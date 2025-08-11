@@ -1,0 +1,1373 @@
+{
+  "resourceType" : "Questionnaire",
+  "id" : "ImmsotVaccinationDataEntryQuestionnaire",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire ImmsotVaccinationDataEntryQuestionnaire</b></p><a name=\"ImmsotVaccinationDataEntryQuestionnaire\"> </a><a name=\"hcImmsotVaccinationDataEntryQuestionnaire\"> </a><a name=\"ImmsotVaccinationDataEntryQuestionnaire-en-NZ\"> </a><b>Structure</b><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The linkID for the item\">LinkID</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the item can appear in the instance\">Cardinality</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Other attributes of the item\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> </td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Submit an overseas, historic, or not-done vaccination to AIR</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">https://build.fhir.org/ig/tewhatuora/cinc-fhir-ig/Questionnaire/ImmsotVaccinationDataEntryQuestionnaire#0.4.1</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" id=\"item.p01-Immunisation\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"group\" class=\"hierarchy\"/> p01-Immunisation</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">page 1. Page 1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.p01-q01-Type\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> p01-q01-Type</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">page 1 question 1. Type of vaccination</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.p01-q01-Type\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.p01-q02-StatusCompleted\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> p01-q02-StatusCompleted</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">page 1 question 2. Extract - Status completed</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-hidden.html\" title=\"Is a hidden item\"><img src=\"icon-qi-hidden.png\" alt=\"icon\"/></a><img src=\"icon-qi-hidden.png\" alt=\"icon\"/></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"http://hl7.org/fhir/R4/immunization.html#Immunization.status\">Immunization.status</a><br/>Enable When: <ul><li><a href=\"#item.p01-q01-Type\">p01-q01-Type</a> = </li><li><a href=\"#item.p01-q01-Type\">p01-q01-Type</a> = </li></ul><br/>Initial Value: string = completed</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.p01-q03-StatusNotDone\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> p01-q03-StatusNotDone</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">page 1 question 3. Extract - Status not done</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-hidden.html\" title=\"Is a hidden item\"><img src=\"icon-qi-hidden.png\" alt=\"icon\"/></a><img src=\"icon-qi-hidden.png\" alt=\"icon\"/></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"http://hl7.org/fhir/R4/immunization.html#Immunization.status\">Immunization.status</a><br/>Enable When: <span><a href=\"#item.p01-q01-Type\">p01-q01-Type</a> = </span><br/>Initial Value: string = not-done</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.p01-q04-StatusReasonOverseas\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> p01-q04-StatusReasonOverseas</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">page 1 question 4. Extract - Status reason</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-hidden.html\" title=\"Is a hidden item\"><img src=\"icon-qi-hidden.png\" alt=\"icon\"/></a><img src=\"icon-qi-hidden.png\" alt=\"icon\"/></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"http://hl7.org/fhir/R4/immunization.html#Immunization.statusReason.coding[]\">Immunization.statusReason.coding[]</a><br/>Enable When: <span><a href=\"#item.p01-q01-Type\">p01-q01-Type</a> = </span><br/>Initial Value: Coding = <span title=\"https://standards.digital.health.nz/ns/air-status-reason-terms\">air-status-reason-terms</span>#GIVNOS &quot;Given overseas&quot;</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.p01-q05-StatusReasonHistoric\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> p01-q05-StatusReasonHistoric</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">page 1 question 5. Extract - Status reason</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-hidden.html\" title=\"Is a hidden item\"><img src=\"icon-qi-hidden.png\" alt=\"icon\"/></a><img src=\"icon-qi-hidden.png\" alt=\"icon\"/></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"http://hl7.org/fhir/R4/immunization.html#Immunization.statusReason.coding[]\">Immunization.statusReason.coding[]</a><br/>Enable When: <span><a href=\"#item.p01-q01-Type\">p01-q01-Type</a> = </span><br/>Initial Value: Coding = <span title=\"https://standards.digital.health.nz/ns/air-status-reason-terms\">air-status-reason-terms</span>#HSTGIVN &quot;Given historically&quot;</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.p01-q06-StatusReasonNotDone\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> p01-q06-StatusReasonNotDone</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">page 1 question 6. Status reason</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"http://hl7.org/fhir/R4/immunization.html#Immunization.statusReason.coding[]\">Immunization.statusReason.coding[]</a><br/>Enable When: <span><a href=\"#item.p01-q01-Type\">p01-q01-Type</a> = </span><br/>Options: <a href=\"#opt-item.p01-q06-StatusReasonNotDone\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.p01-q07-FacilityOverseas\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> p01-q07-FacilityOverseas</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">page 1 question 7. Extract - Overseas facility</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-hidden.html\" title=\"Is a hidden item\"><img src=\"icon-qi-hidden.png\" alt=\"icon\"/></a><img src=\"icon-qi-hidden.png\" alt=\"icon\"/></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"http://hl7.org/fhir/R4/immunization.html#Immunization.location\">Immunization.location</a><br/>Enable When: <span><a href=\"#item.p01-q01-Type\">p01-q01-Type</a> = </span><br/>Initial Value: Coding = <span title=\"null\">[not stated]</span>#F3R789-A &quot;NIR Overseas Clinic&quot;</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.p01-q08-FacilityHistoric\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> p01-q08-FacilityHistoric</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">page 1 question 8. Extract - Historic facility</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-hidden.html\" title=\"Is a hidden item\"><img src=\"icon-qi-hidden.png\" alt=\"icon\"/></a><img src=\"icon-qi-hidden.png\" alt=\"icon\"/></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"http://hl7.org/fhir/R4/immunization.html#Immunization.location\">Immunization.location</a><br/>Enable When: <ul><li><a href=\"#item.p01-q01-Type\">p01-q01-Type</a> = </li><li><a href=\"#item.p01-q01-Type\">p01-q01-Type</a> = </li></ul><br/>Initial Value: Coding = <span title=\"null\">[not stated]</span>#F3R790-H &quot;NIR Unknown NZ Clinic&quot;</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.p01-q09-Antigens\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> p01-q09-Antigens</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">page 1 question 9. Vaccine antigens</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"http://hl7.org/fhir/R4/immunization.html#Immunization.vaccineCode.coding[]\">Immunization.vaccineCode.coding[]</a><br/>Enable When: <span><a href=\"#item.p01-q01-Type\">p01-q01-Type</a> exists </span><br/>Options: <a href=\"#opt-item.p01-q09-Antigens\">82 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.p01-q10-DoseNumber\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"integer\" class=\"hierarchy\"/> p01-q10-DoseNumber</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">page 1 question 10. Dose number</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"http://hl7.org/fhir/R4/immunization.html#Immunization.protocolApplied[].doseNumberPositiveInt\">Immunization.protocolApplied[].doseNumberPositiveInt</a><br/>Enable When: <ul><li><a href=\"#item.p01-q01-Type\">p01-q01-Type</a> = </li><li><a href=\"#item.p01-q01-Type\">p01-q01-Type</a> = </li></ul></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.p01-q11-DoseNumber\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"integer\" class=\"hierarchy\"/> p01-q11-DoseNumber</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">page 1 question 11. Dose number</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"http://hl7.org/fhir/R4/immunization.html#Immunization.protocolApplied[].doseNumberPositiveInt\">Immunization.protocolApplied[].doseNumberPositiveInt</a><br/>Enable When: <span><a href=\"#item.p01-q01-Type\">p01-q01-Type</a> = </span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.p01-q12-Indication\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> p01-q12-Indication</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">page 1 question 12. Indication (reason code)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"http://hl7.org/fhir/R4/immunization.html#Immunization.reasonCode[].coding[]\">Immunization.reasonCode[].coding[]</a><br/>Enable When: <span><a href=\"#item.p01-q01-Type\">p01-q01-Type</a> exists </span><br/>Options: <a href=\"#opt-item.p01-q12-Indication\">33 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.p01-q13-DateAdministered\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> p01-q13-DateAdministered</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">page 1 question 13. Date vaccine administered</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"http://hl7.org/fhir/R4/immunization.html#Immunization.occurrenceDateTime\">Immunization.occurrenceDateTime</a><br/>Enable When: <ul><li><a href=\"#item.p01-q01-Type\">p01-q01-Type</a> = </li><li><a href=\"#item.p01-q01-Type\">p01-q01-Type</a> = </li></ul></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.p01-q14-DateNotDone\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"date\" class=\"hierarchy\"/> p01-q14-DateNotDone</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">page 1 question 14. Date vaccine determined as not done</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Definition: <a href=\"http://hl7.org/fhir/R4/immunization.html#Immunization.occurrenceDateTime\">Immunization.occurrenceDateTime</a><br/>Enable When: <span><a href=\"#item.p01-q01-Type\">p01-q01-Type</a> = </span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" id=\"item.p01-q15-SubjectMeta\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> p01-q15-SubjectMeta</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">page 1 question 15. null</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-hidden.html\" title=\"Is a hidden item\"><img src=\"icon-qi-hidden.png\" alt=\"icon\"/></a><img src=\"icon-qi-hidden.png\" alt=\"icon\"/></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Initial Value: boolean = true</td></tr>\r\n<tr><td colspan=\"6\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name=\"opt-item.p01-q01-Type\"> </a><p><b>Answer options for p01-q01-Type </b></p><ul><li style=\"font-size: 11px\">null#Overseas (&quot;Overseas&quot;)</li><li style=\"font-size: 11px\">null#Historic (&quot;Historic&quot;)</li><li style=\"font-size: 11px\">null#Not done (&quot;Not done&quot;)</li></ul><a name=\"opt-item.p01-q06-StatusReasonNotDone\"> </a><p><b>Answer options for p01-q06-StatusReasonNotDone </b></p><ul><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-status-reason-terms#DPC (&quot;Declined by parent/guardian&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-status-reason-terms#DIC (&quot;Declined by individual&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-status-reason-terms#DMC (&quot;Permanent contraindication&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-status-reason-terms#DNI (&quot;Immune&quot;)</li></ul><a name=\"opt-item.p01-q09-Antigens\"> </a><p><b>Answer options for p01-q09-Antigens </b></p><ul><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#03 (&quot;03 - MMR&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#05 (&quot;05 - Measles&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#06 (&quot;06 - Rubella&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#08 (&quot;08 - HepB&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#09 (&quot;09 - Td&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#10 (&quot;10 - IPV&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#19 (&quot;19 - BCG&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#20 (&quot;20 - DTaP&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#21 (&quot;21 - VV&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#22 (&quot;22 - DTP-Hib&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#25 (&quot;25 - Typhoid&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#26 (&quot;26 - Cholera&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#28 (&quot;28 - DT&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#30 (&quot;30 - HBIG&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#33 (&quot;33 - 23PPV&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#35 (&quot;35 - Tetanus&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#37 (&quot;37 - YFV&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#39 (&quot;39 - JEV&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#43 (&quot;43 - HepB&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#44 (&quot;44 - HepB&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#48 (&quot;48 - Hib-PRP-T&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#50 (&quot;50 - DTaP-Hib&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#51 (&quot;51 - Hib-HepB&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#52 (&quot;52 - HepA&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#56 (&quot;56 - Dengue&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#62 (&quot;62 - HPV4&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#75 (&quot;75 - MPX&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#83 (&quot;83 - HepA&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#100 (&quot;100 - PCV7&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#101 (&quot;101 - Typhoid&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#103 (&quot;103 - MenC&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#104 (&quot;104 - HepB-HepA&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#110 (&quot;110 - DTaP-IPV-HepB&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#114 (&quot;114 - MenACWY&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#115 (&quot;115 - Tdap&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#116 (&quot;116 - RV5&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#118 (&quot;118 - HPV2&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#119 (&quot;119 - RV1&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#120 (&quot;120 - DTaP-IPV-Hib&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#121 (&quot;121 - rZV&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#127 (&quot;127 - Influenza A (H1N1)&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#130 (&quot;130 - DTaP-IPV&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#133 (&quot;133 - PCV13&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#134 (&quot;134 - JEV&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#150 (&quot;150 - Influenza&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#160 (&quot;160 - Influenza A (H5N1)&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#161 (&quot;161 - Influenza&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#163 (&quot;163 - MenB&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#165 (&quot;165 - HPV9&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#182 (&quot;182 - OPV&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#187 (&quot;187 - rZV&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#202 (&quot;202 - Influenza&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#205 (&quot;205 - Influenza&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#208 (&quot;208 - COVID-19&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#210 (&quot;210 - COVID-19&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#211 (&quot;211 - COVID-19&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#217 (&quot;217 - COVID-19&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#218 (&quot;218 - COVID-19&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#219 (&quot;219 - COVID-19&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#222 (&quot;222 - TBE&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#300 (&quot;300 - COVID-19&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#303 (&quot;303 - RSV&quot;)</li><li style=\"font-size: 11px\">http://hl7.org/fhir/sid/cvx#500 (&quot;500 - COVID-19&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/immunisation-code#52101 (&quot;52101 - HepA-Typhoid&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/immunisation-code#090306 (&quot;090306 - PCV unspecified&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/immunisation-code#90906 (&quot;90906 - Td&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/immunisation-code#99001 (&quot;99001 - DTaP-IPV&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/immunisation-code#99002 (&quot;99002 - MeNZB&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/immunisation-code#99003 (&quot;99003 - Diphtheria, paed&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/immunisation-code#99004 (&quot;99004 - aP&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/immunisation-code#99005 (&quot;99005 - Diphtheria, adult&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/immunisation-code#99006 (&quot;99006 - Influenza&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/immunisation-code#99007 (&quot;99007 - HepA&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/immunisation-code#99008 (&quot;99008 - MenACWY&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/immunisation-code#99009 (&quot;99009 - Rabies&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/immunisation-code#99010 (&quot;99010 - RIG&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/immunisation-code#99011 (&quot;99011 - Tdap-IPV&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/immunisation-code#99012 (&quot;99012 - Tdap&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/immunisation-code#99013 (&quot;99013 - MenC&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/immunisation-code#210307 (&quot;210307 - DTaP-IPV-HepB/Hib&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/immunisation-code#260209 (&quot;260209 - PCV10&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/immunisation-code#EVPMnC (&quot;EVPMnC - MenC&quot;)</li></ul><a name=\"opt-item.p01-q12-Indication\"> </a><p><b>Answer options for p01-q12-Indication </b></p><ul><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#1 (&quot;Influenza, eligible over 65 years&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#2 (&quot;Influenza, eligible under 18 years&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#3 (&quot;Influenza, eligible criteria&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#4 (&quot;Sexual or household contact&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#5 (&quot;Primary course&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#6 (&quot;Booster&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#7 (&quot;Post partum&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#8 (&quot;Low birth weight&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#9 (&quot;HepB carrier mother&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#10 (&quot;At risk for TB&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#11 (&quot;Pre-post splenectomy schedule&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#12 (&quot;At risk, no previous history&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#13 (&quot;At risk, previous PCV history&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#14 (&quot;At risk, previous 23PPV&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#15 (&quot;Pre-emergency&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#16 (&quot;Pregnant&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#21 (&quot;PCV catch up&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#Pre (&quot;Pre-primary course&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#Stn (&quot;Funded, if not otherwise specified&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#6W (&quot;6 weeks&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#3M (&quot;3 months&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#5M (&quot;5 months&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#12M (&quot;12 months&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#15M (&quot;15 months&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#4Y (&quot;4 years&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#11Y (&quot;11 years&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#14Y (&quot;14 years&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#45Y (&quot;45 years&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#65Y (&quot;65 years&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#96 (&quot;HepB high risk, booster or extra dose&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#TPW (&quot;Tetanus-prone wound&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#5P (&quot;Privately funded, primary course&quot;)</li><li style=\"font-size: 11px\">https://standards.digital.health.nz/ns/air-terms-code#6P (&quot;Privately funded, booster&quot;)</li></ul></div>"
+  },
+  "url" : "https://build.fhir.org/ig/tewhatuora/cinc-fhir-ig/Questionnaire/ImmsotVaccinationDataEntryQuestionnaire",
+  "identifier" : [
+    {
+      "use" : "usual",
+      "value" : "ImmsotVaccinationDataEntryQuestionnaire",
+      "period" : {
+        "start" : "2023-07-05"
+      }
+    }
+  ],
+  "version" : "0.4.1",
+  "title" : "AIR - Overseas, Historic, Not Done",
+  "status" : "draft",
+  "date" : "2025-06-05T00:26:00+00:00",
+  "publisher" : "Te Whatu Ora",
+  "contact" : [
+    {
+      "name" : "Te Whatu Ora",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://www.tewhatuora.govt.nz/"
+        }
+      ]
+    },
+    {
+      "name" : "Te Whatu Ora Integration Team",
+      "telecom" : [
+        {
+          "system" : "email",
+          "value" : "integration@tewhatuora.govt.nz",
+          "use" : "work"
+        }
+      ]
+    }
+  ],
+  "description" : "Submit an overseas, historic, or not-done vaccination to AIR",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "NZ",
+          "display" : "New Zealand"
+        }
+      ]
+    }
+  ],
+  "item" : [
+    {
+      "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/sdc-questionnaire-itemExtractionContext",
+          "valueCode" : "Immunization"
+        }
+      ],
+      "linkId" : "p01-Immunisation",
+      "prefix" : "page 1",
+      "text" : "Page 1",
+      "type" : "group",
+      "item" : [
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "drop-down",
+                    "display" : "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId" : "p01-q01-Type",
+          "prefix" : "page 1 question 1",
+          "text" : "Type of vaccination",
+          "type" : "choice",
+          "required" : true,
+          "answerOption" : [
+            {
+              "valueCoding" : {
+                "code" : "Overseas",
+                "display" : "Overseas"
+              }
+            },
+            {
+              "valueCoding" : {
+                "code" : "Historic",
+                "display" : "Historic"
+              }
+            },
+            {
+              "valueCoding" : {
+                "code" : "Not done",
+                "display" : "Not done"
+              }
+            }
+          ]
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+              "valueBoolean" : true
+            }
+          ],
+          "linkId" : "p01-q02-StatusCompleted",
+          "definition" : "http://hl7.org/fhir/StructureDefinition/Immunization#Immunization.status",
+          "prefix" : "page 1 question 2",
+          "text" : "Extract - Status completed",
+          "type" : "string",
+          "enableWhen" : [
+            {
+              "question" : "p01-q01-Type",
+              "operator" : "=",
+              "answerCoding" : {
+                "display" : "Overseas"
+              }
+            },
+            {
+              "question" : "p01-q01-Type",
+              "operator" : "=",
+              "answerCoding" : {
+                "display" : "Historic"
+              }
+            }
+          ],
+          "enableBehavior" : "any",
+          "required" : true,
+          "initial" : [
+            {
+              "valueString" : "completed"
+            }
+          ]
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+              "valueBoolean" : true
+            }
+          ],
+          "linkId" : "p01-q03-StatusNotDone",
+          "definition" : "http://hl7.org/fhir/StructureDefinition/Immunization#Immunization.status",
+          "prefix" : "page 1 question 3",
+          "text" : "Extract - Status not done",
+          "type" : "string",
+          "enableWhen" : [
+            {
+              "question" : "p01-q01-Type",
+              "operator" : "=",
+              "answerCoding" : {
+                "display" : "Not done"
+              }
+            }
+          ],
+          "enableBehavior" : "all",
+          "initial" : [
+            {
+              "valueString" : "not-done"
+            }
+          ]
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+              "valueBoolean" : true
+            }
+          ],
+          "linkId" : "p01-q04-StatusReasonOverseas",
+          "definition" : "http://hl7.org/fhir/StructureDefinition/Immunization#Immunization.statusReason.coding[]",
+          "prefix" : "page 1 question 4",
+          "text" : "Extract - Status reason",
+          "type" : "choice",
+          "enableWhen" : [
+            {
+              "question" : "p01-q01-Type",
+              "operator" : "=",
+              "answerCoding" : {
+                "display" : "Overseas"
+              }
+            }
+          ],
+          "enableBehavior" : "all",
+          "initial" : [
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-status-reason-terms",
+                "code" : "GIVNOS",
+                "display" : "Given overseas"
+              }
+            }
+          ]
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+              "valueBoolean" : true
+            }
+          ],
+          "linkId" : "p01-q05-StatusReasonHistoric",
+          "definition" : "http://hl7.org/fhir/StructureDefinition/Immunization#Immunization.statusReason.coding[]",
+          "prefix" : "page 1 question 5",
+          "text" : "Extract - Status reason",
+          "type" : "choice",
+          "enableWhen" : [
+            {
+              "question" : "p01-q01-Type",
+              "operator" : "=",
+              "answerCoding" : {
+                "display" : "Historic"
+              }
+            }
+          ],
+          "enableBehavior" : "all",
+          "initial" : [
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-status-reason-terms",
+                "code" : "HSTGIVN",
+                "display" : "Given historically"
+              }
+            }
+          ]
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "drop-down",
+                    "display" : "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId" : "p01-q06-StatusReasonNotDone",
+          "definition" : "http://hl7.org/fhir/StructureDefinition/Immunization#Immunization.statusReason.coding[]",
+          "prefix" : "page 1 question 6",
+          "text" : "Status reason",
+          "type" : "choice",
+          "enableWhen" : [
+            {
+              "question" : "p01-q01-Type",
+              "operator" : "=",
+              "answerCoding" : {
+                "display" : "Not done"
+              }
+            }
+          ],
+          "enableBehavior" : "all",
+          "required" : true,
+          "answerOption" : [
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-status-reason-terms",
+                "code" : "DPC",
+                "display" : "Declined by parent/guardian"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-status-reason-terms",
+                "code" : "DIC",
+                "display" : "Declined by individual"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-status-reason-terms",
+                "code" : "DMC",
+                "display" : "Permanent contraindication"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-status-reason-terms",
+                "code" : "DNI",
+                "display" : "Immune"
+              }
+            }
+          ]
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+              "valueBoolean" : true
+            }
+          ],
+          "linkId" : "p01-q07-FacilityOverseas",
+          "definition" : "http://hl7.org/fhir/StructureDefinition/Immunization#Immunization.location",
+          "prefix" : "page 1 question 7",
+          "text" : "Extract - Overseas facility",
+          "type" : "choice",
+          "enableWhen" : [
+            {
+              "question" : "p01-q01-Type",
+              "operator" : "=",
+              "answerCoding" : {
+                "display" : "Overseas"
+              }
+            }
+          ],
+          "enableBehavior" : "all",
+          "initial" : [
+            {
+              "valueCoding" : {
+                "code" : "F3R789-A",
+                "display" : "NIR Overseas Clinic"
+              }
+            }
+          ]
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "drop-down",
+                    "display" : "Drop down"
+                  }
+                ]
+              }
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+              "valueBoolean" : true
+            }
+          ],
+          "linkId" : "p01-q08-FacilityHistoric",
+          "definition" : "http://hl7.org/fhir/StructureDefinition/Immunization#Immunization.location",
+          "prefix" : "page 1 question 8",
+          "text" : "Extract - Historic facility",
+          "type" : "choice",
+          "enableWhen" : [
+            {
+              "question" : "p01-q01-Type",
+              "operator" : "=",
+              "answerCoding" : {
+                "display" : "Historic"
+              }
+            },
+            {
+              "question" : "p01-q01-Type",
+              "operator" : "=",
+              "answerCoding" : {
+                "display" : "Not done"
+              }
+            }
+          ],
+          "enableBehavior" : "any",
+          "initial" : [
+            {
+              "valueCoding" : {
+                "code" : "F3R790-H",
+                "display" : "NIR Unknown NZ Clinic"
+              }
+            }
+          ]
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "drop-down",
+                    "display" : "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId" : "p01-q09-Antigens",
+          "definition" : "http://hl7.org/fhir/StructureDefinition/Immunization#Immunization.vaccineCode.coding[]",
+          "prefix" : "page 1 question 9",
+          "text" : "Vaccine antigens",
+          "type" : "choice",
+          "enableWhen" : [
+            {
+              "question" : "p01-q01-Type",
+              "operator" : "exists",
+              "answerBoolean" : true
+            }
+          ],
+          "enableBehavior" : "all",
+          "required" : true,
+          "answerOption" : [
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "03",
+                "display" : "03 - MMR"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "05",
+                "display" : "05 - Measles"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "06",
+                "display" : "06 - Rubella"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "08",
+                "display" : "08 - HepB"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "09",
+                "display" : "09 - Td"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "10",
+                "display" : "10 - IPV"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "19",
+                "display" : "19 - BCG"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "20",
+                "display" : "20 - DTaP"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "21",
+                "display" : "21 - VV"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "22",
+                "display" : "22 - DTP-Hib"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "25",
+                "display" : "25 - Typhoid"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "26",
+                "display" : "26 - Cholera"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "28",
+                "display" : "28 - DT"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "30",
+                "display" : "30 - HBIG"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "33",
+                "display" : "33 - 23PPV"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "35",
+                "display" : "35 - Tetanus"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "37",
+                "display" : "37 - YFV"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "39",
+                "display" : "39 - JEV"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "43",
+                "display" : "43 - HepB"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "44",
+                "display" : "44 - HepB"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "48",
+                "display" : "48 - Hib-PRP-T"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "50",
+                "display" : "50 - DTaP-Hib"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "51",
+                "display" : "51 - Hib-HepB"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "52",
+                "display" : "52 - HepA"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "56",
+                "display" : "56 - Dengue"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "62",
+                "display" : "62 - HPV4"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "75",
+                "display" : "75 - MPX"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "83",
+                "display" : "83 - HepA"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "100",
+                "display" : "100 - PCV7"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "101",
+                "display" : "101 - Typhoid"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "103",
+                "display" : "103 - MenC"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "104",
+                "display" : "104 - HepB-HepA"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "110",
+                "display" : "110 - DTaP-IPV-HepB"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "114",
+                "display" : "114 - MenACWY"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "115",
+                "display" : "115 - Tdap"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "116",
+                "display" : "116 - RV5"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "118",
+                "display" : "118 - HPV2"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "119",
+                "display" : "119 - RV1"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "120",
+                "display" : "120 - DTaP-IPV-Hib"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "121",
+                "display" : "121 - rZV"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "127",
+                "display" : "127 - Influenza A (H1N1)"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "130",
+                "display" : "130 - DTaP-IPV"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "133",
+                "display" : "133 - PCV13"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "134",
+                "display" : "134 - JEV"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "150",
+                "display" : "150 - Influenza"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "160",
+                "display" : "160 - Influenza A (H5N1)"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "161",
+                "display" : "161 - Influenza"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "163",
+                "display" : "163 - MenB"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "165",
+                "display" : "165 - HPV9"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "182",
+                "display" : "182 - OPV"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "187",
+                "display" : "187 - rZV"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "202",
+                "display" : "202 - Influenza"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "205",
+                "display" : "205 - Influenza"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "208",
+                "display" : "208 - COVID-19"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "210",
+                "display" : "210 - COVID-19"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "211",
+                "display" : "211 - COVID-19"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "217",
+                "display" : "217 - COVID-19"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "218",
+                "display" : "218 - COVID-19"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "219",
+                "display" : "219 - COVID-19"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "222",
+                "display" : "222 - TBE"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "300",
+                "display" : "300 - COVID-19"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "303",
+                "display" : "303 - RSV"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "http://hl7.org/fhir/sid/cvx",
+                "code" : "500",
+                "display" : "500 - COVID-19"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/immunisation-code",
+                "code" : "52101",
+                "display" : "52101 - HepA-Typhoid"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/immunisation-code",
+                "code" : "090306",
+                "display" : "090306 - PCV unspecified"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/immunisation-code",
+                "code" : "90906",
+                "display" : "90906 - Td"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/immunisation-code",
+                "code" : "99001",
+                "display" : "99001 - DTaP-IPV"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/immunisation-code",
+                "code" : "99002",
+                "display" : "99002 - MeNZB"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/immunisation-code",
+                "code" : "99003",
+                "display" : "99003 - Diphtheria, paed"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/immunisation-code",
+                "code" : "99004",
+                "display" : "99004 - aP"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/immunisation-code",
+                "code" : "99005",
+                "display" : "99005 - Diphtheria, adult"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/immunisation-code",
+                "code" : "99006",
+                "display" : "99006 - Influenza"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/immunisation-code",
+                "code" : "99007",
+                "display" : "99007 - HepA"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/immunisation-code",
+                "code" : "99008",
+                "display" : "99008 - MenACWY"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/immunisation-code",
+                "code" : "99009",
+                "display" : "99009 - Rabies"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/immunisation-code",
+                "code" : "99010",
+                "display" : "99010 - RIG"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/immunisation-code",
+                "code" : "99011",
+                "display" : "99011 - Tdap-IPV"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/immunisation-code",
+                "code" : "99012",
+                "display" : "99012 - Tdap"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/immunisation-code",
+                "code" : "99013",
+                "display" : "99013 - MenC"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/immunisation-code",
+                "code" : "210307",
+                "display" : "210307 - DTaP-IPV-HepB/Hib"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/immunisation-code",
+                "code" : "260209",
+                "display" : "260209 - PCV10"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/immunisation-code",
+                "code" : "EVPMnC",
+                "display" : "EVPMnC - MenC"
+              }
+            }
+          ]
+        },
+        {
+          "linkId" : "p01-q10-DoseNumber",
+          "definition" : "http://hl7.org/fhir/StructureDefinition/Immunization#Immunization.protocolApplied[].doseNumberPositiveInt",
+          "prefix" : "page 1 question 10",
+          "text" : "Dose number",
+          "type" : "integer",
+          "enableWhen" : [
+            {
+              "question" : "p01-q01-Type",
+              "operator" : "=",
+              "answerCoding" : {
+                "display" : "Overseas"
+              }
+            },
+            {
+              "question" : "p01-q01-Type",
+              "operator" : "=",
+              "answerCoding" : {
+                "display" : "Historic"
+              }
+            }
+          ],
+          "enableBehavior" : "any"
+        },
+        {
+          "linkId" : "p01-q11-DoseNumber",
+          "definition" : "http://hl7.org/fhir/StructureDefinition/Immunization#Immunization.protocolApplied[].doseNumberPositiveInt",
+          "prefix" : "page 1 question 11",
+          "text" : "Dose number",
+          "type" : "integer",
+          "enableWhen" : [
+            {
+              "question" : "p01-q01-Type",
+              "operator" : "=",
+              "answerCoding" : {
+                "display" : "Not done"
+              }
+            }
+          ],
+          "enableBehavior" : "all",
+          "required" : true
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "drop-down",
+                    "display" : "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId" : "p01-q12-Indication",
+          "definition" : "http://hl7.org/fhir/StructureDefinition/Immunization#Immunization.reasonCode[].coding[]",
+          "prefix" : "page 1 question 12",
+          "text" : "Indication (reason code)",
+          "type" : "choice",
+          "enableWhen" : [
+            {
+              "question" : "p01-q01-Type",
+              "operator" : "exists",
+              "answerBoolean" : true
+            }
+          ],
+          "enableBehavior" : "all",
+          "required" : true,
+          "answerOption" : [
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "1",
+                "display" : "Influenza, eligible over 65 years"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "2",
+                "display" : "Influenza, eligible under 18 years"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "3",
+                "display" : "Influenza, eligible criteria"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "4",
+                "display" : "Sexual or household contact"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "5",
+                "display" : "Primary course"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "6",
+                "display" : "Booster"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "7",
+                "display" : "Post partum"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "8",
+                "display" : "Low birth weight"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "9",
+                "display" : "HepB carrier mother"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "10",
+                "display" : "At risk for TB"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "11",
+                "display" : "Pre-post splenectomy schedule"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "12",
+                "display" : "At risk, no previous history"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "13",
+                "display" : "At risk, previous PCV history"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "14",
+                "display" : "At risk, previous 23PPV"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "15",
+                "display" : "Pre-emergency"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "16",
+                "display" : "Pregnant"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "21",
+                "display" : "PCV catch up"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "Pre",
+                "display" : "Pre-primary course"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "Stn",
+                "display" : "Funded, if not otherwise specified"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "6W",
+                "display" : "6 weeks"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "3M",
+                "display" : "3 months"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "5M",
+                "display" : "5 months"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "12M",
+                "display" : "12 months"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "15M",
+                "display" : "15 months"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "4Y",
+                "display" : "4 years"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "11Y",
+                "display" : "11 years"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "14Y",
+                "display" : "14 years"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "45Y",
+                "display" : "45 years"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "65Y",
+                "display" : "65 years"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "96",
+                "display" : "HepB high risk, booster or extra dose"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "TPW",
+                "display" : "Tetanus-prone wound"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "5P",
+                "display" : "Privately funded, primary course"
+              }
+            },
+            {
+              "valueCoding" : {
+                "system" : "https://standards.digital.health.nz/ns/air-terms-code",
+                "code" : "6P",
+                "display" : "Privately funded, booster"
+              }
+            }
+          ]
+        },
+        {
+          "linkId" : "p01-q13-DateAdministered",
+          "definition" : "http://hl7.org/fhir/StructureDefinition/Immunization#Immunization.occurrenceDateTime",
+          "prefix" : "page 1 question 13",
+          "text" : "Date vaccine administered",
+          "type" : "date",
+          "enableWhen" : [
+            {
+              "question" : "p01-q01-Type",
+              "operator" : "=",
+              "answerCoding" : {
+                "display" : "Overseas"
+              }
+            },
+            {
+              "question" : "p01-q01-Type",
+              "operator" : "=",
+              "answerCoding" : {
+                "display" : "Historic"
+              }
+            }
+          ],
+          "enableBehavior" : "any",
+          "required" : true
+        },
+        {
+          "linkId" : "p01-q14-DateNotDone",
+          "definition" : "http://hl7.org/fhir/StructureDefinition/Immunization#Immunization.occurrenceDateTime",
+          "prefix" : "page 1 question 14",
+          "text" : "Date vaccine determined as not done",
+          "type" : "date",
+          "enableWhen" : [
+            {
+              "question" : "p01-q01-Type",
+              "operator" : "=",
+              "answerCoding" : {
+                "display" : "Not done"
+              }
+            }
+          ],
+          "enableBehavior" : "all",
+          "required" : true
+        },
+        {
+          "extension" : [
+            {
+              "extension" : [
+                {
+                  "url" : "source",
+                  "valueExpression" : {
+                    "language" : "text/fhirpath",
+                    "expression" : "QuestionnaireResponse.subject"
+                  }
+                },
+                {
+                  "url" : "destination",
+                  "valueExpression" : {
+                    "language" : "text/fhirpath",
+                    "expression" : "Immunization.patient"
+                  }
+                }
+              ],
+              "url" : "http://health.govt.nz/fhir/StructureDefinition/sdc-questionnaire-extractMetadata"
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+              "valueBoolean" : true
+            }
+          ],
+          "linkId" : "p01-q15-SubjectMeta",
+          "prefix" : "page 1 question 15",
+          "type" : "boolean",
+          "initial" : [
+            {
+              "valueBoolean" : true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
