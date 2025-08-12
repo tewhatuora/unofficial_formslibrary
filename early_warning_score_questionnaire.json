@@ -1,0 +1,124 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "title": "Early Warning Score",
+  "item": [
+    {
+      "linkId": "q1754959092649_u3xyhoyl3",
+      "text": "Enter a Respiratory Rate (breaths per minute)",
+      "type": "integer",
+      "required": false,
+      "repeats": false
+    },
+    {
+      "linkId": "q1754959131253_ze0lod345",
+      "text": "Enter supplemental Oxygen (litres per minute) ",
+      "type": "choice",
+      "required": false,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueString": "Room Air"
+        },
+        {
+          "valueString": "1 Lpm"
+        },
+        {
+          "valueString": "2 Lpm"
+        },
+        {
+          "valueString": "3 Lpm"
+        },
+        {
+          "valueString": "4 Lpm"
+        },
+        {
+          "valueString": "5 Lpm"
+        },
+        {
+          "valueString": "6 Lpm"
+        },
+        {
+          "valueString": "7 Lpm"
+        },
+        {
+          "valueString": "8 Lpm"
+        },
+        {
+          "valueString": "9 Lpm"
+        },
+        {
+          "valueString": "10 Lpm"
+        },
+        {
+          "valueString": "11 Lpm"
+        },
+        {
+          "valueString": "12 Lpm"
+        },
+        {
+          "valueString": "13 Lpm"
+        },
+        {
+          "valueString": "14 Lpm"
+        },
+        {
+          "valueString": "15 Lpm"
+        }
+      ]
+    },
+    {
+      "linkId": "q1754959250051_kzqhji02b",
+      "text": "Enter Oxygen Saturation (percentage)",
+      "type": "decimal",
+      "required": false,
+      "repeats": false
+    },
+    {
+      "linkId": "q1754959290445_jtvjves61",
+      "text": "Enter Heart Rate (beats per min)",
+      "type": "integer",
+      "required": false,
+      "repeats": false
+    },
+    {
+      "linkId": "q1754959298140_q6fhc1utf",
+      "text": "Enter Systolic Blood Pressure (mmHg)",
+      "type": "integer",
+      "required": false,
+      "repeats": false
+    },
+    {
+      "linkId": "q1754959334561_pdrxlevki",
+      "text": "Enter Temperature (°Celcius)",
+      "type": "decimal",
+      "required": false,
+      "repeats": false
+    },
+    {
+      "linkId": "q1754959358907_574cjwsu2",
+      "text": "New choice question",
+      "type": "choice",
+      "required": false,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueString": "Alert"
+        },
+        {
+          "valueString": "Responds to Voice"
+        },
+        {
+          "valueString": "Responds to Pain"
+        },
+        {
+          "valueString": "Unresponsive"
+        }
+      ]
+    }
+  ],
+  "description": "For collecting the observations as a questionnaire for an Adult Early Warning Score Calculation in New Zealand.",
+  "version": "0.0.1",
+  "publisher": "Jon Herries - Te Whatu Ora",
+  "date": "2025-08-12T00:43:56.287Z"
+}
