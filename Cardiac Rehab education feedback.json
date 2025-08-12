@@ -7,7 +7,7 @@
       "linkId": "q1755036425159_fz6qbj7q7",
       "text": "Which module does this relate to?",
       "type": "choice",
-      "required": false,
+      "required": true,
       "repeats": false,
       "answerOption": [
         {
@@ -20,9 +20,9 @@
     },
     {
       "linkId": "q1755036430102_ylfuxhpcn",
-      "text": "Do you like the content in this model?",
+      "text": "Do you like the content in this module?",
       "type": "choice",
-      "required": false,
+      "required": true,
       "repeats": false,
       "answerOption": [
         {
@@ -44,5 +44,5 @@
   "description": "For receiving feedback in Cardiac Rehab Careplan",
   "version": "0.0.1",
   "publisher": "Jon Herries - Te Whatu Ora",
-  "date": "2025-08-12T22:09:39.817Z"
+  "date": "2025-08-12T22:21:10.795Z"
 }
