@@ -1,377 +1,338 @@
 {
-    "resourceType": "Questionnaire",
-    "id": "canshare-report1",
-    "meta": {
-        "versionId": "6",
-        "lastUpdated": "2025-08-12T22:27:29.9976088+00:00"
-    },
-    "extension": [
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "title": "Colorectal MVP Report",
+  "item": [
+    {
+      "linkId": "id-0",
+      "text": "Colorectal MVP Report 1",
+      "type": "group",
+      "required": false,
+      "repeats": false,
+      "item": [
         {
-            "extension": [
-                {
-                    "url": "name",
-                    "valueCoding": {
-                        "code": "patient"
-                    }
-                },
-                {
-                    "url": "type",
-                    "valueCode": "Patient"
-                },
-                {
-                    "url": "description",
-                    "valueString": "The patient that is to be used to pre-populate the form"
-                }
-            ],
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
-        },
-        {
-            "extension": [
-                {
-                    "url": "name",
-                    "valueCoding": {
-                        "code": "user"
-                    }
-                },
-                {
-                    "url": "type",
-                    "valueCode": "Practitioner"
-                },
-                {
-                    "url": "description",
-                    "valueString": "The practitioner that is to be used to pre-populate the form"
-                }
-            ],
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
-        },
-        {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
-            "valueUrl": "https://backup.canshare.co.nz/proxy"
-        },
-        {
-            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extractAllocateId",
-            "valueString": "patientID"
-        }
-    ],
-    "url": "http://canshare.co.nz/questionnaire/report1",
-    "name": "ASAPMVPColorectalReport-report1",
-    "title": "Colorectal MVP Report 1",
-    "status": "active",
-    "publisher": "DEMO: David Hay",
-    "useContext": [
-        {
-            "code": {
-                "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
-                "code": "user",
-                "display": "User Type"
-            },
-            "valueCodeableConcept": {
-                "coding": [
-                    {
-                        "code": "extract",
-                        "display": "Demo Extract"
-                    }
-                ]
+          "linkId": "id-1",
+          "text": "Tumour site",
+          "type": "group",
+          "required": false,
+          "repeats": false,
+          "extension": [
+            {
+              "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+              "valueString": "report1.clinical"
             }
-        }
-    ],
-    "item": [
-        {
-            "linkId": "id-0",
-            "text": "Colorectal MVP Report 1",
-            "type": "group",
-            "item": [
+          ],
+          "item": [
+            {
+              "linkId": "id-2",
+              "text": "Site",
+              "type": "choice",
+              "required": false,
+              "repeats": false,
+              "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-gi-colorectal-topography",
+              "code": [
                 {
-                    "extension": [
-                        {
-                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                            "valueString": "report1.clinical"
-                        }
-                    ],
-                    "linkId": "id-1",
-                    "text": "Tumour site",
-                    "type": "group",
-                    "item": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                    "valueString": "report1.clinical.site"
-                                }
-                            ],
-                            "linkId": "id-2",
-                            "code": [
-                                {
-                                    "system": "http://snomed.info/sct",
-                                    "code": "566971000210109",
-                                    "display": "Primary site"
-                                }
-                            ],
-                            "text": "Site",
-                            "type": "choice",
-                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-gi-colorectal-topography"
-                        }
-                    ]
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                            "valueString": "report1.histology"
-                        }
-                    ],
-                    "linkId": "id-3",
-                    "text": "Histology",
-                    "type": "group",
-                    "item": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                    "valueString": "report1.histology.type"
-                                }
-                            ],
-                            "linkId": "id-4",
-                            "code": [
-                                {
-                                    "system": "http://snomed.info/sct",
-                                    "code": "371441004",
-                                    "display": "Histologic type"
-                                }
-                            ],
-                            "text": "Type *",
-                            "type": "choice",
-                            "repeats": true,
-                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-who-digestive-colon-rectum-histology"
-                        }
-                    ]
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                            "valueString": "report1.grade"
-                        }
-                    ],
-                    "linkId": "id-5",
-                    "text": "Grading",
-                    "type": "group",
-                    "item": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                    "valueString": "report1.grade.GradingSystem"
-                                },
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
-                                    "valueBoolean": true
-                                }
-                            ],
-                            "linkId": "id-6",
-                            "text": "Grading system",
-                            "type": "choice",
-                            "answerOption": [
-                                {
-                                    "valueCoding": {
-                                        "system": "http://snomed.info/sct",
-                                        "code": "332371000210101",
-                                        "display": "WHO classification of tumours (5th edition) malignant low/high grading system"
-                                    },
-                                    "initialSelected": true
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                    "valueString": "report1.grade.Grade"
-                                }
-                            ],
-                            "linkId": "id-7",
-                            "text": "Grade",
-                            "type": "choice",
-                            "answerOption": [
-                                {
-                                    "valueCoding": {
-                                        "system": "http://example.com/fhir/CodeSystem/example",
-                                        "code": "384741006",
-                                        "display": "Grade cannot be determined"
-                                    }
-                                },
-                                {
-                                    "valueCoding": {
-                                        "system": "http://example.com/fhir/CodeSystem/example",
-                                        "code": "261721000210105",
-                                        "display": "Not applicable"
-                                    }
-                                },
-                                {
-                                    "valueCoding": {
-                                        "system": "http://example.com/fhir/CodeSystem/example",
-                                        "code": "476591000210102",
-                                        "display": "Low histologic grade (well-moderately differentiated)"
-                                    }
-                                },
-                                {
-                                    "valueCoding": {
-                                        "system": "http://example.com/fhir/CodeSystem/example",
-                                        "code": "476601000210107",
-                                        "display": "High histologic grade (poorly differentiated)"
-                                    }
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                            "valueString": "report1.stage"
-                        }
-                    ],
-                    "linkId": "id-8",
-                    "text": "Staging",
-                    "type": "group",
-                    "item": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                    "valueString": "report1.stage.StagingSystem"
-                                }
-                            ],
-                            "linkId": "id-9",
-                            "code": [
-                                {
-                                    "system": "http://snomed.info/sct",
-                                    "code": "297601000210100",
-                                    "display": "Staging system"
-                                }
-                            ],
-                            "text": "Staging system",
-                            "type": "choice",
-                            "answerOption": [
-                                {
-                                    "valueCoding": {
-                                        "system": "http://example.com/fhir/CodeSystem/example",
-                                        "code": "897275008",
-                                        "display": "AJCC cancer staging manual, 8th edition"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                    "valueString": "report1.stage.prefix"
-                                }
-                            ],
-                            "linkId": "id-10",
-                            "code": [
-                                {
-                                    "system": "http://snomed.info/sct",
-                                    "code": "567071000210105",
-                                    "display": "Cancer staging prefix"
-                                }
-                            ],
-                            "text": "Prefix",
-                            "type": "choice",
-                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-prefix"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                    "valueString": "report1.stage.suffix"
-                                }
-                            ],
-                            "linkId": "id-11",
-                            "code": [
-                                {
-                                    "system": "http://snomed.info/sct",
-                                    "code": "567081000210107",
-                                    "display": "Cancer staging suffix"
-                                }
-                            ],
-                            "text": "Suffix",
-                            "type": "choice",
-                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-suffix"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                    "valueString": "report1.stage.pt"
-                                }
-                            ],
-                            "linkId": "id-12",
-                            "code": [
-                                {
-                                    "system": "http://snomed.info/sct",
-                                    "code": "399534004",
-                                    "display": "pT category"
-                                }
-                            ],
-                            "text": "Pathological T",
-                            "type": "choice",
-                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm8-gi-colorectal-pt"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                    "valueString": "report1.stage.pn"
-                                }
-                            ],
-                            "linkId": "id-13",
-                            "code": [
-                                {
-                                    "system": "http://snomed.info/sct",
-                                    "code": "399534004",
-                                    "display": "pN category"
-                                }
-                            ],
-                            "text": "Pathological N",
-                            "type": "choice",
-                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm8-gi-colorectal-pn"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                    "valueString": "report1.stage.pm"
-                                }
-                            ],
-                            "linkId": "id-14",
-                            "code": [
-                                {
-                                    "system": "http://snomed.info/sct",
-                                    "code": "399534004",
-                                    "display": "pM category"
-                                }
-                            ],
-                            "text": "Pathological M",
-                            "type": "choice",
-                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm8-gi-colorectal-pm"
-                        }
-                    ]
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                            "valueString": "report1.text"
-                        }
-                    ],
-                    "linkId": "id-15",
-                    "text": "text",
-                    "type": "text"
+                  "system": "http://snomed.info/sct",
+                  "code": "566971000210109",
+                  "display": "Primary site"
                 }
-            ]
+              ],
+              "extension": [
+                {
+                  "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                  "valueString": "report1.clinical.site"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "id-3",
+          "text": "Histology",
+          "type": "group",
+          "required": false,
+          "repeats": false,
+          "extension": [
+            {
+              "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+              "valueString": "report1.histology"
+            }
+          ],
+          "item": [
+            {
+              "linkId": "id-4",
+              "text": "Type *",
+              "type": "choice",
+              "required": false,
+              "repeats": true,
+              "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-who-digestive-colon-rectum-histology",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "371441004",
+                  "display": "Histologic type"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                  "valueString": "report1.histology.type"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "id-5",
+          "text": "Grading",
+          "type": "group",
+          "required": false,
+          "repeats": false,
+          "extension": [
+            {
+              "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+              "valueString": "report1.grade"
+            }
+          ],
+          "item": [
+            {
+              "linkId": "id-6",
+              "text": "Grading system",
+              "type": "choice",
+              "required": false,
+              "repeats": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "332371000210101",
+                    "display": "WHO classification of tumours (5th edition) malignant low/high grading system"
+                  }
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                  "valueString": "report1.grade.GradingSystem"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+                  "valueBoolean": true
+                }
+              ]
+            },
+            {
+              "linkId": "id-7",
+              "text": "Grade",
+              "type": "choice",
+              "required": false,
+              "repeats": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://example.com/fhir/CodeSystem/example",
+                    "code": "384741006",
+                    "display": "Grade cannot be determined"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.com/fhir/CodeSystem/example",
+                    "code": "261721000210105",
+                    "display": "Not applicable"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.com/fhir/CodeSystem/example",
+                    "code": "476591000210102",
+                    "display": "Low histologic grade (well-moderately differentiated)"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.com/fhir/CodeSystem/example",
+                    "code": "476601000210107",
+                    "display": "High histologic grade (poorly differentiated)"
+                  }
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                  "valueString": "report1.grade.Grade"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "id-8",
+          "text": "Staging",
+          "type": "group",
+          "required": false,
+          "repeats": false,
+          "extension": [
+            {
+              "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+              "valueString": "report1.stage"
+            }
+          ],
+          "item": [
+            {
+              "linkId": "id-9",
+              "text": "Staging system",
+              "type": "choice",
+              "required": false,
+              "repeats": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://example.com/fhir/CodeSystem/example",
+                    "code": "897275008",
+                    "display": "AJCC cancer staging manual, 8th edition"
+                  }
+                }
+              ],
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "297601000210100",
+                  "display": "Staging system"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                  "valueString": "report1.stage.StagingSystem"
+                }
+              ]
+            },
+            {
+              "linkId": "id-10",
+              "text": "Prefix",
+              "type": "choice",
+              "required": false,
+              "repeats": false,
+              "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-prefix",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "567071000210105",
+                  "display": "Cancer staging prefix"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                  "valueString": "report1.stage.prefix"
+                }
+              ]
+            },
+            {
+              "linkId": "id-11",
+              "text": "Suffix",
+              "type": "choice",
+              "required": false,
+              "repeats": false,
+              "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-suffix",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "567081000210107",
+                  "display": "Cancer staging suffix"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                  "valueString": "report1.stage.suffix"
+                }
+              ]
+            },
+            {
+              "linkId": "id-12",
+              "text": "Pathological T",
+              "type": "choice",
+              "required": false,
+              "repeats": false,
+              "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm8-gi-colorectal-pt",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "399534004",
+                  "display": "pT category"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                  "valueString": "report1.stage.pt"
+                }
+              ]
+            },
+            {
+              "linkId": "id-13",
+              "text": "Pathological N",
+              "type": "choice",
+              "required": false,
+              "repeats": false,
+              "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm8-gi-colorectal-pn",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "399534004",
+                  "display": "pN category"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                  "valueString": "report1.stage.pn"
+                }
+              ]
+            },
+            {
+              "linkId": "id-14",
+              "text": "Pathological M",
+              "type": "choice",
+              "required": false,
+              "repeats": false,
+              "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm8-gi-colorectal-pm",
+              "code": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "399534004",
+                  "display": "pM category"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                  "valueString": "report1.stage.pm"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "id-15",
+          "text": "text",
+          "type": "text",
+          "required": false,
+          "repeats": false,
+          "extension": [
+            {
+              "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+              "valueString": "report1.text"
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ],
+  "description": "Colorectal cancer primary resection/biopsy/polypectomy histology reports, respectively. If used for biopsy or polypectomy histology, only limited data will be able to be captured (ie grading/staging data may not be applicable).",
+  "version": "0.1",
+  "publisher": "Canshare, Te Aho o Te Kahu",
+  "date": "2025-08-18T00:51:31.461Z"
 }
