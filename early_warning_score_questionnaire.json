@@ -8,7 +8,28 @@
       "text": "Enter a Respiratory Rate (breaths per minute)",
       "type": "integer",
       "required": false,
-      "repeats": false
+      "repeats": false,
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "9279-1",
+          "display": "Respiratory rate"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{breaths}/min;{counts}/min",
+            "display": "{breaths}/min"
+          }
+        }
+      ]
     },
     {
       "linkId": "q1754959131253_ze0lod345",
@@ -65,6 +86,21 @@
         {
           "valueString": "15 Lpm"
         }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "88658-0",
+          "display": "Use of supplemental oxygen",
+          "ucumUnit": null,
+          "displayUnit": null
+        }
       ]
     },
     {
@@ -72,47 +108,162 @@
       "text": "Enter Oxygen Saturation (percentage)",
       "type": "decimal",
       "required": false,
-      "repeats": false
+      "repeats": false,
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "59408-5",
+          "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "%",
+            "display": "%"
+          }
+        }
+      ]
     },
     {
       "linkId": "q1754959290445_jtvjves61",
       "text": "Enter Heart Rate (beats per min)",
       "type": "integer",
       "required": false,
-      "repeats": false
+      "repeats": false,
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart rate"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{beats}/min;{counts}/min",
+            "display": "{beats}/min"
+          }
+        }
+      ]
     },
     {
       "linkId": "q1754959298140_q6fhc1utf",
       "text": "Enter Systolic Blood Pressure (mmHg)",
       "type": "integer",
       "required": false,
-      "repeats": false
+      "repeats": false,
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "Systolic blood pressure"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "mm[Hg]",
+            "display": "mm Hg"
+          }
+        }
+      ]
     },
     {
       "linkId": "q1754959334561_pdrxlevki",
       "text": "Enter Temperature (°Celcius)",
       "type": "decimal",
       "required": false,
-      "repeats": false
+      "repeats": false,
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "8310-5",
+          "display": "Body temperature"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "Cel",
+            "display": "deg C"
+          }
+        }
+      ]
     },
     {
       "linkId": "q1754959358907_574cjwsu2",
-      "text": "New choice question",
+      "text": "Level of Consciousness",
       "type": "choice",
       "required": false,
       "repeats": false,
       "answerOption": [
         {
-          "valueString": "Alert"
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "300202002",
+            "display": "Responds to voice"
+          }
         },
         {
-          "valueString": "Responds to Voice"
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "450847001",
+            "display": "Responds to pain"
+          }
         },
         {
-          "valueString": "Responds to Pain"
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "418107008",
+            "display": "Unconscious"
+          }
         },
         {
-          "valueString": "Unresponsive"
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "248234008",
+            "display": "Mentally alert"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "80288-4",
+          "display": "Level of consciousness",
+          "ucumUnit": null,
+          "displayUnit": null
         }
       ]
     }
@@ -120,5 +271,5 @@
   "description": "For collecting the observations as a questionnaire for an Adult Early Warning Score Calculation in New Zealand.",
   "version": "0.0.1",
   "publisher": "Jon Herries - Te Whatu Ora",
-  "date": "2025-08-12T00:43:56.287Z"
+  "date": "2025-09-01T02:08:10.571Z"
 }
