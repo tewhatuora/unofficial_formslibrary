@@ -1,9 +1,9 @@
 {
     "resourceType": "Questionnaire",
-    "id": "canshare-report2",
+    "id": "canshare-BreastMVPReport1",
     "meta": {
-        "versionId": "15",
-        "lastUpdated": "2025-07-31T22:40:24.8440962+00:00"
+        "versionId": "7",
+        "lastUpdated": "2025-09-02T22:32:18.3729128+00:00"
     },
     "extension": [
         {
@@ -53,11 +53,12 @@
             "valueString": "patientID"
         }
     ],
-    "url": "http://canshare.co.nz/questionnaire/report2",
-    "name": "ASAPMVPBreastReport-report2",
-    "title": "Breast MVP Report 2",
+    "url": "http://canshare.co.nz/questionnaire/BreastMVPReport1",
+    "name": "ASAPMVPBreastReport-BreastMVPReport1",
+    "title": "Breast MVP Report 1",
     "status": "active",
     "publisher": "DEMO: David Hay",
+    "description": "Breast MVP Report 1 for the AI in structured pathology proof of concept project.",
     "useContext": [
         {
             "code": {
@@ -77,44 +78,82 @@
     ],
     "item": [
         {
-            "extension": [
-                {
-                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                    "valueCodeableConcept": {
-                        "coding": [
-                            {
-                                "system": "http://hl7.org/fhir/questionnaire-item-control",
-                                "code": "tab-container"
-                            }
-                        ]
-                    }
-                }
-            ],
             "linkId": "id-0",
-            "text": "Breast MVP Report 2",
+            "text": "Breast MVP Report 1",
             "type": "group",
             "item": [
                 {
                     "extension": [
                         {
                             "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                            "valueString": "report2.text"
+                            "valueString": "BreastMVPReport1.text"
                         }
                     ],
                     "linkId": "id-1",
-                    "text": "Textual report",
+                    "text": "text",
+                    "type": "text"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                            "valueString": "BreastMVPReport1.clinical"
+                        }
+                    ],
+                    "linkId": "id-2",
+                    "text": "Tumour site",
                     "type": "group",
                     "item": [
                         {
                             "extension": [
                                 {
                                     "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                    "valueString": "report2.text.text"
+                                    "valueString": "BreastMVPReport1.clinical.site"
                                 }
                             ],
-                            "linkId": "id-2",
-                            "text": "text",
-                            "type": "text"
+                            "linkId": "id-3",
+                            "code": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "566971000210109",
+                                    "display": "Primary site"
+                                }
+                            ],
+                            "text": "Site *",
+                            "type": "choice",
+                            "repeats": true,
+                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-breast-topography"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                                    "valueString": "BreastMVPReport1.clinical.Laterality"
+                                }
+                            ],
+                            "linkId": "id-4",
+                            "code": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "297561000210100",
+                                    "display": "Laterality of primary site"
+                                }
+                            ],
+                            "text": "Laterality",
+                            "type": "choice",
+                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-laterality-with-unknown"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                                    "valueString": "BreastMVPReport1.clinical.clockface"
+                                }
+                            ],
+                            "linkId": "id-5",
+                            "text": "Clockface",
+                            "type": "choice",
+                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-clockface-position"
                         }
                     ]
                 },
@@ -122,374 +161,86 @@
                     "extension": [
                         {
                             "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                            "valueString": "report2.coded"
+                            "valueString": "BreastMVPReport1.histology"
                         }
                     ],
-                    "linkId": "id-3",
-                    "text": "Coded data",
+                    "linkId": "id-6",
+                    "text": "Histology",
                     "type": "group",
                     "item": [
                         {
                             "extension": [
                                 {
                                     "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                    "valueString": "report2.coded.clinical"
+                                    "valueString": "BreastMVPReport1.histology.type"
                                 }
                             ],
-                            "linkId": "id-4",
-                            "text": "Tumour site",
-                            "type": "group",
-                            "item": [
+                            "linkId": "id-7",
+                            "code": [
                                 {
-                                    "extension": [
-                                        {
-                                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                            "valueString": "report2.coded.clinical.site"
-                                        }
-                                    ],
-                                    "linkId": "id-5",
-                                    "code": [
-                                        {
-                                            "system": "http://snomed.info/sct",
-                                            "code": "566971000210109",
-                                            "display": "Primary site"
-                                        }
-                                    ],
-                                    "text": "Site",
-                                    "type": "choice",
-                                    "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-breast-topography"
-                                },
-                                {
-                                    "extension": [
-                                        {
-                                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                            "valueString": "report2.coded.clinical.Laterality"
-                                        }
-                                    ],
-                                    "linkId": "id-6",
-                                    "code": [
-                                        {
-                                            "system": "http://snomed.info/sct",
-                                            "code": "297561000210100",
-                                            "display": "Laterality of primary site"
-                                        }
-                                    ],
-                                    "text": "Laterality",
-                                    "type": "choice",
-                                    "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-laterality-with-unknown"
-                                },
-                                {
-                                    "extension": [
-                                        {
-                                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                            "valueString": "report2.coded.clinical.clockface"
-                                        }
-                                    ],
-                                    "linkId": "id-7",
-                                    "text": "Clockface",
-                                    "type": "choice",
-                                    "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-clockface-position"
+                                    "system": "http://snomed.info/sct",
+                                    "code": "371441004",
+                                    "display": "Histologic type"
                                 }
-                            ]
-                        },
+                            ],
+                            "text": "Type *",
+                            "type": "choice",
+                            "repeats": true,
+                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-who-breast-invasive-histology"
+                        }
+                    ]
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                            "valueString": "BreastMVPReport1.grade"
+                        }
+                    ],
+                    "linkId": "id-8",
+                    "text": "Grading",
+                    "type": "group",
+                    "item": [
                         {
                             "extension": [
                                 {
                                     "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                    "valueString": "report2.coded.histo"
+                                    "valueString": "BreastMVPReport1.grade.NottinghamGrade"
                                 }
                             ],
-                            "linkId": "id-8",
-                            "text": "Histology",
+                            "linkId": "id-9",
+                            "text": "Nottingham grade",
                             "type": "group",
                             "item": [
                                 {
                                     "extension": [
                                         {
                                             "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                            "valueString": "report2.coded.histo.type"
-                                        }
-                                    ],
-                                    "linkId": "id-9",
-                                    "code": [
-                                        {
-                                            "system": "http://snomed.info/sct",
-                                            "code": "371441004",
-                                            "display": "Histologic type"
-                                        }
-                                    ],
-                                    "text": "Type *",
-                                    "type": "choice",
-                                    "repeats": true,
-                                    "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-who-breast-histology"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                    "valueString": "report2.coded.grading"
-                                }
-                            ],
-                            "linkId": "id-10",
-                            "text": "Grading",
-                            "type": "group",
-                            "item": [
-                                {
-                                    "extension": [
-                                        {
-                                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                            "valueString": "report2.coded.grading.NottinghamGrade"
-                                        }
-                                    ],
-                                    "linkId": "id-11",
-                                    "text": "Nottingham grade",
-                                    "type": "group",
-                                    "item": [
-                                        {
-                                            "extension": [
-                                                {
-                                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                                    "valueString": "report2.coded.grading.NottinghamGrade.GradingSystem"
-                                                },
-                                                {
-                                                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
-                                                    "valueBoolean": true
-                                                }
-                                            ],
-                                            "linkId": "id-12",
-                                            "code": [
-                                                {
-                                                    "system": "http://snomed.info/sct",
-                                                    "code": "384739005",
-                                                    "display": "Grading system used"
-                                                }
-                                            ],
-                                            "text": "Grading system",
-                                            "type": "choice",
-                                            "answerOption": [
-                                                {
-                                                    "valueCoding": {
-                                                        "system": "http://snomed.info/sct",
-                                                        "code": "449205006",
-                                                        "display": "Nottingham combined histologic grading system"
-                                                    },
-                                                    "initialSelected": true
-                                                }
-                                            ]
+                                            "valueString": "BreastMVPReport1.grade.NottinghamGrade.GradingSystem"
                                         },
                                         {
-                                            "extension": [
-                                                {
-                                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                                    "valueString": "report2.coded.grading.NottinghamGrade.OverallGrade"
-                                                }
-                                            ],
-                                            "linkId": "id-13",
-                                            "code": [
-                                                {
-                                                    "system": "http://snomed.info/sct",
-                                                    "code": "371469007",
-                                                    "display": "Histologic grade"
-                                                }
-                                            ],
-                                            "text": "Overall grade",
-                                            "type": "choice",
-                                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-nottingham-grade"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "extension": [
-                                        {
-                                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                            "valueString": "report2.coded.grading.NuclearGrade"
+                                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+                                            "valueBoolean": true
                                         }
                                     ],
-                                    "linkId": "id-14",
-                                    "text": "Nuclear grade",
-                                    "type": "group",
-                                    "item": [
-                                        {
-                                            "extension": [
-                                                {
-                                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                                    "valueString": "report2.coded.grading.NuclearGrade.InSituGradingSystem"
-                                                },
-                                                {
-                                                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
-                                                    "valueBoolean": true
-                                                }
-                                            ],
-                                            "linkId": "id-15",
-                                            "code": [
-                                                {
-                                                    "system": "http://snomed.info/sct",
-                                                    "code": "384739005",
-                                                    "display": "Grading system used"
-                                                }
-                                            ],
-                                            "text": "Grading system",
-                                            "type": "choice",
-                                            "answerOption": [
-                                                {
-                                                    "valueCoding": {
-                                                        "system": "http://snomed.info/sct",
-                                                        "code": "285131000210108",
-                                                        "display": "Nuclear ductal carcinoma in situ grading system"
-                                                    },
-                                                    "initialSelected": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "extension": [
-                                                {
-                                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                                    "valueString": "report2.coded.grading.NuclearGrade.Grade"
-                                                }
-                                            ],
-                                            "linkId": "id-16",
-                                            "code": [
-                                                {
-                                                    "system": "http://snomed.info/sct",
-                                                    "code": "371469007",
-                                                    "display": "Histologic grade"
-                                                }
-                                            ],
-                                            "text": "Grade",
-                                            "type": "choice",
-                                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-nuclear-grade"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                    "valueString": "report2.coded.ancillary"
-                                }
-                            ],
-                            "linkId": "id-17",
-                            "text": "Ancillary studies",
-                            "type": "group",
-                            "item": [
-                                {
-                                    "extension": [
-                                        {
-                                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                            "valueString": "report2.coded.ancillary.er"
-                                        }
-                                    ],
-                                    "linkId": "id-18",
+                                    "linkId": "id-10",
                                     "code": [
                                         {
                                             "system": "http://snomed.info/sct",
-                                            "code": "445028008",
-                                            "display": "ER status"
+                                            "code": "384739005",
+                                            "display": "Grading system used"
                                         }
                                     ],
-                                    "text": "ER status",
-                                    "type": "choice",
-                                    "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-er-expression"
-                                },
-                                {
-                                    "extension": [
-                                        {
-                                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                            "valueString": "report2.coded.ancillary.pr"
-                                        }
-                                    ],
-                                    "linkId": "id-19",
-                                    "code": [
-                                        {
-                                            "system": "http://snomed.info/sct",
-                                            "code": "445029000",
-                                            "display": "PR status"
-                                        }
-                                    ],
-                                    "text": "PR status",
-                                    "type": "choice",
-                                    "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-pr-expression"
-                                },
-                                {
-                                    "extension": [
-                                        {
-                                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                            "valueString": "report2.coded.ancillary.her2imm"
-                                        }
-                                    ],
-                                    "linkId": "id-20",
-                                    "code": [
-                                        {
-                                            "system": "http://snomed.info/sct",
-                                            "code": "261811000210109",
-                                            "display": "HER2 amplification status by IHC"
-                                        }
-                                    ],
-                                    "text": "HER2 immunochemistry",
-                                    "type": "choice",
-                                    "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-her2-expression-immunohistochemistry"
-                                },
-                                {
-                                    "extension": [
-                                        {
-                                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                            "valueString": "report2.coded.ancillary.her2mol"
-                                        }
-                                    ],
-                                    "linkId": "id-21",
-                                    "code": [
-                                        {
-                                            "system": "http://snomed.info/sct",
-                                            "code": "476161000210103",
-                                            "display": "HER2 amplification status by molecular testing"
-                                        }
-                                    ],
-                                    "text": "HER2 molecular",
-                                    "type": "choice",
-                                    "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-her2-expression-molecular"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                    "valueString": "report2.coded.stage"
-                                }
-                            ],
-                            "linkId": "id-22",
-                            "text": "Staging",
-                            "type": "group",
-                            "item": [
-                                {
-                                    "extension": [
-                                        {
-                                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                            "valueString": "report2.coded.stage.StagingSystem"
-                                        }
-                                    ],
-                                    "linkId": "id-23",
-                                    "code": [
-                                        {
-                                            "system": "http://snomed.info/sct",
-                                            "code": "297601000210100",
-                                            "display": "Staging system"
-                                        }
-                                    ],
-                                    "text": "Staging system",
+                                    "text": "Grading system",
                                     "type": "choice",
                                     "answerOption": [
                                         {
                                             "valueCoding": {
-                                                "system": "http://example.com/fhir/CodeSystem/example",
-                                                "code": "897275008",
-                                                "display": "AJCC cancer staging manual, 8th edition"
-                                            }
+                                                "system": "http://snomed.info/sct",
+                                                "code": "449205006",
+                                                "display": "Nottingham combined histologic grading system"
+                                            },
+                                            "initialSelected": true
                                         }
                                     ]
                                 },
@@ -497,98 +248,247 @@
                                     "extension": [
                                         {
                                             "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                            "valueString": "report2.coded.stage.prefix"
+                                            "valueString": "BreastMVPReport1.grade.NottinghamGrade.OverallGrade"
                                         }
                                     ],
-                                    "linkId": "id-24",
+                                    "linkId": "id-11",
                                     "code": [
                                         {
                                             "system": "http://snomed.info/sct",
-                                            "code": "567071000210105",
-                                            "display": "Cancer staging prefix"
+                                            "code": "371469007",
+                                            "display": "Histologic grade"
                                         }
                                     ],
-                                    "text": "Prefix",
+                                    "text": "Overall grade",
                                     "type": "choice",
-                                    "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-prefix"
-                                },
-                                {
-                                    "extension": [
-                                        {
-                                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                            "valueString": "report2.coded.stage.suffix"
-                                        }
-                                    ],
-                                    "linkId": "id-25",
-                                    "code": [
-                                        {
-                                            "system": "http://snomed.info/sct",
-                                            "code": "567081000210107",
-                                            "display": "Cancer staging suffix"
-                                        }
-                                    ],
-                                    "text": "Suffix",
-                                    "type": "choice",
-                                    "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-suffix"
-                                },
-                                {
-                                    "extension": [
-                                        {
-                                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                            "valueString": "report2.coded.stage.pt"
-                                        }
-                                    ],
-                                    "linkId": "id-26",
-                                    "code": [
-                                        {
-                                            "system": "http://snomed.info/sct",
-                                            "code": "399534004",
-                                            "display": "pT category"
-                                        }
-                                    ],
-                                    "text": "Pathological T",
-                                    "type": "choice",
-                                    "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm8-breast-pt"
-                                },
-                                {
-                                    "extension": [
-                                        {
-                                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                            "valueString": "report2.coded.stage.pn"
-                                        }
-                                    ],
-                                    "linkId": "id-27",
-                                    "code": [
-                                        {
-                                            "system": "http://snomed.info/sct",
-                                            "code": "399534004",
-                                            "display": "pN category"
-                                        }
-                                    ],
-                                    "text": "Pathological N",
-                                    "type": "choice",
-                                    "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm8-breast-pn"
-                                },
-                                {
-                                    "extension": [
-                                        {
-                                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
-                                            "valueString": "report2.coded.stage.pm"
-                                        }
-                                    ],
-                                    "linkId": "id-28",
-                                    "code": [
-                                        {
-                                            "system": "http://snomed.info/sct",
-                                            "code": "399534004",
-                                            "display": "pM category"
-                                        }
-                                    ],
-                                    "text": "Pathological M",
-                                    "type": "choice",
-                                    "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm8-breast-pm"
+                                    "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-nottingham-grade"
                                 }
                             ]
+                        }
+                    ]
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                            "valueString": "BreastMVPReport1.ancillary"
+                        }
+                    ],
+                    "linkId": "id-12",
+                    "text": "Ancillary studies",
+                    "type": "group",
+                    "item": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                                    "valueString": "BreastMVPReport1.ancillary.er"
+                                }
+                            ],
+                            "linkId": "id-13",
+                            "code": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "445028008",
+                                    "display": "ER status"
+                                }
+                            ],
+                            "text": "ER status",
+                            "type": "choice",
+                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-er-expression"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                                    "valueString": "BreastMVPReport1.ancillary.pr"
+                                }
+                            ],
+                            "linkId": "id-14",
+                            "code": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "445029000",
+                                    "display": "PR status"
+                                }
+                            ],
+                            "text": "PR status",
+                            "type": "choice",
+                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-pr-expression"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                                    "valueString": "BreastMVPReport1.ancillary.her2imm"
+                                }
+                            ],
+                            "linkId": "id-15",
+                            "code": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "261811000210109",
+                                    "display": "HER2 amplification status by IHC"
+                                }
+                            ],
+                            "text": "HER2 immunochemistry",
+                            "type": "choice",
+                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-her2-expression-immunohistochemistry"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                                    "valueString": "BreastMVPReport1.ancillary.her2mol"
+                                }
+                            ],
+                            "linkId": "id-16",
+                            "code": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "476161000210103",
+                                    "display": "HER2 amplification status by molecular testing"
+                                }
+                            ],
+                            "text": "HER2 molecular",
+                            "type": "choice",
+                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-her2-expression-molecular"
+                        }
+                    ]
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                            "valueString": "BreastMVPReport1.stage"
+                        }
+                    ],
+                    "linkId": "id-17",
+                    "text": "Staging",
+                    "type": "group",
+                    "item": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                                    "valueString": "BreastMVPReport1.stage.StagingSystem"
+                                }
+                            ],
+                            "linkId": "id-18",
+                            "code": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "297601000210100",
+                                    "display": "Staging system"
+                                }
+                            ],
+                            "text": "Staging system",
+                            "type": "choice",
+                            "answerOption": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://example.com/fhir/CodeSystem/example",
+                                        "code": "897275008",
+                                        "display": "AJCC cancer staging manual, 8th edition"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                                    "valueString": "BreastMVPReport1.stage.prefix"
+                                }
+                            ],
+                            "linkId": "id-19",
+                            "code": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "567071000210105",
+                                    "display": "Cancer staging prefix"
+                                }
+                            ],
+                            "text": "Prefix *",
+                            "type": "choice",
+                            "repeats": true,
+                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-prefix"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                                    "valueString": "BreastMVPReport1.stage.suffix"
+                                }
+                            ],
+                            "linkId": "id-20",
+                            "code": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "567081000210107",
+                                    "display": "Cancer staging suffix"
+                                }
+                            ],
+                            "text": "Suffix",
+                            "type": "choice",
+                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-suffix"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                                    "valueString": "BreastMVPReport1.stage.pt"
+                                }
+                            ],
+                            "linkId": "id-21",
+                            "code": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "399534004",
+                                    "display": "pT category"
+                                }
+                            ],
+                            "text": "Pathological T",
+                            "type": "choice",
+                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm8-breast-pt"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                                    "valueString": "BreastMVPReport1.stage.pn"
+                                }
+                            ],
+                            "linkId": "id-22",
+                            "code": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "399534004",
+                                    "display": "pN category"
+                                }
+                            ],
+                            "text": "Pathological N",
+                            "type": "choice",
+                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm8-breast-pn"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://canshare.co.nz/fhir/StructureDefinition/original-path",
+                                    "valueString": "BreastMVPReport1.stage.pm"
+                                }
+                            ],
+                            "linkId": "id-23",
+                            "code": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "399534004",
+                                    "display": "pM category"
+                                }
+                            ],
+                            "text": "Pathological M",
+                            "type": "choice",
+                            "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm8-breast-pm"
                         }
                     ]
                 }
