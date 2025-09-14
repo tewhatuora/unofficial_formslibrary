@@ -1,0 +1,555 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "pmsSoftwareName",
+      "text": "PMS Software Name",
+      "type": "string"
+    },
+    {
+      "linkId": "pmsSoftwareVersion",
+      "text": "PMS Software Version",
+      "type": "string"
+    },
+    {
+      "linkId": "claimNumber",
+      "text": "Claim Number",
+      "type": "string"
+    },
+    {
+      "linkId": "vendor",
+      "text": "Vendor",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "vendor.practiceName",
+          "text": "Practice Name",
+          "type": "string"
+        },
+        {
+          "linkId": "vendor.hpiOrganisationNumber",
+          "text": "HPI Organisation Number",
+          "type": "string"
+        },
+        {
+          "linkId": "vendor.hpiFacilityNumber",
+          "text": "HPI Facility Number",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "provider",
+      "text": "Provider",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "provider.details",
+          "text": "Provider Details",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "provider.details.providerId",
+              "text": "Provider ID",
+              "type": "string"
+            },
+            {
+              "linkId": "provider.details.providerTypeCode",
+              "text": "Provider Type Code",
+              "type": "string"
+            },
+            {
+              "linkId": "provider.details.firstName",
+              "text": "First Name",
+              "type": "string"
+            },
+            {
+              "linkId": "provider.details.middleName",
+              "text": "Middle Name",
+              "type": "string"
+            },
+            {
+              "linkId": "provider.details.surname",
+              "text": "Surname",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "linkId": "provider.address",
+          "text": "Provider Address",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "provider.address.type",
+              "text": "Address Type",
+              "type": "string"
+            },
+            {
+              "linkId": "provider.address.line1",
+              "text": "Address Line 1",
+              "type": "string"
+            },
+            {
+              "linkId": "provider.address.line2",
+              "text": "Address Line 2",
+              "type": "string"
+            },
+            {
+              "linkId": "provider.address.suburb",
+              "text": "Suburb",
+              "type": "string"
+            },
+            {
+              "linkId": "provider.address.city",
+              "text": "City",
+              "type": "string"
+            },
+            {
+              "linkId": "provider.address.postCode",
+              "text": "Post Code",
+              "type": "string"
+            },
+            {
+              "linkId": "provider.address.country",
+              "text": "Country",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "patient",
+      "text": "Patient",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "patient.details",
+          "text": "Patient Details",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "patient.details.nhi",
+              "text": "NHI",
+              "type": "string"
+            },
+            {
+              "linkId": "patient.details.firstName",
+              "text": "First Name",
+              "type": "string"
+            },
+            {
+              "linkId": "patient.details.middleName",
+              "text": "Middle Name",
+              "type": "string"
+            },
+            {
+              "linkId": "patient.details.surname",
+              "text": "Surname",
+              "type": "string"
+            },
+            {
+              "linkId": "patient.details.dateOfBirth",
+              "text": "Date of Birth",
+              "type": "date"
+            },
+            {
+              "linkId": "patient.details.gender",
+              "text": "Gender",
+              "type": "choice",
+              "answerOption": [
+                { "valueString": "Male" },
+                { "valueString": "Female" },
+                { "valueString": "Other" }
+              ]
+            },
+            {
+              "linkId": "patient.details.ethnicityCode",
+              "text": "Ethnicity Code",
+              "type": "string"
+            },
+            {
+              "linkId": "patient.details.otherEthnicity",
+              "text": "Other Ethnicity",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "linkId": "patient.occupationCode",
+          "text": "Occupation Code",
+          "type": "string"
+        },
+        {
+          "linkId": "patient.contact",
+          "text": "Contact Information",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "patient.contact.emailAddress",
+              "text": "Email Address",
+              "type": "string"
+            },
+            {
+              "linkId": "patient.contact.mobilePhone",
+              "text": "Mobile Phone",
+              "type": "string"
+            },
+            {
+              "linkId": "patient.contact.homePhone",
+              "text": "Home Phone",
+              "type": "string"
+            },
+            {
+              "linkId": "patient.contact.workPhone",
+              "text": "Work Phone",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "linkId": "patient.address",
+          "text": "Patient Address",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "patient.address.type",
+              "text": "Address Type",
+              "type": "string"
+            },
+            {
+              "linkId": "patient.address.line1",
+              "text": "Address Line 1",
+              "type": "string"
+            },
+            {
+              "linkId": "patient.address.line2",
+              "text": "Address Line 2",
+              "type": "string"
+            },
+            {
+              "linkId": "patient.address.suburb",
+              "text": "Suburb",
+              "type": "string"
+            },
+            {
+              "linkId": "patient.address.city",
+              "text": "City",
+              "type": "string"
+            },
+            {
+              "linkId": "patient.address.postCode",
+              "text": "Post Code",
+              "type": "string"
+            },
+            {
+              "linkId": "patient.address.country",
+              "text": "Country",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "employment",
+      "text": "Employment",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "employment.inPaidEmployment",
+          "text": "In Paid Employment",
+          "type": "boolean"
+        },
+        {
+          "linkId": "employment.employmentStatusCode",
+          "text": "Employment Status Code",
+          "type": "string"
+        },
+        {
+          "linkId": "employment.otherEmployment",
+          "text": "Other Employment",
+          "type": "string"
+        },
+        {
+          "linkId": "employment.workTypeCode",
+          "text": "Work Type Code",
+          "type": "string"
+        },
+        {
+          "linkId": "employment.employer",
+          "text": "Employer",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "employment.employer.employerName",
+              "text": "Employer Name",
+              "type": "string"
+            },
+            {
+              "linkId": "employment.employer.address",
+              "text": "Employer Address",
+              "type": "group",
+              "item": [
+                {
+                  "linkId": "employment.employer.address.type",
+                  "text": "Address Type",
+                  "type": "string"
+                },
+                {
+                  "linkId": "employment.employer.address.line1",
+                  "text": "Address Line 1",
+                  "type": "string"
+                },
+                {
+                  "linkId": "employment.employer.address.line2",
+                  "text": "Address Line 2",
+                  "type": "string"
+                },
+                {
+                  "linkId": "employment.employer.address.suburb",
+                  "text": "Suburb",
+                  "type": "string"
+                },
+                {
+                  "linkId": "employment.employer.address.city",
+                  "text": "City",
+                  "type": "string"
+                },
+                {
+                  "linkId": "employment.employer.address.postCode",
+                  "text": "Post Code",
+                  "type": "string"
+                },
+                {
+                  "linkId": "employment.employer.address.country",
+                  "text": "Country",
+                  "type": "string"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "injury",
+      "text": "Injury Details",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "injury.accidentDate",
+          "text": "Accident Date",
+          "type": "date"
+        },
+        {
+          "linkId": "injury.accidentLocationCode",
+          "text": "Accident Location Code",
+          "type": "string"
+        },
+        {
+          "linkId": "injury.accidentSceneCode",
+          "text": "Accident Scene Code",
+          "type": "string"
+        },
+        {
+          "linkId": "injury.causeOfAccident",
+          "text": "Cause of Accident",
+          "type": "string"
+        },
+        {
+          "linkId": "injury.involvesVehicle",
+          "text": "Involves Vehicle",
+          "type": "boolean"
+        },
+        {
+          "linkId": "injury.medicalTreatmentInjury",
+          "text": "Medical Treatment Injury",
+          "type": "boolean"
+        },
+        {
+          "linkId": "injury.workInjury",
+          "text": "Work Injury",
+          "type": "boolean"
+        },
+        {
+          "linkId": "injury.sportingInjury",
+          "text": "Sporting Injury",
+          "type": "boolean"
+        },
+        {
+          "linkId": "injury.sportNameCode",
+          "text": "Sport Name Code",
+          "type": "string"
+        },
+        {
+          "linkId": "injury.gradualProcessInjury",
+          "text": "Gradual Process Injury",
+          "type": "boolean"
+        },
+        {
+          "linkId": "injury.admittedToHospital",
+          "text": "Admitted to Hospital",
+          "type": "boolean"
+        },
+        {
+          "linkId": "injury.injuryComments",
+          "text": "Injury Comments",
+          "type": "string"
+        },
+        {
+          "linkId": "injury.assistanceRequired",
+          "text": "Assistance Required",
+          "type": "boolean"
+        },
+        {
+          "linkId": "injury.accContactProvider",
+          "text": "ACC Contact Provider",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "diagnosis",
+      "text": "Diagnosis",
+      "type": "group",
+      "repeats": true,
+      "item": [
+        {
+          "linkId": "diagnosis.diagnosisCodeType",
+          "text": "Diagnosis Code Type",
+          "type": "string"
+        },
+        {
+          "linkId": "diagnosis.diagnosisCode",
+          "text": "Diagnosis Code",
+          "type": "string"
+        },
+        {
+          "linkId": "diagnosis.diagnosisDescription",
+          "text": "Diagnosis Description",
+          "type": "string"
+        },
+        {
+          "linkId": "diagnosis.diagnosisSide",
+          "text": "Diagnosis Side",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "workCapacity",
+      "text": "Work Capacity",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "workCapacity.canResumeNormalWork",
+          "text": "Can Resume Normal Work",
+          "type": "boolean"
+        },
+        {
+          "linkId": "workCapacity.incapacity",
+          "text": "Incapacity",
+          "type": "group",
+          "repeats": true,
+          "item": [
+            {
+              "linkId": "workCapacity.incapacity.incapacityType",
+              "text": "Incapacity Type",
+              "type": "string"
+            },
+            {
+              "linkId": "workCapacity.incapacity.incapacityDateRange",
+              "text": "Incapacity Date Range",
+              "type": "group",
+              "item": [
+                {
+                  "linkId": "workCapacity.incapacity.incapacityDateRange.fromDate",
+                  "text": "From Date",
+                  "type": "date"
+                },
+                {
+                  "linkId": "workCapacity.incapacity.incapacityDateRange.toDate",
+                  "text": "To Date",
+                  "type": "date"
+                }
+              ]
+            },
+            {
+              "linkId": "workCapacity.incapacity.selectedAlternativeWork",
+              "text": "Selected Alternative Work",
+              "type": "group",
+              "item": [
+                {
+                  "linkId": "workCapacity.incapacity.selectedAlternativeWork.alternativeWorkTypeCode",
+                  "text": "Alternative Work Type Code",
+                  "type": "string"
+                },
+                {
+                  "linkId": "workCapacity.incapacity.selectedAlternativeWork.physicalRestrictions",
+                  "text": "Physical Restrictions",
+                  "type": "group",
+                  "repeats": true,
+                  "item": [
+                    {
+                      "linkId": "workCapacity.incapacity.selectedAlternativeWork.physicalRestrictions.restriction",
+                      "text": "Restriction",
+                      "type": "string"
+                    }
+                  ]
+                },
+                {
+                  "linkId": "workCapacity.incapacity.selectedAlternativeWork.restrictedHoursPerDay",
+                  "text": "Restricted Hours Per Day",
+                  "type": "integer"
+                },
+                {
+                  "linkId": "workCapacity.incapacity.selectedAlternativeWork.restrictionComment",
+                  "text": "Restriction Comment",
+                  "type": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "workCapacity.returnToNormalWorkDate",
+          "text": "Return to Normal Work Date",
+          "type": "date"
+        }
+      ]
+    },
+    {
+      "linkId": "referrals",
+      "text": "Referrals",
+      "type": "group",
+      "repeats": true,
+      "item": [
+        {
+          "linkId": "referrals.providerTypeCode",
+          "text": "Provider Type Code",
+          "type": "string"
+        },
+        {
+          "linkId": "referrals.referralReason",
+          "text": "Referral Reason",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "declaration",
+      "text": "Declaration",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "declaration.providerDeclaration",
+          "text": "Provider Declaration",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}
