@@ -1,118 +1,138 @@
 {
   "resourceType": "Questionnaire",
-  "status": "draft",
+  "id": "acc-claim-form",
+  "status": "active",
+  "subjectType": [
+    "Patient"
+  ],
   "item": [
     {
-      "linkId": "pmsSoftwareName",
-      "text": "PMS Software Name",
-      "type": "string"
-    },
-    {
-      "linkId": "pmsSoftwareVersion",
-      "text": "PMS Software Version",
-      "type": "string"
-    },
-    {
-      "linkId": "claimNumber",
-      "text": "Claim Number",
-      "type": "string"
-    },
-    {
-      "linkId": "vendor",
-      "text": "Vendor",
+      "linkId": "pmsSoftware",
+      "text": "PMS Software",
       "type": "group",
       "item": [
         {
-          "linkId": "vendor.practiceName",
+          "linkId": "pmsSoftwareName",
+          "text": "PMS Software Name",
+          "type": "string"
+        },
+        {
+          "linkId": "pmsSoftwareVersion",
+          "text": "PMS Software Version",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "claimNumber",
+      "text": "ACC45 Claim Number",
+      "type": "string",
+      "required": true
+    },
+    {
+      "linkId": "vendor",
+      "text": "Vendor Details",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "practiceName",
           "text": "Practice Name",
           "type": "string"
         },
         {
-          "linkId": "vendor.hpiOrganisationNumber",
-          "text": "HPI Organisation Number",
+          "linkId": "hpiOrganisationNumber",
+          "text": "ACC Vendor ID",
           "type": "string"
         },
         {
-          "linkId": "vendor.hpiFacilityNumber",
-          "text": "HPI Facility Number",
+          "linkId": "hpiFacilityNumber",
+          "text": "ACC Facility Number",
           "type": "string"
         }
       ]
     },
     {
       "linkId": "provider",
-      "text": "Provider",
+      "text": "Provider Details",
       "type": "group",
       "item": [
         {
-          "linkId": "provider.details",
+          "linkId": "providerDetails",
           "text": "Provider Details",
           "type": "group",
           "item": [
             {
-              "linkId": "provider.details.providerId",
-              "text": "Provider ID",
+              "linkId": "providerId",
+              "text": "ACC Provider ID",
               "type": "string"
             },
             {
-              "linkId": "provider.details.providerTypeCode",
+              "linkId": "providerTypeCode",
               "text": "Provider Type Code",
               "type": "string"
             },
             {
-              "linkId": "provider.details.firstName",
+              "linkId": "firstName",
               "text": "First Name",
               "type": "string"
             },
             {
-              "linkId": "provider.details.middleName",
+              "linkId": "middleName",
               "text": "Middle Name",
               "type": "string"
             },
             {
-              "linkId": "provider.details.surname",
+              "linkId": "surname",
               "text": "Surname",
               "type": "string"
             }
           ]
         },
         {
-          "linkId": "provider.address",
-          "text": "Provider Address",
+          "linkId": "address",
+          "text": "Address",
           "type": "group",
           "item": [
             {
-              "linkId": "provider.address.type",
+              "linkId": "type",
               "text": "Address Type",
-              "type": "string"
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueString": "Home"
+                },
+                {
+                  "valueString": "Postal"
+                }
+              ]
             },
             {
-              "linkId": "provider.address.line1",
+              "linkId": "line1",
               "text": "Address Line 1",
               "type": "string"
             },
             {
-              "linkId": "provider.address.line2",
+              "linkId": "line2",
               "text": "Address Line 2",
               "type": "string"
             },
             {
-              "linkId": "provider.address.suburb",
+              "linkId": "suburb",
               "text": "Suburb",
               "type": "string"
             },
             {
-              "linkId": "provider.address.city",
+              "linkId": "city",
               "text": "City",
               "type": "string"
             },
             {
-              "linkId": "provider.address.postCode",
+              "linkId": "postCode",
               "text": "Post Code",
               "type": "string"
             },
             {
-              "linkId": "provider.address.country",
+              "linkId": "country",
               "text": "Country",
               "type": "string"
             }
@@ -122,130 +142,147 @@
     },
     {
       "linkId": "patient",
-      "text": "Patient",
+      "text": "Patient Details",
       "type": "group",
       "item": [
         {
-          "linkId": "patient.details",
+          "linkId": "details",
           "text": "Patient Details",
           "type": "group",
           "item": [
             {
-              "linkId": "patient.details.nhi",
-              "text": "NHI",
+              "linkId": "nhi",
+              "text": "National Health Index Number",
               "type": "string"
             },
             {
-              "linkId": "patient.details.firstName",
+              "linkId": "firstName",
               "text": "First Name",
               "type": "string"
             },
             {
-              "linkId": "patient.details.middleName",
+              "linkId": "middleName",
               "text": "Middle Name",
               "type": "string"
             },
             {
-              "linkId": "patient.details.surname",
+              "linkId": "surname",
               "text": "Surname",
               "type": "string"
             },
             {
-              "linkId": "patient.details.dateOfBirth",
+              "linkId": "dateOfBirth",
               "text": "Date of Birth",
               "type": "date"
             },
             {
-              "linkId": "patient.details.gender",
+              "linkId": "gender",
               "text": "Gender",
               "type": "choice",
               "answerOption": [
-                { "valueString": "Male" },
-                { "valueString": "Female" },
-                { "valueString": "Other" }
+                {
+                  "valueString": "M"
+                },
+                {
+                  "valueString": "F"
+                },
+                {
+                  "valueString": "U"
+                },
+                {
+                  "valueString": "O"
+                }
               ]
             },
             {
-              "linkId": "patient.details.ethnicityCode",
+              "linkId": "ethnicityCode",
               "text": "Ethnicity Code",
               "type": "string"
             },
             {
-              "linkId": "patient.details.otherEthnicity",
+              "linkId": "otherEthnicity",
               "text": "Other Ethnicity",
               "type": "string"
             }
           ]
         },
         {
-          "linkId": "patient.occupationCode",
+          "linkId": "occupationCode",
           "text": "Occupation Code",
           "type": "string"
         },
         {
-          "linkId": "patient.contact",
+          "linkId": "contact",
           "text": "Contact Information",
           "type": "group",
           "item": [
             {
-              "linkId": "patient.contact.emailAddress",
+              "linkId": "emailAddress",
               "text": "Email Address",
               "type": "string"
             },
             {
-              "linkId": "patient.contact.mobilePhone",
+              "linkId": "mobilePhone",
               "text": "Mobile Phone",
               "type": "string"
             },
             {
-              "linkId": "patient.contact.homePhone",
+              "linkId": "homePhone",
               "text": "Home Phone",
               "type": "string"
             },
             {
-              "linkId": "patient.contact.workPhone",
+              "linkId": "workPhone",
               "text": "Work Phone",
               "type": "string"
             }
           ]
         },
         {
-          "linkId": "patient.address",
-          "text": "Patient Address",
+          "linkId": "address",
+          "text": "Address",
           "type": "group",
           "item": [
             {
-              "linkId": "patient.address.type",
+              "linkId": "type",
               "text": "Address Type",
-              "type": "string"
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueString": "Home"
+                },
+                {
+                  "valueString": "Postal"
+                }
+              ]
             },
             {
-              "linkId": "patient.address.line1",
+              "linkId": "line1",
               "text": "Address Line 1",
               "type": "string"
             },
             {
-              "linkId": "patient.address.line2",
+              "linkId": "line2",
               "text": "Address Line 2",
               "type": "string"
             },
             {
-              "linkId": "patient.address.suburb",
+              "linkId": "suburb",
               "text": "Suburb",
               "type": "string"
             },
             {
-              "linkId": "patient.address.city",
+              "linkId": "city",
               "text": "City",
               "type": "string"
             },
             {
-              "linkId": "patient.address.postCode",
+              "linkId": "postCode",
               "text": "Post Code",
               "type": "string"
             },
             {
-              "linkId": "patient.address.country",
+              "linkId": "country",
               "text": "Country",
               "type": "string"
             }
@@ -255,76 +292,92 @@
     },
     {
       "linkId": "employment",
-      "text": "Employment",
+      "text": "Employment Details",
       "type": "group",
       "item": [
         {
-          "linkId": "employment.inPaidEmployment",
+          "linkId": "inPaidEmployment",
           "text": "In Paid Employment",
-          "type": "boolean"
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "True"
+            },
+            {
+              "valueString": "False"
+            }
+          ]
         },
         {
-          "linkId": "employment.employmentStatusCode",
+          "linkId": "employmentStatusCode",
           "text": "Employment Status Code",
           "type": "string"
         },
         {
-          "linkId": "employment.otherEmployment",
+          "linkId": "otherEmployment",
           "text": "Other Employment",
           "type": "string"
         },
         {
-          "linkId": "employment.workTypeCode",
+          "linkId": "workTypeCode",
           "text": "Work Type Code",
           "type": "string"
         },
         {
-          "linkId": "employment.employer",
-          "text": "Employer",
+          "linkId": "employer",
+          "text": "Employer Details",
           "type": "group",
           "item": [
             {
-              "linkId": "employment.employer.employerName",
+              "linkId": "employerName",
               "text": "Employer Name",
               "type": "string"
             },
             {
-              "linkId": "employment.employer.address",
+              "linkId": "address",
               "text": "Employer Address",
               "type": "group",
               "item": [
                 {
-                  "linkId": "employment.employer.address.type",
+                  "linkId": "type",
                   "text": "Address Type",
-                  "type": "string"
+                  "type": "choice",
+                  "answerOption": [
+                    {
+                      "valueString": "Home"
+                    },
+                    {
+                      "valueString": "Postal"
+                    }
+                  ]
                 },
                 {
-                  "linkId": "employment.employer.address.line1",
+                  "linkId": "line1",
                   "text": "Address Line 1",
                   "type": "string"
                 },
                 {
-                  "linkId": "employment.employer.address.line2",
+                  "linkId": "line2",
                   "text": "Address Line 2",
                   "type": "string"
                 },
                 {
-                  "linkId": "employment.employer.address.suburb",
+                  "linkId": "suburb",
                   "text": "Suburb",
                   "type": "string"
                 },
                 {
-                  "linkId": "employment.employer.address.city",
+                  "linkId": "city",
                   "text": "City",
                   "type": "string"
                 },
                 {
-                  "linkId": "employment.employer.address.postCode",
+                  "linkId": "postCode",
                   "text": "Post Code",
                   "type": "string"
                 },
                 {
-                  "linkId": "employment.employer.address.country",
+                  "linkId": "country",
                   "text": "Country",
                   "type": "string"
                 }
@@ -340,72 +393,128 @@
       "type": "group",
       "item": [
         {
-          "linkId": "injury.accidentDate",
+          "linkId": "accidentDate",
           "text": "Accident Date",
           "type": "date"
         },
         {
-          "linkId": "injury.accidentLocationCode",
+          "linkId": "accidentLocationCode",
           "text": "Accident Location Code",
           "type": "string"
         },
         {
-          "linkId": "injury.accidentSceneCode",
+          "linkId": "accidentSceneCode",
           "text": "Accident Scene Code",
           "type": "string"
         },
         {
-          "linkId": "injury.causeOfAccident",
+          "linkId": "causeOfAccident",
           "text": "Cause of Accident",
           "type": "string"
         },
         {
-          "linkId": "injury.involvesVehicle",
+          "linkId": "involvesVehicle",
           "text": "Involves Vehicle",
-          "type": "boolean"
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "True"
+            },
+            {
+              "valueString": "False"
+            }
+          ]
         },
         {
-          "linkId": "injury.medicalTreatmentInjury",
+          "linkId": "medicalTreatmentInjury",
           "text": "Medical Treatment Injury",
-          "type": "boolean"
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "True"
+            },
+            {
+              "valueString": "False"
+            }
+          ]
         },
         {
-          "linkId": "injury.workInjury",
+          "linkId": "workInjury",
           "text": "Work Injury",
-          "type": "boolean"
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "True"
+            },
+            {
+              "valueString": "False"
+            }
+          ]
         },
         {
-          "linkId": "injury.sportingInjury",
+          "linkId": "sportingInjury",
           "text": "Sporting Injury",
-          "type": "boolean"
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "True"
+            },
+            {
+              "valueString": "False"
+            }
+          ]
         },
         {
-          "linkId": "injury.sportNameCode",
+          "linkId": "sportNameCode",
           "text": "Sport Name Code",
           "type": "string"
         },
         {
-          "linkId": "injury.gradualProcessInjury",
+          "linkId": "gradualProcessInjury",
           "text": "Gradual Process Injury",
-          "type": "boolean"
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "True"
+            },
+            {
+              "valueString": "False"
+            }
+          ]
         },
         {
-          "linkId": "injury.admittedToHospital",
+          "linkId": "admittedToHospital",
           "text": "Admitted to Hospital",
-          "type": "boolean"
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "True"
+            },
+            {
+              "valueString": "False"
+            }
+          ]
         },
         {
-          "linkId": "injury.injuryComments",
+          "linkId": "injuryComments",
           "text": "Injury Comments",
           "type": "string"
         },
         {
-          "linkId": "injury.assistanceRequired",
+          "linkId": "assistanceRequired",
           "text": "Assistance Required",
-          "type": "boolean"
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "True"
+            },
+            {
+              "valueString": "False"
+            }
+          ]
         },
         {
-          "linkId": "injury.accContactProvider",
+          "linkId": "accContactProvider",
           "text": "ACC Contact Provider",
           "type": "string"
         }
@@ -418,24 +527,38 @@
       "repeats": true,
       "item": [
         {
-          "linkId": "diagnosis.diagnosisCodeType",
+          "linkId": "diagnosisCodeType",
           "text": "Diagnosis Code Type",
           "type": "string"
         },
         {
-          "linkId": "diagnosis.diagnosisCode",
+          "linkId": "diagnosisCode",
           "text": "Diagnosis Code",
           "type": "string"
         },
         {
-          "linkId": "diagnosis.diagnosisDescription",
+          "linkId": "diagnosisDescription",
           "text": "Diagnosis Description",
           "type": "string"
         },
         {
-          "linkId": "diagnosis.diagnosisSide",
+          "linkId": "diagnosisSide",
           "text": "Diagnosis Side",
-          "type": "string"
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "left"
+            },
+            {
+              "valueString": "right"
+            },
+            {
+              "valueString": "notApplicable"
+            },
+            {
+              "valueString": "bilateral"
+            }
+          ]
         }
       ]
     },
@@ -445,68 +568,119 @@
       "type": "group",
       "item": [
         {
-          "linkId": "workCapacity.canResumeNormalWork",
+          "linkId": "canResumeNormalWork",
           "text": "Can Resume Normal Work",
-          "type": "boolean"
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "True"
+            },
+            {
+              "valueString": "False"
+            }
+          ]
         },
         {
-          "linkId": "workCapacity.incapacity",
+          "linkId": "incapacity",
           "text": "Incapacity",
           "type": "group",
           "repeats": true,
           "item": [
             {
-              "linkId": "workCapacity.incapacity.incapacityType",
+              "linkId": "incapacityType",
               "text": "Incapacity Type",
-              "type": "string"
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueString": "Fitforselectedwork"
+                },
+                {
+                  "valueString": "Fullyunfitforwork"
+                }
+              ]
             },
             {
-              "linkId": "workCapacity.incapacity.incapacityDateRange",
+              "linkId": "incapacityDateRange",
               "text": "Incapacity Date Range",
               "type": "group",
               "item": [
                 {
-                  "linkId": "workCapacity.incapacity.incapacityDateRange.fromDate",
+                  "linkId": "fromDate",
                   "text": "From Date",
                   "type": "date"
                 },
                 {
-                  "linkId": "workCapacity.incapacity.incapacityDateRange.toDate",
+                  "linkId": "toDate",
                   "text": "To Date",
                   "type": "date"
                 }
               ]
             },
             {
-              "linkId": "workCapacity.incapacity.selectedAlternativeWork",
+              "linkId": "selectedAlternativeWork",
               "text": "Selected Alternative Work",
               "type": "group",
               "item": [
                 {
-                  "linkId": "workCapacity.incapacity.selectedAlternativeWork.alternativeWorkTypeCode",
+                  "linkId": "alternativeWorkTypeCode",
                   "text": "Alternative Work Type Code",
                   "type": "string"
                 },
                 {
-                  "linkId": "workCapacity.incapacity.selectedAlternativeWork.physicalRestrictions",
+                  "linkId": "physicalRestrictions",
                   "text": "Physical Restrictions",
                   "type": "group",
                   "repeats": true,
                   "item": [
                     {
-                      "linkId": "workCapacity.incapacity.selectedAlternativeWork.physicalRestrictions.restriction",
+                      "linkId": "restriction",
                       "text": "Restriction",
-                      "type": "string"
+                      "type": "choice",
+                      "answerOption": [
+                        {
+                          "valueString": "Lifting"
+                        },
+                        {
+                          "valueString": "Posture"
+                        },
+                        {
+                          "valueString": "Heavy Physical"
+                        },
+                        {
+                          "valueString": "Repetition"
+                        },
+                        {
+                          "valueString": "Vibration"
+                        },
+                        {
+                          "valueString": "Temperature"
+                        },
+                        {
+                          "valueString": "Driving"
+                        },
+                        {
+                          "valueString": "Prolonged Sitting"
+                        },
+                        {
+                          "valueString": "Prolonged Walking"
+                        },
+                        {
+                          "valueString": "Prolonged Standing"
+                        },
+                        {
+                          "valueString": "Other"
+                        }
+                      ]
                     }
                   ]
                 },
                 {
-                  "linkId": "workCapacity.incapacity.selectedAlternativeWork.restrictedHoursPerDay",
+                  "linkId": "restrictedHoursPerDay",
                   "text": "Restricted Hours Per Day",
                   "type": "integer"
                 },
                 {
-                  "linkId": "workCapacity.incapacity.selectedAlternativeWork.restrictionComment",
+                  "linkId": "restrictionComment",
                   "text": "Restriction Comment",
                   "type": "string"
                 }
@@ -515,7 +689,7 @@
           ]
         },
         {
-          "linkId": "workCapacity.returnToNormalWorkDate",
+          "linkId": "returnToNormalWorkDate",
           "text": "Return to Normal Work Date",
           "type": "date"
         }
@@ -528,12 +702,12 @@
       "repeats": true,
       "item": [
         {
-          "linkId": "referrals.providerTypeCode",
+          "linkId": "providerTypeCode",
           "text": "Provider Type Code",
           "type": "string"
         },
         {
-          "linkId": "referrals.referralReason",
+          "linkId": "referralReason",
           "text": "Referral Reason",
           "type": "string"
         }
@@ -545,9 +719,9 @@
       "type": "group",
       "item": [
         {
-          "linkId": "declaration.providerDeclaration",
+          "linkId": "providerDeclaration",
           "text": "Provider Declaration",
-          "type": "string"
+          "type": "date"
         }
       ]
     }
