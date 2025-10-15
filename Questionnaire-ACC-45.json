@@ -1,25 +1,28 @@
 {
   "resourceType": "Questionnaire",
-  "id": "acc-claim-form",
-  "status": "active",
-  "subjectType": [
-    "Patient"
-  ],
+  "status": "draft",
+  "title": "ACC 45 Registration",
   "item": [
     {
       "linkId": "pmsSoftware",
       "text": "PMS Software",
       "type": "group",
+      "required": false,
+      "repeats": false,
       "item": [
         {
           "linkId": "pmsSoftwareName",
           "text": "PMS Software Name",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         },
         {
           "linkId": "pmsSoftwareVersion",
           "text": "PMS Software Version",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         }
       ]
     },
@@ -27,27 +30,36 @@
       "linkId": "claimNumber",
       "text": "ACC45 Claim Number",
       "type": "string",
-      "required": true
+      "required": true,
+      "repeats": false
     },
     {
       "linkId": "vendor",
       "text": "Vendor Details",
       "type": "group",
+      "required": false,
+      "repeats": false,
       "item": [
         {
           "linkId": "practiceName",
           "text": "Practice Name",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         },
         {
           "linkId": "hpiOrganisationNumber",
           "text": "ACC Vendor ID",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         },
         {
           "linkId": "hpiFacilityNumber",
           "text": "ACC Facility Number",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         }
       ]
     },
@@ -55,48 +67,66 @@
       "linkId": "provider",
       "text": "Provider Details",
       "type": "group",
+      "required": false,
+      "repeats": false,
       "item": [
         {
           "linkId": "providerDetails",
           "text": "Provider Details",
           "type": "group",
+          "required": false,
+          "repeats": false,
           "item": [
             {
               "linkId": "providerId",
               "text": "ACC Provider ID",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
-              "linkId": "providerTypeCode",
+              "linkId": "ProviderTypeCode",
               "text": "Provider Type Code",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
-              "linkId": "firstName",
+              "linkId": "ProviderFirstName",
               "text": "First Name",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
-              "linkId": "middleName",
+              "linkId": "ProviderMiddleName",
               "text": "Middle Name",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
-              "linkId": "surname",
+              "linkId": "providerSurname",
               "text": "Surname",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             }
           ]
         },
         {
-          "linkId": "address",
-          "text": "Address",
+          "linkId": "ProviderAddress",
+          "text": "Provider Address",
           "type": "group",
+          "required": false,
+          "repeats": false,
           "item": [
             {
-              "linkId": "type",
+              "linkId": "ProviderAddressType",
               "text": "Address Type",
               "type": "choice",
+              "required": false,
+              "repeats": false,
               "answerOption": [
                 {
                   "valueString": "Home"
@@ -107,34 +137,46 @@
               ]
             },
             {
-              "linkId": "line1",
+              "linkId": "ProviderAddressLine1",
               "text": "Address Line 1",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
-              "linkId": "line2",
+              "linkId": "ProviderAddressLine2",
               "text": "Address Line 2",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
-              "linkId": "suburb",
+              "linkId": "ProviderAddressSuburb",
               "text": "Suburb",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
-              "linkId": "city",
+              "linkId": "ProviderAddressCity",
               "text": "City",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
-              "linkId": "postCode",
+              "linkId": "ProviderAddressPostCode",
               "text": "Post Code",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
-              "linkId": "country",
+              "linkId": "ProviderAddressCountry",
               "text": "Country",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             }
           ]
         }
@@ -144,109 +186,133 @@
       "linkId": "patient",
       "text": "Patient Details",
       "type": "group",
+      "required": false,
+      "repeats": false,
       "item": [
         {
           "linkId": "details",
           "text": "Patient Details",
           "type": "group",
+          "required": false,
+          "repeats": false,
           "item": [
             {
               "linkId": "nhi",
               "text": "National Health Index Number",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
               "linkId": "firstName",
               "text": "First Name",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
               "linkId": "middleName",
               "text": "Middle Name",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
               "linkId": "surname",
               "text": "Surname",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
               "linkId": "dateOfBirth",
               "text": "Date of Birth",
-              "type": "date"
+              "type": "date",
+              "required": false,
+              "repeats": false
             },
             {
               "linkId": "gender",
               "text": "Gender",
               "type": "choice",
-              "answerOption": [
-                {
-                  "valueString": "M"
-                },
-                {
-                  "valueString": "F"
-                },
-                {
-                  "valueString": "U"
-                },
-                {
-                  "valueString": "O"
-                }
-              ]
+              "required": false,
+              "repeats": false,
+              "answerValueSet": "http://hl7.org/fhir/ValueSet/administrative-gender"
             },
             {
               "linkId": "ethnicityCode",
               "text": "Ethnicity Code",
-              "type": "string"
+              "type": "choice",
+              "required": false,
+              "repeats": false,
+              "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/ethnic-group-level-4-code"
             },
             {
               "linkId": "otherEthnicity",
               "text": "Other Ethnicity",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             }
           ]
         },
         {
           "linkId": "occupationCode",
           "text": "Occupation Code",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         },
         {
           "linkId": "contact",
           "text": "Contact Information",
           "type": "group",
+          "required": false,
+          "repeats": false,
           "item": [
             {
-              "linkId": "emailAddress",
+              "linkId": "PatientEmailAddress",
               "text": "Email Address",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
-              "linkId": "mobilePhone",
+              "linkId": "PatientMobilePhone",
               "text": "Mobile Phone",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
-              "linkId": "homePhone",
+              "linkId": "PatientHomePhone",
               "text": "Home Phone",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
-              "linkId": "workPhone",
+              "linkId": "PatientWorkPhone",
               "text": "Work Phone",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             }
           ]
         },
         {
-          "linkId": "address",
-          "text": "Address",
+          "linkId": "PatientAddress",
+          "text": "Patient Address",
           "type": "group",
+          "required": false,
+          "repeats": false,
           "item": [
             {
-              "linkId": "type",
+              "linkId": "PatientAddressType",
               "text": "Address Type",
               "type": "choice",
+              "required": false,
+              "repeats": false,
               "answerOption": [
                 {
                   "valueString": "Home"
@@ -257,34 +323,46 @@
               ]
             },
             {
-              "linkId": "line1",
+              "linkId": "PatientAddressLine1",
               "text": "Address Line 1",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
-              "linkId": "line2",
+              "linkId": "PatientAddressLine2",
               "text": "Address Line 2",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
-              "linkId": "suburb",
+              "linkId": "PatientAddressSuburb",
               "text": "Suburb",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
-              "linkId": "city",
+              "linkId": "PatientAddressCity",
               "text": "City",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
-              "linkId": "postCode",
+              "linkId": "PatientAddressPostCode",
               "text": "Post Code",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
-              "linkId": "country",
+              "linkId": "PatientAddressCountry",
               "text": "Country",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             }
           ]
         }
@@ -294,54 +372,80 @@
       "linkId": "employment",
       "text": "Employment Details",
       "type": "group",
+      "required": false,
+      "repeats": false,
       "item": [
         {
           "linkId": "inPaidEmployment",
           "text": "In Paid Employment",
-          "type": "choice",
+          "type": "boolean",
+          "required": false,
+          "repeats": false,
           "answerOption": [
             {
-              "valueString": "True"
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001",
+                "display": "Yes"
+              }
             },
             {
-              "valueString": "False"
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373067005",
+                "display": "No"
+              }
             }
           ]
         },
         {
           "linkId": "employmentStatusCode",
           "text": "Employment Status Code",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         },
         {
           "linkId": "otherEmployment",
           "text": "Other Employment",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         },
         {
           "linkId": "workTypeCode",
           "text": "Work Type Code",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         },
         {
           "linkId": "employer",
           "text": "Employer Details",
           "type": "group",
+          "required": false,
+          "repeats": false,
           "item": [
             {
               "linkId": "employerName",
               "text": "Employer Name",
-              "type": "string"
+              "type": "string",
+              "required": false,
+              "repeats": false
             },
             {
-              "linkId": "address",
+              "linkId": "EmployerAddress",
               "text": "Employer Address",
               "type": "group",
+              "required": false,
+              "repeats": false,
               "item": [
                 {
-                  "linkId": "type",
+                  "linkId": "EmployerAddressType",
                   "text": "Address Type",
                   "type": "choice",
+                  "required": false,
+                  "repeats": false,
                   "answerOption": [
                     {
                       "valueString": "Home"
@@ -352,34 +456,46 @@
                   ]
                 },
                 {
-                  "linkId": "line1",
+                  "linkId": "EmployerAddressLine1",
                   "text": "Address Line 1",
-                  "type": "string"
+                  "type": "string",
+                  "required": false,
+                  "repeats": false
                 },
                 {
-                  "linkId": "line2",
+                  "linkId": "EmployerAddressLine2",
                   "text": "Address Line 2",
-                  "type": "string"
+                  "type": "string",
+                  "required": false,
+                  "repeats": false
                 },
                 {
-                  "linkId": "suburb",
+                  "linkId": "EmployerAddressSuburb",
                   "text": "Suburb",
-                  "type": "string"
+                  "type": "string",
+                  "required": false,
+                  "repeats": false
                 },
                 {
-                  "linkId": "city",
+                  "linkId": "EmployerAddressCity",
                   "text": "City",
-                  "type": "string"
+                  "type": "string",
+                  "required": false,
+                  "repeats": false
                 },
                 {
-                  "linkId": "postCode",
+                  "linkId": "EmployerAddressPostCode",
                   "text": "Post Code",
-                  "type": "string"
+                  "type": "string",
+                  "required": false,
+                  "repeats": false
                 },
                 {
-                  "linkId": "country",
+                  "linkId": "EmployerAddressCountry",
                   "text": "Country",
-                  "type": "string"
+                  "type": "string",
+                  "required": false,
+                  "repeats": false
                 }
               ]
             }
@@ -391,101 +507,165 @@
       "linkId": "injury",
       "text": "Injury Details",
       "type": "group",
+      "required": false,
+      "repeats": false,
       "item": [
         {
           "linkId": "accidentDate",
           "text": "Accident Date",
-          "type": "date"
+          "type": "date",
+          "required": false,
+          "repeats": false
         },
         {
           "linkId": "accidentLocationCode",
           "text": "Accident Location Code",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         },
         {
           "linkId": "accidentSceneCode",
           "text": "Accident Scene Code",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         },
         {
           "linkId": "causeOfAccident",
           "text": "Cause of Accident",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         },
         {
           "linkId": "involvesVehicle",
           "text": "Involves Vehicle",
-          "type": "choice",
+          "type": "boolean",
+          "required": false,
+          "repeats": false,
           "answerOption": [
             {
-              "valueString": "True"
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001",
+                "display": "Yes"
+              }
             },
             {
-              "valueString": "False"
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373067005",
+                "display": "No"
+              }
             }
           ]
         },
         {
           "linkId": "medicalTreatmentInjury",
           "text": "Medical Treatment Injury",
-          "type": "choice",
+          "type": "boolean",
+          "required": false,
+          "repeats": false,
           "answerOption": [
             {
-              "valueString": "True"
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001",
+                "display": "Yes"
+              }
             },
             {
-              "valueString": "False"
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373067005",
+                "display": "No"
+              }
             }
           ]
         },
         {
           "linkId": "workInjury",
           "text": "Work Injury",
-          "type": "choice",
+          "type": "boolean",
+          "required": false,
+          "repeats": false,
           "answerOption": [
             {
-              "valueString": "True"
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001",
+                "display": "Yes"
+              }
             },
             {
-              "valueString": "False"
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373067005",
+                "display": "No"
+              }
             }
           ]
         },
         {
           "linkId": "sportingInjury",
           "text": "Sporting Injury",
-          "type": "choice",
+          "type": "boolean",
+          "required": false,
+          "repeats": false,
           "answerOption": [
             {
-              "valueString": "True"
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001",
+                "display": "Yes"
+              }
             },
             {
-              "valueString": "False"
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373067005",
+                "display": "No"
+              }
             }
           ]
         },
         {
           "linkId": "sportNameCode",
           "text": "Sport Name Code",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         },
         {
           "linkId": "gradualProcessInjury",
           "text": "Gradual Process Injury",
-          "type": "choice",
+          "type": "boolean",
+          "required": false,
+          "repeats": false,
           "answerOption": [
             {
-              "valueString": "True"
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001",
+                "display": "Yes"
+              }
             },
             {
-              "valueString": "False"
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373067005",
+                "display": "No"
+              }
             }
           ]
         },
         {
           "linkId": "admittedToHospital",
           "text": "Admitted to Hospital",
-          "type": "choice",
+          "type": "boolean",
+          "required": false,
+          "repeats": false,
           "answerOption": [
             {
               "valueString": "True"
@@ -498,12 +678,16 @@
         {
           "linkId": "injuryComments",
           "text": "Injury Comments",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         },
         {
           "linkId": "assistanceRequired",
           "text": "Assistance Required",
-          "type": "choice",
+          "type": "boolean",
+          "required": false,
+          "repeats": false,
           "answerOption": [
             {
               "valueString": "True"
@@ -516,7 +700,9 @@
         {
           "linkId": "accContactProvider",
           "text": "ACC Contact Provider",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         }
       ]
     },
@@ -524,39 +710,64 @@
       "linkId": "diagnosis",
       "text": "Diagnosis",
       "type": "group",
+      "required": false,
       "repeats": true,
       "item": [
         {
           "linkId": "diagnosisCodeType",
           "text": "Diagnosis Code Type",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         },
         {
           "linkId": "diagnosisCode",
           "text": "Diagnosis Code",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         },
         {
           "linkId": "diagnosisDescription",
           "text": "Diagnosis Description",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         },
         {
           "linkId": "diagnosisSide",
           "text": "Diagnosis Side",
           "type": "choice",
+          "required": false,
+          "repeats": false,
           "answerOption": [
             {
-              "valueString": "left"
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "7771000",
+                "display": "Left"
+              }
             },
             {
-              "valueString": "right"
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "24028007",
+                "display": "Right"
+              }
             },
             {
-              "valueString": "notApplicable"
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "51440002",
+                "display": "Bilateral"
+              }
             },
             {
-              "valueString": "bilateral"
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "385432009",
+                "display": "Not applicable"
+              }
             }
           ]
         }
@@ -566,11 +777,15 @@
       "linkId": "workCapacity",
       "text": "Work Capacity",
       "type": "group",
+      "required": false,
+      "repeats": false,
       "item": [
         {
           "linkId": "canResumeNormalWork",
           "text": "Can Resume Normal Work",
-          "type": "choice",
+          "type": "boolean",
+          "required": false,
+          "repeats": false,
           "answerOption": [
             {
               "valueString": "True"
@@ -584,18 +799,21 @@
           "linkId": "incapacity",
           "text": "Incapacity",
           "type": "group",
+          "required": false,
           "repeats": true,
           "item": [
             {
               "linkId": "incapacityType",
               "text": "Incapacity Type",
               "type": "choice",
+              "required": false,
+              "repeats": false,
               "answerOption": [
                 {
-                  "valueString": "Fitforselectedwork"
+                  "valueString": "Fit for work"
                 },
                 {
-                  "valueString": "Fullyunfitforwork"
+                  "valueString": "Unfit for work"
                 }
               ]
             },
@@ -603,16 +821,22 @@
               "linkId": "incapacityDateRange",
               "text": "Incapacity Date Range",
               "type": "group",
+              "required": false,
+              "repeats": false,
               "item": [
                 {
                   "linkId": "fromDate",
                   "text": "From Date",
-                  "type": "date"
+                  "type": "date",
+                  "required": false,
+                  "repeats": false
                 },
                 {
                   "linkId": "toDate",
                   "text": "To Date",
-                  "type": "date"
+                  "type": "date",
+                  "required": false,
+                  "repeats": false
                 }
               ]
             },
@@ -620,22 +844,29 @@
               "linkId": "selectedAlternativeWork",
               "text": "Selected Alternative Work",
               "type": "group",
+              "required": false,
+              "repeats": false,
               "item": [
                 {
                   "linkId": "alternativeWorkTypeCode",
                   "text": "Alternative Work Type Code",
-                  "type": "string"
+                  "type": "string",
+                  "required": false,
+                  "repeats": false
                 },
                 {
                   "linkId": "physicalRestrictions",
                   "text": "Physical Restrictions",
                   "type": "group",
+                  "required": false,
                   "repeats": true,
                   "item": [
                     {
                       "linkId": "restriction",
                       "text": "Restriction",
                       "type": "choice",
+                      "required": false,
+                      "repeats": false,
                       "answerOption": [
                         {
                           "valueString": "Lifting"
@@ -677,12 +908,16 @@
                 {
                   "linkId": "restrictedHoursPerDay",
                   "text": "Restricted Hours Per Day",
-                  "type": "integer"
+                  "type": "integer",
+                  "required": false,
+                  "repeats": false
                 },
                 {
                   "linkId": "restrictionComment",
                   "text": "Restriction Comment",
-                  "type": "string"
+                  "type": "string",
+                  "required": false,
+                  "repeats": false
                 }
               ]
             }
@@ -691,7 +926,9 @@
         {
           "linkId": "returnToNormalWorkDate",
           "text": "Return to Normal Work Date",
-          "type": "date"
+          "type": "date",
+          "required": false,
+          "repeats": false
         }
       ]
     },
@@ -699,17 +936,22 @@
       "linkId": "referrals",
       "text": "Referrals",
       "type": "group",
+      "required": false,
       "repeats": true,
       "item": [
         {
           "linkId": "providerTypeCode",
           "text": "Provider Type Code",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         },
         {
           "linkId": "referralReason",
           "text": "Referral Reason",
-          "type": "string"
+          "type": "string",
+          "required": false,
+          "repeats": false
         }
       ]
     },
@@ -717,13 +959,21 @@
       "linkId": "declaration",
       "text": "Declaration",
       "type": "group",
+      "required": false,
+      "repeats": false,
       "item": [
         {
           "linkId": "providerDeclaration",
           "text": "Provider Declaration",
-          "type": "date"
+          "type": "date",
+          "required": false,
+          "repeats": false
         }
       ]
     }
-  ]
+  ],
+  "description": "A questionnaire for completing ACC registrations (using the ACC45 question set from their API).",
+  "version": "1.0.0",
+  "publisher": "Te Whatu Ora | Health NZ",
+  "date": "2025-10-15T02:41:25.111Z"
 }
