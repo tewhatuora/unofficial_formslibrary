@@ -1,0 +1,481 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "active",
+  "title": "Day Surgery Feedback Questionnaire 2024",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Age of patient",
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "0-15yrs",
+            "display": "0-15 years"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "16-30yrs",
+            "display": "16-30 years"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "31-64yrs",
+            "display": "31-64 years"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "65yrs+",
+            "display": "65 years and older"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "When were you notified of your date of surgery?",
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "less24hrs",
+            "display": "Less than 24 hours"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "less7days",
+            "display": "Less than 7 days"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "less2weeks",
+            "display": "Less than 2 weeks"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "less3weeks",
+            "display": "Less than 3 weeks"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "greater4weeks",
+            "display": "Greater than 4 weeks"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "greater6weeks",
+            "display": "Greater than 6 weeks"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "other",
+            "display": "Other"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Was the Day Surgery Unit easy to locate?",
+      "type": "open-choice",
+      "required": true,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "yes",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "no",
+            "display": "No"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Did you feel welcomed on arrival to the unit?",
+      "type": "open-choice",
+      "required": true,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "yes",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "no",
+            "display": "No"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "somewhat",
+            "display": "Somewhat"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "other",
+            "display": "Other"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "What was the name of your procedure? eg: Tonsillectomy",
+      "type": "text",
+      "required": false,
+      "repeats": false
+    },
+    {
+      "linkId": "6",
+      "text": "Was your procedure under:",
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "local_anaesthetic",
+            "display": "Local anaesthetic (numbing medicine to one area of your body)"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "general_anaesthetic",
+            "display": "General anaesthetic (fully asleep)"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "sedation",
+            "display": "Sedation (given drugs to help you feel more relaxed during procedure)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "7",
+      "text": "What surgical team were looking after you?",
+      "type": "open-choice",
+      "required": true,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "orthopaedics",
+            "display": "Orthopaedics"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "paediatrics",
+            "display": "Paediatrics – visiting surgeons from Christchurch"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "gynaecology",
+            "display": "Gynaecology – women's health"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "general_surgery",
+            "display": "General surgery"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ophthalmology",
+            "display": "Ophthalmology"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ent",
+            "display": "ENT – Ear nose and throat"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "neurosurgery",
+            "display": "Neurosurgery"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "radiology",
+            "display": "Procedure/MRI/CT/Radiology/DSA"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "urology",
+            "display": "Urology"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "plastics",
+            "display": "Plastics"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "maxillofacial",
+            "display": "Maxillofacial surgery"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "8",
+      "text": "Was your procedure in the Day Surgery Theatres or Main Operating Theatre?",
+      "type": "open-choice",
+      "required": true,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "day_surgery_theatre",
+            "display": "Day Surgery Theatre"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "main_operating_theatre",
+            "display": "Main Operating Theatre – Located on the 5th floor"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "9",
+      "text": "Did the communication you received from the hospital help you to feel well prepared for your surgery (1 = Not Prepared and 10 = Well prepared)?",
+      "type": "integer",
+      "required": true,
+      "repeats": false
+    },
+    {
+      "linkId": "10",
+      "text": "Please write any comments here on your score/number for Question Number 9.",
+      "type": "text",
+      "required": false,
+      "repeats": false
+    },
+    {
+      "linkId": "11",
+      "text": "Did you experience any nausea/vomiting at the Day Surgery Unit (1=None of the time and 10=All of the time)?",
+      "type": "integer",
+      "required": true,
+      "repeats": false
+    },
+    {
+      "linkId": "12",
+      "text": "Have you experienced any nausea and/or vomiting in the 24hr period post discharge from the Day Surgery Unit? (1= None of the Time, 10= All of the time).",
+      "type": "integer",
+      "required": true,
+      "repeats": false
+    },
+    {
+      "linkId": "13",
+      "text": "Did you experience any moderate or severe pain in the Day Surgery Unit? (1=None of the time and 10=All of the time).",
+      "type": "integer",
+      "required": true,
+      "repeats": false
+    },
+    {
+      "linkId": "14",
+      "text": "Have you experienced any moderate or severe pain in the 24hr period after leaving the Day Surgery Unit? (1=None of the time and 10=All of the time)",
+      "type": "integer",
+      "required": true,
+      "repeats": false
+    },
+    {
+      "linkId": "15",
+      "text": "Was the post-operative information provided by the Day Surgery staff easy to understand and helpful?",
+      "type": "open-choice",
+      "required": true,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "yes",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "no",
+            "display": "No"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "16",
+      "text": "If you answered No or Other to the above question, please write feedback below:",
+      "type": "text",
+      "required": false,
+      "repeats": false
+    },
+    {
+      "linkId": "17",
+      "text": "Following your surgery did you...",
+      "type": "open-choice",
+      "required": false,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "go_home",
+            "display": "Go home on the day of surgery"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "planned_overnight",
+            "display": "Have a planned overnight stay in hospital"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "unexpected_overnight",
+            "display": "Have an unexpected overnight stay in hospital"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "18",
+      "text": "After leaving the Day Surgery Unit, did you need to contact someone for advice or assistance?",
+      "type": "open-choice",
+      "required": true,
+      "repeats": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "no_contact",
+            "display": "No, I did not need to seek further advice or assistance"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "gp",
+            "display": "Yes, GP/Doctors practice"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "day_surgery_staff",
+            "display": "Yes, the Day Surgery unit staff"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "other_medical_service",
+            "display": "Yes, another medical service"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "registrar",
+            "display": "Yes, Registrar on call Dunedin Hospital (Surgical Doctor)"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "emergency_department",
+            "display": "Yes, attended the Emergency Department"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "returned_hospital",
+            "display": "Yes, returned to the hospital for an overnight stay(s)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "19",
+      "text": "If you did seek advice or assistance, please comment below:",
+      "type": "text",
+      "required": false,
+      "repeats": false
+    },
+    {
+      "linkId": "20",
+      "text": "During your stay in the Day Surgery unit did you feel your cultural/spiritual needs were met?",
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "yes",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "somewhat",
+            "display": "Somewhat"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "no",
+            "display": "No"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "did_not_have_any",
+            "display": "I did not have any"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "21",
+      "text": "If you answered 'somewhat or no' to Question 20 please comment here:",
+      "type": "text",
+      "required": false,
+      "repeats": false
+    },
+    {
+      "linkId": "22",
+      "text": "Please share any further comments or feedback.",
+      "type": "text",
+      "required": false,
+      "repeats": false
+    }
+  ],
+  "description": "This questionnaire collects anonymous data to identify possible quality and service improvements following day surgery.",
+  "version": "1.0.0",
+  "publisher": "Health New Zealand - Te Whatu Ora",
+  "date": "2025-11-21T00:14:35.954Z"
+}
