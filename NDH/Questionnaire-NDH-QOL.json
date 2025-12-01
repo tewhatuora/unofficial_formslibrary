@@ -1,0 +1,173 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "active",
+  "title": "How does your condition affect your life?",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "How much does your condition affect your social interactions? (Examples: meeting friends, going out, joining in groups, going shopping, everyday activities outside the home)",
+      "type": "choice",
+      "required": false,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueString": "1 = No difficulty"
+        },
+        {
+          "valueString": "2 = Little difficulty"
+        },
+        {
+          "valueString": "3 = Some difficulty"
+        },
+        {
+          "valueString": "4 = Quite difficult"
+        },
+        {
+          "valueString": "5 = Very difficult"
+        },
+        {
+          "valueString": "6 = Extremely difficult"
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "How much does your condition affect your personal relationships? (Examples: personal relations with partner, family members, close personal friends)",
+      "type": "choice",
+      "required": false,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueString": "1 = No difficulty"
+        },
+        {
+          "valueString": "2 = Little difficulty"
+        },
+        {
+          "valueString": "3 = Some difficulty"
+        },
+        {
+          "valueString": "4 = Quite difficult"
+        },
+        {
+          "valueString": "5 = Very difficult"
+        },
+        {
+          "valueString": "6 = Extremely difficult"
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "How much does your condition affect your ability to meet your responsibilities to others? (Examples: doing meaningful things for yourself or others, including caring for children, grandchildren or partner, work (paid and unpaid) including how 'having to rely on others' may have an impact on you)",
+      "type": "choice",
+      "required": false,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueString": "1 = No difficulty"
+        },
+        {
+          "valueString": "2 = Little difficulty"
+        },
+        {
+          "valueString": "3 = Some difficulty"
+        },
+        {
+          "valueString": "4 = Quite difficult"
+        },
+        {
+          "valueString": "5 = Very difficult"
+        },
+        {
+          "valueString": "6 = Extremely difficult"
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "How much does your condition affect your personal care? (Examples: looking after yourself, your health, personal hygiene, need for aids or special clothing)",
+      "type": "choice",
+      "required": false,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueString": "1 = No difficulty"
+        },
+        {
+          "valueString": "2 = Little difficulty"
+        },
+        {
+          "valueString": "3 = Some difficulty"
+        },
+        {
+          "valueString": "4 = Quite difficult"
+        },
+        {
+          "valueString": "5 = Very difficult"
+        },
+        {
+          "valueString": "6 = Extremely difficult"
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "How much does your condition affect your personal safety? (Examples: being safe from injury and harm, from yourself or others and in your surroundings)",
+      "type": "choice",
+      "required": false,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueString": "1 = No difficulty"
+        },
+        {
+          "valueString": "2 = Little difficulty"
+        },
+        {
+          "valueString": "3 = Some difficulty"
+        },
+        {
+          "valueString": "4 = Quite difficult"
+        },
+        {
+          "valueString": "5 = Very difficult"
+        },
+        {
+          "valueString": "6 = Extremely difficult"
+        }
+      ]
+    },
+    {
+      "linkId": "6",
+      "text": "How much does your condition affect your leisure activities? (Examples: getting exercise, hobbies, sporting activities, gardening, do-it-yourself activities, crafts and travel)",
+      "type": "choice",
+      "required": false,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueString": "1 = No difficulty"
+        },
+        {
+          "valueString": "2 = Little difficulty"
+        },
+        {
+          "valueString": "3 = Some difficulty"
+        },
+        {
+          "valueString": "4 = Quite difficult"
+        },
+        {
+          "valueString": "5 = Very difficult"
+        },
+        {
+          "valueString": "6 = Extremely difficult"
+        }
+      ]
+    }
+  ],
+  "description": "Please tell us about how much difficulty your condition causes in different areas of your life, which may limit\nthe things you can do.\n\nEach question below includes examples to illustrate some of the things this area of life covers. It is okay if\nsome of these examples don't apply to you. Please just think about whatever this area of life means for you.\nPlease circle the number that most represents how much your condition affects each area of your life.",
+  "version": "v2",
+  "publisher": "Health New Zealand - Southern",
+  "date": "2025-11-21T00:00:39.692Z"
+}
