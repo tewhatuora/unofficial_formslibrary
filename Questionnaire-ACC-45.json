@@ -1,5 +1,9 @@
 {
   "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire acc-45-registration</b></p><h2>ACC 45 Registration</h2><p>A questionnaire for completing ACC registrations (using the ACC45 question set from their API).</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
   "status": "draft",
   "title": "ACC 45 Registration",
   "item": [
@@ -259,9 +263,10 @@
         {
           "linkId": "occupationCode",
           "text": "Occupation Code",
-          "type": "string",
+          "type": "choice",
           "required": false,
-          "repeats": false
+          "repeats": false,
+          "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/national-occupation-list"
         },
         {
           "linkId": "contact",
@@ -534,7 +539,7 @@
         {
           "linkId": "causeOfAccident",
           "text": "Cause of Accident",
-          "type": "string",
+          "type": "text",
           "required": false,
           "repeats": false
         },
@@ -788,10 +793,16 @@
           "repeats": false,
           "answerOption": [
             {
-              "valueString": "True"
+              "valueCoding": {
+                "code": "true",
+                "display": "True"
+              }
             },
             {
-              "valueString": "False"
+              "valueCoding": {
+                "code": "false",
+                "display": "False"
+              }
             }
           ]
         },
@@ -810,10 +821,16 @@
               "repeats": false,
               "answerOption": [
                 {
-                  "valueString": "Fit for work"
+                  "valueCoding": {
+                    "code": "160926000",
+                    "display": "Fit for work"
+                  }
                 },
                 {
-                  "valueString": "Unfit for work"
+                  "valueCoding": {
+                    "code": "160910001",
+                    "display": "Unfit for work"
+                  }
                 }
               ]
             },
@@ -869,37 +886,70 @@
                       "repeats": false,
                       "answerOption": [
                         {
-                          "valueString": "Lifting"
+                          "valueCoding": {
+                            "code": "lifting",
+                            "display": "Lifting"
+                          }
                         },
                         {
-                          "valueString": "Posture"
+                          "valueCoding": {
+                            "code": "posture",
+                            "display": "Posture"
+                          }
                         },
                         {
-                          "valueString": "Heavy Physical"
+                          "valueCoding": {
+                            "code": "heavyphysical",
+                            "display": "Heavy Physical"
+                          }
                         },
                         {
-                          "valueString": "Repetition"
+                          "valueCoding": {
+                            "code": "repetition",
+                            "display": "Repetition"
+                          }
                         },
                         {
-                          "valueString": "Vibration"
+                          "valueCoding": {
+                            "code": "vibration",
+                            "display": "Vibration"
+                          }
                         },
                         {
-                          "valueString": "Temperature"
+                          "valueCoding": {
+                            "code": "temperature",
+                            "display": "Temperature"
+                          }
                         },
                         {
-                          "valueString": "Driving"
+                          "valueCoding": {
+                            "code": "driving",
+                            "display": "Driving"
+                          }
                         },
                         {
-                          "valueString": "Prolonged Sitting"
+                          "valueCoding": {
+                            "code": "prolongedsitting",
+                            "display": "Prolonged Sitting"
+                          }
                         },
                         {
-                          "valueString": "Prolonged Walking"
+                          "valueCoding": {
+                            "code": "prolongedwalking",
+                            "display": "Prolonged Walking"
+                          }
                         },
                         {
-                          "valueString": "Prolonged Standing"
+                          "valueCoding": {
+                            "code": "prolongedstanding",
+                            "display": "Prolonged Standing"
+                          }
                         },
                         {
-                          "valueString": "Other"
+                          "valueCoding": {
+                            "code": "other",
+                            "display": "Other"
+                          }
                         }
                       ]
                     }
@@ -944,14 +994,14 @@
           "text": "Provider Type Code",
           "type": "string",
           "required": false,
-          "repeats": false
+          "repeats": true
         },
         {
           "linkId": "referralReason",
           "text": "Referral Reason",
           "type": "string",
           "required": false,
-          "repeats": false
+          "repeats": true
         }
       ]
     },
@@ -975,5 +1025,5 @@
   "description": "A questionnaire for completing ACC registrations (using the ACC45 question set from their API).",
   "version": "1.0.0",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2025-10-15T02:41:25.111Z"
+  "date": "2025-12-15T22:58:18.988Z"
 }
