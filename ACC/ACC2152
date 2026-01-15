@@ -1,0 +1,222 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire acc2152-treatment-injury-claim</b></p><h2>ACC2152 Treatment Injury Claim</h2><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "draft",
+  "title": "ACC2152 Treatment Injury Claim",
+  "item": [
+    {
+      "linkId": "p01-treatment-injury-details",
+      "text": "Treatment injury details",
+      "type": "group",
+      "prefix": "page 01",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p01-g01-q01-list-the-injurys",
+          "text": "List the injury(s) caused by the treatment:",
+          "type": "text",
+          "prefix": "page 01 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q02-signs-and-symptoms",
+          "text": "List the signs and symptoms of the injury:",
+          "type": "text",
+          "required": false,
+          "repeats": false,
+          "prefix": "page 01 group 01 question 2"
+        },
+        {
+          "linkId": "p01-g01-q03-diagnosis-code-type",
+          "text": "Diagnosis codes (if available):",
+          "type": "choice",
+          "prefix": "page 01 group 01 question 3",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "icd10",
+                "display": "ICD10"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "readcode",
+                "display": "Read Code"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "reasondental",
+                "display": "Reason (Dental)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p01-g01-q04-diagnosis-code",
+          "text": "Diagnosis Code:",
+          "type": "string",
+          "required": false,
+          "repeats": true,
+          "prefix": "page 01 group 01 question 4"
+        },
+        {
+          "linkId": "p01-g01-q05-date-of-injury",
+          "text": "Date when the patient first sought treatment for the injury.",
+          "type": "date",
+          "prefix": "page 01 group 01 question 5",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q06-effects",
+          "text": "How does the injury affect the patient today?",
+          "type": "text",
+          "prefix": "page 01 group 01 question 6",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p02-treatment-claimed",
+      "text": "Treatment claimed to have caused the injury",
+      "type": "group",
+      "prefix": "page 02",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p02-g01-q01-what-treatment",
+          "text": "What treatment gave rise to the injury? (If the claimed injury resulted from failure to treat, please note.)",
+          "type": "text",
+          "required": false,
+          "repeats": false,
+          "prefix": "page 02 group 01 question 1"
+        },
+        {
+          "linkId": "p02-g01-q02-describe-the-events",
+          "text": "Describe the events or circumstances which led to the injury.",
+          "type": "text",
+          "prefix": "page 02 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q03-where-was-treatment-provided",
+          "text": "Where was treatment provided?",
+          "type": "choice",
+          "prefix": "page 02 group 01 question 3",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "specialistrooms",
+                "display": "Specialist rooms"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "gpmedicalcentre",
+                "display": "GP/medical centre"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "operatingtheatre",
+                "display": "Operating theatre"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "emergencydepartment",
+                "display": "Emergency department"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "wardspecialunit",
+                "display": "Ward/special unit"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "communityclinic",
+                "display": "Community clinic"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "hospitaloutpatientclinic",
+                "display": "Hospital outpatient clinic"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "radiology",
+                "display": "Radiology"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p02-g01-q04-name-of-the-facility",
+          "text": "Name of the facility (if relevant):",
+          "type": "text",
+          "required": false,
+          "repeats": false,
+          "prefix": "page 02 group 01 question 4"
+        },
+        {
+          "linkId": "p02-g01-q05-conditions-being-treated",
+          "text": "Outline the condition(s) being treated (with dates):",
+          "type": "text",
+          "required": false,
+          "repeats": false,
+          "prefix": "page 02 group 01 question 5"
+        },
+        {
+          "linkId": "p02-g01-q06-underlying-health-conditions",
+          "text": "Outline all underlying health conditions and other relevant factors/treatment. (If the injury is a worsening of an existing condition, please note.)",
+          "type": "text",
+          "prefix": "page 02 group 01 question 6",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q07-name-and-occupation",
+          "text": "Name and occupation of the health professional(s) who provided or directed treatment. (ACC may need to contact these people for more information.)",
+          "type": "text",
+          "required": false,
+          "repeats": false,
+          "prefix": "page 02 group 01 question 7"
+        },
+        {
+          "linkId": "p02-g01-q08-other-information",
+          "text": "Other information which may be relevant to this claim. (If there are any related ACC claims, please note.)",
+          "type": "text",
+          "required": false,
+          "repeats": false,
+          "prefix": "page 02 group 01 question 8"
+        }
+      ]
+    }
+  ],
+  "version": "0.1",
+  "publisher": "Te Whatu Ora | Health NZ",
+  "date": "2026-01-15T00:37:28.756Z"
+}
