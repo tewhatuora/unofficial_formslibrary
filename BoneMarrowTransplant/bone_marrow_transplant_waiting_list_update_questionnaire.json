@@ -1,0 +1,331 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire bone-marrow-transplant-waiting-list-update</b></p><h2>Bone Marrow Transplant Waiting List Update</h2><p>Update waiting list information for a patient registered on the bone marrow transplant waiting list</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "draft",
+  "title": "Bone Marrow Transplant Waiting List Update",
+  "item": [
+    {
+      "linkId": "update-administrative",
+      "text": "Administrative Updates",
+      "type": "group",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "update-smo",
+          "text": "Senior Medical Officer (SMO)",
+          "type": "string",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "update-cns",
+          "text": "Clinical Nurse Specialist (CNS)",
+          "type": "string",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "update-clinical-status",
+      "text": "Clinical Status Updates",
+      "type": "group",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "patient-journey",
+          "text": "Patient Journey Status",
+          "type": "choice",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "no",
+                "display": "NO - Not ready for admission"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "discharge",
+                "display": "DISCHARGE - Discharged from waiting list"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "admitted",
+                "display": "ADMITTED - Currently admitted"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "planning",
+                "display": "PLANNING - Treatment planning in progress"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "ready",
+                "display": "READY - Ready for admission"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "on-hold",
+                "display": "ON-HOLD - Temporarily on hold"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "patient-ready-date",
+          "text": "Patient Ready Date",
+          "type": "date",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "patient-priority",
+          "text": "Patient Priority",
+          "type": "choice",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "priority-1",
+                "display": "Priority 1 - Highest"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "priority-2",
+                "display": "Priority 2 - High"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "priority-3",
+                "display": "Priority 3 - Medium"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "priority-4",
+                "display": "Priority 4 - Standard"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "urgency-update",
+          "text": "Urgency Level",
+          "type": "choice",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "urgent",
+                "display": "Urgent"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "planned",
+                "display": "Planned"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "emergent",
+                "display": "Emergent"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "disease-indication-update",
+          "text": "Disease Indication (if changed)",
+          "type": "choice",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "91861009",
+                "display": "Acute myeloid leukemia (AML)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "91857003",
+                "display": "Acute lymphoblastic leukemia (ALL)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "109995007",
+                "display": "Myelodysplastic syndrome"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "118601006",
+                "display": "Non-Hodgkin lymphoma"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "109989006",
+                "display": "Multiple myeloma"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "118599009",
+                "display": "Hodgkin lymphoma"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "92814006",
+                "display": "Chronic myeloid leukemia (CML)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "61180009",
+                "display": "Severe aplastic anemia"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "92814006",
+                "display": "Chronic lymphocytic leukemia (CLL)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "40108008",
+                "display": "Thalassemia major"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "417357006",
+                "display": "Sickle cell disease"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "31323000",
+                "display": "Primary immunodeficiency"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "307651008",
+                "display": "Myelofibrosis"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "30575002",
+                "display": "Fanconi anemia"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "74733009",
+                "display": "Inherited metabolic disorder"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "79544006",
+                "display": "Paroxysmal nocturnal hemoglobinuria"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "74732009",
+                "display": "Amyloidosis"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "55342001",
+                "display": "Neuroblastoma"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "74964007",
+                "display": "Other"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "patient-type-update",
+          "text": "Patient Type (if changed)",
+          "type": "choice",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "174241000112100",
+                "display": "Allogenic HSCT"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "709115004",
+                "display": "Autologous HSCT"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "comments-update",
+          "text": "Comments / Update Notes",
+          "type": "text",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    }
+  ],
+  "description": "Update waiting list information for a patient registered on the bone marrow transplant waiting list",
+  "version": "0.1.0",
+  "publisher": "Te Whatu Ora | Health NZ",
+  "date": "2026-02-09T20:53:33.233Z"
+}

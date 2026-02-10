@@ -1,0 +1,410 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire bone-marrow-transplant-treatment-finalization</b></p><h2>Bone Marrow Transplant Treatment Finalization</h2><p>Finalize actual treatment received information for a patient who underwent bone marrow transplant</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "draft",
+  "title": "Bone Marrow Transplant Treatment Finalization",
+  "item": [
+    {
+      "linkId": "actual-admission-details",
+      "text": "Actual Admission Details",
+      "type": "group",
+      "required": true,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "fixed-admission-date",
+          "text": "Actual Admission Date",
+          "type": "date",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "fixed-discharge-date",
+          "text": "Actual Discharge Date",
+          "type": "date",
+          "required": true,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "transplant-details",
+      "text": "Transplant Details",
+      "type": "group",
+      "required": true,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "transplant-date",
+          "text": "Actual Transplant Date (Day 0)",
+          "type": "date",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "final-patient-type",
+          "text": "Final Patient Type (Transplant Type)",
+          "type": "choice",
+          "required": true,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "709115004",
+                "display": "Autologous HSCT"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "174241000112100",
+                "display": "Allogenic HSCT"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "actual-conditioning-regimen",
+          "text": "Actual Conditioning Regimen",
+          "type": "choice",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "sequential",
+                "display": "Sequential Conditioning"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "870253002",
+                "display": "Myeloablative conditioning regimen"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "60581000210100",
+                "display": "Allogeneic non myeloablative conditioning protocol"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "60601000210108",
+                "display": "Reduced intensity conditioning protocol"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "actual-donor-type",
+          "text": "Actual Donor Type (for Allogeneic transplants)",
+          "type": "choice",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "matched-related",
+                "display": "Matched Related Donor (MRD)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "matched-unrelated",
+                "display": "Matched Unrelated Donor (MUD)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "mismatched-unrelated",
+                "display": "Mismatched Unrelated Donor (MMUD)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "haploidentical",
+                "display": "Haploidentical"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "cord-blood",
+                "display": "Cord Blood"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "stem-cell-source",
+          "text": "Stem Cell Source",
+          "type": "choice",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "peripheral-blood",
+                "display": "Peripheral Blood Stem Cells (PBSC)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "bone-marrow",
+                "display": "Bone Marrow"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "cord-blood",
+                "display": "Cord Blood"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "cd34-dose",
+          "text": "CD34+ Cell Dose (x10^6/kg)",
+          "type": "decimal",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "engraftment-data",
+      "text": "Engraftment Data",
+      "type": "group",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "neutrophil-engraftment-date",
+          "text": "Neutrophil Engraftment Date (ANC >0.5)",
+          "type": "date",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "platelet-engraftment-date",
+          "text": "Platelet Engraftment Date (>20k untransfused)",
+          "type": "date",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "chimerism-day-30",
+          "text": "Day +30 Chimerism (%)",
+          "type": "decimal",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "chimerism-day-100",
+          "text": "Day +100 Chimerism (%)",
+          "type": "decimal",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "complications",
+      "text": "Complications and Outcomes",
+      "type": "group",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "acute-gvhd",
+          "text": "Acute GVHD (Grade)",
+          "type": "choice",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "none",
+                "display": "None"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "grade-1",
+                "display": "Grade I"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "grade-2",
+                "display": "Grade II"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "grade-3",
+                "display": "Grade III"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "grade-4",
+                "display": "Grade IV"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "chronic-gvhd",
+          "text": "Chronic GVHD",
+          "type": "choice",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "none",
+                "display": "None"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "mild",
+                "display": "Mild"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "moderate",
+                "display": "Moderate"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "severe",
+                "display": "Severe"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "major-infections",
+          "text": "Major Infections",
+          "type": "text",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "vod-sos",
+          "text": "Veno-occlusive Disease/Sinusoidal Obstruction Syndrome (VOD/SOS)",
+          "type": "boolean",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "other-complications",
+          "text": "Other Significant Complications",
+          "type": "text",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "readmission-info",
+      "text": "Readmission Information",
+      "type": "group",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "re-admit-date",
+          "text": "Re-admission Date (if applicable)",
+          "type": "date",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "readmission-reason",
+          "text": "Reason for Readmission",
+          "type": "text",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "final-outcome",
+      "text": "Final Outcome and Journey Status",
+      "type": "group",
+      "required": true,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "patient-journey-final",
+          "text": "Final Patient Journey Status",
+          "type": "choice",
+          "required": true,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "discharge",
+                "display": "DISCHARGE - Discharged home"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "transferred",
+                "display": "TRANSFERRED - Transferred to another facility"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "deceased",
+                "display": "DECEASED"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "ongoing-care",
+                "display": "ONGOING CARE - Still under care"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "readmitted",
+                "display": "READMITTED - Readmitted for complications"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "discharge-destination",
+          "text": "Discharge Destination",
+          "type": "text",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "final-comments",
+          "text": "Final Treatment Summary Comments",
+          "type": "text",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    }
+  ],
+  "description": "Finalize actual treatment received information for a patient who underwent bone marrow transplant",
+  "version": "0.1.0",
+  "publisher": "Te Whatu Ora | Health NZ",
+  "date": "2026-02-10T00:37:10.960Z"
+}
