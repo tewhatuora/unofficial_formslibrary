@@ -2,551 +2,404 @@
   "resourceType": "Questionnaire",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire acc-45-registration</b></p><h2>ACC 45 Registration</h2><p>A questionnaire for completing ACC registrations (using the ACC45 question set from their API).</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire acc-45-registration</b></p><h2>ACC 45 Registration</h2><p>A questionnaire for completing ACC registrations (using the ACC45 question set from their API). Still needs: sports code, provider type, location to be added to NZHTS.</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
   },
   "status": "draft",
   "title": "ACC 45 Registration",
   "item": [
     {
-      "linkId": "pmsSoftware",
+      "linkId": "p01-pms-software",
       "text": "PMS Software",
       "type": "group",
+      "prefix": "page 01",
       "required": false,
       "repeats": false,
       "item": [
         {
-          "linkId": "pmsSoftwareName",
+          "linkId": "p01-g01-q01-pms-software-name",
           "text": "PMS Software Name",
           "type": "string",
+          "prefix": "page 01 group 01 question 1",
           "required": false,
           "repeats": false
         },
         {
-          "linkId": "pmsSoftwareVersion",
+          "linkId": "p01-g01-q02-pms-software-version",
           "text": "PMS Software Version",
           "type": "string",
+          "prefix": "page 01 group 01 question 2",
           "required": false,
           "repeats": false
         }
       ]
     },
     {
-      "linkId": "claimNumber",
+      "linkId": "p02-acc45-claim-number",
       "text": "ACC45 Claim Number",
       "type": "string",
-      "required": true,
+      "prefix": "page 02",
+      "required": false,
       "repeats": false
     },
     {
-      "linkId": "vendor",
+      "linkId": "p03-vendor-details",
       "text": "Vendor Details",
       "type": "group",
+      "prefix": "page 03",
       "required": false,
       "repeats": false,
       "item": [
         {
-          "linkId": "practiceName",
-          "text": "Practice Name",
+          "linkId": "p03-g01-q01-facility-name",
+          "text": "Facility Name",
           "type": "string",
+          "prefix": "page 03 group 01 question 1",
           "required": false,
           "repeats": false
         },
         {
-          "linkId": "hpiOrganisationNumber",
-          "text": "ACC Vendor ID",
+          "linkId": "p03-g01-q02-hpi-organisation-number",
+          "text": "HPI Organisation Number",
           "type": "string",
+          "prefix": "page 03 group 01 question 2",
           "required": false,
           "repeats": false
         },
         {
-          "linkId": "hpiFacilityNumber",
-          "text": "ACC Facility Number",
+          "linkId": "p03-g01-q03-hpi-facility-identifier",
+          "text": "HPI Facility Identifier",
           "type": "string",
+          "prefix": "page 03 group 01 question 3",
           "required": false,
           "repeats": false
         }
       ]
     },
     {
-      "linkId": "provider",
+      "linkId": "p04-provider-details",
       "text": "Provider Details",
       "type": "group",
+      "prefix": "page 04",
       "required": false,
       "repeats": false,
       "item": [
         {
-          "linkId": "providerDetails",
+          "linkId": "p04-g01-provider-details",
           "text": "Provider Details",
           "type": "group",
+          "prefix": "page 04 group 01",
           "required": false,
           "repeats": false,
           "item": [
             {
-              "linkId": "providerId",
-              "text": "ACC Provider ID",
+              "linkId": "p04-g01-q01-practitioner-cpn-number",
+              "text": "Practitioner CPN Number",
               "type": "string",
+              "prefix": "page 04 group 01 question 1",
               "required": false,
               "repeats": false
             },
             {
-              "linkId": "ProviderTypeCode",
-              "text": "Provider Type Code",
+              "linkId": "p04-g01-q02-provider-type",
+              "text": "Provider Type",
               "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "ProviderFirstName",
-              "text": "First Name",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "ProviderMiddleName",
-              "text": "Middle Name",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "providerSurname",
-              "text": "Surname",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            }
-          ]
-        },
-        {
-          "linkId": "ProviderAddress",
-          "text": "Provider Address",
-          "type": "group",
-          "required": false,
-          "repeats": false,
-          "item": [
-            {
-              "linkId": "ProviderAddressType",
-              "text": "Address Type",
-              "type": "choice",
               "required": false,
               "repeats": false,
-              "answerOption": [
-                {
-                  "valueString": "Home"
-                },
-                {
-                  "valueString": "Postal"
-                }
-              ]
-            },
-            {
-              "linkId": "ProviderAddressLine1",
-              "text": "Address Line 1",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "ProviderAddressLine2",
-              "text": "Address Line 2",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "ProviderAddressSuburb",
-              "text": "Suburb",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "ProviderAddressCity",
-              "text": "City",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "ProviderAddressPostCode",
-              "text": "Post Code",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "ProviderAddressCountry",
-              "text": "Country",
-              "type": "string",
-              "required": false,
-              "repeats": false
+              "prefix": "page 04 group 01 question 2"
             }
           ]
         }
       ]
     },
     {
-      "linkId": "patient",
+      "linkId": "p05-patient-details",
       "text": "Patient Details",
       "type": "group",
+      "prefix": "page 05",
       "required": false,
       "repeats": false,
       "item": [
         {
-          "linkId": "details",
+          "linkId": "p05-g01-patient-details",
           "text": "Patient Details",
           "type": "group",
+          "prefix": "page 05 group 01",
           "required": false,
           "repeats": false,
           "item": [
             {
-              "linkId": "nhi",
+              "linkId": "p05-g01-q01-national-health-index-number",
               "text": "National Health Index Number",
               "type": "string",
+              "prefix": "page 05 group 01 question 1",
               "required": false,
               "repeats": false
             },
             {
-              "linkId": "firstName",
-              "text": "First Name",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "middleName",
-              "text": "Middle Name",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "surname",
-              "text": "Surname",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "dateOfBirth",
+              "linkId": "p05-g01-q02-date-of-birth",
               "text": "Date of Birth",
               "type": "date",
+              "prefix": "page 05 group 01 question 2",
               "required": false,
               "repeats": false
             },
             {
-              "linkId": "gender",
+              "linkId": "p05-g01-q03-gender",
               "text": "Gender",
-              "type": "choice",
+              "type": "open-choice",
               "required": false,
               "repeats": false,
-              "answerValueSet": "http://hl7.org/fhir/ValueSet/administrative-gender"
+              "answerValueSet": "http://hl7.org/fhir/ValueSet/administrative-gender",
+              "prefix": "page 05 group 01 question 3"
             },
             {
-              "linkId": "ethnicityCode",
-              "text": "Ethnicity Code",
+              "linkId": "p05-g01-q04-occupation-code",
+              "text": "Occupation Code",
               "type": "choice",
+              "prefix": "page 05 group 01 question 4",
               "required": false,
               "repeats": false,
-              "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/ethnic-group-level-4-code"
-            },
-            {
-              "linkId": "otherEthnicity",
-              "text": "Other Ethnicity",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            }
-          ]
-        },
-        {
-          "linkId": "occupationCode",
-          "text": "Occupation Code",
-          "type": "choice",
-          "required": false,
-          "repeats": false,
-          "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/national-occupation-list"
-        },
-        {
-          "linkId": "contact",
-          "text": "Contact Information",
-          "type": "group",
-          "required": false,
-          "repeats": false,
-          "item": [
-            {
-              "linkId": "PatientEmailAddress",
-              "text": "Email Address",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "PatientMobilePhone",
-              "text": "Mobile Phone",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "PatientHomePhone",
-              "text": "Home Phone",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "PatientWorkPhone",
-              "text": "Work Phone",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            }
-          ]
-        },
-        {
-          "linkId": "PatientAddress",
-          "text": "Patient Address",
-          "type": "group",
-          "required": false,
-          "repeats": false,
-          "item": [
-            {
-              "linkId": "PatientAddressType",
-              "text": "Address Type",
-              "type": "choice",
-              "required": false,
-              "repeats": false,
-              "answerOption": [
-                {
-                  "valueString": "Home"
-                },
-                {
-                  "valueString": "Postal"
-                }
-              ]
-            },
-            {
-              "linkId": "PatientAddressLine1",
-              "text": "Address Line 1",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "PatientAddressLine2",
-              "text": "Address Line 2",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "PatientAddressSuburb",
-              "text": "Suburb",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "PatientAddressCity",
-              "text": "City",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "PatientAddressPostCode",
-              "text": "Post Code",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "PatientAddressCountry",
-              "text": "Country",
-              "type": "string",
-              "required": false,
-              "repeats": false
+              "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/national-occupation-list"
             }
           ]
         }
       ]
     },
     {
-      "linkId": "employment",
+      "linkId": "p06-employment-details",
       "text": "Employment Details",
       "type": "group",
+      "prefix": "page 06",
       "required": false,
       "repeats": false,
       "item": [
         {
-          "linkId": "inPaidEmployment",
-          "text": "In Paid Employment",
-          "type": "boolean",
-          "required": false,
-          "repeats": false,
-          "answerOption": [
-            {
-              "valueCoding": {
-                "system": "http://snomed.info/sct",
-                "code": "373066001",
-                "display": "Yes"
-              }
-            },
-            {
-              "valueCoding": {
-                "system": "http://snomed.info/sct",
-                "code": "373067005",
-                "display": "No"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "employmentStatusCode",
-          "text": "Employment Status Code",
-          "type": "string",
-          "required": false,
-          "repeats": false
-        },
-        {
-          "linkId": "otherEmployment",
-          "text": "Other Employment",
-          "type": "string",
-          "required": false,
-          "repeats": false
-        },
-        {
-          "linkId": "workTypeCode",
-          "text": "Work Type Code",
-          "type": "string",
-          "required": false,
-          "repeats": false
-        },
-        {
-          "linkId": "employer",
+          "linkId": "p06-g01-employer-details",
           "text": "Employer Details",
           "type": "group",
+          "prefix": "page 06 group 01",
           "required": false,
           "repeats": false,
           "item": [
             {
-              "linkId": "employerName",
+              "linkId": "p06-g01-q01-employer-name",
               "text": "Employer Name",
               "type": "string",
+              "prefix": "page 06 group 01 question 1",
               "required": false,
               "repeats": false
             },
             {
-              "linkId": "EmployerAddress",
+              "linkId": "p06-g01-q02-employer-address",
               "text": "Employer Address",
               "type": "group",
+              "prefix": "page 06 group 01 question 2",
               "required": false,
               "repeats": false,
               "item": [
                 {
-                  "linkId": "EmployerAddressType",
+                  "linkId": "p06-g01-q01-address-type",
                   "text": "Address Type",
                   "type": "choice",
+                  "prefix": "page 06 group 01 question 1",
                   "required": false,
                   "repeats": false,
                   "answerOption": [
                     {
-                      "valueString": "Home"
+                      "valueCoding": {
+                        "code": "home",
+                        "display": "Home"
+                      }
                     },
                     {
-                      "valueString": "Postal"
+                      "valueCoding": {
+                        "code": "postal",
+                        "display": "Postal"
+                      }
                     }
                   ]
                 },
                 {
-                  "linkId": "EmployerAddressLine1",
+                  "linkId": "p06-g01-q02-address-line-1",
                   "text": "Address Line 1",
                   "type": "string",
+                  "prefix": "page 06 group 01 question 2",
                   "required": false,
                   "repeats": false
                 },
                 {
-                  "linkId": "EmployerAddressLine2",
+                  "linkId": "p06-g01-q03-address-line-2",
                   "text": "Address Line 2",
                   "type": "string",
+                  "prefix": "page 06 group 01 question 3",
                   "required": false,
                   "repeats": false
                 },
                 {
-                  "linkId": "EmployerAddressSuburb",
+                  "linkId": "p06-g01-q04-suburb",
                   "text": "Suburb",
                   "type": "string",
+                  "prefix": "page 06 group 01 question 4",
                   "required": false,
                   "repeats": false
                 },
                 {
-                  "linkId": "EmployerAddressCity",
+                  "linkId": "p06-g01-q05-city",
                   "text": "City",
                   "type": "string",
+                  "prefix": "page 06 group 01 question 5",
                   "required": false,
                   "repeats": false
                 },
                 {
-                  "linkId": "EmployerAddressPostCode",
+                  "linkId": "p06-g01-q06-post-code",
                   "text": "Post Code",
                   "type": "string",
+                  "prefix": "page 06 group 01 question 6",
                   "required": false,
                   "repeats": false
                 },
                 {
-                  "linkId": "EmployerAddressCountry",
+                  "linkId": "p06-g01-q07-country",
                   "text": "Country",
                   "type": "string",
+                  "prefix": "page 06 group 01 question 7",
                   "required": false,
                   "repeats": false
                 }
               ]
             }
           ]
+        },
+        {
+          "linkId": "p06-g02-q01-in-paid-employment",
+          "text": "In Paid Employment",
+          "type": "boolean",
+          "prefix": "page 06 group 02 question 1",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373066001",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "373067005",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p06-g02-q02-employment-status-code",
+          "text": "Employment Status Code",
+          "type": "choice",
+          "prefix": "page 06 group 02 question 2",
+          "required": false,
+          "repeats": false,
+          "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/acc-employment-status-code"
+        },
+        {
+          "linkId": "p06-g02-q03-other-employment",
+          "text": "Other Employment",
+          "type": "string",
+          "prefix": "page 06 group 02 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p06-g02-q04-work-type-code",
+          "text": "Work Type Code",
+          "type": "choice",
+          "prefix": "page 06 group 02 question 4",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "365539008",
+                "display": "Sedentary (i.e. sitting)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1388355003",
+                "display": "Light"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1388357006",
+                "display": "Medium"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1388354004",
+                "display": "Heavy"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1388356002",
+                "display": "Very heavy"
+              }
+            }
+          ]
         }
       ]
     },
     {
-      "linkId": "injury",
+      "linkId": "p07-injury-details",
       "text": "Injury Details",
       "type": "group",
+      "prefix": "page 07",
       "required": false,
       "repeats": false,
       "item": [
         {
-          "linkId": "accidentDate",
+          "linkId": "p07-g01-q01-accident-date",
           "text": "Accident Date",
           "type": "date",
+          "prefix": "page 07 group 01 question 1",
           "required": false,
           "repeats": false
         },
         {
-          "linkId": "accidentLocationCode",
+          "linkId": "p07-g01-q02-accident-location-code",
           "text": "Accident Location Code",
           "type": "string",
+          "prefix": "page 07 group 01 question 2",
           "required": false,
           "repeats": false
         },
         {
-          "linkId": "accidentSceneCode",
+          "linkId": "p07-g01-q03-accident-scene-code",
           "text": "Accident Scene Code",
-          "type": "string",
+          "type": "choice",
+          "prefix": "page 07 group 01 question 3",
           "required": false,
-          "repeats": false
+          "repeats": false,
+          "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/acc-accident-scene-code"
         },
         {
-          "linkId": "causeOfAccident",
+          "linkId": "p07-g01-q04-cause-of-accident",
           "text": "Cause of Accident",
           "type": "text",
+          "prefix": "page 07 group 01 question 4",
           "required": false,
           "repeats": false
         },
         {
-          "linkId": "involvesVehicle",
+          "linkId": "p07-g01-q05-involves-vehicle",
           "text": "Involves Vehicle",
           "type": "boolean",
+          "prefix": "page 07 group 01 question 5",
           "required": false,
           "repeats": false,
           "answerOption": [
@@ -567,9 +420,10 @@
           ]
         },
         {
-          "linkId": "medicalTreatmentInjury",
+          "linkId": "p07-g01-q06-medical-treatment-injury",
           "text": "Medical Treatment Injury",
           "type": "boolean",
+          "prefix": "page 07 group 01 question 6",
           "required": false,
           "repeats": false,
           "answerOption": [
@@ -590,9 +444,10 @@
           ]
         },
         {
-          "linkId": "workInjury",
+          "linkId": "p07-g01-q07-work-injury",
           "text": "Work Injury",
           "type": "boolean",
+          "prefix": "page 07 group 01 question 7",
           "required": false,
           "repeats": false,
           "answerOption": [
@@ -613,9 +468,10 @@
           ]
         },
         {
-          "linkId": "sportingInjury",
+          "linkId": "p07-g01-q08-sporting-injury",
           "text": "Sporting Injury",
           "type": "boolean",
+          "prefix": "page 07 group 01 question 8",
           "required": false,
           "repeats": false,
           "answerOption": [
@@ -636,16 +492,26 @@
           ]
         },
         {
-          "linkId": "sportNameCode",
+          "linkId": "p07-g01-q09-sport-name-code",
           "text": "Sport Name Code",
-          "type": "string",
+          "type": "choice",
+          "prefix": "page 07 group 01 question 9",
           "required": false,
-          "repeats": false
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "1386227007",
+                "display": "Aerobic exercise"
+              }
+            }
+          ]
         },
         {
-          "linkId": "gradualProcessInjury",
+          "linkId": "p07-g01-q10-gradual-process-injury",
           "text": "Gradual Process Injury",
           "type": "boolean",
+          "prefix": "page 07 group 01 question 10",
           "required": false,
           "repeats": false,
           "answerOption": [
@@ -666,9 +532,10 @@
           ]
         },
         {
-          "linkId": "admittedToHospital",
+          "linkId": "p07-g01-q11-admitted-to-hospital",
           "text": "Admitted to Hospital",
           "type": "boolean",
+          "prefix": "page 07 group 01 question 11",
           "required": false,
           "repeats": false,
           "answerOption": [
@@ -681,16 +548,18 @@
           ]
         },
         {
-          "linkId": "injuryComments",
+          "linkId": "p07-g01-q12-injury-comments",
           "text": "Injury Comments",
           "type": "string",
+          "prefix": "page 07 group 01 question 12",
           "required": false,
           "repeats": false
         },
         {
-          "linkId": "assistanceRequired",
+          "linkId": "p07-g01-q13-assistance-required",
           "text": "Assistance Required",
           "type": "boolean",
+          "prefix": "page 07 group 01 question 13",
           "required": false,
           "repeats": false,
           "answerOption": [
@@ -703,120 +572,72 @@
           ]
         },
         {
-          "linkId": "accContactProvider",
+          "linkId": "p07-g01-q14-acc-contact-provider",
           "text": "ACC Contact Provider",
           "type": "string",
+          "prefix": "page 07 group 01 question 14",
           "required": false,
           "repeats": false
         }
       ]
     },
     {
-      "linkId": "diagnosis",
+      "linkId": "p08-diagnosis",
       "text": "Diagnosis",
       "type": "group",
+      "prefix": "page 08",
       "required": false,
       "repeats": true,
       "item": [
         {
-          "linkId": "diagnosisCodeType",
+          "linkId": "p08-g01-q01-diagnosis-code-type",
           "text": "Diagnosis Code Type",
           "type": "string",
+          "prefix": "page 08 group 01 question 1",
           "required": false,
           "repeats": false
         },
         {
-          "linkId": "diagnosisCode",
+          "linkId": "p08-g01-q02-diagnosis-code",
           "text": "Diagnosis Code",
-          "type": "string",
-          "required": false,
-          "repeats": false
-        },
-        {
-          "linkId": "diagnosisDescription",
-          "text": "Diagnosis Description",
-          "type": "string",
-          "required": false,
-          "repeats": false
-        },
-        {
-          "linkId": "diagnosisSide",
-          "text": "Diagnosis Side",
           "type": "choice",
+          "prefix": "page 08 group 01 question 2",
           "required": false,
           "repeats": false,
-          "answerOption": [
-            {
-              "valueCoding": {
-                "system": "http://snomed.info/sct",
-                "code": "7771000",
-                "display": "Left"
-              }
-            },
-            {
-              "valueCoding": {
-                "system": "http://snomed.info/sct",
-                "code": "24028007",
-                "display": "Right"
-              }
-            },
-            {
-              "valueCoding": {
-                "system": "http://snomed.info/sct",
-                "code": "51440002",
-                "display": "Bilateral"
-              }
-            },
-            {
-              "valueCoding": {
-                "system": "http://snomed.info/sct",
-                "code": "385432009",
-                "display": "Not applicable"
-              }
-            }
-          ]
+          "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/acc-claim-reference-set"
+        },
+        {
+          "linkId": "p08-g01-q03-diagnosis-side",
+          "text": "Diagnosis Side",
+          "type": "choice",
+          "prefix": "page 08 group 01 question 3",
+          "required": false,
+          "repeats": false,
+          "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/acc-bodysite-laterality"
         }
       ]
     },
     {
-      "linkId": "workCapacity",
+      "linkId": "p09-work-capacity",
       "text": "Work Capacity",
       "type": "group",
+      "prefix": "page 09",
       "required": false,
       "repeats": false,
       "item": [
         {
-          "linkId": "canResumeNormalWork",
-          "text": "Can Resume Normal Work",
-          "type": "boolean",
-          "required": false,
-          "repeats": false,
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "true",
-                "display": "True"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "false",
-                "display": "False"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "incapacity",
+          "linkId": "p09-g01-incapacity",
           "text": "Incapacity",
           "type": "group",
+          "prefix": "page 09 group 01",
           "required": false,
           "repeats": true,
           "item": [
             {
-              "linkId": "incapacityType",
+              "linkId": "p09-g01-q01-incapacity-type",
               "text": "Incapacity Type",
               "type": "choice",
+              "prefix": "page 09 group 01 question 1",
               "required": false,
               "repeats": false,
               "answerOption": [
@@ -835,53 +656,60 @@
               ]
             },
             {
-              "linkId": "incapacityDateRange",
+              "linkId": "p09-g01-q02-incapacity-date-range",
               "text": "Incapacity Date Range",
               "type": "group",
+              "prefix": "page 09 group 01 question 2",
               "required": false,
               "repeats": false,
               "item": [
                 {
-                  "linkId": "fromDate",
+                  "linkId": "p09-g01-q01-from-date",
                   "text": "From Date",
                   "type": "date",
+                  "prefix": "page 09 group 01 question 1",
                   "required": false,
                   "repeats": false
                 },
                 {
-                  "linkId": "toDate",
+                  "linkId": "p09-g01-q02-to-date",
                   "text": "To Date",
                   "type": "date",
+                  "prefix": "page 09 group 01 question 2",
                   "required": false,
                   "repeats": false
                 }
               ]
             },
             {
-              "linkId": "selectedAlternativeWork",
+              "linkId": "p09-g01-q03-selected-alternative-work",
               "text": "Selected Alternative Work",
               "type": "group",
+              "prefix": "page 09 group 01 question 3",
               "required": false,
               "repeats": false,
               "item": [
                 {
-                  "linkId": "alternativeWorkTypeCode",
+                  "linkId": "p09-g01-q01-alternative-work-type-code",
                   "text": "Alternative Work Type Code",
                   "type": "string",
+                  "prefix": "page 09 group 01 question 1",
                   "required": false,
                   "repeats": false
                 },
                 {
-                  "linkId": "physicalRestrictions",
+                  "linkId": "p09-g01-q02-physical-restrictions",
                   "text": "Physical Restrictions",
                   "type": "group",
+                  "prefix": "page 09 group 01 question 2",
                   "required": false,
                   "repeats": true,
                   "item": [
                     {
-                      "linkId": "restriction",
+                      "linkId": "p09-g01-q01-restriction",
                       "text": "Restriction",
                       "type": "choice",
+                      "prefix": "page 09 group 01 question 1",
                       "required": false,
                       "repeats": false,
                       "answerOption": [
@@ -956,16 +784,18 @@
                   ]
                 },
                 {
-                  "linkId": "restrictedHoursPerDay",
+                  "linkId": "p09-g01-q03-restricted-hours-per-day",
                   "text": "Restricted Hours Per Day",
                   "type": "integer",
+                  "prefix": "page 09 group 01 question 3",
                   "required": false,
                   "repeats": false
                 },
                 {
-                  "linkId": "restrictionComment",
+                  "linkId": "p09-g01-q04-restriction-comment",
                   "text": "Restriction Comment",
                   "type": "string",
+                  "prefix": "page 09 group 01 question 4",
                   "required": false,
                   "repeats": false
                 }
@@ -974,56 +804,84 @@
           ]
         },
         {
-          "linkId": "returnToNormalWorkDate",
+          "linkId": "p09-g02-q01-can-resume-normal-work",
+          "text": "Can Resume Normal Work",
+          "type": "boolean",
+          "prefix": "page 09 group 02 question 1",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "true",
+                "display": "True"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "false",
+                "display": "False"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p09-g02-q02-return-to-normal-work-date",
           "text": "Return to Normal Work Date",
           "type": "date",
+          "prefix": "page 09 group 02 question 2",
           "required": false,
           "repeats": false
         }
       ]
     },
     {
-      "linkId": "referrals",
+      "linkId": "p10-referrals",
       "text": "Referrals",
       "type": "group",
+      "prefix": "page 10",
       "required": false,
       "repeats": true,
       "item": [
         {
-          "linkId": "providerTypeCode",
+          "linkId": "p10-g01-q01-provider-type-code",
           "text": "Provider Type Code",
           "type": "string",
+          "prefix": "page 10 group 01 question 1",
           "required": false,
           "repeats": true
         },
         {
-          "linkId": "referralReason",
+          "linkId": "p10-g01-q02-referral-reason",
           "text": "Referral Reason",
           "type": "string",
+          "prefix": "page 10 group 01 question 2",
           "required": false,
           "repeats": true
         }
       ]
     },
     {
-      "linkId": "declaration",
+      "linkId": "p11-declaration",
       "text": "Declaration",
       "type": "group",
+      "prefix": "page 11",
       "required": false,
       "repeats": false,
       "item": [
         {
-          "linkId": "providerDeclaration",
+          "linkId": "p11-g01-q01-provider-declaration",
           "text": "Provider Declaration",
           "type": "date",
+          "prefix": "page 11 group 01 question 1",
           "required": false,
           "repeats": false
         }
       ]
     }
   ],
-  "description": "A questionnaire for completing ACC registrations (using the ACC45 question set from their API).",
-  "version": "1.0.0",
+  "description": "A questionnaire for completing ACC registrations (using the ACC45 question set from their API). Still needs: sports code, provider type, location to be added to NZHTS.",
+  "version": "1.1.0",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2025-12-15T22:58:18.988Z"
+  "date": "2026-02-15T23:18:18.083Z"
 }
