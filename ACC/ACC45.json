@@ -1086,7 +1086,7 @@
       ]
     }
   ],
-  "description": "A questionnaire for completing ACC registrations (using the ACC45 question set from their API). Still needs: sports code, provider type, location to be added to NZHTS.",
+  "description": "A questionnaire for completing ACC registrations (using the ACC45 question set from their API).",
   "version": "1.4.0",
   "publisher": "Te Whatu Ora | Health NZ",
   "date": "2026-02-16T02:14:07.991Z"
