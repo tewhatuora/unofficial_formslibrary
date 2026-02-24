@@ -145,8 +145,9 @@
             },
             {
               "valueCoding": {
-                "code": "cord-blood",
-                "display": "Cord Blood"
+                "system": "http://snomed.info/sct",
+                "code": "12499000",
+                "display": "Cord blood"
               }
             }
           ]
@@ -237,5 +238,5 @@
   "description": "Register treatment plan information once known for a patient on the bone marrow transplant waiting list",
   "version": "0.1.0",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-02-09T20:58:45.690Z"
+  "date": "2026-02-24T02:39:58.842Z"
 }
