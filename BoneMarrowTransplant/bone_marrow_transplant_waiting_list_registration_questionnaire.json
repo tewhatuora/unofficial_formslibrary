@@ -8,53 +8,96 @@
   "title": "Bone Marrow Transplant Waiting List Registration",
   "item": [
     {
-      "linkId": "registration-details",
+      "linkId": "p01-waiting-list-registration-details",
       "text": "Waiting List Registration Details",
       "type": "group",
+      "prefix": "page 01",
       "required": true,
       "repeats": false,
       "item": [
         {
-          "linkId": "smo",
+          "linkId": "p01-g01-q01-senior-medical-officer-smo",
           "text": "Senior Medical Officer (SMO)",
           "type": "string",
+          "prefix": "page 01 group 01 question 1",
           "required": true,
           "repeats": false
         },
         {
-          "linkId": "cns",
-          "text": "Clinical Nurse Specialist (CNS)",
-          "type": "string",
+          "linkId": "p01-g01-q02-referral-date",
+          "text": "Referral Date",
+          "type": "date",
+          "prefix": "page 01 group 01 question 2",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q03-first-specialist-assessment-fsa-date",
+          "text": "First Specialist Assessment (FSA) Date",
+          "type": "date",
+          "prefix": "page 01 group 01 question 3",
           "required": false,
           "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q04-clinical-nurse-specialist-cns",
+          "text": "Clinical Nurse Specialist (CNS)",
+          "type": "string",
+          "prefix": "page 01 group 01 question 4",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q05-treatment-location",
+          "text": "Treatment Location",
+          "type": "choice",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "F03067-A",
+                "display": "Auckland Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F06033-K",
+                "display": "Wellington Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F04028-G",
+                "display": "Christchurch Hospital"
+              }
+            }
+          ],
+          "prefix": "page 01 group 01 question 5"
         }
       ]
     },
     {
-      "linkId": "clinical-details",
+      "linkId": "p02-clinical-details",
       "text": "Clinical Details",
       "type": "group",
+      "prefix": "page 02",
       "required": true,
       "repeats": false,
       "item": [
         {
-          "linkId": "referral-date",
-          "text": "Referral Date",
-          "type": "date",
-          "required": true,
-          "repeats": false
-        },
-        {
-          "linkId": "smo-tci-date",
+          "linkId": "p02-g01-q01-smo-transplant-clinical-indication-tci-date",
           "text": "SMO Transplant Clinical Indication (TCI) Date",
           "type": "date",
+          "prefix": "page 02 group 01 question 1",
           "required": true,
           "repeats": false
         },
         {
-          "linkId": "disease-indication",
+          "linkId": "p02-g01-q02-disease-indication",
           "text": "Disease Indication",
           "type": "choice",
+          "prefix": "page 02 group 01 question 2",
           "required": true,
           "repeats": false,
           "answerOption": [
@@ -194,9 +237,10 @@
           ]
         },
         {
-          "linkId": "patient-type",
+          "linkId": "p02-g01-q03-patient-type-transplant-type",
           "text": "Patient Type (Transplant Type)",
           "type": "choice",
+          "prefix": "page 02 group 01 question 3",
           "required": true,
           "repeats": false,
           "answerOption": [
@@ -209,7 +253,6 @@
             },
             {
               "valueCoding": {
-                "system": "http://snomed.info/sct",
                 "code": "709115004",
                 "display": "Autologous HSCT"
               }
@@ -217,44 +260,73 @@
           ]
         },
         {
-          "linkId": "urgency",
-          "text": "Urgency",
-          "type": "choice",
-          "required": true,
+          "linkId": "p02-g01-q04-treatment-intent",
+          "text": "Treatment Intent",
+          "type": "open-choice",
+          "required": false,
           "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
-                "code": "urgent",
+                "system": "http://snomed.info/sct",
+                "code": "393127004",
+                "display": "Curative treatment"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "129428001",
+                "display": "Preventive"
+              }
+            }
+          ],
+          "prefix": "page 02 group 01 question 4"
+        },
+        {
+          "linkId": "p02-g01-q05-comments",
+          "text": "Comments",
+          "type": "text",
+          "prefix": "page 02 group 01 question 5",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q06-urgency",
+          "text": "Urgency",
+          "type": "choice",
+          "prefix": "page 02 group 01 question 6",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "103391001",
                 "display": "Urgent"
               }
             },
             {
               "valueCoding": {
-                "code": "planned",
+                "system": "http://snomed.info/sct",
+                "code": "397943006",
                 "display": "Planned"
               }
             },
             {
               "valueCoding": {
-                "code": "emergent",
-                "display": "Emergent"
+                "system": "http://snomed.info/sct",
+                "code": "53737009",
+                "display": "Acute"
               }
             }
           ]
-        },
-        {
-          "linkId": "comments",
-          "text": "Comments",
-          "type": "text",
-          "required": false,
-          "repeats": false
         }
       ]
     }
   ],
   "description": "Initial registration of a patient on the bone marrow transplant waiting list",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-02-09T20:51:45.949Z"
+  "date": "2026-03-02T21:40:05.870Z"
 }
