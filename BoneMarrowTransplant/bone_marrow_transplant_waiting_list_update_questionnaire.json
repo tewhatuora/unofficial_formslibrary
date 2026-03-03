@@ -8,151 +8,100 @@
   "title": "Bone Marrow Transplant Waiting List Update",
   "item": [
     {
-      "linkId": "update-administrative",
+      "linkId": "p01-administrative-updates",
       "text": "Administrative Updates",
       "type": "group",
+      "prefix": "page 01",
       "required": false,
       "repeats": false,
       "item": [
         {
-          "linkId": "update-smo",
+          "linkId": "p01-g01-q01-senior-medical-officer-smo",
           "text": "Senior Medical Officer (SMO)",
           "type": "string",
+          "prefix": "page 01 group 01 question 1",
           "required": false,
           "repeats": false
         },
         {
-          "linkId": "update-cns",
+          "linkId": "p01-g01-q02-clinical-nurse-specialist-cns",
           "text": "Clinical Nurse Specialist (CNS)",
           "type": "string",
+          "prefix": "page 01 group 01 question 2",
           "required": false,
           "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q03-treatment-location",
+          "text": "Treatment Location",
+          "type": "choice",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "F03067-A",
+                "display": "Auckland Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F06033-K",
+                "display": "Wellington Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F04028-G",
+                "display": "Christchurch Hospital"
+              }
+            }
+          ],
+          "prefix": "page 01 group 01 question 3"
         }
       ]
     },
     {
-      "linkId": "update-clinical-status",
+      "linkId": "p02-clinical-status-updates",
       "text": "Clinical Status Updates",
       "type": "group",
+      "prefix": "page 02",
       "required": false,
       "repeats": false,
       "item": [
         {
-          "linkId": "patient-journey",
-          "text": "Patient Journey Status",
-          "type": "choice",
-          "required": false,
-          "repeats": false,
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "no",
-                "display": "NO - Not ready for admission"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "discharge",
-                "display": "DISCHARGE - Discharged from waiting list"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "admitted",
-                "display": "ADMITTED - Currently admitted"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "planning",
-                "display": "PLANNING - Treatment planning in progress"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "ready",
-                "display": "READY - Ready for admission"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "on-hold",
-                "display": "ON-HOLD - Temporarily on hold"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "patient-ready-date",
-          "text": "Patient Ready Date",
-          "type": "date",
-          "required": false,
-          "repeats": false
-        },
-        {
-          "linkId": "patient-priority",
-          "text": "Patient Priority",
-          "type": "choice",
-          "required": false,
-          "repeats": false,
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "priority-1",
-                "display": "Priority 1 - Highest"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "priority-2",
-                "display": "Priority 2 - High"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "priority-3",
-                "display": "Priority 3 - Medium"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "priority-4",
-                "display": "Priority 4 - Standard"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "urgency-update",
+          "linkId": "p02-g01-q01-urgency-level",
           "text": "Urgency Level",
           "type": "choice",
+          "prefix": "page 02 group 01 question 1",
           "required": false,
           "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
-                "code": "urgent",
+                "code": "103391001",
                 "display": "Urgent"
               }
             },
             {
               "valueCoding": {
-                "code": "planned",
+                "code": "397943006",
                 "display": "Planned"
               }
             },
             {
               "valueCoding": {
-                "code": "emergent",
-                "display": "Emergent"
+                "code": "53737009",
+                "display": "Acute"
               }
             }
           ]
         },
         {
-          "linkId": "disease-indication-update",
-          "text": "Disease Indication (if changed)",
+          "linkId": "p02-g01-q02-disease-indication",
+          "text": "Disease Indication",
           "type": "choice",
+          "prefix": "page 02 group 01 question 2",
           "required": false,
           "repeats": false,
           "answerOption": [
@@ -292,9 +241,32 @@
           ]
         },
         {
-          "linkId": "patient-type-update",
-          "text": "Patient Type (if changed)",
+          "linkId": "p02-g01-q03-donor-fields-allogeneic-only",
+          "text": "Donor Fields (Allogeneic only)",
+          "type": "open-choice",
+          "prefix": "page 02 group 01 question 3",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "option1",
+                "display": "Donor type"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option2",
+                "display": "Option 2"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p02-g01-q04-patient-type",
+          "text": "Patient Type",
           "type": "choice",
+          "prefix": "page 02 group 01 question 4",
           "required": false,
           "repeats": false,
           "answerOption": [
@@ -315,9 +287,79 @@
           ]
         },
         {
-          "linkId": "comments-update",
+          "linkId": "p02-g01-q05-comments-update-notes",
           "text": "Comments / Update Notes",
           "type": "text",
+          "prefix": "page 02 group 01 question 5",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p03-discharge-from-waiting-list-use-this-to-close-the-",
+      "text": "Discharge from Waiting List. Use this to close the careplan.",
+      "type": "group",
+      "prefix": "page 03",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p03-g01-q01-reason-for-discharge-from-waiting-list",
+          "text": "Reason for Discharge from Waiting List.",
+          "type": "choice",
+          "prefix": "page 03 group 01 question 1",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "no-donor",
+                "display": "No donor"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262041000210107",
+                "display": "Disease progression"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "263718001",
+                "display": "Complication"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "74964007",
+                "display": "Other"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "410534003",
+                "display": "Not indicated"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "599151000210108",
+                "display": "Treatment declined by patient"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p03-g01-q02-date-of-discharge-if-entered-this-person-will-be-r",
+          "text": "Date of Discharge (if entered this person will be removed from the waiting list).",
+          "type": "date",
+          "prefix": "page 03 group 01 question 2",
           "required": false,
           "repeats": false
         }
@@ -325,7 +367,7 @@
     }
   ],
   "description": "Update waiting list information for a patient registered on the bone marrow transplant waiting list",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-02-09T20:53:33.233Z"
+  "date": "2026-03-02T21:42:19.537Z"
 }
