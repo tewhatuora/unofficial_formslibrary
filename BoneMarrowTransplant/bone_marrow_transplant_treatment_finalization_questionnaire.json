@@ -221,31 +221,10 @@
           "repeats": false
         }
       ]
-    },
-    {
-      "linkId": "q1772505124699_vkp0oqxvj",
-      "text": "New open-choice question",
-      "type": "open-choice",
-      "required": false,
-      "repeats": false,
-      "answerOption": [
-        {
-          "valueCoding": {
-            "code": "option1",
-            "display": "Alive"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "option2",
-            "display": "Dead"
-          }
-        }
-      ]
     }
   ],
   "description": "Finalize actual treatment received information for a patient who underwent bone marrow transplant",
   "version": "0.2.0",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-03-03T02:32:18.585Z"
+  "date": "2026-03-03T19:36:02.279Z"
 }
