@@ -8,46 +8,52 @@
   "title": "Bone Marrow Transplant Treatment Finalization",
   "item": [
     {
-      "linkId": "actual-admission-details",
+      "linkId": "p01-actual-admission-details",
       "text": "Actual Admission Details",
       "type": "group",
+      "prefix": "page 01",
       "required": true,
       "repeats": false,
       "item": [
         {
-          "linkId": "fixed-admission-date",
+          "linkId": "p01-g01-q01-actual-admission-date",
           "text": "Actual Admission Date",
           "type": "date",
+          "prefix": "page 01 group 01 question 1",
           "required": true,
           "repeats": false
         },
         {
-          "linkId": "fixed-discharge-date",
+          "linkId": "p01-g01-q02-actual-discharge-date",
           "text": "Actual Discharge Date",
           "type": "date",
+          "prefix": "page 01 group 01 question 2",
           "required": true,
           "repeats": false
         }
       ]
     },
     {
-      "linkId": "transplant-details",
+      "linkId": "p02-transplant-details",
       "text": "Transplant Details",
       "type": "group",
+      "prefix": "page 02",
       "required": false,
       "repeats": false,
       "item": [
         {
-          "linkId": "transplant-date",
+          "linkId": "p02-g01-q01-actual-transplant-date-day-0",
           "text": "Actual Transplant Date (Day 0)",
           "type": "date",
+          "prefix": "page 02 group 01 question 1",
           "required": true,
           "repeats": false
         },
         {
-          "linkId": "final-patient-type",
+          "linkId": "p02-g01-q02-final-patient-type-transplant-type",
           "text": "Final Patient Type (Transplant Type)",
           "type": "choice",
+          "prefix": "page 02 group 01 question 2",
           "required": true,
           "repeats": false,
           "answerOption": [
@@ -68,9 +74,10 @@
           ]
         },
         {
-          "linkId": "actual-donor-type",
+          "linkId": "p02-g01-q03-actual-donor-type-for-allogeneic-transplants",
           "text": "Actual Donor Type (for Allogeneic transplants)",
           "type": "choice",
+          "prefix": "page 02 group 01 question 3",
           "required": false,
           "repeats": false,
           "answerOption": [
@@ -107,9 +114,10 @@
           ]
         },
         {
-          "linkId": "actual-conditioning-regimen",
+          "linkId": "p02-g01-q04-actual-conditioning-regimen",
           "text": "Actual Conditioning Regimen",
           "type": "choice",
+          "prefix": "page 02 group 01 question 4",
           "required": false,
           "repeats": false,
           "answerOption": [
@@ -143,9 +151,10 @@
           ]
         },
         {
-          "linkId": "stem-cell-source",
+          "linkId": "p02-g01-q05-stem-cell-source",
           "text": "Stem Cell Source",
           "type": "choice",
+          "prefix": "page 02 group 01 question 5",
           "required": false,
           "repeats": false,
           "answerOption": [
@@ -170,53 +179,60 @@
           ]
         },
         {
-          "linkId": "cd34-dose",
+          "linkId": "p02-g01-q06-cd34-cell-dose-x106kg",
           "text": "CD34+ Cell Dose (x10^6/kg)",
           "type": "decimal",
+          "prefix": "page 02 group 01 question 6",
           "required": false,
           "repeats": false
         }
       ]
     },
     {
-      "linkId": "engraftment-data",
+      "linkId": "p03-engraftment-data",
       "text": "Engraftment Data",
       "type": "group",
+      "prefix": "page 03",
       "required": false,
       "repeats": false,
       "item": [
         {
-          "linkId": "neutrophil-engraftment-date",
+          "linkId": "p03-g01-q01-neutrophil-engraftment-date-anc-05",
           "text": "Neutrophil Engraftment Date (ANC >0.5)",
           "type": "date",
+          "prefix": "page 03 group 01 question 1",
           "required": false,
           "repeats": false
         },
         {
-          "linkId": "platelet-engraftment-date",
+          "linkId": "p03-g01-q02-platelet-engraftment-date-20k-untransfused",
           "text": "Platelet Engraftment Date (>20k untransfused)",
           "type": "date",
+          "prefix": "page 03 group 01 question 2",
           "required": false,
           "repeats": false
         },
         {
-          "linkId": "chimerism-day-30",
+          "linkId": "p03-g01-q03-day-30-chimerism",
           "text": "Day +30 Chimerism (%)",
           "type": "decimal",
+          "prefix": "page 03 group 01 question 3",
           "required": false,
           "repeats": false
         },
         {
-          "linkId": "chimerism-day-60",
+          "linkId": "p03-g01-q04-day-60-chimerism",
           "text": "Day +60 Chimerism (%)",
           "type": "decimal",
+          "prefix": "page 03 group 01 question 4",
           "required": false,
           "repeats": false
         },
         {
-          "linkId": "chimerism-day-100",
+          "linkId": "p03-g01-q05-day-100-chimerism",
           "text": "Day +100 Chimerism (%)",
           "type": "decimal",
+          "prefix": "page 03 group 01 question 5",
           "required": false,
           "repeats": false
         }
@@ -226,5 +242,5 @@
   "description": "Finalize actual treatment received information for a patient who underwent bone marrow transplant",
   "version": "0.2.0",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-03-03T19:36:02.279Z"
+  "date": "2026-03-03T23:02:43.881Z"
 }
