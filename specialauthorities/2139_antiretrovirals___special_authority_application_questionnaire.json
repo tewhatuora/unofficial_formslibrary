@@ -1,0 +1,224 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire 2139-antiretrovirals-special-authority-application</b></p><h2>2139 Antiretrovirals - Special Authority Application</h2><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "draft",
+  "title": "2139 Antiretrovirals - Special Authority Application",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Applicant Information",
+      "type": "group",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "1.1",
+          "text": "Registration Number",
+          "type": "string",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "1.2",
+          "text": "Name",
+          "type": "string",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "1.3",
+          "text": "Address",
+          "type": "string",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "1.4",
+          "text": "Fax Number",
+          "type": "string",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Patient Information",
+      "type": "group",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "2.1",
+          "text": "NHI",
+          "type": "string",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "2.2",
+          "text": "First Names",
+          "type": "string",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "2.3",
+          "text": "Surname",
+          "type": "string",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "2.4",
+          "text": "Date of Birth",
+          "type": "date",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "2.5",
+          "text": "Address",
+          "type": "string",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Referrer Information",
+      "type": "group",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "3.1",
+          "text": "Registration Number",
+          "type": "string",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "3.2",
+          "text": "First Names",
+          "type": "string",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "3.3",
+          "text": "Surname",
+          "type": "string",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "3.4",
+          "text": "Address",
+          "type": "string",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "3.5",
+          "text": "Fax Number",
+          "type": "string",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Initial Application - Confirmed HIV",
+      "type": "group",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "4.1",
+          "text": "The patient has confirmed HIV infection",
+          "type": "boolean",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "Renewal - Confirmed HIV",
+      "type": "group",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "5.1",
+          "text": "Current approval number (if known)",
+          "type": "string",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "5.2",
+          "text": "The treatment remains appropriate and the patient is benefiting from treatment",
+          "type": "boolean",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "6",
+      "text": "Initial Application - Prevention of Maternal Transmission",
+      "type": "group",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "6.1",
+          "text": "Prevention of maternal foetal transmission",
+          "type": "boolean",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "6.2",
+          "text": "Treatment of the newborn for up to eight weeks",
+          "type": "boolean",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "7",
+      "text": "Confirmation and Submission",
+      "type": "group",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "7.1",
+          "text": "Signature",
+          "type": "string",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "7.2",
+          "text": "Date",
+          "type": "date",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    }
+  ],
+  "version": "0.1.0",
+  "publisher": "Te Whatu Ora | Health NZ",
+  "date": "2026-03-09T04:01:10.665Z"
+}
