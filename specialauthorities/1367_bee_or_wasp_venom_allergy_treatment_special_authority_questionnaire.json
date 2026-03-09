@@ -1,0 +1,255 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire 1367-bee-or-wasp-venom-allergy-treatment-special-a</b></p><h2>1367 Bee or wasp venom allergy treatment Special Authority</h2><p>Form SA1367: Application for subsidy for bee or wasp venom allergy treatment.</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "draft",
+  "title": "1367 Bee or wasp venom allergy treatment Special Authority",
+  "item": [
+    {
+      "linkId": "p01-applicant",
+      "text": "APPLICANT",
+      "type": "group",
+      "prefix": "page 01",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p01-g01-q01-reg-no",
+          "text": "Reg No",
+          "type": "string",
+          "prefix": "page 01 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q02-name",
+          "text": "Name",
+          "type": "string",
+          "prefix": "page 01 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q03-address",
+          "text": "Address",
+          "type": "string",
+          "prefix": "page 01 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q04-fax-number",
+          "text": "Fax Number",
+          "type": "string",
+          "prefix": "page 01 group 01 question 4",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p02-patient",
+      "text": "PATIENT",
+      "type": "group",
+      "prefix": "page 02",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p02-g01-q01-nhi",
+          "text": "NHI",
+          "type": "string",
+          "prefix": "page 02 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q02-first-names",
+          "text": "First Names",
+          "type": "string",
+          "prefix": "page 02 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q03-surname",
+          "text": "Surname",
+          "type": "string",
+          "prefix": "page 02 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q04-dob",
+          "text": "DOB",
+          "type": "date",
+          "prefix": "page 02 group 01 question 4",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q05-address",
+          "text": "Address",
+          "type": "string",
+          "prefix": "page 02 group 01 question 5",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p03-referrer",
+      "text": "REFERRER",
+      "type": "group",
+      "prefix": "page 03",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p03-g01-q01-reg-no",
+          "text": "Reg No",
+          "type": "string",
+          "prefix": "page 03 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q02-first-names",
+          "text": "First Names",
+          "type": "string",
+          "prefix": "page 03 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q03-surname",
+          "text": "Surname",
+          "type": "string",
+          "prefix": "page 03 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q04-address",
+          "text": "Address",
+          "type": "string",
+          "prefix": "page 03 group 01 question 4",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q05-fax-number",
+          "text": "Fax Number",
+          "type": "string",
+          "prefix": "page 03 group 01 question 5",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p04-initial-application",
+      "text": "Initial application",
+      "type": "group",
+      "prefix": "page 04",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p04-g01-prerequisites-tick-boxes-where-appropriate",
+          "text": "Prerequisites (tick boxes where appropriate)",
+          "type": "group",
+          "prefix": "page 04 group 01",
+          "required": false,
+          "repeats": false,
+          "item": [
+            {
+              "linkId": "p04-g01-q01-rast-or-skin-test-positive",
+              "text": "RAST or skin test positive",
+              "type": "boolean",
+              "prefix": "page 04 group 01 question 1",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "p04-g01-q02-patient-has-had-severe-generalised-reaction-to-the",
+              "text": "Patient has had severe generalised reaction to the sensitising agent",
+              "type": "boolean",
+              "prefix": "page 04 group 01 question 2",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "p05-renewal",
+      "text": "Renewal",
+      "type": "group",
+      "prefix": "page 05",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p05-g01-prerequisites-tick-box-where-appropriate",
+          "text": "Prerequisites (tick box where appropriate)",
+          "type": "group",
+          "prefix": "page 05 group 01",
+          "required": false,
+          "repeats": false,
+          "item": [
+            {
+              "linkId": "p05-g01-q01-the-treatment-remains-appropriate-and-the-patient-",
+              "text": "The treatment remains appropriate and the patient is benefiting from treatment",
+              "type": "boolean",
+              "prefix": "page 05 group 01 question 1",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "linkId": "p05-g02-q01-current-approval-number-if-known",
+          "text": "Current approval Number (if known)",
+          "type": "string",
+          "prefix": "page 05 group 02 question 1",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p06-confirmation",
+      "text": "Confirmation",
+      "type": "group",
+      "prefix": "page 06",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p06-g01-q01-signed",
+          "text": "Signed",
+          "type": "string",
+          "prefix": "page 06 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p06-g01-q02-date",
+          "text": "Date",
+          "type": "date",
+          "prefix": "page 06 group 01 question 2",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    }
+  ],
+  "description": "Form SA1367: Application for subsidy for bee or wasp venom allergy treatment.",
+  "version": "0.1.0",
+  "publisher": "Te Whatu Ora | HealthNZ",
+  "date": "2026-03-09T04:46:51.517Z"
+}
