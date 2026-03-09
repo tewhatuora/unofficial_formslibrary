@@ -1,0 +1,326 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire 1683-azithromycin-special-authority-application</b></p><h2>1683 Azithromycin - Special Authority Application</h2><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "draft",
+  "title": "1683 Azithromycin - Special Authority Application",
+  "item": [
+    {
+      "linkId": "p01-applicant-details",
+      "text": "Applicant Details",
+      "type": "group",
+      "prefix": "page 01",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p01-g01-q01-reg-no",
+          "text": "Reg No",
+          "type": "string",
+          "prefix": "page 01 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q02-name",
+          "text": "Name",
+          "type": "string",
+          "prefix": "page 01 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q03-address",
+          "text": "Address",
+          "type": "string",
+          "prefix": "page 01 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q04-fax-number",
+          "text": "Fax Number",
+          "type": "string",
+          "prefix": "page 01 group 01 question 4",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p02-patient-details",
+      "text": "Patient Details",
+      "type": "group",
+      "prefix": "page 02",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p02-g01-q01-patient-nhi",
+          "text": "Patient NHI",
+          "type": "string",
+          "prefix": "page 02 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q02-first-name",
+          "text": "First Name",
+          "type": "string",
+          "prefix": "page 02 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q03-surname",
+          "text": "Surname",
+          "type": "string",
+          "prefix": "page 02 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q04-date-of-birth",
+          "text": "Date of Birth",
+          "type": "date",
+          "prefix": "page 02 group 01 question 4",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q05-address",
+          "text": "Address",
+          "type": "string",
+          "prefix": "page 02 group 01 question 5",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p03-referrer-details",
+      "text": "Referrer Details",
+      "type": "group",
+      "prefix": "page 03",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p03-g01-q01-reg-no",
+          "text": "Reg No",
+          "type": "string",
+          "prefix": "page 03 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q02-first-name",
+          "text": "First Name",
+          "type": "string",
+          "prefix": "page 03 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q03-surname",
+          "text": "Surname",
+          "type": "string",
+          "prefix": "page 03 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q04-address",
+          "text": "Address",
+          "type": "string",
+          "prefix": "page 03 group 01 question 4",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q05-fax-number",
+          "text": "Fax Number",
+          "type": "string",
+          "prefix": "page 03 group 01 question 5",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p04-initial-application",
+      "text": "Initial Application",
+      "type": "group",
+      "prefix": "page 04",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p04-g01-bronchiolitis-obliterans-syndrome-cystic-fibrosis-",
+          "text": "Bronchiolitis Obliterans Syndrome, Cystic Fibrosis, and Atypical Mycobacterium Infections",
+          "type": "group",
+          "prefix": "page 04 group 01",
+          "required": false,
+          "repeats": false,
+          "item": [
+            {
+              "linkId": "p04-g01-q01-patient-has-received-a-lung-transplant-stem-cell-t",
+              "text": "Patient has received a lung transplant, stem cell transplant, or bone marrow transplant and requires treatment for bronchiolitis obliterans syndrome",
+              "type": "boolean",
+              "prefix": "page 04 group 01 question 1",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "p04-g01-q02-patient-has-received-a-lung-transplant-and-require",
+              "text": "Patient has received a lung transplant and requires prophylaxis for bronchiolitis obliterans syndrome",
+              "type": "boolean",
+              "prefix": "page 04 group 01 question 2",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "p04-g01-q03-patient-has-cystic-fibrosis-and-has-chronic-infect",
+              "text": "Patient has cystic fibrosis and has chronic infection with Pseudomonas aeruginosa or Pseudomonas-related gram-negative organisms",
+              "type": "boolean",
+              "prefix": "page 04 group 01 question 3",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "p04-g01-q04-patient-has-an-atypical-mycobacterium-infection",
+              "text": "Patient has an atypical Mycobacterium infection",
+              "type": "boolean",
+              "prefix": "page 04 group 01 question 4",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g02-non-cystic-fibrosis-bronchiectasis",
+          "text": "Non-Cystic Fibrosis Bronchiectasis",
+          "type": "group",
+          "prefix": "page 04 group 02",
+          "required": false,
+          "repeats": false,
+          "item": [
+            {
+              "linkId": "p04-g02-q01-for-prophylaxis-of-exacerbations-of-non-cystic-fib",
+              "text": "For prophylaxis of exacerbations of non-cystic fibrosis bronchiectasis",
+              "type": "boolean",
+              "prefix": "page 04 group 02 question 1",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "p04-g02-q02-patient-is-aged-18-and-under",
+              "text": "Patient is aged 18 and under",
+              "type": "boolean",
+              "prefix": "page 04 group 02 question 2",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "p04-g02-q03-patient-has-had-3-or-more-exacerbations-of-their-b",
+              "text": "Patient has had 3 or more exacerbations of their bronchiectasis, within a 12-month period",
+              "type": "boolean",
+              "prefix": "page 04 group 02 question 3",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "p04-g02-q04-patient-has-had-3-acute-admissions-to-hospital-for",
+              "text": "Patient has had 3 acute admissions to hospital for treatment of infective respiratory exacerbations within a 12-month period",
+              "type": "boolean",
+              "prefix": "page 04 group 02 question 4",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "p05-renewal-application-non-cystic-fibrosis-bronchiect",
+      "text": "Renewal Application - Non-Cystic Fibrosis Bronchiectasis",
+      "type": "group",
+      "prefix": "page 05",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p05-g01-q01-current-approval-number-if-known",
+          "text": "Current Approval Number (if known)",
+          "type": "string",
+          "prefix": "page 05 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p05-g01-q02-the-patient-has-completed-12-months-of-azithromyci",
+          "text": "The patient has completed 12 months of azithromycin treatment for non-cystic fibrosis bronchiectasis",
+          "type": "boolean",
+          "prefix": "page 05 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p05-g01-q03-following-initial-12-months-of-treatment-the-patie",
+          "text": "Following initial 12 months of treatment, the patient has not received any further azithromycin treatment for non-cystic fibrosis bronchiectasis for a further 12 months, unless considered clinically inappropriate to stop treatment",
+          "type": "boolean",
+          "prefix": "page 05 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p05-g01-q04-the-patient-will-not-receive-more-than-a-total-of-",
+          "text": "The patient will not receive more than a total of 24 months' azithromycin cumulative treatment",
+          "type": "boolean",
+          "prefix": "page 05 group 01 question 4",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p06-declaration",
+      "text": "Declaration",
+      "type": "group",
+      "prefix": "page 06",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p06-g01-q01-i-confirm-the-above-details-are-correct-and-that-i",
+          "text": "I confirm the above details are correct and that in signing this form I understand I may be audited.",
+          "type": "boolean",
+          "prefix": "page 06 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p06-g01-q02-signed",
+          "text": "Signed",
+          "type": "string",
+          "prefix": "page 06 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p06-g01-q03-date",
+          "text": "Date",
+          "type": "date",
+          "prefix": "page 06 group 01 question 3",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    }
+  ],
+  "version": "0.1.0",
+  "publisher": "Te Whatu Ora | Health NZ",
+  "date": "2026-03-09T04:38:37.748Z"
+}

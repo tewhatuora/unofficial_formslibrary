@@ -1,0 +1,233 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire 2395-aripiprazole-special-authority-application</b></p><h2>2395 Aripiprazole - Special Authority Application </h2><p>Special Authority application form for Aripiprazole</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "active",
+  "title": "2395 Aripiprazole - Special Authority Application ",
+  "item": [
+    {
+      "linkId": "p01-applicant-details",
+      "text": "Applicant Details",
+      "type": "group",
+      "prefix": "page 01",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p01-g01-q01-reg-no",
+          "text": "Reg No",
+          "type": "string",
+          "prefix": "page 01 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q02-name",
+          "text": "Name",
+          "type": "string",
+          "prefix": "page 01 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q03-address",
+          "text": "Address",
+          "type": "string",
+          "prefix": "page 01 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q04-fax-number",
+          "text": "Fax Number",
+          "type": "string",
+          "prefix": "page 01 group 01 question 4",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p02-patient-details",
+      "text": "Patient Details",
+      "type": "group",
+      "prefix": "page 02",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p02-g01-q01-nhi",
+          "text": "NHI",
+          "type": "string",
+          "prefix": "page 02 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q02-first-names",
+          "text": "First Names",
+          "type": "string",
+          "prefix": "page 02 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q03-surname",
+          "text": "Surname",
+          "type": "string",
+          "prefix": "page 02 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q04-dob",
+          "text": "DOB",
+          "type": "date",
+          "prefix": "page 02 group 01 question 4",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q05-address",
+          "text": "Address",
+          "type": "string",
+          "prefix": "page 02 group 01 question 5",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p03-referrer-details",
+      "text": "Referrer Details",
+      "type": "group",
+      "prefix": "page 03",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p03-g01-q01-reg-no",
+          "text": "Reg No",
+          "type": "string",
+          "prefix": "page 03 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q02-first-names",
+          "text": "First Names",
+          "type": "string",
+          "prefix": "page 03 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q03-surname",
+          "text": "Surname",
+          "type": "string",
+          "prefix": "page 03 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q04-address",
+          "text": "Address",
+          "type": "string",
+          "prefix": "page 03 group 01 question 4",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q05-fax-number",
+          "text": "Fax Number",
+          "type": "string",
+          "prefix": "page 03 group 01 question 5",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p04-initial-application",
+      "text": "Initial Application",
+      "type": "group",
+      "prefix": "page 04",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p04-g01-q01-the-patient-has-had-an-initial-special-authority-a",
+          "text": "The patient has had an initial Special Authority approval for risperidone depot injection, paliperidone depot injection or olanzapine depot injection",
+          "type": "boolean",
+          "prefix": "page 04 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p04-g01-q02-the-patient-has-schizophrenia-or-other-psychotic-d",
+          "text": "The patient has schizophrenia or other psychotic disorder",
+          "type": "boolean",
+          "prefix": "page 04 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p04-g01-q03-the-patient-has-received-treatment-with-oral-atypi",
+          "text": "The patient has received treatment with oral atypical antipsychotic agents but has been unable to adhere",
+          "type": "boolean",
+          "prefix": "page 04 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p04-g01-q04-the-patient-has-been-admitted-to-hospital-or-treat",
+          "text": "The patient has been admitted to hospital or treated in respite care, or intensive outpatient or home-based treatment for 30 days or more in last 12 months",
+          "type": "boolean",
+          "prefix": "page 04 group 01 question 4",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p04-g01-q05-the-patient-has-been-unable-to-access-olanzapine-d",
+          "text": "The patient has been unable to access olanzapine depot injection due to supply issues or would have been started on olanzapine depot injection but has been unable to due to supply issues",
+          "type": "boolean",
+          "prefix": "page 04 group 01 question 5",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p05-declaration",
+      "text": "Declaration",
+      "type": "group",
+      "prefix": "page 05",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p05-g01-q01-signed",
+          "text": "Signed",
+          "type": "string",
+          "prefix": "page 05 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p05-g01-q02-date",
+          "text": "Date",
+          "type": "date",
+          "prefix": "page 05 group 01 question 2",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    }
+  ],
+  "description": "Special Authority application form for Aripiprazole",
+  "version": "0.1.0",
+  "publisher": "Te Whatu Ora | Health NZ",
+  "date": "2026-03-09T04:29:35.407Z"
+}
