@@ -27,9 +27,9 @@
           "linkId": "p01-g01-q02-signs-and-symptoms",
           "text": "List the signs and symptoms of the injury:",
           "type": "text",
+          "prefix": "page 01 group 01 question 2",
           "required": false,
-          "repeats": false,
-          "prefix": "page 01 group 01 question 2"
+          "repeats": false
         },
         {
           "linkId": "p01-g01-q03-diagnosis-code-type",
@@ -63,9 +63,9 @@
           "linkId": "p01-g01-q04-diagnosis-code",
           "text": "Diagnosis Code:",
           "type": "string",
+          "prefix": "page 01 group 01 question 4",
           "required": false,
-          "repeats": true,
-          "prefix": "page 01 group 01 question 4"
+          "repeats": true
         },
         {
           "linkId": "p01-g01-q05-date-of-injury",
@@ -97,9 +97,9 @@
           "linkId": "p02-g01-q01-what-treatment",
           "text": "What treatment gave rise to the injury? (If the claimed injury resulted from failure to treat, please note.)",
           "type": "text",
+          "prefix": "page 02 group 01 question 1",
           "required": false,
-          "repeats": false,
-          "prefix": "page 02 group 01 question 1"
+          "repeats": false
         },
         {
           "linkId": "p02-g01-q02-describe-the-events",
@@ -177,17 +177,17 @@
           "linkId": "p02-g01-q04-name-of-the-facility",
           "text": "Name of the facility (if relevant):",
           "type": "text",
+          "prefix": "page 02 group 01 question 4",
           "required": false,
-          "repeats": false,
-          "prefix": "page 02 group 01 question 4"
+          "repeats": false
         },
         {
           "linkId": "p02-g01-q05-conditions-being-treated",
           "text": "Outline the condition(s) being treated (with dates):",
           "type": "text",
+          "prefix": "page 02 group 01 question 5",
           "required": false,
-          "repeats": false,
-          "prefix": "page 02 group 01 question 5"
+          "repeats": false
         },
         {
           "linkId": "p02-g01-q06-underlying-health-conditions",
@@ -201,22 +201,43 @@
           "linkId": "p02-g01-q07-name-and-occupation",
           "text": "Name and occupation of the health professional(s) who provided or directed treatment. (ACC may need to contact these people for more information.)",
           "type": "text",
+          "prefix": "page 02 group 01 question 7",
           "required": false,
-          "repeats": false,
-          "prefix": "page 02 group 01 question 7"
+          "repeats": false
         },
         {
           "linkId": "p02-g01-q08-other-information",
           "text": "Other information which may be relevant to this claim. (If there are any related ACC claims, please note.)",
           "type": "text",
+          "prefix": "page 02 group 01 question 8",
           "required": false,
-          "repeats": false,
-          "prefix": "page 02 group 01 question 8"
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "q1772654332724_r8vsbovbl",
+      "text": "Is there another claim that this might relate to",
+      "type": "integer",
+      "required": false,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "option1",
+            "display": "Option 1"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "option2",
+            "display": "Option 2"
+          }
         }
       ]
     }
   ],
   "version": "0.1",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-01-15T00:37:28.756Z"
+  "date": "2026-03-04T19:59:42.136Z"
 }
