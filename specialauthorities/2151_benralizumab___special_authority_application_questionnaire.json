@@ -1,0 +1,330 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire 2151-benralizumab-special-authority-application</b></p><h2>2151 Benralizumab - Special Authority Application</h2><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "draft",
+  "title": "2151 Benralizumab - Special Authority Application",
+  "item": [
+    {
+      "linkId": "p01-applicant-details",
+      "text": "Applicant Details",
+      "type": "group",
+      "prefix": "page 01",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p01-g01-q01-reg-no",
+          "text": "Reg No",
+          "type": "string",
+          "prefix": "page 01 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q02-name",
+          "text": "Name",
+          "type": "string",
+          "prefix": "page 01 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q03-address",
+          "text": "Address",
+          "type": "string",
+          "prefix": "page 01 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q04-fax-number",
+          "text": "Fax Number",
+          "type": "string",
+          "prefix": "page 01 group 01 question 4",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p02-patient-details",
+      "text": "Patient Details",
+      "type": "group",
+      "prefix": "page 02",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p02-g01-q01-nhi",
+          "text": "NHI",
+          "type": "string",
+          "prefix": "page 02 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q02-first-name",
+          "text": "First Name",
+          "type": "string",
+          "prefix": "page 02 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q03-surname",
+          "text": "Surname",
+          "type": "string",
+          "prefix": "page 02 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q04-date-of-birth",
+          "text": "Date of Birth",
+          "type": "date",
+          "prefix": "page 02 group 01 question 4",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q05-address",
+          "text": "Address",
+          "type": "string",
+          "prefix": "page 02 group 01 question 5",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p03-referrer-details",
+      "text": "Referrer Details",
+      "type": "group",
+      "prefix": "page 03",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p03-g01-q01-reg-no",
+          "text": "Reg No",
+          "type": "string",
+          "prefix": "page 03 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q02-first-name",
+          "text": "First Name",
+          "type": "string",
+          "prefix": "page 03 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q03-surname",
+          "text": "Surname",
+          "type": "string",
+          "prefix": "page 03 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q04-address",
+          "text": "Address",
+          "type": "string",
+          "prefix": "page 03 group 01 question 4",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q05-fax-number",
+          "text": "Fax Number",
+          "type": "string",
+          "prefix": "page 03 group 01 question 5",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p04-initial-application-severe-eosinophilic-asthma",
+      "text": "Initial Application – Severe Eosinophilic Asthma",
+      "type": "group",
+      "prefix": "page 04",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p04-g01-q01-patient-must-be-aged-12-years-or-older",
+          "text": "Patient must be aged 12 years or older",
+          "type": "boolean",
+          "prefix": "page 04 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p04-g01-q02-patient-must-have-a-diagnosis-of-severe-eosinophil",
+          "text": "Patient must have a diagnosis of severe eosinophilic asthma documented by a respiratory physician or clinical immunologist",
+          "type": "boolean",
+          "prefix": "page 04 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p04-g01-q03-conditions-that-mimic-asthma-eg-vocal-cord-dysfunc",
+          "text": "Conditions that mimic asthma e.g. vocal cord dysfunction, central airway obstruction, bronchiolitis etc. have been excluded",
+          "type": "boolean",
+          "prefix": "page 04 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p04-g01-q04-patient-has-a-blood-eosinophil-count-of-greater-th",
+          "text": "Patient has a blood eosinophil count of greater than 0.5 × 10⁹ cells/L in the last 12 months",
+          "type": "boolean",
+          "prefix": "page 04 group 01 question 4",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p04-g01-q05-patient-must-be-adherent-to-optimised-asthma-thera",
+          "text": "Patient must be adherent to optimised asthma therapy including inhaled corticosteroids (equivalent to at least 1000 mcg per day of fluticasone propionate) plus long-acting beta-2 agonist, or budesonide/formoterol as part of the anti-inflammatory reliever therapy plus maintenance regimen, unless contraindicated or not tolerated",
+          "type": "boolean",
+          "prefix": "page 04 group 01 question 5",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p04-g01-q06-patient-has-had-at-least-4-exacerbations-needing-s",
+          "text": "Patient has had at least 4 exacerbations needing systemic corticosteroids in the previous 12 months, where an exacerbation is defined as either documented use of oral corticosteroids for at least 3 days or parenteral corticosteroids",
+          "type": "boolean",
+          "prefix": "page 04 group 01 question 6",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p04-g01-q07-patient-has-received-continuous-oral-corticosteroi",
+          "text": "Patient has received continuous oral corticosteroids of at least the equivalent of 10 mg per day over the previous 3 months",
+          "type": "boolean",
+          "prefix": "page 04 group 01 question 7",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p04-g01-q08-treatment-is-not-to-be-used-in-combination-with-su",
+          "text": "Treatment is not to be used in combination with subsidised mepolizumab",
+          "type": "boolean",
+          "prefix": "page 04 group 01 question 8",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p04-g01-q09-patient-has-an-asthma-control-test-act-score-of-10",
+          "text": "Patient has an Asthma Control Test (ACT) score of 10 or less. Baseline measurements of the patient’s asthma control using the ACT and oral corticosteroid dose must be made at the time of application, and again at around 52 weeks after the first dose to assess response to treatment",
+          "type": "boolean",
+          "prefix": "page 04 group 01 question 9",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p04-g01-q10-patient-has-not-previously-received-an-anti-il5-bi",
+          "text": "Patient has not previously received an anti-IL5 biological therapy for their severe eosinophilic asthma",
+          "type": "boolean",
+          "prefix": "page 04 group 01 question 10",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p04-g01-q11-patient-was-refractory-or-intolerant-to-previous-a",
+          "text": "Patient was refractory or intolerant to previous anti-IL5 biological therapy",
+          "type": "boolean",
+          "prefix": "page 04 group 01 question 11",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p04-g01-q12-patient-was-not-eligible-to-continue-treatment-wit",
+          "text": "Patient was not eligible to continue treatment with previous anti-IL5 biological therapy and discontinued within 12 months of commencing treatment",
+          "type": "boolean",
+          "prefix": "page 04 group 01 question 12",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p05-renewal-severe-eosinophilic-asthma",
+      "text": "Renewal – Severe Eosinophilic Asthma",
+      "type": "group",
+      "prefix": "page 05",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p05-g01-q01-current-approval-number-if-known",
+          "text": "Current approval number (if known)",
+          "type": "string",
+          "prefix": "page 05 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p05-g01-q02-an-increase-in-the-asthma-control-test-act-score-o",
+          "text": "An increase in the Asthma Control Test (ACT) score of at least 5 from baseline",
+          "type": "boolean",
+          "prefix": "page 05 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p05-g01-q03-exacerbations-have-been-reduced-from-baseline-by-5",
+          "text": "Exacerbations have been reduced from baseline by 50% as a result of treatment with benralizumab",
+          "type": "boolean",
+          "prefix": "page 05 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p05-g01-q04-reduction-in-continuous-oral-corticosteroid-use-by",
+          "text": "Reduction in continuous oral corticosteroid use by 50% or by 10 mg/day while maintaining or improving asthma control",
+          "type": "boolean",
+          "prefix": "page 05 group 01 question 4",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p06-declaration",
+      "text": "Declaration",
+      "type": "group",
+      "prefix": "page 06",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p06-g01-q01-signed",
+          "text": "Signed",
+          "type": "string",
+          "prefix": "page 06 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p06-g01-q02-date",
+          "text": "Date",
+          "type": "date",
+          "prefix": "page 06 group 01 question 2",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    }
+  ],
+  "version": "0.1.0",
+  "publisher": "Te Whatu Ora | Health NZ",
+  "date": "2026-03-09T04:56:45.522Z"
+}

@@ -1,0 +1,308 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire 2453-bevacizumab-special-authority-application</b></p><h2>2453 Bevacizumab - Special Authority Application</h2><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "draft",
+  "title": "2453 Bevacizumab - Special Authority Application",
+  "item": [
+    {
+      "linkId": "p01-applicant-details",
+      "text": "Applicant Details",
+      "type": "group",
+      "prefix": "page 01",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p01-g01-q01-reg-no",
+          "text": "Reg No",
+          "type": "string",
+          "prefix": "page 01 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q02-name",
+          "text": "Name",
+          "type": "string",
+          "prefix": "page 01 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q03-address",
+          "text": "Address",
+          "type": "string",
+          "prefix": "page 01 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q04-fax-number",
+          "text": "Fax Number",
+          "type": "string",
+          "prefix": "page 01 group 01 question 4",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p02-patient-details",
+      "text": "Patient Details",
+      "type": "group",
+      "prefix": "page 02",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p02-g01-q01-nhi",
+          "text": "NHI",
+          "type": "string",
+          "prefix": "page 02 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q02-first-names",
+          "text": "First Names",
+          "type": "string",
+          "prefix": "page 02 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q03-surname",
+          "text": "Surname",
+          "type": "string",
+          "prefix": "page 02 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q04-dob",
+          "text": "DOB",
+          "type": "date",
+          "prefix": "page 02 group 01 question 4",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q05-address",
+          "text": "Address",
+          "type": "string",
+          "prefix": "page 02 group 01 question 5",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p03-referrer-details",
+      "text": "Referrer Details",
+      "type": "group",
+      "prefix": "page 03",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p03-g01-q01-reg-no",
+          "text": "Reg No",
+          "type": "string",
+          "prefix": "page 03 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q02-first-names",
+          "text": "First Names",
+          "type": "string",
+          "prefix": "page 03 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q03-surname",
+          "text": "Surname",
+          "type": "string",
+          "prefix": "page 03 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q04-address",
+          "text": "Address",
+          "type": "string",
+          "prefix": "page 03 group 01 question 4",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q05-fax-number",
+          "text": "Fax Number",
+          "type": "string",
+          "prefix": "page 03 group 01 question 5",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p04-initial-application-unresectable-hepatocellular-ca",
+      "text": "Initial Application — Unresectable Hepatocellular Carcinoma",
+      "type": "group",
+      "prefix": "page 04",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p04-g01-prerequisites-tick-boxes-where-appropriate",
+          "text": "Prerequisites (tick boxes where appropriate)",
+          "type": "group",
+          "prefix": "page 04 group 01",
+          "required": false,
+          "repeats": false,
+          "item": [
+            {
+              "linkId": "p04-g01-q01-patient-is-currently-on-treatment-with-bevacizumab",
+              "text": "Patient is currently on treatment with bevacizumab, and met all remaining criteria prior to commencing treatment",
+              "type": "boolean",
+              "prefix": "page 04 group 01 question 1",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "p04-g01-q02-patient-has-locally-advanced-or-metastatic-unresec",
+              "text": "Patient has locally advanced or metastatic, unresectable hepatocellular carcinoma",
+              "type": "boolean",
+              "prefix": "page 04 group 01 question 2",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "p04-g01-q03-patient-has-preserved-liver-function-child-pugh-a",
+              "text": "Patient has preserved liver function (Child-Pugh A)",
+              "type": "boolean",
+              "prefix": "page 04 group 01 question 3",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "p04-g01-q04-transarterial-chemoembolisation-tace-is-unsuitable",
+              "text": "Transarterial chemoembolisation (TACE) is unsuitable",
+              "type": "boolean",
+              "prefix": "page 04 group 01 question 4",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "p04-g01-q05-patient-has-not-received-prior-systemic-therapy-fo",
+              "text": "Patient has not received prior systemic therapy for the treatment of hepatocellular carcinoma",
+              "type": "boolean",
+              "prefix": "page 04 group 01 question 5",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "p04-g01-q06-patient-received-funded-lenvatinib-before-1-march-",
+              "text": "Patient received funded lenvatinib before 1 March 2025",
+              "type": "boolean",
+              "prefix": "page 04 group 01 question 6",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "p04-g01-q07-patient-has-experienced-treatment-limiting-toxicit",
+              "text": "Patient has experienced treatment-limiting toxicity from treatment with lenvatinib",
+              "type": "boolean",
+              "prefix": "page 04 group 01 question 7",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "p04-g01-q08-no-disease-progression-since-initiation-of-lenvati",
+              "text": "No disease progression since initiation of lenvatinib",
+              "type": "boolean",
+              "prefix": "page 04 group 01 question 8",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "p04-g01-q09-patient-has-an-ecog-performance-status-of-0-2",
+              "text": "Patient has an ECOG performance status of 0-2",
+              "type": "boolean",
+              "prefix": "page 04 group 01 question 9",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "p04-g01-q10-to-be-given-in-combination-with-atezolizumab",
+              "text": "To be given in combination with atezolizumab",
+              "type": "boolean",
+              "prefix": "page 04 group 01 question 10",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "p05-renewal-unresectable-hepatocellular-carcinoma",
+      "text": "Renewal — Unresectable Hepatocellular Carcinoma",
+      "type": "group",
+      "prefix": "page 05",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p05-g01-q01-current-approval-number-if-known",
+          "text": "Current approval Number (if known)",
+          "type": "string",
+          "prefix": "page 05 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p05-g01-q02-there-is-no-evidence-of-disease-progression",
+          "text": "There is no evidence of disease progression",
+          "type": "boolean",
+          "prefix": "page 05 group 01 question 2",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p06-declaration",
+      "text": "Declaration",
+      "type": "group",
+      "prefix": "page 06",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p06-g01-q01-signed",
+          "text": "Signed",
+          "type": "string",
+          "prefix": "page 06 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p06-g01-q02-date",
+          "text": "Date",
+          "type": "date",
+          "prefix": "page 06 group 01 question 2",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    }
+  ],
+  "version": "0.1.0",
+  "publisher": "Te Whatu Ora | Health NZ",
+  "date": "2026-03-09T05:02:49.249Z"
+}
