@@ -1,0 +1,222 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire bone-marrow-transplant-treatment-finalization</b></p><h2>Bone Marrow Transplant Treatment Finalization</h2><p>Finalize actual treatment received information for a patient who underwent bone marrow transplant</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "draft",
+  "title": "Bone Marrow Transplant Treatment Finalization",
+  "item": [
+    {
+      "linkId": "p01-actual-admission-details",
+      "text": "Actual Admission Details",
+      "type": "group",
+      "prefix": "page 01",
+      "required": true,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p01-g01-q01-actual-admission-date",
+          "text": "Actual Admission Date",
+          "type": "date",
+          "prefix": "page 01 group 01 question 1",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "p01-g01-q02-actual-discharge-date",
+          "text": "Actual Discharge Date",
+          "type": "date",
+          "prefix": "page 01 group 01 question 2",
+          "required": true,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p02-transplant-details",
+      "text": "Transplant Details",
+      "type": "group",
+      "prefix": "page 02",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p02-g01-q01-actual-transplant-date-day-0",
+          "text": "Actual Transplant Date (Day 0)",
+          "type": "date",
+          "prefix": "page 02 group 01 question 1",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "p02-g01-q02-actual-donor-type-for-allogeneic-transplants",
+          "text": "Actual Donor Type (for Allogeneic transplants)",
+          "type": "coding",
+          "prefix": "page 02 group 01 question 2",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "matched-related",
+                "display": "Matched Related Donor (MRD)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "matched-unrelated",
+                "display": "Matched Unrelated Donor (MUD)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "mismatched-unrelated",
+                "display": "Mismatched Unrelated Donor (MMUD)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "haploidentical",
+                "display": "Haploidentical"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "cord-blood",
+                "display": "Cord Blood"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p02-g01-q03-actual-conditioning-regimen",
+          "text": "Actual Conditioning Regimen",
+          "type": "coding",
+          "prefix": "page 02 group 01 question 3",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "sequential",
+                "display": "Sequential Conditioning"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "870253002",
+                "display": "Myeloablative conditioning regimen"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "60581000210100",
+                "display": "Allogeneic non myeloablative conditioning protocol"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "60601000210108",
+                "display": "Reduced intensity conditioning protocol"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p02-g01-q04-stem-cell-source",
+          "text": "Stem Cell Source",
+          "type": "coding",
+          "prefix": "page 02 group 01 question 4",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "peripheral-blood",
+                "display": "Peripheral Blood Stem Cells (PBSC)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "bone-marrow",
+                "display": "Bone Marrow"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "cord-blood",
+                "display": "Cord Blood"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p02-g01-q05-cd34-cell-dose-x106kg",
+          "text": "CD34+ Cell Dose (x10^6/kg)",
+          "type": "decimal",
+          "prefix": "page 02 group 01 question 5",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    },
+    {
+      "linkId": "p03-engraftment-data",
+      "text": "Engraftment Data",
+      "type": "group",
+      "prefix": "page 03",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p03-g01-q01-neutrophil-engraftment-date-anc-05",
+          "text": "Neutrophil Engraftment Date (ANC >0.5)",
+          "type": "date",
+          "prefix": "page 03 group 01 question 1",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q02-platelet-engraftment-date-20k-untransfused",
+          "text": "Platelet Engraftment Date (>20k untransfused)",
+          "type": "date",
+          "prefix": "page 03 group 01 question 2",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q03-day-30-chimerism",
+          "text": "Day +30 Chimerism (%)",
+          "type": "decimal",
+          "prefix": "page 03 group 01 question 3",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q04-day-60-chimerism",
+          "text": "Day +60 Chimerism (%)",
+          "type": "decimal",
+          "prefix": "page 03 group 01 question 4",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "p03-g01-q05-day-100-chimerism",
+          "text": "Day +100 Chimerism (%)",
+          "type": "decimal",
+          "prefix": "page 03 group 01 question 5",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    }
+  ],
+  "description": "Finalize actual treatment received information for a patient who underwent bone marrow transplant",
+  "version": "0.3.0",
+  "publisher": "Te Whatu Ora | Health NZ",
+  "date": "2026-03-16T20:49:41.821Z"
+}
