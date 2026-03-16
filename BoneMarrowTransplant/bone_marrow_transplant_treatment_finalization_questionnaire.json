@@ -50,34 +50,10 @@
           "repeats": false
         },
         {
-          "linkId": "p02-g01-q02-final-patient-type-transplant-type",
-          "text": "Final Patient Type (Transplant Type)",
-          "type": "choice",
-          "prefix": "page 02 group 01 question 2",
-          "required": true,
-          "repeats": false,
-          "answerOption": [
-            {
-              "valueCoding": {
-                "system": "http://snomed.info/sct",
-                "code": "709115004",
-                "display": "Autologous HSCT"
-              }
-            },
-            {
-              "valueCoding": {
-                "system": "http://snomed.info/sct",
-                "code": "174241000112100",
-                "display": "Allogenic HSCT"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "p02-g01-q03-actual-donor-type-for-allogeneic-transplants",
+          "linkId": "p02-g01-q02-actual-donor-type-for-allogeneic-transplants",
           "text": "Actual Donor Type (for Allogeneic transplants)",
-          "type": "choice",
-          "prefix": "page 02 group 01 question 3",
+          "type": "coding",
+          "prefix": "page 02 group 01 question 2",
           "required": false,
           "repeats": false,
           "answerOption": [
@@ -114,10 +90,10 @@
           ]
         },
         {
-          "linkId": "p02-g01-q04-actual-conditioning-regimen",
+          "linkId": "p02-g01-q03-actual-conditioning-regimen",
           "text": "Actual Conditioning Regimen",
-          "type": "choice",
-          "prefix": "page 02 group 01 question 4",
+          "type": "coding",
+          "prefix": "page 02 group 01 question 3",
           "required": false,
           "repeats": false,
           "answerOption": [
@@ -151,10 +127,10 @@
           ]
         },
         {
-          "linkId": "p02-g01-q05-stem-cell-source",
+          "linkId": "p02-g01-q04-stem-cell-source",
           "text": "Stem Cell Source",
-          "type": "choice",
-          "prefix": "page 02 group 01 question 5",
+          "type": "coding",
+          "prefix": "page 02 group 01 question 4",
           "required": false,
           "repeats": false,
           "answerOption": [
@@ -179,10 +155,10 @@
           ]
         },
         {
-          "linkId": "p02-g01-q06-cd34-cell-dose-x106kg",
+          "linkId": "p02-g01-q05-cd34-cell-dose-x106kg",
           "text": "CD34+ Cell Dose (x10^6/kg)",
           "type": "decimal",
-          "prefix": "page 02 group 01 question 6",
+          "prefix": "page 02 group 01 question 5",
           "required": false,
           "repeats": false
         }
@@ -240,7 +216,7 @@
     }
   ],
   "description": "Finalize actual treatment received information for a patient who underwent bone marrow transplant",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-03-03T23:02:43.881Z"
+  "date": "2026-03-16T20:49:41.821Z"
 }
