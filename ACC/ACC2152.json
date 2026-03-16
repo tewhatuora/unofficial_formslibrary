@@ -16,7 +16,7 @@
       "repeats": false,
       "item": [
         {
-          "linkId": "p01-g01-q01-list-the-injurys",
+          "linkId": "p01-g01-q01-list-the-injurys-caused-by-the-treatment",
           "text": "List the injury(s) caused by the treatment:",
           "type": "text",
           "prefix": "page 01 group 01 question 1",
@@ -24,7 +24,7 @@
           "repeats": false
         },
         {
-          "linkId": "p01-g01-q02-signs-and-symptoms",
+          "linkId": "p01-g01-q02-list-the-signs-and-symptoms-of-the-injury",
           "text": "List the signs and symptoms of the injury:",
           "type": "text",
           "prefix": "page 01 group 01 question 2",
@@ -32,61 +32,34 @@
           "repeats": false
         },
         {
-          "linkId": "p01-g01-q03-diagnosis-code-type",
-          "text": "Diagnosis codes (if available):",
-          "type": "choice",
+          "linkId": "p01-g01-q03-diagnosis-code",
+          "text": "Diagnosis Code:",
+          "type": "coding",
           "prefix": "page 01 group 01 question 3",
           "required": false,
-          "repeats": false,
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "icd10",
-                "display": "ICD10"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "readcode",
-                "display": "Read Code"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "reasondental",
-                "display": "Reason (Dental)"
-              }
-            }
-          ]
+          "repeats": true,
+          "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/acc-claim-reference-set"
         },
         {
-          "linkId": "p01-g01-q04-diagnosis-code",
-          "text": "Diagnosis Code:",
-          "type": "string",
-          "prefix": "page 01 group 01 question 4",
-          "required": false,
-          "repeats": true
-        },
-        {
-          "linkId": "p01-g01-q05-date-of-injury",
+          "linkId": "p01-g01-q04-date-when-the-patient-first-sought-treatment-for-t",
           "text": "Date when the patient first sought treatment for the injury.",
           "type": "date",
-          "prefix": "page 01 group 01 question 5",
+          "prefix": "page 01 group 01 question 4",
           "required": false,
           "repeats": false
         },
         {
-          "linkId": "p01-g01-q06-effects",
+          "linkId": "p01-g01-q05-how-does-the-injury-affect-the-patient-today",
           "text": "How does the injury affect the patient today?",
           "type": "text",
-          "prefix": "page 01 group 01 question 6",
+          "prefix": "page 01 group 01 question 5",
           "required": false,
           "repeats": false
         }
       ]
     },
     {
-      "linkId": "p02-treatment-claimed",
+      "linkId": "p02-treatment-claimed-to-have-caused-the-injury",
       "text": "Treatment claimed to have caused the injury",
       "type": "group",
       "prefix": "page 02",
@@ -94,7 +67,7 @@
       "repeats": false,
       "item": [
         {
-          "linkId": "p02-g01-q01-what-treatment",
+          "linkId": "p02-g01-q01-what-treatment-gave-rise-to-the-injury-if-the-clai",
           "text": "What treatment gave rise to the injury? (If the claimed injury resulted from failure to treat, please note.)",
           "type": "text",
           "prefix": "page 02 group 01 question 1",
@@ -102,7 +75,7 @@
           "repeats": false
         },
         {
-          "linkId": "p02-g01-q02-describe-the-events",
+          "linkId": "p02-g01-q02-describe-the-events-or-circumstances-which-led-to-",
           "text": "Describe the events or circumstances which led to the injury.",
           "type": "text",
           "prefix": "page 02 group 01 question 2",
@@ -110,115 +83,121 @@
           "repeats": false
         },
         {
-          "linkId": "p02-g01-q03-where-was-treatment-provided",
-          "text": "Where was treatment provided?",
-          "type": "choice",
+          "linkId": "p02-g01-q03-name-of-the-facility-if-relevant",
+          "text": "Name of the facility (if relevant):",
+          "type": "coding",
           "prefix": "page 02 group 01 question 3",
           "required": false,
           "repeats": false,
           "answerOption": [
-            {
-              "valueCoding": {
-                "code": "specialistrooms",
-                "display": "Specialist rooms"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "gpmedicalcentre",
-                "display": "GP/medical centre"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "operatingtheatre",
-                "display": "Operating theatre"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "emergencydepartment",
-                "display": "Emergency department"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "wardspecialunit",
-                "display": "Ward/special unit"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "communityclinic",
-                "display": "Community clinic"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "hospitaloutpatientclinic",
-                "display": "Hospital outpatient clinic"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "radiology",
-                "display": "Radiology"
-              }
-            }
-          ]
+  		  { "valueCoding": { "code": "F04003-B", "display": "Alexandra Hospital" } },
+  		  { "valueCoding": { "code": "F03023-C", "display": "Ashburton Hospital" } },
+  		  { "valueCoding": { "code": "F03067-A", "display": "Auckland City Hospital" } },
+  		  { "valueCoding": { "code": "F04056-A", "display": "Bay of Islands Hospital" } },
+  		  { "valueCoding": { "code": "F03053-A", "display": "Botany Downs Primary Birthing Unit" } },
+  		  { "valueCoding": { "code": "F3J027-D", "display": "Botany SuperClinic" } },
+  		  { "valueCoding": { "code": "F06053-E", "display": "Buller Health" } },
+  		  { "valueCoding": { "code": "F04030-E", "display": "Burwood Hospital" } },
+  		  { "valueCoding": { "code": "F04028-G", "display": "Christchurch Hospital" } },
+  		  { "valueCoding": { "code": "F04031-G", "display": "Christchurch Womens Hospital" } },
+  		  { "valueCoding": { "code": "F04041-K", "display": "Darfield Hospital" } },
+  		  { "valueCoding": { "code": "F04055-K", "display": "Dargaville Hospital" } },
+  		  { "valueCoding": { "code": "F04066-D", "display": "Dunedin Hospital" } },
+  		  { "valueCoding": { "code": "F05073-F", "display": "Dunstan Hospital" } },
+  		  { "valueCoding": { "code": "F04044-E", "display": "Ellesmere Hospital" } },
+  		  { "valueCoding": { "code": "F03047-F", "display": "Franklin Memorial Hospital" } },
+  		  { "valueCoding": { "code": "F03076-B", "display": "Gisborne Hospital" } },
+  		  { "valueCoding": { "code": "F0D027-E", "display": "Gore Hospital" } },
+  		  { "valueCoding": { "code": "F03026-J", "display": "Greenlane Clinical Centre" } },
+  		  { "valueCoding": { "code": "F05039-F", "display": "Hawera Hospital" } },
+	  	  { "valueCoding": { "code": "F03084-A", "display": "Hawkes Bay Hospital" } },
+	  	  { "valueCoding": { "code": "F06034-A", "display": "Hutt Hospital" } },
+	  	  { "valueCoding": { "code": "F04039-A", "display": "Kaikoura Hospital" } },
+	  	  { "valueCoding": { "code": "F04054-H", "display": "Kaitaia Hospital" } },
+	 	  { "valueCoding": { "code": "F06037-G", "display": "Kenepuru Hospital" } },
+	 	  { "valueCoding": { "code": "F05024-D", "display": "Lakes District Hospital" } },
+	 	  { "valueCoding": { "code": "F03065-H", "display": "Manukau SuperClinic" } },
+		  { "valueCoding": { "code": "F05097-J", "display": "Matariki Hospital" } },
+		  { "valueCoding": { "code": "F03029-D", "display": "Middlemore Hospital" } },
+		  { "valueCoding": { "code": "F03099-C", "display": "Nelson Hospital" } },
+		  { "valueCoding": { "code": "F03031-B", "display": "North Shore Hospital" } },
+		  { "valueCoding": { "code": "F06020-A", "display": "Oamaru Hospital" } },
+		  { "valueCoding": { "code": "F03073-G", "display": "Opotiki Community Care Centre" } },
+		  { "valueCoding": { "code": "F2W038-H", "display": "Overseas Hospital of Transfer" } },
+		  { "valueCoding": { "code": "F04037-H", "display": "Oxford Hospital" } },
+		  { "valueCoding": { "code": "F04084-F", "display": "Palmerston North Hospital" } },
+		  { "valueCoding": { "code": "F03037-C", "display": "Papakura Obstetric Hospital" } },
+		  { "valueCoding": { "code": "F03036-A", "display": "Pukekohe Hospital" } },
+		  { "valueCoding": { "code": "F04043-C", "display": "Rangiora Hospital" } },
+		  { "valueCoding": { "code": "F06048-A", "display": "Reefton Health Services" } },
+		  { "valueCoding": { "code": "F05077-C", "display": "Rotorua Hospital" } },
+		  { "valueCoding": { "code": "F05021-J", "display": "Southland Hospital" } },
+		  { "valueCoding": { "code": "F3R402-F", "display": "Starship Childrens Hospital" } },
+		  { "valueCoding": { "code": "F05038-D", "display": "Taranaki Base Hospital" } },
+		  { "valueCoding": { "code": "F05049-J", "display": "Taumarunui Community Hospital" } },
+		  { "valueCoding": { "code": "F05095-E", "display": "Taupo Hospital" } },
+		  { "valueCoding": { "code": "F05051-G", "display": "Tauranga Hospital" } },
+		  { "valueCoding": { "code": "F05078-E", "display": "Te Kuiti Community Hospital" } },
+		  { "valueCoding": { "code": "F06046-H", "display": "Te Nikau Grey Hospital" } },
+		  { "valueCoding": { "code": "F3M518-E", "display": "Te Puke Community Health Centre" } },
+		  { "valueCoding": { "code": "F05065-G", "display": "Thames Hospital" } },
+		  { "valueCoding": { "code": "F04029-J", "display": "The Princess Margaret Hospital" } },
+		  { "valueCoding": { "code": "F05013-K", "display": "Timaru Hospital" } },
+		  { "valueCoding": { "code": "F05089-K", "display": "Tokoroa Hospital" } },
+		  { "valueCoding": { "code": "F04040-H", "display": "Waikari Hospital" } },
+		  { "valueCoding": { "code": "F05076-A", "display": "Waikato Hospital" } },
+		  { "valueCoding": { "code": "F06007-J", "display": "Wairarapa Hospital" } },
+		  { "valueCoding": { "code": "F03093-B", "display": "Wairau Hospital" } },
+		  { "valueCoding": { "code": "F03032-D", "display": "Waitakere Hospital" } },
+		  { "valueCoding": { "code": "F04067-F", "display": "Wakari Hospital" } },
+		  { "valueCoding": { "code": "F06033-K", "display": "Wellington Hospital" } },
+		  { "valueCoding": { "code": "F03070-A", "display": "Whakatane Hospital" } },
+		  { "valueCoding": { "code": "F06022-E", "display": "Whanganui Hospital" } },
+		  { "valueCoding": { "code": "F04053-F", "display": "Whangarei Hospital" } }
+	]
+
+
+          
         },
         {
-          "linkId": "p02-g01-q04-name-of-the-facility",
-          "text": "Name of the facility (if relevant):",
+          "linkId": "p02-g01-q04-outline-the-conditions-being-treated-with-dates",
+          "text": "Outline the condition(s) being treated (with dates):",
           "type": "text",
           "prefix": "page 02 group 01 question 4",
           "required": false,
           "repeats": false
         },
         {
-          "linkId": "p02-g01-q05-conditions-being-treated",
-          "text": "Outline the condition(s) being treated (with dates):",
+          "linkId": "p02-g01-q05-outline-all-underlying-health-conditions-and-other",
+          "text": "Outline all underlying health conditions and other relevant factors/treatment. (If the injury is a worsening of an existing condition, please note.)",
           "type": "text",
           "prefix": "page 02 group 01 question 5",
           "required": false,
           "repeats": false
         },
         {
-          "linkId": "p02-g01-q06-underlying-health-conditions",
-          "text": "Outline all underlying health conditions and other relevant factors/treatment. (If the injury is a worsening of an existing condition, please note.)",
+          "linkId": "p02-g01-q06-name-and-occupation-of-the-health-professionals-wh",
+          "text": "Name and occupation of the health professional(s) who provided or directed treatment. (ACC may need to contact these people for more information.)",
           "type": "text",
           "prefix": "page 02 group 01 question 6",
           "required": false,
           "repeats": false
         },
         {
-          "linkId": "p02-g01-q07-name-and-occupation",
-          "text": "Name and occupation of the health professional(s) who provided or directed treatment. (ACC may need to contact these people for more information.)",
-          "type": "text",
-          "prefix": "page 02 group 01 question 7",
-          "required": false,
-          "repeats": false
-        },
-        {
-          "linkId": "p02-g01-q08-other-information",
+          "linkId": "p02-g01-q07-other-information-which-may-be-relevant-to-this-cl",
           "text": "Other information which may be relevant to this claim. (If there are any related ACC claims, please note.)",
           "type": "text",
-          "prefix": "page 02 group 01 question 8",
+          "prefix": "page 02 group 01 question 7",
           "required": false,
           "repeats": false
         }
       ]
     },
     {
-      "linkId": "q1772654332724_r8vsbovbl",
+      "linkId": "p03-is-there-another-claim-that-this-might-relate-to",
       "text": "Is there another claim that this might relate to",
       "type": "integer",
+      "prefix": "page 03",
       "required": false,
       "repeats": false,
       "answerOption": [
@@ -237,7 +216,7 @@
       ]
     }
   ],
-  "version": "0.1",
+  "version": "0.2",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-03-04T19:59:42.136Z"
+  "date": "2026-03-16T22:34:53.547Z"
 }
