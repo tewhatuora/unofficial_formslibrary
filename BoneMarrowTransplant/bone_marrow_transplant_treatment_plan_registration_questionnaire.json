@@ -18,7 +18,8 @@
         {
           "linkId": "p01-g01-q01-patient-journey-status",
           "text": "Patient Journey Status",
-          "type": "choice",
+          "type": "coding",
+          "prefix": "page 01 group 01 question 1",
           "required": true,
           "repeats": false,
           "answerOption": [
@@ -52,8 +53,7 @@
                 "display": "Temporarily on hold"
               }
             }
-          ],
-          "prefix": "page 01 group 01 question 1"
+          ]
         },
         {
           "linkId": "p01-g01-q02-planned-admission-date",
@@ -67,25 +67,25 @@
           "linkId": "p01-g01-q03-patient-ready-date",
           "text": "Patient Ready Date",
           "type": "date",
+          "prefix": "page 01 group 01 question 3",
           "required": false,
-          "repeats": false,
-          "prefix": "page 01 group 01 question 3"
+          "repeats": false
         },
         {
           "linkId": "p01-g01-q04-smo-ok-to-admit-from-date",
           "text": "SMO “OK to Admit From” Date",
           "type": "date",
+          "prefix": "page 01 group 01 question 4",
           "required": false,
-          "repeats": false,
-          "prefix": "page 01 group 01 question 4"
+          "repeats": false
         },
         {
           "linkId": "p01-g01-q05-planned-discharge-date-if-entered-this-will-overri",
           "text": "Planned Discharge Date (if entered this will override standard LOS)",
           "type": "date",
+          "prefix": "page 01 group 01 question 5",
           "required": false,
-          "repeats": false,
-          "prefix": "page 01 group 01 question 5"
+          "repeats": false
         }
       ]
     },
@@ -100,27 +100,33 @@
         {
           "linkId": "p02-g01-q01-conditioning-regimen",
           "text": "Conditioning Regimen",
-          "type": "open-choice",
+          "type": "coding",
           "prefix": "page 02 group 01 question 1",
           "required": false,
           "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
-                "code": "BEAM",
+                "code": "496341000210106",
                 "display": "BEAM"
               }
             },
             {
               "valueCoding": {
-                "code": "BCNU",
+                "code": "393831000210107",
                 "display": "BCNU/Thiotepa"
               }
             },
             {
               "valueCoding": {
-                "code": "Default",
-                "display": "Default → high‑dose melphalan"
+                "code": " 496381000210104",
+                "display": "High‑dose melphalan (200)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "496371000210101",
+                "display": "High‑dose melphalan (140)"
               }
             }
           ]
@@ -144,7 +150,7 @@
         {
           "linkId": "p02-g01-q04-donor-type-for-allogeneic-transplants",
           "text": "Donor Type (for Allogeneic transplants)",
-          "type": "choice",
+          "type": "coding",
           "prefix": "page 02 group 01 question 4",
           "required": false,
           "repeats": false,
@@ -205,7 +211,7 @@
     }
   ],
   "description": "Register and update treatment planning information once known for a patient on the bone marrow transplant waiting list",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-03-02T21:45:31.451Z"
+  "date": "2026-03-17T21:05:12.361Z"
 }
