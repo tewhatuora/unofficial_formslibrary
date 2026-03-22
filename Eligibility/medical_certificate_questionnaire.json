@@ -1,0 +1,263 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire medical-certificate</b></p><h2>Medical Certificate</h2><p>For a clinician completing a medical certificate.</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "draft",
+  "title": "Medical Certificate",
+  "item": [
+    {
+      "linkId": "p01-who-is-this-for",
+      "text": "Who is this for",
+      "type": "coding",
+      "required": false,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ACC18",
+            "display": "ACC"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "MSD",
+            "display": "For MSD"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "INSURANCE",
+            "display": "Health Insurance"
+          }
+        }
+      ],
+      "prefix": "page 01"
+    },
+    {
+      "linkId": "p02-reason-for-medical-certificate",
+      "text": "Reason for Medical Certificate",
+      "type": "text",
+      "required": false,
+      "repeats": false,
+      "prefix": "page 02"
+    },
+    {
+      "linkId": "p03-consultation-date",
+      "text": "Consultation Date",
+      "type": "date",
+      "required": false,
+      "repeats": false,
+      "prefix": "page 03"
+    },
+    {
+      "linkId": "p04-this-certificate-is-valid-until",
+      "text": "This certificate is valid until",
+      "type": "date",
+      "required": false,
+      "repeats": false,
+      "prefix": "page 04"
+    },
+    {
+      "linkId": "p05-this-certificate-is-valid-from",
+      "text": "This certificate is valid from",
+      "type": "date",
+      "required": false,
+      "repeats": false,
+      "prefix": "page 05"
+    },
+    {
+      "linkId": "p06-physical-restrictions",
+      "text": "Physical Restrictions",
+      "type": "group",
+      "required": false,
+      "repeats": true,
+      "item": [
+        {
+          "linkId": "p06-g01-q01-type-of-restriction",
+          "text": "Type of restriction",
+          "type": "coding",
+          "required": false,
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "258141001",
+                "display": "Lifting"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "363855006",
+                "display": "Posture"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "90845004",
+                "display": "Heavy physical"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "191992009",
+                "display": "Repetitive routines"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "33679000",
+                "display": "Vibration"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "703421000",
+                "display": "Temperature"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "272547001",
+                "display": "Long-sitting"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "248244005",
+                "display": "Prolonged Walking"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "249902000",
+                "display": "Difficulty standing"
+              }
+            }
+          ],
+          "prefix": "page 06 group 01 question 1"
+        },
+        {
+          "linkId": "p06-g01-q02-restricted-hours-per-day",
+          "text": "Restricted Hours Per Day",
+          "type": "integer",
+          "required": false,
+          "repeats": false,
+          "prefix": "page 06 group 01 question 2"
+        },
+        {
+          "linkId": "p06-g01-q03-restriction-comment",
+          "text": "Restriction Comment",
+          "type": "string",
+          "required": false,
+          "repeats": false,
+          "prefix": "page 06 group 01 question 3"
+        }
+      ],
+      "prefix": "page 06"
+    },
+    {
+      "linkId": "p07-selected-alternative-work",
+      "text": "Selected Alternative Work",
+      "type": "group",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p07-g01-q01-what-alternative-work-can-the-person-do",
+          "text": "What alternative Work can the person do",
+          "type": "coding",
+          "required": false,
+          "repeats": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "365539008",
+                "display": "Sedentary (i.e. sitting)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1388355003",
+                "display": "Light"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1388357006",
+                "display": "Medium"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1388354004",
+                "display": "Heavy"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1388356002",
+                "display": "Very Heavy"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "224407007",
+                "display": "Works at home"
+              }
+            }
+          ],
+          "prefix": "page 07 group 01 question 1"
+        }
+      ],
+      "prefix": "page 07"
+    },
+    {
+      "linkId": "p08-acc-related-questions",
+      "text": "ACC related questions",
+      "type": "group",
+      "required": false,
+      "repeats": false,
+      "item": [
+        {
+          "linkId": "p08-g01-q01-acc-number",
+          "text": "ACC Number",
+          "type": "integer",
+          "required": false,
+          "repeats": false,
+          "prefix": "page 08 group 01 question 1"
+        },
+        {
+          "linkId": "p08-g01-q02-diagnosis-code",
+          "text": "Diagnosis Code",
+          "type": "coding",
+          "required": false,
+          "repeats": false,
+          "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/acc-claim-reference-set",
+          "prefix": "page 08 group 01 question 2"
+        }
+      ],
+      "enableWhen": [
+        {
+          "question": "p01-who-is-this-for",
+          "operator": "=",
+          "answerString": "ACC (ACC18)"
+        }
+      ],
+      "prefix": "page 08"
+    }
+  ],
+  "description": "For a clinician completing a medical certificate.",
+  "version": "0.1.0",
+  "publisher": "Te Whatu Ora | HealthNZ",
+  "date": "2026-03-22T22:19:24.040Z"
+}
