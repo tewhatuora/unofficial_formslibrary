@@ -18,7 +18,7 @@
         {
           "linkId": "p01-g01-q01-patient-journey-status",
           "text": "Patient Journey Status",
-          "type": "coding",
+          "type": "choice",
           "prefix": "page 01 group 01 question 1",
           "required": true,
           "repeats": false,
@@ -100,7 +100,7 @@
         {
           "linkId": "p02-g01-q01-conditioning-regimen",
           "text": "Conditioning Regimen",
-          "type": "coding",
+          "type": "choice",
           "prefix": "page 02 group 01 question 1",
           "required": false,
           "repeats": false,
@@ -150,7 +150,7 @@
         {
           "linkId": "p02-g01-q04-donor-type-for-allogeneic-transplants",
           "text": "Donor Type (for Allogeneic transplants)",
-          "type": "coding",
+          "type": "choice",
           "prefix": "page 02 group 01 question 4",
           "required": false,
           "repeats": false,
@@ -211,7 +211,7 @@
     }
   ],
   "description": "Register and update treatment planning information once known for a patient on the bone marrow transplant waiting list",
-  "version": "0.3.0",
+  "version": "0.34.0",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-03-17T21:05:12.361Z"
+  "date": "2026-05-12T01:08:43.874Z"
 }
