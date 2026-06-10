@@ -1,5 +1,10 @@
 {
   "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire bone-marrow-transplant-waiting-list-update</b></p><h2>Bone Marrow Transplant Waiting List Update</h2><p>Update waiting list information for a patient registered on the bone marrow transplant waiting list</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
@@ -12,31 +17,12 @@
       "text": "Administrative Updates",
       "type": "group",
       "prefix": "page 01",
-      "required": false,
-      "repeats": false,
       "item": [
         {
-          "linkId": "p01-g01-q01-senior-medical-officer-smo",
-          "text": "Senior Medical Officer (SMO)",
-          "type": "string",
-          "prefix": "page 01 group 01 question 1",
-          "required": false,
-          "repeats": false
-        },
-        {
-          "linkId": "p01-g01-q02-clinical-nurse-specialist-cns",
-          "text": "Clinical Nurse Specialist (CNS)",
-          "type": "string",
-          "prefix": "page 01 group 01 question 2",
-          "required": false,
-          "repeats": false
-        },
-        {
-          "linkId": "p01-g01-q03-treatment-location",
+          "linkId": "p01-g01-q01-treatment-location",
           "text": "Treatment Location",
           "type": "choice",
-          "required": false,
-          "repeats": false,
+          "prefix": "page 01 group 01 question 1",
           "answerOption": [
             {
               "valueCoding": {
@@ -56,8 +42,142 @@
                 "display": "Christchurch Hospital"
               }
             }
+          ]
+        },
+        {
+          "linkId": "p01-g01-q02-senior-medical-officer-smo-wellington",
+          "text": "Senior Medical Officer (SMO) - Wellington",
+          "type": "open-choice",
+          "prefix": "page 01 group 01 question 2",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "16AMAK",
+                "display": "Alwyn D'Souza"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "19ASZH",
+                "display": "Travis Perera"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "17AWZY",
+                "display": "Victoria Campion"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "28BHRL",
+                "display": "Anup George"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "12JBNR",
+                "display": "Huib Buyck"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option6",
+                "display": "Cat Tang"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "15AVPH",
+                "display": "Michelle Dickson"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "12CKWC",
+                "display": "Rob Weinkove"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "14HTHQ",
+                "display": "Hayden Jina"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "29DJPA",
+                "display": "Phil George"
+              }
+            }
           ],
-          "prefix": "page 01 group 01 question 3"
+          "enableWhen": [
+            {
+              "question": "p01-g01-q01-treatment-location",
+              "operator": "=",
+              "answerString": "Wellington Hospital"
+            }
+          ]
+        },
+        {
+          "linkId": "p01-g01-q03-senior-medical-officer-smo-auckland",
+          "text": "Senior Medical Officer (SMO) - Auckland",
+          "type": "open-choice",
+          "prefix": "page 01 group 01 question 3",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "option1",
+                "display": "Clinton Lewis"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option2",
+                "display": "Option 2"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "p01-g01-q01-treatment-location",
+              "operator": "=",
+              "answerString": "Auckland Hospital"
+            }
+          ]
+        },
+        {
+          "linkId": "p01-g01-q04-senior-medical-officer-smo-christchurch",
+          "text": "Senior Medical Officer (SMO) - Christchurch",
+          "type": "open-choice",
+          "prefix": "page 01 group 01 question 4",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "option1",
+                "display": "Andrew Butler"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option2",
+                "display": "Option 2"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "p01-g01-q01-treatment-location",
+              "operator": "=",
+              "answerString": "Christchurch Hospital"
+            }
+          ]
+        },
+        {
+          "linkId": "p01-g01-q05-clinical-nurse-specialist-cns",
+          "text": "Clinical Nurse Specialist (CNS)",
+          "type": "string",
+          "prefix": "page 01 group 01 question 5"
         }
       ]
     },
@@ -66,16 +186,12 @@
       "text": "Clinical Status Updates",
       "type": "group",
       "prefix": "page 02",
-      "required": false,
-      "repeats": false,
       "item": [
         {
           "linkId": "p02-g01-q01-urgency-level",
           "text": "Urgency Level",
           "type": "choice",
           "prefix": "page 02 group 01 question 1",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -102,8 +218,6 @@
           "text": "Disease Indication",
           "type": "choice",
           "prefix": "page 02 group 01 question 2",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -241,34 +355,10 @@
           ]
         },
         {
-          "linkId": "p02-g01-q03-donor-fields-allogeneic-only",
-          "text": "Donor Fields (Allogeneic only)",
-          "type": "open-choice",
-          "prefix": "page 02 group 01 question 3",
-          "required": false,
-          "repeats": false,
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "option1",
-                "display": "Donor type"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "option2",
-                "display": "Option 2"
-              }
-            }
-          ]
-        },
-        {
           "linkId": "p02-g01-q04-patient-type",
-          "text": "Patient Type",
+          "text": "Patient Type (Transplant Type)",
           "type": "choice",
           "prefix": "page 02 group 01 question 4",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -283,6 +373,31 @@
                 "code": "709115004",
                 "display": "Autologous HSCT"
               }
+            },
+            {
+              "valueCoding": {
+                "code": "1156961008",
+                "display": "CAR T-cell"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "q1781058861669_sl9b81tpf",
+          "text": "Treatment Intent",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "393127004",
+                "display": "Curative treatment"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "129428001",
+                "display": "Non-curative treatment"
+              }
             }
           ]
         },
@@ -290,9 +405,7 @@
           "linkId": "p02-g01-q05-comments-update-notes",
           "text": "Comments / Update Notes",
           "type": "text",
-          "prefix": "page 02 group 01 question 5",
-          "required": false,
-          "repeats": false
+          "prefix": "page 02 group 01 question 5"
         }
       ]
     },
@@ -301,16 +414,18 @@
       "text": "Discharge from Waiting List. Use this to close the careplan.",
       "type": "group",
       "prefix": "page 03",
-      "required": false,
-      "repeats": false,
       "item": [
+        {
+          "linkId": "p03-g01-q02-date-of-discharge-if-entered-this-person-will-be-r",
+          "text": "Date of Discharge (if entered this person will be removed from the waiting list).",
+          "type": "date",
+          "prefix": "page 03 group 01 question 2"
+        },
         {
           "linkId": "p03-g01-q01-reason-for-discharge-from-waiting-list",
           "text": "Reason for Discharge from Waiting List.",
           "type": "choice",
           "prefix": "page 03 group 01 question 1",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -354,20 +469,12 @@
               }
             }
           ]
-        },
-        {
-          "linkId": "p03-g01-q02-date-of-discharge-if-entered-this-person-will-be-r",
-          "text": "Date of Discharge (if entered this person will be removed from the waiting list).",
-          "type": "date",
-          "prefix": "page 03 group 01 question 2",
-          "required": false,
-          "repeats": false
         }
       ]
     }
   ],
   "description": "Update waiting list information for a patient registered on the bone marrow transplant waiting list",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-03-02T21:42:19.537Z"
+  "date": "2026-06-10T02:35:24.654Z"
 }
