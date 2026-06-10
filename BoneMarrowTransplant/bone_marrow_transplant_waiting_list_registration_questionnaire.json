@@ -211,6 +211,35 @@
           "required": true
         },
         {
+          "linkId": "p02-g01-q06-urgency",
+          "text": "Urgency Level",
+          "type": "choice",
+          "prefix": "page 02 group 01 question 6",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "103391001",
+                "display": "Urgent"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "397943006",
+                "display": "Planned"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "53737009",
+                "display": "Acute"
+              }
+            }
+          ]
+        },
+        {
           "linkId": "p02-g01-q02-disease-indication",
           "text": "Disease Indication",
           "type": "choice",
@@ -406,41 +435,12 @@
           "text": "Comments",
           "type": "text",
           "prefix": "page 02 group 01 question 5"
-        },
-        {
-          "linkId": "p02-g01-q06-urgency",
-          "text": "Urgency",
-          "type": "choice",
-          "prefix": "page 02 group 01 question 6",
-          "answerOption": [
-            {
-              "valueCoding": {
-                "system": "http://snomed.info/sct",
-                "code": "103391001",
-                "display": "Urgent"
-              }
-            },
-            {
-              "valueCoding": {
-                "system": "http://snomed.info/sct",
-                "code": "397943006",
-                "display": "Planned"
-              }
-            },
-            {
-              "valueCoding": {
-                "system": "http://snomed.info/sct",
-                "code": "53737009",
-                "display": "Acute"
-              }
-            }
-          ]
         }
       ]
     }
   ],
   "description": "Initial registration of a patient on the bone marrow transplant waiting list",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-06-10T01:17:14.957Z"
+  "date": "2026-06-10T02:36:40.718Z"
 }
