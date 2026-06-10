@@ -1,5 +1,10 @@
 {
   "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire bone-marrow-transplant-treatment-planning</b></p><h2>Bone Marrow Transplant Treatment Planning</h2><p>Register and update treatment planning information once known for a patient on the bone marrow transplant waiting list</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
@@ -13,7 +18,6 @@
       "type": "group",
       "prefix": "page 01",
       "required": true,
-      "repeats": false,
       "item": [
         {
           "linkId": "p01-g01-q01-patient-journey-status",
@@ -21,7 +25,6 @@
           "type": "choice",
           "prefix": "page 01 group 01 question 1",
           "required": true,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -60,32 +63,25 @@
           "text": "Planned Admission Date",
           "type": "date",
           "prefix": "page 01 group 01 question 2",
-          "required": true,
-          "repeats": false
+          "required": true
         },
         {
           "linkId": "p01-g01-q03-patient-ready-date",
           "text": "Patient Ready Date",
           "type": "date",
-          "prefix": "page 01 group 01 question 3",
-          "required": false,
-          "repeats": false
+          "prefix": "page 01 group 01 question 3"
         },
         {
           "linkId": "p01-g01-q04-smo-ok-to-admit-from-date",
           "text": "SMO “OK to Admit From” Date",
           "type": "date",
-          "prefix": "page 01 group 01 question 4",
-          "required": false,
-          "repeats": false
+          "prefix": "page 01 group 01 question 4"
         },
         {
           "linkId": "p01-g01-q05-planned-discharge-date-if-entered-this-will-overri",
           "text": "Planned Discharge Date (if entered this will override standard LOS)",
           "type": "date",
-          "prefix": "page 01 group 01 question 5",
-          "required": false,
-          "repeats": false
+          "prefix": "page 01 group 01 question 5"
         }
       ]
     },
@@ -95,15 +91,12 @@
       "type": "group",
       "prefix": "page 02",
       "required": true,
-      "repeats": false,
       "item": [
         {
           "linkId": "p02-g01-q01-conditioning-regimen",
           "text": "Conditioning Regimen",
           "type": "choice",
           "prefix": "page 02 group 01 question 1",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -135,49 +128,89 @@
           "linkId": "p02-g01-q02-transplant-conditioning-intensity-tci-score",
           "text": "Transplant Conditioning Intensity (TCI) Score",
           "type": "integer",
-          "prefix": "page 02 group 01 question 2",
-          "required": false,
-          "repeats": false
+          "prefix": "page 02 group 01 question 2"
         },
         {
           "linkId": "p02-g01-q03-gvhd-prophylaxis-plan",
           "text": "GVHD Prophylaxis Plan",
           "type": "text",
-          "prefix": "page 02 group 01 question 3",
-          "required": false,
-          "repeats": false
+          "prefix": "page 02 group 01 question 3"
         },
         {
           "linkId": "p02-g01-q04-donor-type-for-allogeneic-transplants",
           "text": "Donor Type (for Allogeneic transplants)",
           "type": "choice",
           "prefix": "page 02 group 01 question 4",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
-                "code": "matched-related",
-                "display": "Matched Related Donor (MRD)"
+                "system": "http://snomed.info/sct",
+                "code": "211661000210106",
+                "display": "Matched related stem cell donor"
               }
             },
             {
               "valueCoding": {
-                "code": "matched-unrelated",
-                "display": "Matched Unrelated Donor (MUD)"
+                "system": "http://snomed.info/sct",
+                "code": "211671000210100",
+                "display": "Matched unrelated stem cell donor"
               }
             },
             {
               "valueCoding": {
-                "code": "mismatched-unrelated",
-                "display": "Mismatched Unrelated Donor (MMUD)"
+                "system": "http://snomed.info/sct",
+                "code": "211691000210101",
+                "display": "Mismatched unrelated stem cell donor"
               }
             },
             {
               "valueCoding": {
-                "code": "haploidentical",
-                "display": "Haploidentical"
+                "code": "211681000210103",
+                "display": "Mismatched related stem cell donor (Haplo)"
               }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "211701000210101",
+                "display": "Cord blood stem cell donor"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p02-g01-q05-relationship-between-donor-and-recipient",
+          "text": "Relationship between donor and recipient",
+          "type": "choice",
+          "prefix": "page 02 group 01 question 5",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "375005",
+                "display": "Sibling"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "40683002",
+                "display": "Parent"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "67822003",
+                "display": "Child"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "p02-g01-q04-donor-type-for-allogeneic-transplants",
+              "operator": "=",
+              "answerString": "Mismatched related stem cell donor (Haplo)"
             }
           ]
         }
@@ -188,30 +221,24 @@
       "text": "Treatment Plan Notes",
       "type": "group",
       "prefix": "page 03",
-      "required": false,
-      "repeats": false,
       "item": [
         {
           "linkId": "p03-g01-q01-special-considerations",
           "text": "Special Considerations",
           "type": "text",
-          "prefix": "page 03 group 01 question 1",
-          "required": false,
-          "repeats": false
+          "prefix": "page 03 group 01 question 1"
         },
         {
           "linkId": "p03-g01-q02-additional-comments",
           "text": "Additional Comments",
           "type": "text",
-          "prefix": "page 03 group 01 question 2",
-          "required": false,
-          "repeats": false
+          "prefix": "page 03 group 01 question 2"
         }
       ]
     }
   ],
   "description": "Register and update treatment planning information once known for a patient on the bone marrow transplant waiting list",
-  "version": "0.34.0",
+  "version": "0.4.0",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-05-12T01:08:43.874Z"
+  "date": "2026-06-10T03:16:14.120Z"
 }
