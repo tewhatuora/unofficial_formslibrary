@@ -1,5 +1,10 @@
 {
   "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire bone-marrow-transplant-waiting-list-registration</b></p><h2>Bone Marrow Transplant Waiting List Registration</h2><p>Initial registration of a patient on the bone marrow transplant waiting list</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
@@ -13,46 +18,26 @@
       "type": "group",
       "prefix": "page 01",
       "required": true,
-      "repeats": false,
       "item": [
         {
-          "linkId": "p01-g01-q01-senior-medical-officer-smo",
-          "text": "Senior Medical Officer (SMO)",
-          "type": "string",
-          "prefix": "page 01 group 01 question 1",
-          "required": true,
-          "repeats": false
-        },
-        {
-          "linkId": "p01-g01-q02-referral-date",
+          "linkId": "p01-g01-q01-referral-date",
           "text": "Referral Date",
           "type": "date",
-          "prefix": "page 01 group 01 question 2",
-          "required": true,
-          "repeats": false
+          "prefix": "page 01 group 01 question 1",
+          "required": true
         },
         {
-          "linkId": "p01-g01-q03-first-specialist-assessment-fsa-date",
+          "linkId": "p01-g01-q02-first-specialist-assessment-fsa-date",
           "text": "First Specialist Assessment (FSA) Date",
           "type": "date",
-          "prefix": "page 01 group 01 question 3",
-          "required": false,
-          "repeats": false
+          "prefix": "page 01 group 01 question 2"
         },
         {
-          "linkId": "p01-g01-q04-clinical-nurse-specialist-cns",
-          "text": "Clinical Nurse Specialist (CNS)",
-          "type": "string",
-          "prefix": "page 01 group 01 question 4",
-          "required": false,
-          "repeats": false
-        },
-        {
-          "linkId": "p01-g01-q05-treatment-location",
+          "linkId": "p01-g01-q03-treatment-location",
           "text": "Treatment Location",
           "type": "choice",
-          "required": false,
-          "repeats": false,
+          "prefix": "page 01 group 01 question 3",
+          "required": true,
           "answerOption": [
             {
               "valueCoding": {
@@ -72,8 +57,142 @@
                 "display": "Christchurch Hospital"
               }
             }
+          ]
+        },
+        {
+          "linkId": "p01-g01-q04-senior-medical-officer-smo-wellington",
+          "text": "Senior Medical Officer (SMO) - Wellington",
+          "type": "open-choice",
+          "prefix": "page 01 group 01 question 4",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "16AMAK",
+                "display": "Alwyn D'Souza"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "19ASZH",
+                "display": "Travis Perera"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "17AWZY",
+                "display": "Victoria Campion"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "28BHRL",
+                "display": "Anup George"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "12JBNR",
+                "display": "Huib Buyck"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option6",
+                "display": "Cat Tang"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "15AVPH",
+                "display": "Michelle Dickson"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "12CKWC",
+                "display": "Rob Weinkove"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "14HTHQ",
+                "display": "Hayden Jina"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "29DJPA",
+                "display": "Phil George"
+              }
+            }
           ],
-          "prefix": "page 01 group 01 question 5"
+          "enableWhen": [
+            {
+              "question": "p01-g01-q03-treatment-location",
+              "operator": "=",
+              "answerString": "Wellington Hospital"
+            }
+          ]
+        },
+        {
+          "linkId": "p01-g01-q05-senior-medical-officer-smo-auckland",
+          "text": "Senior Medical Officer (SMO) - Auckland",
+          "type": "open-choice",
+          "prefix": "page 01 group 01 question 5",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "option1",
+                "display": "Clinton Lewis"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option2",
+                "display": "Option 2"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "p01-g01-q03-treatment-location",
+              "operator": "=",
+              "answerString": "Auckland Hospital"
+            }
+          ]
+        },
+        {
+          "linkId": "p01-g01-q06-senior-medical-officer-smo-christchurch",
+          "text": "Senior Medical Officer (SMO) - Christchurch",
+          "type": "open-choice",
+          "prefix": "page 01 group 01 question 6",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "option1",
+                "display": "Adnrew Butler"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option2",
+                "display": "Option 2"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "p01-g01-q03-treatment-location",
+              "operator": "=",
+              "answerString": "Christchurch Hospital"
+            }
+          ]
+        },
+        {
+          "linkId": "p01-g01-q07-clinical-nurse-specialist-cns",
+          "text": "Clinical Nurse Specialist (CNS)",
+          "type": "string",
+          "prefix": "page 01 group 01 question 7"
         }
       ]
     },
@@ -83,15 +202,13 @@
       "type": "group",
       "prefix": "page 02",
       "required": true,
-      "repeats": false,
       "item": [
         {
           "linkId": "p02-g01-q01-smo-transplant-clinical-indication-tci-date",
           "text": "SMO Transplant Clinical Indication (TCI) Date",
           "type": "date",
           "prefix": "page 02 group 01 question 1",
-          "required": true,
-          "repeats": false
+          "required": true
         },
         {
           "linkId": "p02-g01-q02-disease-indication",
@@ -99,7 +216,6 @@
           "type": "choice",
           "prefix": "page 02 group 01 question 2",
           "required": true,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -242,7 +358,6 @@
           "type": "choice",
           "prefix": "page 02 group 01 question 3",
           "required": true,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -256,6 +371,12 @@
                 "code": "709115004",
                 "display": "Autologous HSCT"
               }
+            },
+            {
+              "valueCoding": {
+                "code": "1156961008",
+                "display": "CAR T-cell"
+              }
             }
           ]
         },
@@ -263,8 +384,7 @@
           "linkId": "p02-g01-q04-treatment-intent",
           "text": "Treatment Intent",
           "type": "open-choice",
-          "required": false,
-          "repeats": false,
+          "prefix": "page 02 group 01 question 4",
           "answerOption": [
             {
               "valueCoding": {
@@ -275,29 +395,23 @@
             },
             {
               "valueCoding": {
-                "system": "http://snomed.info/sct",
                 "code": "129428001",
-                "display": "Preventive"
+                "display": "Non-curative treatment"
               }
             }
-          ],
-          "prefix": "page 02 group 01 question 4"
+          ]
         },
         {
           "linkId": "p02-g01-q05-comments",
           "text": "Comments",
           "type": "text",
-          "prefix": "page 02 group 01 question 5",
-          "required": false,
-          "repeats": false
+          "prefix": "page 02 group 01 question 5"
         },
         {
           "linkId": "p02-g01-q06-urgency",
           "text": "Urgency",
           "type": "choice",
           "prefix": "page 02 group 01 question 6",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -326,7 +440,7 @@
     }
   ],
   "description": "Initial registration of a patient on the bone marrow transplant waiting list",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-03-02T21:40:05.870Z"
+  "date": "2026-06-10T01:17:14.957Z"
 }
