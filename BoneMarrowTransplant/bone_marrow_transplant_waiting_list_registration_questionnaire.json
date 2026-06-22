@@ -142,14 +142,8 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": "option1",
+                "code": "25CRAX",
                 "display": "Clinton Lewis"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "option2",
-                "display": "Option 2"
               }
             }
           ],
@@ -175,7 +169,7 @@
             },
             {
               "valueCoding": {
-                "code": "option2",
+                "code": "15AWWY",
                 "display": "Blake Hsu"
               }
             },
@@ -217,7 +211,7 @@
             },
             {
               "valueCoding": {
-                "code": "option9",
+                "code": "24FPPE",
                 "display": "Min-Hi Nan"
               }
             }
@@ -482,7 +476,7 @@
     }
   ],
   "description": "Initial registration of a patient on the bone marrow transplant waiting list",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-06-10T21:26:18.519Z"
+  "date": "2026-06-22T21:06:00.442Z"
 }
