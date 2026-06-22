@@ -127,14 +127,8 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": "option1",
+                "code": "25CRAX",
                 "display": "Clinton Lewis"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "option2",
-                "display": "Option 2"
               }
             }
           ],
@@ -160,7 +154,7 @@
             },
             {
               "valueCoding": {
-                "code": "option2",
+                "code": "15AWWY",
                 "display": "Blake Hsu"
               }
             },
@@ -202,7 +196,7 @@
             },
             {
               "valueCoding": {
-                "code": "option9",
+                "code": "24FPPE",
                 "display": "Min-Hi Nan"
               }
             }
@@ -516,7 +510,7 @@
     }
   ],
   "description": "Update waiting list information for a patient registered on the bone marrow transplant waiting list",
-  "version": "0.3.1",
+  "version": "0.4.2",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-06-10T21:33:10.338Z"
+  "date": "2026-06-22T21:06:37.746Z"
 }
