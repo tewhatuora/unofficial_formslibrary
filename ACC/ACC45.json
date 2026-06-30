@@ -1,5 +1,10 @@
 {
   "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire acc-45-registration</b></p><h2>ACC 45 Registration</h2><p>A questionnaire for completing ACC registrations (using the ACC45 question set from their API).</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
@@ -12,32 +17,398 @@
       "text": "Vendor Details",
       "type": "group",
       "prefix": "page 01",
-      "required": false,
-      "repeats": false,
       "item": [
-        {
-          "linkId": "p01-g01-q01-facility-name",
-          "text": "Facility Name",
-          "type": "string",
-          "prefix": "page 01 group 01 question 1",
-          "required": false,
-          "repeats": false
-        },
-        {
-          "linkId": "p01-g01-q02-hpi-organisation-number",
-          "text": "HPI Organisation Number",
-          "type": "string",
-          "prefix": "page 01 group 01 question 2",
-          "required": false,
-          "repeats": false
-        },
         {
           "linkId": "p01-g01-q03-hpi-facility-identifier",
           "text": "HPI Facility Identifier",
-          "type": "string",
+          "type": "choice",
           "prefix": "page 01 group 01 question 3",
-          "required": false,
-          "repeats": false
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "F04003-B",
+                "display": "Alexandra Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F03023-C",
+                "display": "Ashburton Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F03067-A",
+                "display": "Auckland City Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F04056-A",
+                "display": "Bay of Islands Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F03053-A",
+                "display": "Botany Downs Primary Birthing Unit"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F3J027-D",
+                "display": "Botany SuperClinic"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F06053-E",
+                "display": "Buller Health"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F04030-E",
+                "display": "Burwood Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F04028-G",
+                "display": "Christchurch Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F04031-G",
+                "display": "Christchurch Womens Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F04041-K",
+                "display": "Darfield Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F04055-K",
+                "display": "Dargaville Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F04066-D",
+                "display": "Dunedin Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F05073-F",
+                "display": "Dunstan Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F04044-E",
+                "display": "Ellesmere Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F03047-F",
+                "display": "Franklin Memorial Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F03076-B",
+                "display": "Gisborne Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F0D027-E",
+                "display": "Gore Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F03026-J",
+                "display": "Greenlane Clinical Centre"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F05039-F",
+                "display": "Hawera Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F03084-A",
+                "display": "Hawkes Bay Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F06034-A",
+                "display": "Hutt Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F04039-A",
+                "display": "Kaikoura Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F04054-H",
+                "display": "Kaitaia Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F06037-G",
+                "display": "Kenepuru Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F05024-D",
+                "display": "Lakes District Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F03065-H",
+                "display": "Manukau SuperClinic"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F05097-J",
+                "display": "Matariki Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F03029-D",
+                "display": "Middlemore Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F03099-C",
+                "display": "Nelson Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F03031-B",
+                "display": "North Shore Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F06020-A",
+                "display": "Oamaru Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F03073-G",
+                "display": "Opotiki Community Care Centre"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F2W038-H",
+                "display": "Overseas Hospital of Transfer"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F04037-H",
+                "display": "Oxford Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F04084-F",
+                "display": "Palmerston North Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F03037-C",
+                "display": "Papakura Obstetric Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F03036-A",
+                "display": "Pukekohe Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F04043-C",
+                "display": "Rangiora Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F06048-A",
+                "display": "Reefton Health Services"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F05077-C",
+                "display": "Rotorua Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F05021-J",
+                "display": "Southland Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F3R402-F",
+                "display": "Starship Childrens Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F05038-D",
+                "display": "Taranaki Base Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F05049-J",
+                "display": "Taumarunui Community Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F05095-E",
+                "display": "Taupo Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F05051-G",
+                "display": "Tauranga Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F05078-E",
+                "display": "Te Kuiti Community Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F06046-H",
+                "display": "Te Nikau Grey Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F3M518-E",
+                "display": "Te Puke Community Health Centre"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F05065-G",
+                "display": "Thames Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F04029-J",
+                "display": "The Princess Margaret Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F05013-K",
+                "display": "Timaru Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F05089-K",
+                "display": "Tokoroa Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F04040-H",
+                "display": "Waikari Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F05076-A",
+                "display": "Waikato Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F06007-J",
+                "display": "Wairarapa Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F03093-B",
+                "display": "Wairau Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F03032-D",
+                "display": "Waitakere Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F04067-F",
+                "display": "Wakari Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F06033-K",
+                "display": "Wellington Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F03070-A",
+                "display": "Whakatane Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F06022-E",
+                "display": "Whanganui Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F04053-F",
+                "display": "Whangarei Hospital"
+              }
+            }
+          ]
         }
       ]
     },
@@ -46,16 +417,12 @@
       "text": "Provider Details",
       "type": "group",
       "prefix": "page 02",
-      "required": false,
-      "repeats": false,
       "item": [
         {
           "linkId": "p02-g01-q01-provider-type",
           "text": "Provider Type",
           "type": "choice",
           "prefix": "page 02 group 01 question 1",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -390,31 +757,24 @@
       "text": "Employment Details",
       "type": "group",
       "prefix": "page 03",
-      "required": false,
-      "repeats": false,
       "item": [
         {
           "linkId": "p03-g01-employer-details",
           "text": "Employer Details",
           "type": "group",
           "prefix": "page 03 group 01",
-          "required": false,
-          "repeats": false,
           "item": [
             {
               "linkId": "p03-g01-q01-employer-name",
               "text": "Employer Name",
               "type": "string",
-              "prefix": "page 03 group 01 question 1",
-              "required": false,
-              "repeats": false
+              "prefix": "page 03 group 01 question 1"
             },
             {
               "linkId": "p03-g01-q02-employer-address",
               "text": "Employer Address",
               "type": "group",
               "prefix": "page 03 group 01 question 2",
-              "required": false,
               "repeats": true,
               "item": [
                 {
@@ -422,8 +782,6 @@
                   "text": "Address Type",
                   "type": "choice",
                   "prefix": "page 03 group 01 question 1",
-                  "required": false,
-                  "repeats": false,
                   "answerOption": [
                     {
                       "valueCoding": {
@@ -443,49 +801,37 @@
                   "linkId": "p03-g01-q02-address-line-1",
                   "text": "Address Line 1",
                   "type": "string",
-                  "prefix": "page 03 group 01 question 2",
-                  "required": false,
-                  "repeats": false
+                  "prefix": "page 03 group 01 question 2"
                 },
                 {
                   "linkId": "p03-g01-q03-address-line-2",
                   "text": "Address Line 2",
                   "type": "string",
-                  "prefix": "page 03 group 01 question 3",
-                  "required": false,
-                  "repeats": false
+                  "prefix": "page 03 group 01 question 3"
                 },
                 {
                   "linkId": "p03-g01-q04-suburb",
                   "text": "Suburb",
                   "type": "string",
-                  "prefix": "page 03 group 01 question 4",
-                  "required": false,
-                  "repeats": false
+                  "prefix": "page 03 group 01 question 4"
                 },
                 {
                   "linkId": "p03-g01-q05-city",
                   "text": "City",
                   "type": "string",
-                  "prefix": "page 03 group 01 question 5",
-                  "required": false,
-                  "repeats": false
+                  "prefix": "page 03 group 01 question 5"
                 },
                 {
                   "linkId": "p03-g01-q06-post-code",
                   "text": "Post Code",
                   "type": "string",
-                  "prefix": "page 03 group 01 question 6",
-                  "required": false,
-                  "repeats": false
+                  "prefix": "page 03 group 01 question 6"
                 },
                 {
                   "linkId": "p03-g01-q07-country",
                   "text": "Country",
                   "type": "string",
-                  "prefix": "page 03 group 01 question 7",
-                  "required": false,
-                  "repeats": false
+                  "prefix": "page 03 group 01 question 7"
                 }
               ]
             }
@@ -496,8 +842,6 @@
           "text": "In Paid Employment",
           "type": "boolean",
           "prefix": "page 03 group 02 question 1",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -520,25 +864,19 @@
           "text": "Employment Status Code",
           "type": "choice",
           "prefix": "page 03 group 02 question 2",
-          "required": false,
-          "repeats": false,
           "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/acc-employment-status-code"
         },
         {
           "linkId": "p03-g02-q03-other-employment",
           "text": "Other Employment",
           "type": "string",
-          "prefix": "page 03 group 02 question 3",
-          "required": false,
-          "repeats": false
+          "prefix": "page 03 group 02 question 3"
         },
         {
           "linkId": "p03-g02-q04-work-type-code",
           "text": "Work Type Code",
           "type": "choice",
           "prefix": "page 03 group 02 question 4",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -576,10 +914,8 @@
           "linkId": "p03-g02-q05-patients-occupation",
           "text": "Patients Occupation",
           "type": "choice",
-          "required": false,
-          "repeats": false,
-          "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/national-occupation-list",
-          "prefix": "page 03 group 02 question 5"
+          "prefix": "page 03 group 02 question 5",
+          "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/national-occupation-list"
         }
       ]
     },
@@ -588,24 +924,18 @@
       "text": "Injury Details",
       "type": "group",
       "prefix": "page 04",
-      "required": false,
-      "repeats": false,
       "item": [
         {
           "linkId": "p04-g01-q01-accident-date",
           "text": "Accident Date",
           "type": "date",
-          "prefix": "page 04 group 01 question 1",
-          "required": false,
-          "repeats": false
+          "prefix": "page 04 group 01 question 1"
         },
         {
           "linkId": "p04-g01-q02-accident-location-code",
           "text": "Accident Location Code",
           "type": "choice",
           "prefix": "page 04 group 01 question 2",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -1022,25 +1352,19 @@
           "text": "Accident Scene Code",
           "type": "choice",
           "prefix": "page 04 group 01 question 3",
-          "required": false,
-          "repeats": false,
           "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/acc-accident-scene-code"
         },
         {
           "linkId": "p04-g01-q04-cause-of-accident",
           "text": "Cause of Accident",
           "type": "text",
-          "prefix": "page 04 group 01 question 4",
-          "required": false,
-          "repeats": false
+          "prefix": "page 04 group 01 question 4"
         },
         {
           "linkId": "p04-g01-q05-involves-vehicle",
           "text": "Involves Vehicle",
           "type": "boolean",
           "prefix": "page 04 group 01 question 5",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -1063,8 +1387,6 @@
           "text": "Medical Treatment Injury",
           "type": "boolean",
           "prefix": "page 04 group 01 question 6",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -1087,8 +1409,6 @@
           "text": "Work Injury",
           "type": "boolean",
           "prefix": "page 04 group 01 question 7",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -1111,8 +1431,6 @@
           "text": "Sporting Injury",
           "type": "boolean",
           "prefix": "page 04 group 01 question 8",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -1135,8 +1453,6 @@
           "text": "Sport Name Code",
           "type": "choice",
           "prefix": "page 04 group 01 question 9",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -1541,8 +1857,6 @@
           "text": "Gradual Process Injury",
           "type": "boolean",
           "prefix": "page 04 group 01 question 10",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -1565,8 +1879,6 @@
           "text": "Admitted to Hospital",
           "type": "boolean",
           "prefix": "page 04 group 01 question 11",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueString": "True"
@@ -1580,17 +1892,13 @@
           "linkId": "p04-g01-q12-injury-comments",
           "text": "Injury Comments",
           "type": "string",
-          "prefix": "page 04 group 01 question 12",
-          "required": false,
-          "repeats": false
+          "prefix": "page 04 group 01 question 12"
         },
         {
           "linkId": "p04-g01-q13-assistance-required",
           "text": "Assistance Required",
           "type": "boolean",
           "prefix": "page 04 group 01 question 13",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -1611,8 +1919,6 @@
           "text": "ACC Contact Provider",
           "type": "choice",
           "prefix": "page 04 group 01 question 14",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -1653,7 +1959,6 @@
       "text": "Diagnosis",
       "type": "group",
       "prefix": "page 05",
-      "required": false,
       "repeats": true,
       "item": [
         {
@@ -1661,8 +1966,6 @@
           "text": "Diagnosis Code",
           "type": "choice",
           "prefix": "page 05 group 01 question 1",
-          "required": false,
-          "repeats": false,
           "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/acc-claim-reference-set"
         },
         {
@@ -1670,8 +1973,6 @@
           "text": "Diagnosis Side",
           "type": "choice",
           "prefix": "page 05 group 01 question 2",
-          "required": false,
-          "repeats": false,
           "answerValueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/acc-bodysite-laterality"
         }
       ]
@@ -1681,15 +1982,12 @@
       "text": "Work Capacity",
       "type": "group",
       "prefix": "page 06",
-      "required": false,
-      "repeats": false,
       "item": [
         {
           "linkId": "p06-g01-incapacity",
           "text": "Incapacity",
           "type": "group",
           "prefix": "page 06 group 01",
-          "required": false,
           "repeats": true,
           "item": [
             {
@@ -1697,8 +1995,6 @@
               "text": "Incapacity Type",
               "type": "choice",
               "prefix": "page 06 group 01 question 1",
-              "required": false,
-              "repeats": false,
               "answerOption": [
                 {
                   "valueCoding": {
@@ -1719,7 +2015,6 @@
               "text": "Physical Restrictions",
               "type": "group",
               "prefix": "page 06 group 01 question 2",
-              "required": false,
               "repeats": true,
               "item": [
                 {
@@ -1727,8 +2022,6 @@
                   "text": "Restriction",
                   "type": "choice",
                   "prefix": "page 06 group 01 question 1",
-                  "required": false,
-                  "repeats": false,
                   "answerOption": [
                     {
                       "valueCoding": {
@@ -1802,17 +2095,13 @@
                   "linkId": "p06-g01-q02-restricted-hours-per-day",
                   "text": "Restricted Hours Per Day",
                   "type": "integer",
-                  "prefix": "page 06 group 01 question 2",
-                  "required": false,
-                  "repeats": false
+                  "prefix": "page 06 group 01 question 2"
                 },
                 {
                   "linkId": "p06-g01-q03-restriction-comment",
                   "text": "Restriction Comment",
                   "type": "string",
-                  "prefix": "page 06 group 01 question 3",
-                  "required": false,
-                  "repeats": false
+                  "prefix": "page 06 group 01 question 3"
                 }
               ]
             },
@@ -1821,24 +2110,18 @@
               "text": "Incapacity Date Range",
               "type": "group",
               "prefix": "page 06 group 01 question 3",
-              "required": false,
-              "repeats": false,
               "item": [
                 {
                   "linkId": "p06-g01-q01-from-date",
                   "text": "From Date",
                   "type": "date",
-                  "prefix": "page 06 group 01 question 1",
-                  "required": false,
-                  "repeats": false
+                  "prefix": "page 06 group 01 question 1"
                 },
                 {
                   "linkId": "p06-g01-q02-to-date",
                   "text": "To Date",
                   "type": "date",
-                  "prefix": "page 06 group 01 question 2",
-                  "required": false,
-                  "repeats": false
+                  "prefix": "page 06 group 01 question 2"
                 }
               ]
             },
@@ -1847,16 +2130,12 @@
               "text": "Selected Alternative Work",
               "type": "group",
               "prefix": "page 06 group 01 question 4",
-              "required": false,
-              "repeats": false,
               "item": [
                 {
                   "linkId": "p06-g01-q01-alternative-work-type-code",
                   "text": "Alternative Work Type Code",
                   "type": "choice",
                   "prefix": "page 06 group 01 question 1",
-                  "required": false,
-                  "repeats": false,
                   "answerOption": [
                     {
                       "valueCoding": {
@@ -1899,8 +2178,6 @@
           "text": "Can Resume Normal Work",
           "type": "boolean",
           "prefix": "page 06 group 02 question 1",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -1920,9 +2197,7 @@
           "linkId": "p06-g02-q02-return-to-normal-work-date",
           "text": "Return to Normal Work Date",
           "type": "date",
-          "prefix": "page 06 group 02 question 2",
-          "required": false,
-          "repeats": false
+          "prefix": "page 06 group 02 question 2"
         }
       ]
     },
@@ -1931,7 +2206,6 @@
       "text": "Referrals",
       "type": "group",
       "prefix": "page 07",
-      "required": false,
       "repeats": true,
       "item": [
         {
@@ -1939,8 +2213,6 @@
           "text": "Provider Type Code",
           "type": "choice",
           "prefix": "page 07 group 01 question 1",
-          "required": false,
-          "repeats": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -2272,9 +2544,7 @@
           "linkId": "p07-g01-q02-referral-reason",
           "text": "Referral Reason",
           "type": "string",
-          "prefix": "page 07 group 01 question 2",
-          "required": false,
-          "repeats": false
+          "prefix": "page 07 group 01 question 2"
         }
       ]
     },
@@ -2283,30 +2553,24 @@
       "text": "Declaration",
       "type": "group",
       "prefix": "page 08",
-      "required": false,
-      "repeats": false,
       "item": [
         {
           "linkId": "p08-g01-q01-the-information-provided-by-me-is-true-and-correct",
           "text": "The information provided by me is true and correct to the best of my knowledge.",
           "type": "boolean",
-          "prefix": "page 08 group 01 question 1",
-          "required": false,
-          "repeats": false
+          "prefix": "page 08 group 01 question 1"
         },
         {
           "linkId": "p08-g01-q02-provider-declaration-date",
           "text": "Provider Declaration Date",
           "type": "date",
-          "prefix": "page 08 group 01 question 2",
-          "required": false,
-          "repeats": false
+          "prefix": "page 08 group 01 question 2"
         }
       ]
     }
   ],
   "description": "A questionnaire for completing ACC registrations (using the ACC45 question set from their API).",
-  "version": "1.5.0",
+  "version": "0.9",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-02-16T02:50:37.379Z"
+  "date": "2026-06-30T03:32:53.136Z"
 }
