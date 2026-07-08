@@ -1,0 +1,947 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire gambling-harm-intake-and-case-registration-questio</b></p><h2>Gambling Harm Intake and Case Registration Questionnaire</h2><p>FHIR R4B Questionnaire for gambling harm intake and case registration aligned to HISO 10112:2025.</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "draft",
+  "title": "Gambling Harm Intake and Case Registration Questionnaire",
+  "item": [
+    {
+      "linkId": "p01-provider-organisation-facility",
+      "text": "Provider / Organisation / Facility",
+      "type": "group",
+      "prefix": "page 01",
+      "item": [
+        {
+          "linkId": "p01-g01-q01-facility-name",
+          "text": "Facility Name",
+          "type": "string",
+          "prefix": "page 01 group 01 question 1",
+          "required": true
+        },
+        {
+          "linkId": "p01-g01-q02-organisation-name",
+          "text": "Organisation Name",
+          "type": "string",
+          "prefix": "page 01 group 01 question 2",
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "p02-case-record",
+      "text": "Case Record",
+      "type": "group",
+      "prefix": "page 02",
+      "required": true,
+      "item": [
+        {
+          "linkId": "p02-g01-q01-healthcare-user-type",
+          "text": "Healthcare User Type",
+          "type": "choice",
+          "prefix": "page 02 group 01 question 1",
+          "required": true,
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "303071001",
+                "display": "Client"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "303071001",
+                "display": "Whānau member"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "394863008",
+                "display": "Non-family member"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p02-g01-q02-type-of-gambling",
+          "text": "Type of Gambling",
+          "type": "choice",
+          "prefix": "page 02 group 01 question 2",
+          "required": true,
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "CA",
+                "display": "Casino Table Games – In-person/On-premises (In NZ)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "CO",
+                "display": "Casino Table Games – In-person/On-premises (Overseas)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "ET",
+                "display": "Casino Electronic Table Games – In-person/On-premises (In NZ)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "EO",
+                "display": "Casino Electronic Table Games – In-person/On-premises (Overseas)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "GK",
+                "display": "Casino EGM – In-person/On-premises (In NZ)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "GO",
+                "display": "Casino EGM – In-person/On-premises (Overseas)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "CG",
+                "display": "Online Casino Game (including online pokies) – Online (App/Website) [Licenced]"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "CU",
+                "display": "Online Casino Game (including online pokies) – Online (App/Website) [Unlicenced]"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "PE",
+                "display": "Pub EGM – In-person/On-premises (In NZ)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "CE",
+                "display": "Club EGM – In-person/On-premises (In NZ)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "PO",
+                "display": "Pokies (Overseas) – In-person/On Premises (Overseas)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "TR",
+                "display": "Sports Betting – Track (horse/dog/other) – In-person/On Premises (in NZ)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "TO",
+                "display": "Sports Betting – Track (horse/dog/other) – In-person/On Premises (Overseas)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "TL",
+                "display": "Sports Betting – Track (horse/dog/other) – Online (App/Website) [Licenced]"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "TU",
+                "display": "Sports Betting – Track (horse/dog/other) – Online (App/Website) [Unlicenced]"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "TP",
+                "display": "Sports Betting – Track (horse/dog/other) – Phone"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "SS",
+                "display": "Sports Betting – Sports – In-person/On Premises (In NZ)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "SO",
+                "display": "Sports Betting – Sports – In-person/On Premises (Overseas)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "SL",
+                "display": "Sports Betting – Sports – Online (App/Website) [Licenced]"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "SU",
+                "display": "Sports Betting – Sports – Online (App/Website) [Unlicenced]"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "SP",
+                "display": "Sports Betting – Sports – Phone"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "LT",
+                "display": "Lotto NZ – Lotto (including Wednesday, Powerball and Bullseye) – In-person/On Premises (In NZ)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "LL",
+                "display": "Lotto NZ – Lotto (including Wednesday, Powerball and Bullseye) – Online (App/Website) [Licenced]"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "KN",
+                "display": "Lotto NZ – Keno - In-person/On Premises (In NZ)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "KL",
+                "display": "Lotto NZ – Keno - Online (App/Website) [Licenced]"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "IK",
+                "display": "Lotto NZ – Instant Kiwi (scratches) - In-person/On Premises (In NZ)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "IL",
+                "display": "Lotto NZ – Instant Kiwi (scratches) - Online (App/Website) [Licenced]"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "LO",
+                "display": "Lotteries (Overseas) – In-person/On Premises (Overseas)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "LU",
+                "display": "Lotteries (Overseas) – Online (App/Website) [Unlicenced]"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "HB",
+                "display": "Housie/Bingo (In person) – In-person/On Premises (In NZ)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "HO",
+                "display": "Housie/Bingo (In person) – In-person/On Premises (Overseas)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "CR",
+                "display": "Cards (not at a Casino) – In-person/On Premises (In NZ)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "RO",
+                "display": "Cards (not at a Casino) – In-person/On Premises (Overseas)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "OG",
+                "display": "Other Gambling In-person/On Premises (In NZ)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "OO",
+                "display": "Other Gambling In-person/On Premises (Overseas)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "OU",
+                "display": "Other Gambling Online (App/Website) [Unlicenced]"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p02-g01-q03-type-of-gambling-other-gambling-in-personon-premis",
+          "text": "Type of Gambling – Other Gambling In-person/On Premises (In NZ)",
+          "type": "string",
+          "prefix": "page 02 group 01 question 3",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "case.type-of-gambling",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "OG"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p02-g01-q04-type-of-gambling-other-gambling-in-personon-premis",
+          "text": "Type of Gambling – Other Gambling In-person/On Premises (Overseas)",
+          "type": "string",
+          "prefix": "page 02 group 01 question 4",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "case.type-of-gambling",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "OO"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p02-g01-q05-type-of-gambling-other-gambling-online-appwebsite-",
+          "text": "Type of Gambling – Other Gambling Online (App/Website) [Unlicenced]",
+          "type": "string",
+          "prefix": "page 02 group 01 question 5",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "case.type-of-gambling",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "OU"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p02-g01-q06-referral-received-date",
+          "text": "Referral Received Date",
+          "type": "date",
+          "prefix": "page 02 group 01 question 6",
+          "required": true
+        },
+        {
+          "linkId": "p02-g01-q07-referral-from",
+          "text": "Referral From",
+          "type": "choice",
+          "prefix": "page 02 group 01 question 7",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "700232004",
+                "display": "General medical service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486051000210105",
+                "display": "Substance addiction service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "708168004",
+                "display": "Mental health service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486121000210102",
+                "display": "Work and income support service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "475911000210105",
+                "display": "Budgeting service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "475961000210107",
+                "display": "Legal advice service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "310134006",
+                "display": "Social services"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486211000210100",
+                "display": "Corrections service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486221000210105",
+                "display": "Police service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486231000210107",
+                "display": "Judicial service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486101000210105",
+                "display": "Venue exclusion service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486061000210108",
+                "display": "Gambling harm helpline"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486111000210107",
+                "display": "Pacific island peoples gambling harm helpline service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486071000210102",
+                "display": "Asian helpline service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486081000210100",
+                "display": "Government funded gambling harm service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486091000210103",
+                "display": "Community-based gambling harm service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "257581001",
+                "display": "Casino"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "257676000",
+                "display": "Public house"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "257657002",
+                "display": "Recreational facility"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "537091000210104",
+                "display": "Recreational betting facility"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "537121000210103",
+                "display": "Lotteries commission"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "113163005",
+                "display": "Friend"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "303071001",
+                "display": "Whānau member"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "394571004",
+                "display": "Employer"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "74964007",
+                "display": "Other"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "410604004",
+                "display": "Subject of record (Self-referral)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "171434007",
+                "display": "Health promotion"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p02-g01-q08-referral-from-health-promotion",
+          "text": "Referral From – Health Promotion",
+          "type": "choice",
+          "prefix": "page 02 group 01 question 8",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "BA",
+                "display": "Brochure/pamphlet/flier in another agency"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "BG",
+                "display": "Brochure/pamphlet/flier in a gambling venue"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "SW",
+                "display": "Service website"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "IN",
+                "display": "Internet advertisement"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "TV",
+                "display": "TV advertisement"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "NP",
+                "display": "Newspaper advertisement"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "RD",
+                "display": "Radio"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "SM",
+                "display": "Social media"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "HP",
+                "display": "Health Promotion in community by service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "NS",
+                "display": "None specified"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "OO",
+                "display": "Other"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "case.referral-from",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "171434007"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p02-g01-q09-promotional-services-other-detail",
+          "text": "Promotional Services – Other detail",
+          "type": "string",
+          "prefix": "page 02 group 01 question 9",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "case.referral-from-health-promotion",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "OO"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p02-g01-q10-facilitation-agency",
+          "text": "Facilitation Agency",
+          "type": "string",
+          "prefix": "page 02 group 01 question 10"
+        },
+        {
+          "linkId": "p02-g01-q11-facilitation-agency-type",
+          "text": "Facilitation Agency Type",
+          "type": "choice",
+          "prefix": "page 02 group 01 question 11",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "497571000210105",
+                "display": "Accident compensation service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "302251000210109",
+                "display": "Cultural support service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "475911000210105",
+                "display": "Budgeting service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "700232004",
+                "display": "General medical service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486051000210105",
+                "display": "Substance addiction service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "708168004",
+                "display": "Mental health service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "475901000210108",
+                "display": "Accommodation and housing placement support service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "475961000210107",
+                "display": "Legal advice service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486221000210105",
+                "display": "Police service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486061000210108",
+                "display": "Gambling harm helpline"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486111000210107",
+                "display": "Pacific island peoples gambling harm helpline service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486071000210102",
+                "display": "Asian helpline service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486081000210100",
+                "display": "Government funded gambling harm service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486091000210103",
+                "display": "Community-based gambling harm service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "171641000210104",
+                "display": "Kaupapa Māori service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486121000210102",
+                "display": "Work and income support service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "475931000210103",
+                "display": "Community legal advice and/or assistance support service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "310134006",
+                "display": "Social services"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486101000210105",
+                "display": "Venue exclusion service"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p02-g01-q12-case-start-date",
+          "text": "Case Start Date",
+          "type": "date",
+          "prefix": "page 02 group 01 question 12",
+          "required": true
+        },
+        {
+          "linkId": "p02-g01-q13-case-end",
+          "text": "Case End",
+          "type": "boolean",
+          "prefix": "page 02 group 01 question 13",
+          "required": true
+        },
+        {
+          "linkId": "p02-g01-q14-case-end-date",
+          "text": "Case End Date",
+          "type": "date",
+          "prefix": "page 02 group 01 question 14",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "case.case-end",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "p02-g01-q15-case-end-reason",
+          "text": "Case End Reason",
+          "type": "choice",
+          "prefix": "page 02 group 01 question 15",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262071000210102",
+                "display": "Person unable to be contacted"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "713247000",
+                "display": "Treatment discontinued by patient"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "526251000210101",
+                "display": "Referral to gambling harm service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "537081000210101",
+                "display": "Referral to non gambling harm service"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "182992009",
+                "display": "Treatment completed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "399714002",
+                "display": "Treatment status unknown"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "case.case-end",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "url": "https://fhir.health.nz/ig/gambling-harm/Questionnaire/gambling-harm-intake",
+  "description": "FHIR R4B Questionnaire for gambling harm intake and case registration aligned to HISO 10112:2025.",
+  "version": "0.1",
+  "publisher": "Health New Zealand | Te Whatu Ora",
+  "date": "2026-07-08T20:30:47.380Z"
+}
