@@ -1,0 +1,1689 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire gambling-harm-session-and-measures-questionnaire</b></p><h2>Gambling Harm Session and Measures Questionnaire</h2><p>FHIR R4B Questionnaire for gambling harm session activity, failed contacts and outcome measures aligned to HISO 10112:2025.</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "draft",
+  "title": "Gambling Harm Session and Measures Questionnaire",
+  "item": [
+    {
+      "linkId": "p01-session-record",
+      "text": "Session Record",
+      "type": "group",
+      "prefix": "page 01",
+      "required": true,
+      "item": [
+        {
+          "linkId": "p01-g01-q01-session-id",
+          "text": "Session ID",
+          "type": "string",
+          "prefix": "page 01 group 01 question 1",
+          "required": true
+        },
+        {
+          "linkId": "p01-g01-q02-session-date",
+          "text": "Session Date",
+          "type": "date",
+          "prefix": "page 01 group 01 question 2",
+          "required": true
+        },
+        {
+          "linkId": "p01-g01-q03-session-type",
+          "text": "Session Type",
+          "type": "choice",
+          "prefix": "page 01 group 01 question 3",
+          "required": true,
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "526231000210107",
+                "display": "Assessment of harmful gambling"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "507061000210103",
+                "display": "Brief intervention for gambling harm"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "507071000210109",
+                "display": "Clinical intervention for gambling harm"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "526261000210103",
+                "display": "Facilitation for gambling harm"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "526271000210109",
+                "display": "Peer support for gambling harm"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "526141000210108",
+                "display": "Cultural support"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "507081000210106",
+                "display": "Follow-up for gambling harm"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p01-g01-q04-session-duration",
+          "text": "Session Duration",
+          "type": "quantity",
+          "prefix": "page 01 group 01 question 4",
+          "required": true
+        },
+        {
+          "linkId": "p01-g01-q05-session-attendees",
+          "text": "Session Attendees",
+          "type": "choice",
+          "prefix": "page 01 group 01 question 5",
+          "required": true,
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "303071001",
+                "display": "Client"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "303071001",
+                "display": "Whānau member"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "394863008",
+                "display": "Non-family member"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "262043009",
+                "display": "Partner"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "320731000210100",
+                "display": "Support person"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "76168009",
+                "display": "Group therapy"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p01-g01-q06-session-setting",
+          "text": "Session Setting",
+          "type": "choice",
+          "prefix": "page 01 group 01 question 6",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "285202004",
+                "display": "Community environment"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "257592000",
+                "display": "Courthouse"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "264362003",
+                "display": "Home"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "225728007",
+                "display": "Accident and Emergency department"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "257603009",
+                "display": "Educational establishment"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486131000210100",
+                "display": "Māori cultural setting"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486141000210108",
+                "display": "Pacific island peoples cultural setting"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486151000210106",
+                "display": "Asian cultural setting"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "224880002",
+                "display": "Location within general practice premises"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "284354002",
+                "display": "Police premises"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "722173008",
+                "display": "Prison based care site"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "419955002",
+                "display": "Residential institution"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "486171000210103",
+                "display": "Youth justice facility"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "1279970009",
+                "display": "Addictive behaviour treatment centre"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "440654001",
+                "display": "Inpatient environment"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "43741000",
+                "display": "Site of care"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p01-g01-q07-session-medium",
+          "text": "Session Medium",
+          "type": "choice",
+          "prefix": "page 01 group 01 question 7",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "1258986006",
+                "display": "Face-to-face encounter"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "453131000124105",
+                "display": "Videotelephony encounter"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "185317003",
+                "display": "Telephone encounter"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "445450000",
+                "display": "Text messaging encounter"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "1197766005",
+                "display": "Encounter by electronic text-based asynchronous communication"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "308720009",
+                "display": "Letter encounter"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "1479971000168109",
+                "display": "Email encounter"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p01-g01-q08-session-outcome",
+          "text": "Session Outcome",
+          "type": "choice",
+          "prefix": "page 01 group 01 question 8",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "410543007",
+                "display": "Did not attend"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "385658003",
+                "display": "Completed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "89925002",
+                "display": "Cancelled"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "58334001",
+                "display": "Rescheduled"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "p02-failed-contact",
+      "text": "Failed Contact",
+      "type": "group",
+      "prefix": "page 02",
+      "repeats": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+          "valueInteger": 3
+        }
+      ],
+      "item": [
+        {
+          "linkId": "p02-g01-q01-failed-contact-date",
+          "text": "Failed Contact Date",
+          "type": "dateTime",
+          "prefix": "page 02 group 01 question 1"
+        },
+        {
+          "linkId": "p02-g01-q02-failed-contact-note",
+          "text": "Failed Contact Note",
+          "type": "text",
+          "prefix": "page 02 group 01 question 2"
+        },
+        {
+          "linkId": "p02-g01-q03-failed-contact-attempt-purpose",
+          "text": "Failed Contact Attempt Purpose",
+          "type": "choice",
+          "prefix": "page 02 group 01 question 3",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "507071000210109",
+                "display": "Clinical intervention for gambling harm"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "526261000210103",
+                "display": "Facilitation for gambling harm"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "526271000210109",
+                "display": "Peer support for gambling harm"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "526141000210108",
+                "display": "Cultural support"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "507081000210106",
+                "display": "Follow-up for gambling harm"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "p03-measures-completed",
+      "text": "Measure(s) Completed",
+      "type": "choice",
+      "prefix": "page 03",
+      "repeats": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "DGH",
+            "display": "Domain-General Gambling Harm Scale (DGHS-7)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "SUI",
+            "display": "Suicidality screen"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "HTV",
+            "display": "Hurt-Insulted-Threatened-Screamed (HITS) - Victimisation"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "HTP",
+            "display": "Hurt-Insulted-Threatened-Screamed (HITS) - Perpetration"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "AUD",
+            "display": "Alcohol Use Disorders Identification Test-Consumption (AUDIT-C)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "SQD",
+            "display": "Single-Question Screening Test for Drug Use in Primary Care"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "TIG",
+            "display": "Three-Item Gaming disorder Test-Online-Centred (TIGTOC)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "GSA",
+            "display": "Gambling Symptom Assessment Scale (G-SAS)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "GIP",
+            "display": "Global Assessment Items – In-person Gambling"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "GON",
+            "display": "Global Assessment Items – Online Gambling"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "RIG",
+            "display": "Recovery Index for Gambling Disorder (RIGD)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "PHQ",
+            "display": "Patient Health Questionnaire-2 (PHQ-2)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "GAD",
+            "display": "Generalised Anxiety Disorder (GAD-2)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "WSA",
+            "display": "Work and Social Adjustment Scale (WSAS)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "EUR",
+            "display": "EUROHIS-QOL-8"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "HUA",
+            "display": "Hua Oranga"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "RRS",
+            "display": "Readiness rulers"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "JAS",
+            "display": "Jonsson-Abbott Scale (JAS)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "CSQ",
+            "display": "Client Satisfaction Questionnaire-4 (CSQ-4)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "GHS",
+            "display": "Gambling Harm Scale-10 for Affected Others (GHS-10-AO)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "OIS",
+            "display": "One Item Screen"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "PSS",
+            "display": "Perceived Stress Scale-4 (PSS-4)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "CSE",
+            "display": "Caregiver Self Efficacy Scale (CSES-8)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "BAC",
+            "display": "Brief COPE – Active Coping"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "BPC",
+            "display": "Brief COPE – Planning Coping"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "BSB",
+            "display": "Brief COPE – Self-Blame"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "BBD",
+            "display": "Brief COPE – Behavioural Disengagement"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "SST",
+            "display": "Brief Social Support Scale (BS6) – Tangible support"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "SSE",
+            "display": "Brief Social Support Scale (BS6) – Emotional-Informational support"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "HHI",
+            "display": "Household Income Screen"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+            "code": "CGI",
+            "display": "Clinical Global Impression – Improvement Scale"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "p04-measure-scores",
+      "text": "Measure Scores",
+      "type": "group",
+      "prefix": "page 04",
+      "item": [
+        {
+          "linkId": "p04-g01-q01-rigd-past-response",
+          "text": "RIGD Past Response",
+          "type": "choice",
+          "prefix": "page 04 group 01 question 1",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "AAG",
+                "display": "Avoid all gambling"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "AST",
+                "display": "Avoid specific types of gambling"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "CGA",
+                "display": "Continue gambling affordably"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "RIG"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q02-rigd-future-response",
+          "text": "RIGD Future Response",
+          "type": "choice",
+          "prefix": "page 04 group 01 question 2",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "AAG",
+                "display": "Avoid all gambling"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "AST",
+                "display": "Avoid specific types of gambling"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "CGA",
+                "display": "Continue gambling affordably"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "RIG"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q03-domain-general-gambling-harm-scale-dghs-7-score",
+          "text": "Domain-General Gambling Harm Scale (DGHS-7) Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 3",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "DGH"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 28
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q04-suicidality-screen-score",
+          "text": "Suicidality Screen Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 4",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "SUI"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 3
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q05-hits-victimisation-score",
+          "text": "HITS – Victimisation Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 5",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "HTV"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 5
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q06-hits-perpetration-score",
+          "text": "HITS – Perpetration Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 6",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "HTP"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 5
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q07-audit-c-score",
+          "text": "AUDIT-C Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 7",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "AUD"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 12
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q08-single-question-screening-test-for-drug-use-in-pri",
+          "text": "Single-Question Screening Test for Drug Use in Primary Care Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 8",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "SQD"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 9999
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q09-tigtoc-score",
+          "text": "TIGTOC Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 9",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "TIG"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 9
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q10-g-sas-score",
+          "text": "G-SAS Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 10",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "GSA"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 48
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q11-global-assessment-items-in-person-gambling-number-",
+          "text": "Global Assessment Items – In-person Gambling Number of Days",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 11",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "GIP"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 30
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q12-global-assessment-items-in-person-gambling-spend",
+          "text": "Global Assessment Items – In-person Gambling Spend",
+          "type": "decimal",
+          "prefix": "page 04 group 01 question 12",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "GIP"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q13-global-assessment-items-online-gambling-number-of-",
+          "text": "Global Assessment Items – Online Gambling Number of Days",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 13",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "GON"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 30
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q14-global-assessment-items-online-gambling-spend",
+          "text": "Global Assessment Items – Online Gambling Spend",
+          "type": "decimal",
+          "prefix": "page 04 group 01 question 14",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "GON"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q15-rigd-past-score",
+          "text": "RIGD Past Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 15",
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "RIG"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 5
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q16-rigd-future-score",
+          "text": "RIGD Future Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 16",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "RIG"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 5
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q17-phq-2-score",
+          "text": "PHQ-2 Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 17",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "PHQ"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 6
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q18-gad-2-score",
+          "text": "GAD-2 Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 18",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "GAD"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 6
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q19-wsas-score",
+          "text": "WSAS Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 19",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "WSA"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 40
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q20-eurohis-qol-8-score",
+          "text": "EUROHIS-QOL-8 Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 20",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "EUR"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 8
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 40
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q21-hua-oranga-score",
+          "text": "Hua Oranga Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 21",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "HUA"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 16
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 80
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q22-readiness-rulers-readiness-score",
+          "text": "Readiness Rulers – Readiness Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 22",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "RRS"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 10
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q23-readiness-rulers-importance-score",
+          "text": "Readiness Rulers – Importance Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 23",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "RRS"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 10
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q24-readiness-rulers-confidence-score",
+          "text": "Readiness Rulers – Confidence Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 24",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "RRS"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 10
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q25-jonsson-abbott-scale-jas-score",
+          "text": "Jonsson-Abbott Scale (JAS) Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 25",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "JAS"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 3
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 21
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q26-csq-4-score",
+          "text": "CSQ-4 Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 26",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "CSQ"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 4
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 16
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q27-ghs-10-ao-score",
+          "text": "GHS-10-AO Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 27",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "GHS"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 10
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q28-one-item-screen-score",
+          "text": "One Item Screen Score",
+          "type": "boolean",
+          "prefix": "page 04 group 01 question 28",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "OIS"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q29-pss-4-score",
+          "text": "PSS-4 Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 29",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "PSS"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 16
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q30-cses-8-score",
+          "text": "CSES-8 Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 30",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "CSE"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 8
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 80
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q31-brief-cope-active-coping-score",
+          "text": "Brief COPE – Active Coping Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 31",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "BAC"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 2
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 8
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q32-brief-cope-planning-coping-score",
+          "text": "Brief COPE – Planning Coping Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 32",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "BPC"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 2
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 8
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q33-brief-cope-self-blame-score",
+          "text": "Brief COPE – Self-Blame Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 33",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "BSB"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 2
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 8
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q34-brief-cope-behavioural-disengagement-score",
+          "text": "Brief COPE – Behavioural Disengagement Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 34",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "BBD"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 2
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 8
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q35-bs6-tangible-support-score",
+          "text": "BS6 – Tangible Support Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 35",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "SST"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 3
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 12
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q36-bs6-emotional-informational-support-score",
+          "text": "BS6 – Emotional-Informational Support Score",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 36",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "SSE"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 3
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 12
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q37-household-income-screen",
+          "text": "Household Income Screen",
+          "type": "decimal",
+          "prefix": "page 04 group 01 question 37",
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "HHI"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p04-g01-q38-clinical-global-impression-improvement-scale",
+          "text": "Clinical Global Impression – Improvement Scale",
+          "type": "integer",
+          "prefix": "page 04 group 01 question 38",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "measures",
+              "operator": "=",
+              "answerCoding": {
+                "system": "https://fhir.health.nz/ig/gambling-harm/CodeSystem/hiso-10112-local-codes",
+                "code": "CGI"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "url": "https://fhir.health.nz/ig/gambling-harm/Questionnaire/gambling-harm-session-measures",
+  "description": "FHIR R4B Questionnaire for gambling harm session activity, failed contacts and outcome measures aligned to HISO 10112:2025.",
+  "version": "0.1",
+  "publisher": "Health New Zealand | Te Whatu Ora",
+  "date": "2026-07-08T20:34:42.389Z"
+}
