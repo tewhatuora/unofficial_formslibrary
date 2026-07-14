@@ -1,0 +1,257 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire epcc-cataract-follow-up-assessment</b></p><h2>EPCC Cataract Follow up Assessment</h2><p>Follow up assessment completed by an Optometrist when they are referred following cataract surgery.</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "draft",
+  "title": "EPCC Cataract Follow up Assessment",
+  "item": [
+    {
+      "linkId": "p01-consultation-details",
+      "text": "Consultation Details",
+      "type": "group",
+      "prefix": "page 01",
+      "item": [
+        {
+          "linkId": "p01-g01-q01-date-of-surgery",
+          "text": "Date of Surgery",
+          "type": "date",
+          "prefix": "page 01 group 01 question 1"
+        },
+        {
+          "linkId": "p01-g01-q02-date-of-follow-up-assessment",
+          "text": "Date of Follow up Assessment",
+          "type": "date",
+          "prefix": "page 01 group 01 question 2"
+        },
+        {
+          "linkId": "p01-g01-q03-assessed-by",
+          "text": "Assessed by",
+          "type": "string",
+          "prefix": "page 01 group 01 question 3"
+        },
+        {
+          "linkId": "p01-g01-q04-assessment-organisation",
+          "text": "Assessment Organisation",
+          "type": "string",
+          "prefix": "page 01 group 01 question 4"
+        },
+        {
+          "linkId": "p01-g01-q05-eye-operated-on",
+          "text": "Eye Operated on",
+          "type": "choice",
+          "prefix": "page 01 group 01 question 5",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "option1",
+                "display": "Left"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option2",
+                "display": "Right"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option3",
+                "display": "Both"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "p02-complete-per-eye",
+      "text": "Complete per Eye",
+      "type": "group",
+      "prefix": "page 02",
+      "repeats": true,
+      "item": [
+        {
+          "linkId": "p02-g01-q01-unaided-vision",
+          "text": "Unaided Vision",
+          "type": "string",
+          "prefix": "page 02 group 01 question 1"
+        },
+        {
+          "linkId": "p02-g01-q02-pinhole",
+          "text": "Pinhole",
+          "type": "string",
+          "prefix": "page 02 group 01 question 2"
+        },
+        {
+          "linkId": "p02-g01-q03-autosubj-refraction",
+          "text": "Auto/subj Refraction",
+          "type": "string",
+          "prefix": "page 02 group 01 question 3"
+        },
+        {
+          "linkId": "p02-g01-q04-wound-normal",
+          "text": "Wound Normal",
+          "type": "boolean",
+          "prefix": "page 02 group 01 question 4"
+        },
+        {
+          "linkId": "p02-g01-q05-cornea-normal",
+          "text": "Cornea Normal",
+          "type": "boolean",
+          "prefix": "page 02 group 01 question 5"
+        },
+        {
+          "linkId": "p02-g01-q06-ac-normal",
+          "text": "AC Normal",
+          "type": "boolean",
+          "prefix": "page 02 group 01 question 6"
+        },
+        {
+          "linkId": "p02-g01-q07-pupil-normal",
+          "text": "Pupil Normal",
+          "type": "boolean",
+          "prefix": "page 02 group 01 question 7"
+        },
+        {
+          "linkId": "p02-g01-q08-iolpc-normal",
+          "text": "IOL/PC Normal",
+          "type": "boolean",
+          "prefix": "page 02 group 01 question 8"
+        },
+        {
+          "linkId": "p02-g01-q09-fundus-or-oct-mac-normal",
+          "text": "Fundus or OCT mac Normal",
+          "type": "boolean",
+          "prefix": "page 02 group 01 question 9"
+        },
+        {
+          "linkId": "p02-g01-q10-abnormal-pathway-triggered",
+          "text": "Abnormal Pathway Triggered",
+          "type": "boolean",
+          "prefix": "page 02 group 01 question 10"
+        },
+        {
+          "linkId": "p02-g01-q11-escalation-reason",
+          "text": "Escalation Reason",
+          "type": "open-choice",
+          "prefix": "page 02 group 01 question 11",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "option1",
+                "display": "Cystoid Macular Oedema "
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option2",
+                "display": "Post Operative Inflammation"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option3",
+                "display": "Elevated Intraocular Pressure"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p02-g01-q12-treatment-notes",
+          "text": "Treatment Notes",
+          "type": "text",
+          "prefix": "page 02 group 01 question 12"
+        }
+      ]
+    },
+    {
+      "linkId": "p03-new-group",
+      "text": "New group",
+      "type": "group",
+      "prefix": "page 03",
+      "item": [
+        {
+          "linkId": "p03-g01-q01-follow-up-recommendation",
+          "text": "Follow up Recommendation",
+          "type": "choice",
+          "prefix": "page 03 group 01 question 1",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "option1",
+                "display": "No Follow up Required"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option2",
+                "display": "Escalation pathway treatment complete and problem resolved"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option3",
+                "display": "Escalation pathway treatment complete but problem unresolved – referral back to Ophthalmology"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option4",
+                "display": "Urgent follow up recommended"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p03-g01-q02-follow-up-recommendation-comment",
+          "text": "Follow up recommendation comment",
+          "type": "text",
+          "prefix": "page 03 group 01 question 2"
+        },
+        {
+          "linkId": "p03-g01-q03-next-steps",
+          "text": "Next Steps",
+          "type": "choice",
+          "prefix": "page 03 group 01 question 3",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "option1",
+                "display": "Other eye has already been operated on"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option2",
+                "display": "Other eye is already on the waitlist "
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option3",
+                "display": "Other eye meets CPAC criteria and has been added to the waitlist by Optometrist  "
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option4",
+                "display": "No further surgery required"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "description": "Follow up assessment completed by an Optometrist when they are referred following cataract surgery.",
+  "version": "0.1.0",
+  "publisher": "Te Whatu Ora | Health New Zealand",
+  "date": "2026-07-14T01:29:05.241Z"
+}
