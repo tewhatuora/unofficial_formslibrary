@@ -78,70 +78,90 @@
       "repeats": true,
       "item": [
         {
-          "linkId": "p02-g01-q01-unaided-vision",
-          "text": "Unaided Vision",
-          "type": "string",
-          "prefix": "page 02 group 01 question 1"
+          "linkId": "p02-g01-q01-which-eye",
+          "text": "Which eye",
+          "type": "choice",
+          "prefix": "page 02 group 01 question 1",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "option1",
+                "display": "Left"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option2",
+                "display": "Right"
+              }
+            }
+          ]
         },
         {
-          "linkId": "p02-g01-q02-pinhole",
-          "text": "Pinhole",
+          "linkId": "p02-g01-q02-unaided-vision",
+          "text": "Unaided Vision",
           "type": "string",
           "prefix": "page 02 group 01 question 2"
         },
         {
-          "linkId": "p02-g01-q03-autosubj-refraction",
-          "text": "Auto/subj Refraction",
+          "linkId": "p02-g01-q03-pinhole",
+          "text": "Pinhole",
           "type": "string",
           "prefix": "page 02 group 01 question 3"
         },
         {
-          "linkId": "p02-g01-q04-wound-normal",
-          "text": "Wound Normal",
-          "type": "boolean",
+          "linkId": "p02-g01-q04-autosubj-refraction",
+          "text": "Auto/subj Refraction",
+          "type": "string",
           "prefix": "page 02 group 01 question 4"
         },
         {
-          "linkId": "p02-g01-q05-cornea-normal",
-          "text": "Cornea Normal",
+          "linkId": "p02-g01-q05-wound-normal",
+          "text": "Wound Normal",
           "type": "boolean",
           "prefix": "page 02 group 01 question 5"
         },
         {
-          "linkId": "p02-g01-q06-ac-normal",
-          "text": "AC Normal",
+          "linkId": "p02-g01-q06-cornea-normal",
+          "text": "Cornea Normal",
           "type": "boolean",
           "prefix": "page 02 group 01 question 6"
         },
         {
-          "linkId": "p02-g01-q07-pupil-normal",
-          "text": "Pupil Normal",
+          "linkId": "p02-g01-q07-ac-normal",
+          "text": "AC Normal",
           "type": "boolean",
           "prefix": "page 02 group 01 question 7"
         },
         {
-          "linkId": "p02-g01-q08-iolpc-normal",
-          "text": "IOL/PC Normal",
+          "linkId": "p02-g01-q08-pupil-normal",
+          "text": "Pupil Normal",
           "type": "boolean",
           "prefix": "page 02 group 01 question 8"
         },
         {
-          "linkId": "p02-g01-q09-fundus-or-oct-mac-normal",
-          "text": "Fundus or OCT mac Normal",
+          "linkId": "p02-g01-q09-iolpc-normal",
+          "text": "IOL/PC Normal",
           "type": "boolean",
           "prefix": "page 02 group 01 question 9"
         },
         {
-          "linkId": "p02-g01-q10-abnormal-pathway-triggered",
-          "text": "Abnormal Pathway Triggered",
+          "linkId": "p02-g01-q10-fundus-or-oct-mac-normal",
+          "text": "Fundus or OCT mac Normal",
           "type": "boolean",
           "prefix": "page 02 group 01 question 10"
         },
         {
-          "linkId": "p02-g01-q11-escalation-reason",
+          "linkId": "p02-g01-q11-abnormal-pathway-triggered",
+          "text": "Abnormal Pathway Triggered",
+          "type": "boolean",
+          "prefix": "page 02 group 01 question 11"
+        },
+        {
+          "linkId": "p02-g01-q12-escalation-reason",
           "text": "Escalation Reason",
           "type": "open-choice",
-          "prefix": "page 02 group 01 question 11",
+          "prefix": "page 02 group 01 question 12",
           "answerOption": [
             {
               "valueCoding": {
@@ -164,16 +184,16 @@
           ]
         },
         {
-          "linkId": "p02-g01-q12-treatment-notes",
+          "linkId": "p02-g01-q13-treatment-notes",
           "text": "Treatment Notes",
           "type": "text",
-          "prefix": "page 02 group 01 question 12"
+          "prefix": "page 02 group 01 question 13"
         }
       ]
     },
     {
-      "linkId": "p03-new-group",
-      "text": "New group",
+      "linkId": "p03-assessment-outcome",
+      "text": "Assessment Outcome",
       "type": "group",
       "prefix": "page 03",
       "item": [
@@ -251,7 +271,7 @@
     }
   ],
   "description": "Follow up assessment completed by an Optometrist when they are referred following cataract surgery.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "Te Whatu Ora | Health New Zealand",
-  "date": "2026-07-14T01:29:05.241Z"
+  "date": "2026-07-14T01:41:50.514Z"
 }
