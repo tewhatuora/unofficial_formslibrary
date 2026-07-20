@@ -41,6 +41,18 @@
                 "code": "F04028-G",
                 "display": "Christchurch Hospital"
               }
+            },
+            {
+              "valueCoding": {
+                "code": "F04084-F",
+                "display": "Palmerston North Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F05076-A",
+                "display": "Waikato Hospital"
+              }
             }
           ]
         },
@@ -110,8 +122,7 @@
               "question": "p01-g01-q01-treatment-location",
               "operator": "=",
               "answerCoding": {
-                "code": "F06033-K",
-                "display": "Wellington Hospital"
+                "code": "F06033-K"
               }
             }
           ]
@@ -158,8 +169,7 @@
               "question": "p01-g01-q01-treatment-location",
               "operator": "=",
               "answerCoding": {
-                "code": "F03067-A",
-                "display": "Auckland Hospital"
+                "code": "F03067-A"
               }
             }
           ]
@@ -230,17 +240,10 @@
               "question": "p01-g01-q01-treatment-location",
               "operator": "=",
               "answerCoding": {
-                "code": "F04028-G",
-                "display": "Christchurch Hospital"
+                "code": "F04028-G"
               }
             }
           ]
-        },
-        {
-          "linkId": "p01-g01-q05-clinical-nurse-specialist-cns",
-          "text": "Clinical Nurse Specialist (CNS)",
-          "type": "string",
-          "prefix": "page 01 group 01 question 5"
         }
       ]
     },
@@ -537,7 +540,7 @@
     }
   ],
   "description": "Update waiting list information for a patient registered on the bone marrow transplant waiting list",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-07-02T01:27:52.988Z"
+  "date": "2026-07-20T22:12:23.920Z"
 }
