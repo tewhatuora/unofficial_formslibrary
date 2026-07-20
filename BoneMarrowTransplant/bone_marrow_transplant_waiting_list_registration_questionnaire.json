@@ -56,6 +56,18 @@
                 "code": "F04028-G",
                 "display": "Christchurch Hospital"
               }
+            },
+            {
+              "valueCoding": {
+                "code": "F04084-F",
+                "display": "Palmerston North Hospital"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "F05076-A",
+                "display": "Waikato Hospital"
+              }
             }
           ]
         },
@@ -97,12 +109,6 @@
             },
             {
               "valueCoding": {
-                "code": "option6",
-                "display": "Cat Tang"
-              }
-            },
-            {
-              "valueCoding": {
                 "code": "15AVPH",
                 "display": "Michelle Dickson"
               }
@@ -130,7 +136,72 @@
             {
               "question": "p01-g01-q03-treatment-location",
               "operator": "=",
-              "answerString": "Wellington Hospital"
+              "answerCoding": {
+                "code": "F06033-K"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p01-g01-q07-clinical-nurse-specialist-cns",
+          "text": "Wellington Care Team members to add to the careplan",
+          "type": "choice",
+          "prefix": "page 01 group 01 question 7",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "23CATL",
+                "display": "Ian McKenzie"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "16AMAK",
+                "display": "Alwyn D'Souza"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "14FMCY",
+                "display": "Catherine Wood"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "23BXCR",
+                "display": "Carol Hua-Yung"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "19ASZH",
+                "display": "Travis Perera"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "17AWZY",
+                "display": "Victoria Campion"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "p01-g01-q03-treatment-location",
+              "operator": "=",
+              "answerCoding": {
+                "code": "F06033-K"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCoding": {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "check-box",
+                "display": "check box"
+              }
             }
           ]
         },
@@ -145,13 +216,39 @@
                 "code": "25CRAX",
                 "display": "Clinton Lewis"
               }
+            },
+            {
+              "valueCoding": {
+                "code": "18AMAJ",
+                "display": "Richard Doocey"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "19HSXW",
+                "display": "Nicole Chien"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "10AGBL",
+                "display": "Tim Hawkins"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "21AGNT",
+                "display": "Sarah Tan"
+              }
             }
           ],
           "enableWhen": [
             {
               "question": "p01-g01-q03-treatment-location",
               "operator": "=",
-              "answerString": "Auckland Hospital"
+              "answerCoding": {
+                "code": "F03067-A"
+              }
             }
           ]
         },
@@ -220,15 +317,11 @@
             {
               "question": "p01-g01-q03-treatment-location",
               "operator": "=",
-              "answerString": "Christchurch Hospital"
+              "answerCoding": {
+                "code": "F04028-G"
+              }
             }
           ]
-        },
-        {
-          "linkId": "p01-g01-q07-clinical-nurse-specialist-cns",
-          "text": "Clinical Nurse Specialist (CNS)",
-          "type": "string",
-          "prefix": "page 01 group 01 question 7"
         }
       ]
     },
@@ -476,7 +569,7 @@
     }
   ],
   "description": "Initial registration of a patient on the bone marrow transplant waiting list",
-  "version": "0.4.2",
+  "version": "0.4.4",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-06-22T21:06:00.442Z"
+  "date": "2026-07-20T05:09:59.269Z"
 }
