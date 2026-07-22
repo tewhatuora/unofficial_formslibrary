@@ -197,10 +197,14 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-              "valueCoding": {
-                "system": "http://hl7.org/fhir/questionnaire-item-control",
-                "code": "check-box",
-                "display": "check box"
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "check-box",
+                    "display": "Check Box"
+                  }
+                ]
               }
             }
           ]
@@ -569,7 +573,7 @@
     }
   ],
   "description": "Initial registration of a patient on the bone marrow transplant waiting list",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-07-20T05:09:59.269Z"
+  "date": "2026-07-22T22:25:53.802Z"
 }
