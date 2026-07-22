@@ -147,6 +147,7 @@
           "text": "Wellington Care Team members to add to the careplan",
           "type": "choice",
           "prefix": "page 01 group 01 question 7",
+          "repeats": true,
           "answerOption": [
             {
               "valueCoding": {
@@ -573,7 +574,7 @@
     }
   ],
   "description": "Initial registration of a patient on the bone marrow transplant waiting list",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-07-22T22:25:53.802Z"
+  "date": "2026-07-22T22:52:57.018Z"
 }
