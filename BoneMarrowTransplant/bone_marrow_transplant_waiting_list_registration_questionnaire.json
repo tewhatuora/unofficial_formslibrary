@@ -137,7 +137,8 @@
               "question": "p01-g01-q03-treatment-location",
               "operator": "=",
               "answerCoding": {
-                "code": "F06033-K"
+                "code": "F06033-K",
+                "display": "Wellington Hospital"
               }
             }
           ],
@@ -192,7 +193,8 @@
               "question": "p01-g01-q03-treatment-location",
               "operator": "=",
               "answerCoding": {
-                "code": "F06033-K"
+                "code": "F06033-K",
+                "display": "Wellington Hospital"
               }
             }
           ],
@@ -254,7 +256,8 @@
               "question": "p01-g01-q03-treatment-location",
               "operator": "=",
               "answerCoding": {
-                "code": "F03067-A"
+                "code": "F03067-A",
+                "display": "Auckland Hospital"
               }
             }
           ],
@@ -326,7 +329,8 @@
               "question": "p01-g01-q03-treatment-location",
               "operator": "=",
               "answerCoding": {
-                "code": "F04028-G"
+                "code": "F04028-G",
+                "display": "Christchurch Hospital"
               }
             }
           ],
@@ -578,7 +582,7 @@
     }
   ],
   "description": "Initial registration of a patient on the bone marrow transplant waiting list",
-  "version": "0.4.7",
+  "version": "0.4.8",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-07-23T02:41:16.797Z"
+  "date": "2026-07-23T03:42:58.081Z"
 }
