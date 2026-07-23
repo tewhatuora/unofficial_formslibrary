@@ -140,7 +140,8 @@
                 "code": "F06033-K"
               }
             }
-          ]
+          ],
+          "enableBehavior": "all"
         },
         {
           "linkId": "p01-g01-q07-clinical-nurse-specialist-cns",
@@ -195,6 +196,7 @@
               }
             }
           ],
+          "enableBehavior": "all",
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -255,7 +257,8 @@
                 "code": "F03067-A"
               }
             }
-          ]
+          ],
+          "enableBehavior": "all"
         },
         {
           "linkId": "p01-g01-q06-senior-medical-officer-smo-christchurch",
@@ -326,7 +329,8 @@
                 "code": "F04028-G"
               }
             }
-          ]
+          ],
+          "enableBehavior": "all"
         }
       ]
     },
@@ -574,7 +578,7 @@
     }
   ],
   "description": "Initial registration of a patient on the bone marrow transplant waiting list",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-07-22T22:52:57.018Z"
+  "date": "2026-07-23T02:41:16.797Z"
 }
