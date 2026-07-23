@@ -195,9 +195,13 @@
             {
               "question": "p02-g01-q04-stem-cell-source",
               "operator": "=",
-              "answerString": "Mismatched related stem cell donor (Haplo)"
+              "answerCoding": {
+                "code": "211681000210103",
+                "display": "Mismatched related stem cell donor (Haplo)"
+              }
             }
-          ]
+          ],
+          "enableBehavior": "all"
         },
         {
           "linkId": "p02-g01-q06-cd34-cell-dose-x106kg",
@@ -247,7 +251,7 @@
     }
   ],
   "description": "Finalize actual treatment received information for a patient who underwent bone marrow transplant",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-06-10T03:16:27.298Z"
+  "date": "2026-07-23T04:08:36.051Z"
 }
