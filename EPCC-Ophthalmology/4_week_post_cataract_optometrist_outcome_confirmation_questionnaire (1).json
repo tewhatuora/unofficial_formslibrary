@@ -1,0 +1,67 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire 4-week-post-cataract-optometrist-outcome-confirmat</b></p><h2>4 Week Post-Cataract Optometrist Outcome confirmation</h2><p>For confirmation of the outcome from the Optometrist follow up assessment</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "draft",
+  "title": "4 Week Post-Cataract Optometrist Outcome confirmation",
+  "item": [
+    {
+      "linkId": "p01-outcome-from-assessment-when-not-automatically-com",
+      "text": "Outcome from assessment when not automatically completed",
+      "type": "group",
+      "prefix": "page 01",
+      "item": [
+        {
+          "linkId": "p01-g01-q01-reason-for-exit",
+          "text": "Reason for exit",
+          "type": "choice",
+          "prefix": "page 01 group 01 question 1",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "option1",
+                "display": "Patient was escalated by the Optometrist"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option2",
+                "display": "Patient did not attend the Optometrist appointment"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option3",
+                "display": "The Optometrist did not deliver the service"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p01-g01-q02-date-the-patient-exited-the-service",
+          "text": "Date the patient exited the service",
+          "type": "date",
+          "prefix": "page 01 group 01 question 2"
+        },
+        {
+          "linkId": "p01-g01-q03-comment",
+          "text": "Comment",
+          "type": "text",
+          "prefix": "page 01 group 01 question 3"
+        }
+      ]
+    }
+  ],
+  "description": "For confirmation of the outcome from the Optometrist follow up assessment",
+  "version": "0.4.0",
+  "publisher": "Te Whatu Ora | Health NZ",
+  "date": "2026-07-27T04:23:40.615Z"
+}
