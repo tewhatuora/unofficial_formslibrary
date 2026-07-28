@@ -1,0 +1,122 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire 4-week-post-cataract-optometrist-confirmation-form</b></p><h2>4 Week Post-Cataract Optometrist confirmation Form</h2><p>For confirmation that the assessment will be going to the Optometrist</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "draft",
+  "title": "4 Week Post-Cataract Optometrist confirmation Form",
+  "item": [
+    {
+      "linkId": "p01-referral-details",
+      "text": "Referral Details",
+      "type": "group",
+      "prefix": "page 01",
+      "item": [
+        {
+          "linkId": "p01-g01-q01-optometry-provider",
+          "text": "Optometry Provider",
+          "type": "string",
+          "prefix": "page 01 group 01 question 1"
+        },
+        {
+          "linkId": "p01-g01-q02-date-of-surgery",
+          "text": "Date of Surgery",
+          "type": "date",
+          "prefix": "page 01 group 01 question 2"
+        },
+        {
+          "linkId": "p01-g01-q03-surgeon",
+          "text": "Surgeon",
+          "type": "string",
+          "prefix": "page 01 group 01 question 3"
+        },
+        {
+          "linkId": "p01-g01-q04-operated-eye",
+          "text": "Operated eye",
+          "type": "choice",
+          "prefix": "page 01 group 01 question 4",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "right",
+                "display": "Right"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "left",
+                "display": "Left"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "both",
+                "display": "Both"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p01-g01-q05-status-of-other-eye",
+          "text": "Status of other eye",
+          "type": "choice",
+          "prefix": "page 01 group 01 question 5",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "already-had-surgery",
+                "display": "Already had surgery"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "on-waitlist",
+                "display": "On waitlist"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "no-surgery-required",
+                "display": "No surgery required"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "pending-outcome",
+                "display": "Pending outcome of this eye"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p01-g01-q06-surgical-issuesother",
+          "text": "Surgical Issues/Other",
+          "type": "text",
+          "prefix": "page 01 group 01 question 6"
+        },
+        {
+          "linkId": "p01-g01-q07-attach-the-discharge-summary",
+          "text": "Attach the Discharge Summary",
+          "type": "attachment",
+          "prefix": "page 01 group 01 question 7"
+        },
+        {
+          "linkId": "p01-g01-q08-attach-the-surgery-note",
+          "text": "Attach the Surgery Note",
+          "type": "attachment",
+          "prefix": "page 01 group 01 question 8"
+        }
+      ]
+    }
+  ],
+  "description": "For confirmation that the assessment will be going to the Optometrist",
+  "version": "0.4.0",
+  "publisher": "Te Whatu Ora | Health NZ",
+  "date": "2026-07-27T04:05:11.882Z"
+}
