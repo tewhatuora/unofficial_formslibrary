@@ -1,0 +1,517 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire child-health-questionnaire</b></p><h2>Child Health Questionnaire</h2><p>A health questionnaire for children as part of the B4 School Check program.</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "active",
+  "title": "Child Health Questionnaire",
+  "item": [
+    {
+      "linkId": "child-details",
+      "text": "Child's details",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "first-name",
+          "text": "First Name(s)",
+          "type": "string"
+        },
+        {
+          "linkId": "family-name",
+          "text": "Family Name",
+          "type": "string"
+        },
+        {
+          "linkId": "also-known-as",
+          "text": "Also known as",
+          "type": "string"
+        },
+        {
+          "linkId": "date-of-birth",
+          "text": "Date of Birth",
+          "type": "date"
+        },
+        {
+          "linkId": "gender",
+          "text": "Gender",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "Boy"
+            },
+            {
+              "valueString": "Girl"
+            }
+          ]
+        },
+        {
+          "linkId": "nhi-number",
+          "text": "NHI number if known",
+          "type": "string"
+        },
+        {
+          "linkId": "home-address",
+          "text": "Home Address",
+          "type": "text"
+        },
+        {
+          "linkId": "ethnicity",
+          "text": "Ethnicity (tick all the boxes that apply)",
+          "type": "choice",
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueString": "New Zealand European"
+            },
+            {
+              "valueString": "Maori"
+            },
+            {
+              "valueString": "Samoan"
+            },
+            {
+              "valueString": "Cook Island Maori"
+            },
+            {
+              "valueString": "Tongan"
+            },
+            {
+              "valueString": "Niuean"
+            },
+            {
+              "valueString": "Chinese"
+            },
+            {
+              "valueString": "Indian"
+            },
+            {
+              "valueString": "Fijian Indian"
+            },
+            {
+              "valueString": "Other Pacific"
+            },
+            {
+              "valueString": "Other Asian"
+            },
+            {
+              "valueString": "Other"
+            }
+          ]
+        },
+        {
+          "linkId": "languages-spoken",
+          "text": "Language(s) spoken at home",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "parent-details",
+      "text": "Details of parents/caregiver/guardian",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "parent1-name",
+          "text": "Name",
+          "type": "string"
+        },
+        {
+          "linkId": "parent1-relationship",
+          "text": "Relationship to child",
+          "type": "string"
+        },
+        {
+          "linkId": "parent1-address",
+          "text": "Address (if different from child's address above)",
+          "type": "text"
+        },
+        {
+          "linkId": "parent1-phone",
+          "text": "Phone",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "parent1-phone-home",
+              "text": "Home",
+              "type": "string"
+            },
+            {
+              "linkId": "parent1-phone-work",
+              "text": "Work",
+              "type": "string"
+            },
+            {
+              "linkId": "parent1-phone-mobile",
+              "text": "Mobile",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "linkId": "parent1-email",
+          "text": "Email Address",
+          "type": "string"
+        },
+        {
+          "linkId": "parent2-name",
+          "text": "Name",
+          "type": "string"
+        },
+        {
+          "linkId": "parent2-relationship",
+          "text": "Relationship to child",
+          "type": "string"
+        },
+        {
+          "linkId": "parent2-address",
+          "text": "Address",
+          "type": "text"
+        },
+        {
+          "linkId": "parent2-phone",
+          "text": "Phone",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "parent2-phone-home",
+              "text": "Home",
+              "type": "string"
+            },
+            {
+              "linkId": "parent2-phone-work",
+              "text": "Work",
+              "type": "string"
+            },
+            {
+              "linkId": "parent2-phone-mobile",
+              "text": "Mobile",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "linkId": "family-doctor",
+          "text": "Who is your family doctor?",
+          "type": "string"
+        },
+        {
+          "linkId": "medical-centre",
+          "text": "Medical centre",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "plunket-check",
+      "text": "Has your child been seen by Plunket in the past?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueString": "Unknown Option"
+        },
+        {
+          "valueString": "Unknown Option"
+        }
+      ]
+    },
+    {
+      "linkId": "well-child-provider",
+      "text": "If NO – who is your Well Child Provider?",
+      "type": "string"
+    },
+    {
+      "linkId": "preschool-attendance",
+      "text": "Is your child currently attending preschool?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueString": "Unknown Option"
+        },
+        {
+          "valueString": "Unknown Option"
+        }
+      ]
+    },
+    {
+      "linkId": "preschool-name",
+      "text": "If YES – what is the name of the preschool they attend?",
+      "type": "string"
+    },
+    {
+      "linkId": "preschool-address",
+      "text": "Address of the preschool they attend",
+      "type": "text"
+    },
+    {
+      "linkId": "future-school",
+      "text": "Which school will your child attend when they start school?",
+      "type": "string"
+    },
+    {
+      "linkId": "child-enrolled",
+      "text": "Have you enrolled your child?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueString": "Unknown Option"
+        },
+        {
+          "valueString": "Unknown Option"
+        }
+      ]
+    },
+    {
+      "linkId": "starting-school",
+      "text": "How does your child feel about starting school?",
+      "type": "text"
+    },
+    {
+      "linkId": "b4school-check",
+      "text": "Has your child had a B4 School Check?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueString": "Unknown Option"
+        },
+        {
+          "valueString": "Unknown Option"
+        }
+      ]
+    },
+    {
+      "linkId": "other-children",
+      "text": "Do you have any other children in your care?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueString": "Unknown Option"
+        },
+        {
+          "valueString": "Unknown Option"
+        }
+      ]
+    },
+    {
+      "linkId": "children-details",
+      "text": "Details of other children in your care",
+      "type": "group",
+      "repeats": true,
+      "item": [
+        {
+          "linkId": "child-name",
+          "text": "Name",
+          "type": "string"
+        },
+        {
+          "linkId": "child-age",
+          "text": "Age",
+          "type": "integer"
+        },
+        {
+          "linkId": "child-gender",
+          "text": "Gender",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "Male"
+            },
+            {
+              "valueString": "Female"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "child-health-conditions",
+      "text": "Does your child have any of the following?",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "condition-allergy",
+          "text": "Allergy",
+          "type": "boolean"
+        },
+        {
+          "linkId": "condition-food-intolerance",
+          "text": "Food intolerance",
+          "type": "boolean"
+        },
+        {
+          "linkId": "condition-asthma",
+          "text": "Asthma",
+          "type": "boolean"
+        },
+        {
+          "linkId": "condition-eczema",
+          "text": "Eczema or other skin condition",
+          "type": "boolean"
+        },
+        {
+          "linkId": "condition-heart",
+          "text": "Heart condition",
+          "type": "boolean"
+        },
+        {
+          "linkId": "condition-epilepsy",
+          "text": "Epilepsy seizures",
+          "type": "boolean"
+        },
+        {
+          "linkId": "condition-cerebral-palsy",
+          "text": "Cerebral Palsy",
+          "type": "boolean"
+        },
+        {
+          "linkId": "condition-chronic-chest-cough",
+          "text": "Chronic chest cough",
+          "type": "boolean"
+        },
+        {
+          "linkId": "condition-learning-problem",
+          "text": "Learning problem",
+          "type": "boolean"
+        },
+        {
+          "linkId": "condition-sleep-problem",
+          "text": "Sleep problem",
+          "type": "boolean"
+        },
+        {
+          "linkId": "condition-other",
+          "text": "Other",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "hospitalization",
+      "text": "Has your child spent time in hospital (or had any other significant illness)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueString": "Unknown Option"
+        },
+        {
+          "valueString": "Unknown Option"
+        },
+        {
+          "valueString": "Unknown"
+        }
+      ]
+    },
+    {
+      "linkId": "hospitalization-details",
+      "text": "If yes, details",
+      "type": "text"
+    },
+    {
+      "linkId": "medication",
+      "text": "Is your child on any medication?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueString": "Unknown Option"
+        },
+        {
+          "valueString": "Unknown Option"
+        }
+      ]
+    },
+    {
+      "linkId": "medication-list",
+      "text": "Please list",
+      "type": "text"
+    },
+    {
+      "linkId": "immunisation",
+      "text": "Tick the box or boxes to show at which age or ages your child was immunised.",
+      "type": "choice",
+      "repeats": true,
+      "answerOption": [
+        {
+          "valueString": "6 weeks"
+        },
+        {
+          "valueString": "3 months"
+        },
+        {
+          "valueString": "5 months"
+        },
+        {
+          "valueString": "15 months"
+        },
+        {
+          "valueString": "4 years"
+        }
+      ]
+    },
+    {
+      "linkId": "dental-health",
+      "text": "Dental health",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "dental-concerns",
+          "text": "Do you have any concerns about your child's teeth?",
+          "type": "boolean"
+        },
+        {
+          "linkId": "dental-clinic",
+          "text": "Has your child been to a dental clinic in the past 1–2 years?",
+          "type": "boolean"
+        },
+        {
+          "linkId": "dental-clinic-attended",
+          "text": "Which dental clinic did your child attend?",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "eye-health",
+      "text": "Does your child wear glasses?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "ear-health",
+      "text": "Has your child had (or is planned to have) grommets or tubes inserted?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "other-conditions",
+      "text": "Does your child have any other conditions or disabilities?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "other-conditions-comment",
+      "text": "If yes, please comment",
+      "type": "text"
+    },
+    {
+      "linkId": "support-services",
+      "text": "Are you or your family getting help or support from any services?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "support-services-list",
+      "text": "If yes, please list",
+      "type": "text"
+    },
+    {
+      "linkId": "concerns",
+      "text": "Do you have any other concerns about your child's health that you would like to talk about with the Nurse?",
+      "type": "text"
+    }
+  ],
+  "description": "A health questionnaire for children as part of the B4 School Check program.",
+  "version": "1.0.0",
+  "publisher": "Health New Zealand",
+  "date": "2026-07-23T00:29:07.415Z"
+}
