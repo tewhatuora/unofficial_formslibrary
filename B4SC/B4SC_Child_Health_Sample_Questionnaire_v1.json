@@ -9,38 +9,44 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire child-health-questionnaire</b></p><h2>Child Health Questionnaire</h2><p>A health questionnaire for children as part of the B4 School Check program.</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
   },
-  "status": "active",
+  "status": "draft",
   "title": "Child Health Questionnaire",
   "item": [
     {
-      "linkId": "child-details",
+      "linkId": "p01-childs-details",
       "text": "Child's details",
       "type": "group",
+      "prefix": "page 01",
       "item": [
         {
-          "linkId": "first-name",
+          "linkId": "p01-g01-q01-first-names",
           "text": "First Name(s)",
-          "type": "string"
+          "type": "string",
+          "prefix": "page 01 group 01 question 1"
         },
         {
-          "linkId": "family-name",
+          "linkId": "p01-g01-q02-family-name",
           "text": "Family Name",
-          "type": "string"
+          "type": "string",
+          "prefix": "page 01 group 01 question 2"
         },
         {
-          "linkId": "also-known-as",
+          "linkId": "p01-g01-q03-also-known-as",
           "text": "Also known as",
-          "type": "string"
+          "type": "string",
+          "prefix": "page 01 group 01 question 3"
         },
         {
-          "linkId": "date-of-birth",
+          "linkId": "p01-g01-q04-date-of-birth",
           "text": "Date of Birth",
-          "type": "date"
+          "type": "date",
+          "prefix": "page 01 group 01 question 4"
         },
         {
-          "linkId": "gender",
+          "linkId": "p01-g01-q05-gender",
           "text": "Gender",
           "type": "choice",
+          "prefix": "page 01 group 01 question 5",
           "answerOption": [
             {
               "valueString": "Boy"
@@ -51,19 +57,22 @@
           ]
         },
         {
-          "linkId": "nhi-number",
+          "linkId": "p01-g01-q06-nhi-number-if-known",
           "text": "NHI number if known",
-          "type": "string"
+          "type": "string",
+          "prefix": "page 01 group 01 question 6"
         },
         {
-          "linkId": "home-address",
+          "linkId": "p01-g01-q07-home-address",
           "text": "Home Address",
-          "type": "text"
+          "type": "text",
+          "prefix": "page 01 group 01 question 7"
         },
         {
-          "linkId": "ethnicity",
+          "linkId": "p01-g01-q08-ethnicity-tick-all-the-boxes-that-apply",
           "text": "Ethnicity (tick all the boxes that apply)",
           "type": "choice",
+          "prefix": "page 01 group 01 question 8",
           "repeats": true,
           "answerOption": [
             {
@@ -105,112 +114,132 @@
           ]
         },
         {
-          "linkId": "languages-spoken",
+          "linkId": "p01-g01-q09-languages-spoken-at-home",
           "text": "Language(s) spoken at home",
-          "type": "text"
+          "type": "text",
+          "prefix": "page 01 group 01 question 9"
         }
       ]
     },
     {
-      "linkId": "parent-details",
+      "linkId": "p02-details-of-parentscaregiverguardian",
       "text": "Details of parents/caregiver/guardian",
       "type": "group",
+      "prefix": "page 02",
       "item": [
         {
-          "linkId": "parent1-name",
+          "linkId": "p02-g01-phone",
+          "text": "Phone",
+          "type": "group",
+          "prefix": "page 02 group 01",
+          "item": [
+            {
+              "linkId": "p02-g01-q01-home",
+              "text": "Home",
+              "type": "string",
+              "prefix": "page 02 group 01 question 1"
+            },
+            {
+              "linkId": "p02-g01-q02-work",
+              "text": "Work",
+              "type": "string",
+              "prefix": "page 02 group 01 question 2"
+            },
+            {
+              "linkId": "p02-g01-q03-mobile",
+              "text": "Mobile",
+              "type": "string",
+              "prefix": "page 02 group 01 question 3"
+            }
+          ]
+        },
+        {
+          "linkId": "p02-g02-phone",
+          "text": "Phone",
+          "type": "group",
+          "prefix": "page 02 group 02",
+          "item": [
+            {
+              "linkId": "p02-g02-q01-home",
+              "text": "Home",
+              "type": "string",
+              "prefix": "page 02 group 02 question 1"
+            },
+            {
+              "linkId": "p02-g02-q02-work",
+              "text": "Work",
+              "type": "string",
+              "prefix": "page 02 group 02 question 2"
+            },
+            {
+              "linkId": "p02-g02-q03-mobile",
+              "text": "Mobile",
+              "type": "string",
+              "prefix": "page 02 group 02 question 3"
+            }
+          ]
+        },
+        {
+          "linkId": "p02-g03-q01-name",
           "text": "Name",
-          "type": "string"
+          "type": "string",
+          "prefix": "page 02 group 03 question 1"
         },
         {
-          "linkId": "parent1-relationship",
+          "linkId": "p02-g03-q02-relationship-to-child",
           "text": "Relationship to child",
-          "type": "string"
+          "type": "string",
+          "prefix": "page 02 group 03 question 2"
         },
         {
-          "linkId": "parent1-address",
+          "linkId": "p02-g03-q03-address-if-different-from-childs-address-above",
           "text": "Address (if different from child's address above)",
-          "type": "text"
+          "type": "text",
+          "prefix": "page 02 group 03 question 3"
         },
         {
-          "linkId": "parent1-phone",
-          "text": "Phone",
-          "type": "group",
-          "item": [
-            {
-              "linkId": "parent1-phone-home",
-              "text": "Home",
-              "type": "string"
-            },
-            {
-              "linkId": "parent1-phone-work",
-              "text": "Work",
-              "type": "string"
-            },
-            {
-              "linkId": "parent1-phone-mobile",
-              "text": "Mobile",
-              "type": "string"
-            }
-          ]
-        },
-        {
-          "linkId": "parent1-email",
+          "linkId": "p02-g03-q04-email-address",
           "text": "Email Address",
-          "type": "string"
+          "type": "string",
+          "prefix": "page 02 group 03 question 4"
         },
         {
-          "linkId": "parent2-name",
+          "linkId": "p02-g03-q05-name",
           "text": "Name",
-          "type": "string"
+          "type": "string",
+          "prefix": "page 02 group 03 question 5"
         },
         {
-          "linkId": "parent2-relationship",
+          "linkId": "p02-g03-q06-relationship-to-child",
           "text": "Relationship to child",
-          "type": "string"
+          "type": "string",
+          "prefix": "page 02 group 03 question 6"
         },
         {
-          "linkId": "parent2-address",
+          "linkId": "p02-g03-q07-address",
           "text": "Address",
-          "type": "text"
+          "type": "text",
+          "prefix": "page 02 group 03 question 7"
         },
         {
-          "linkId": "parent2-phone",
-          "text": "Phone",
-          "type": "group",
-          "item": [
-            {
-              "linkId": "parent2-phone-home",
-              "text": "Home",
-              "type": "string"
-            },
-            {
-              "linkId": "parent2-phone-work",
-              "text": "Work",
-              "type": "string"
-            },
-            {
-              "linkId": "parent2-phone-mobile",
-              "text": "Mobile",
-              "type": "string"
-            }
-          ]
-        },
-        {
-          "linkId": "family-doctor",
+          "linkId": "p02-g03-q08-who-is-your-family-doctor",
           "text": "Who is your family doctor?",
-          "type": "string"
+          "type": "string",
+          "prefix": "page 02 group 03 question 8"
         },
         {
-          "linkId": "medical-centre",
+          "linkId": "p02-g03-q09-medical-centre",
           "text": "Medical centre",
-          "type": "string"
+          "type": "string",
+          "prefix": "page 02 group 03 question 9"
         }
       ]
     },
     {
-      "linkId": "plunket-check",
+      "linkId": "p03-has-your-child-been-seen-by-plunket-in-the-past",
       "text": "Has your child been seen by Plunket in the past?",
       "type": "choice",
+      "prefix": "page 03",
       "answerOption": [
         {
           "valueString": "Unknown Option"
@@ -221,14 +250,16 @@
       ]
     },
     {
-      "linkId": "well-child-provider",
+      "linkId": "p04-if-no-who-is-your-well-child-provider",
       "text": "If NO – who is your Well Child Provider?",
-      "type": "string"
+      "type": "string",
+      "prefix": "page 04"
     },
     {
-      "linkId": "preschool-attendance",
+      "linkId": "p05-is-your-child-currently-attending-preschool",
       "text": "Is your child currently attending preschool?",
       "type": "choice",
+      "prefix": "page 05",
       "answerOption": [
         {
           "valueString": "Unknown Option"
@@ -239,24 +270,28 @@
       ]
     },
     {
-      "linkId": "preschool-name",
+      "linkId": "p06-if-yes-what-is-the-name-of-the-preschool-they-atte",
       "text": "If YES – what is the name of the preschool they attend?",
-      "type": "string"
+      "type": "string",
+      "prefix": "page 06"
     },
     {
-      "linkId": "preschool-address",
+      "linkId": "p07-address-of-the-preschool-they-attend",
       "text": "Address of the preschool they attend",
-      "type": "text"
+      "type": "text",
+      "prefix": "page 07"
     },
     {
-      "linkId": "future-school",
+      "linkId": "p08-which-school-will-your-child-attend-when-they-star",
       "text": "Which school will your child attend when they start school?",
-      "type": "string"
+      "type": "string",
+      "prefix": "page 08"
     },
     {
-      "linkId": "child-enrolled",
+      "linkId": "p09-have-you-enrolled-your-child",
       "text": "Have you enrolled your child?",
       "type": "choice",
+      "prefix": "page 09",
       "answerOption": [
         {
           "valueString": "Unknown Option"
@@ -267,14 +302,16 @@
       ]
     },
     {
-      "linkId": "starting-school",
+      "linkId": "p10-how-does-your-child-feel-about-starting-school",
       "text": "How does your child feel about starting school?",
-      "type": "text"
+      "type": "text",
+      "prefix": "page 10"
     },
     {
-      "linkId": "b4school-check",
+      "linkId": "p11-has-your-child-had-a-b4-school-check",
       "text": "Has your child had a B4 School Check?",
       "type": "choice",
+      "prefix": "page 11",
       "answerOption": [
         {
           "valueString": "Unknown Option"
@@ -285,9 +322,10 @@
       ]
     },
     {
-      "linkId": "other-children",
+      "linkId": "p12-do-you-have-any-other-children-in-your-care",
       "text": "Do you have any other children in your care?",
       "type": "choice",
+      "prefix": "page 12",
       "answerOption": [
         {
           "valueString": "Unknown Option"
@@ -298,25 +336,29 @@
       ]
     },
     {
-      "linkId": "children-details",
+      "linkId": "p13-details-of-other-children-in-your-care",
       "text": "Details of other children in your care",
       "type": "group",
+      "prefix": "page 13",
       "repeats": true,
       "item": [
         {
-          "linkId": "child-name",
+          "linkId": "p13-g01-q01-name",
           "text": "Name",
-          "type": "string"
+          "type": "string",
+          "prefix": "page 13 group 01 question 1"
         },
         {
-          "linkId": "child-age",
+          "linkId": "p13-g01-q02-age",
           "text": "Age",
-          "type": "integer"
+          "type": "integer",
+          "prefix": "page 13 group 01 question 2"
         },
         {
-          "linkId": "child-gender",
+          "linkId": "p13-g01-q03-gender",
           "text": "Gender",
           "type": "choice",
+          "prefix": "page 13 group 01 question 3",
           "answerOption": [
             {
               "valueString": "Male"
@@ -329,71 +371,84 @@
       ]
     },
     {
-      "linkId": "child-health-conditions",
+      "linkId": "p14-does-your-child-have-any-of-the-following",
       "text": "Does your child have any of the following?",
       "type": "group",
+      "prefix": "page 14",
       "item": [
         {
-          "linkId": "condition-allergy",
+          "linkId": "p14-g01-q01-allergy",
           "text": "Allergy",
-          "type": "boolean"
+          "type": "boolean",
+          "prefix": "page 14 group 01 question 1"
         },
         {
-          "linkId": "condition-food-intolerance",
+          "linkId": "p14-g01-q02-food-intolerance",
           "text": "Food intolerance",
-          "type": "boolean"
+          "type": "boolean",
+          "prefix": "page 14 group 01 question 2"
         },
         {
-          "linkId": "condition-asthma",
+          "linkId": "p14-g01-q03-asthma",
           "text": "Asthma",
-          "type": "boolean"
+          "type": "boolean",
+          "prefix": "page 14 group 01 question 3"
         },
         {
-          "linkId": "condition-eczema",
+          "linkId": "p14-g01-q04-eczema-or-other-skin-condition",
           "text": "Eczema or other skin condition",
-          "type": "boolean"
+          "type": "boolean",
+          "prefix": "page 14 group 01 question 4"
         },
         {
-          "linkId": "condition-heart",
+          "linkId": "p14-g01-q05-heart-condition",
           "text": "Heart condition",
-          "type": "boolean"
+          "type": "boolean",
+          "prefix": "page 14 group 01 question 5"
         },
         {
-          "linkId": "condition-epilepsy",
+          "linkId": "p14-g01-q06-epilepsy-seizures",
           "text": "Epilepsy seizures",
-          "type": "boolean"
+          "type": "boolean",
+          "prefix": "page 14 group 01 question 6"
         },
         {
-          "linkId": "condition-cerebral-palsy",
+          "linkId": "p14-g01-q07-cerebral-palsy",
           "text": "Cerebral Palsy",
-          "type": "boolean"
+          "type": "boolean",
+          "prefix": "page 14 group 01 question 7"
         },
         {
-          "linkId": "condition-chronic-chest-cough",
+          "linkId": "p14-g01-q08-chronic-chest-cough",
           "text": "Chronic chest cough",
-          "type": "boolean"
+          "type": "boolean",
+          "prefix": "page 14 group 01 question 8"
         },
         {
-          "linkId": "condition-learning-problem",
+          "linkId": "p14-g01-q09-learning-problem",
           "text": "Learning problem",
-          "type": "boolean"
+          "type": "boolean",
+          "prefix": "page 14 group 01 question 9"
         },
         {
-          "linkId": "condition-sleep-problem",
+          "linkId": "p14-g01-q10-sleep-problem",
           "text": "Sleep problem",
-          "type": "boolean"
+          "type": "boolean",
+          "prefix": "page 14 group 01 question 10"
         },
         {
-          "linkId": "condition-other",
+          "linkId": "p14-g01-q11-other",
           "text": "Other",
-          "type": "string"
+          "type": "string",
+          "prefix": "page 14 group 01 question 11"
         }
       ]
     },
     {
-      "linkId": "hospitalization",
+      "linkId": "p15-has-your-child-spent-time-in-hospital-or-had-any-o",
       "text": "Has your child spent time in hospital (or had any other significant illness)?",
       "type": "choice",
+      "prefix": "page 15",
       "answerOption": [
         {
           "valueString": "Unknown Option"
@@ -407,14 +462,16 @@
       ]
     },
     {
-      "linkId": "hospitalization-details",
+      "linkId": "p16-if-yes-details",
       "text": "If yes, details",
-      "type": "text"
+      "type": "text",
+      "prefix": "page 16"
     },
     {
-      "linkId": "medication",
+      "linkId": "p17-is-your-child-on-any-medication",
       "text": "Is your child on any medication?",
       "type": "choice",
+      "prefix": "page 17",
       "answerOption": [
         {
           "valueString": "Unknown Option"
@@ -425,14 +482,16 @@
       ]
     },
     {
-      "linkId": "medication-list",
+      "linkId": "p18-please-list",
       "text": "Please list",
-      "type": "text"
+      "type": "text",
+      "prefix": "page 18"
     },
     {
-      "linkId": "immunisation",
+      "linkId": "p19-tick-the-box-or-boxes-to-show-at-which-age-or-ages",
       "text": "Tick the box or boxes to show at which age or ages your child was immunised.",
       "type": "choice",
+      "prefix": "page 19",
       "repeats": true,
       "answerOption": [
         {
@@ -453,65 +512,76 @@
       ]
     },
     {
-      "linkId": "dental-health",
+      "linkId": "p20-dental-health",
       "text": "Dental health",
       "type": "group",
+      "prefix": "page 20",
       "item": [
         {
-          "linkId": "dental-concerns",
+          "linkId": "p20-g01-q01-do-you-have-any-concerns-about-your-childs-teeth",
           "text": "Do you have any concerns about your child's teeth?",
-          "type": "boolean"
+          "type": "boolean",
+          "prefix": "page 20 group 01 question 1"
         },
         {
-          "linkId": "dental-clinic",
+          "linkId": "p20-g01-q02-has-your-child-been-to-a-dental-clinic-in-the-past",
           "text": "Has your child been to a dental clinic in the past 1–2 years?",
-          "type": "boolean"
+          "type": "boolean",
+          "prefix": "page 20 group 01 question 2"
         },
         {
-          "linkId": "dental-clinic-attended",
+          "linkId": "p20-g01-q03-which-dental-clinic-did-your-child-attend",
           "text": "Which dental clinic did your child attend?",
-          "type": "string"
+          "type": "string",
+          "prefix": "page 20 group 01 question 3"
         }
       ]
     },
     {
-      "linkId": "eye-health",
+      "linkId": "p21-does-your-child-wear-glasses",
       "text": "Does your child wear glasses?",
-      "type": "boolean"
+      "type": "boolean",
+      "prefix": "page 21"
     },
     {
-      "linkId": "ear-health",
+      "linkId": "p22-has-your-child-had-or-is-planned-to-have-grommets-",
       "text": "Has your child had (or is planned to have) grommets or tubes inserted?",
-      "type": "boolean"
+      "type": "boolean",
+      "prefix": "page 22"
     },
     {
-      "linkId": "other-conditions",
+      "linkId": "p23-does-your-child-have-any-other-conditions-or-disab",
       "text": "Does your child have any other conditions or disabilities?",
-      "type": "boolean"
+      "type": "boolean",
+      "prefix": "page 23"
     },
     {
-      "linkId": "other-conditions-comment",
+      "linkId": "p24-if-yes-please-comment",
       "text": "If yes, please comment",
-      "type": "text"
+      "type": "text",
+      "prefix": "page 24"
     },
     {
-      "linkId": "support-services",
+      "linkId": "p25-are-you-or-your-family-getting-help-or-support-fro",
       "text": "Are you or your family getting help or support from any services?",
-      "type": "boolean"
+      "type": "boolean",
+      "prefix": "page 25"
     },
     {
-      "linkId": "support-services-list",
+      "linkId": "p26-if-yes-please-list",
       "text": "If yes, please list",
-      "type": "text"
+      "type": "text",
+      "prefix": "page 26"
     },
     {
-      "linkId": "concerns",
+      "linkId": "p27-do-you-have-any-other-concerns-about-your-childs-h",
       "text": "Do you have any other concerns about your child's health that you would like to talk about with the Nurse?",
-      "type": "text"
+      "type": "text",
+      "prefix": "page 27"
     }
   ],
   "description": "A health questionnaire for children as part of the B4 School Check program.",
-  "version": "1.0.0",
+  "version": "1.0.0.1",
   "publisher": "Health New Zealand",
-  "date": "2026-07-23T00:29:07.415Z"
+  "date": "2026-07-28T00:58:07.111Z"
 }
