@@ -7,14 +7,14 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire 4-week-post-cataract-surgery-referral-and-results-</b></p><h2>4 Week Post-Cataract Surgery Referral and Results Form (V4)</h2><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire create-cataract-follow-up-pathway</b></p><h2>Create Cataract Follow up pathway</h2><p>For starting the workflow to support cataract follow up with Optometrists</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
   },
   "status": "draft",
-  "title": "4 Week Post-Cataract Surgery Referral and Results Form (V4)",
+  "title": "Create Cataract Follow up pathway",
   "item": [
     {
-      "linkId": "p01-patient-details",
-      "text": "Patient Details",
+      "linkId": "p01-patient-preferred-contact-details",
+      "text": "Patient Preferred Contact Details",
       "type": "group",
       "prefix": "page 01",
       "item": [
@@ -39,102 +39,22 @@
       ]
     },
     {
-      "linkId": "p02-referral-details",
-      "text": "Referral Details",
+      "linkId": "p02-optometry-service",
+      "text": "Optometry Service",
       "type": "group",
       "prefix": "page 02",
       "item": [
         {
-          "linkId": "p02-g01-q01-referral-to",
-          "text": "Referral to",
+          "linkId": "p02-g01-q01-preferred-optometry-provider",
+          "text": "Preferred Optometry Provider",
           "type": "string",
           "prefix": "page 02 group 01 question 1"
-        },
-        {
-          "linkId": "p02-g01-q02-address",
-          "text": "Address",
-          "type": "string",
-          "prefix": "page 02 group 01 question 2"
-        },
-        {
-          "linkId": "p02-g01-q03-date-of-surgery",
-          "text": "Date of Surgery",
-          "type": "date",
-          "prefix": "page 02 group 01 question 3"
-        },
-        {
-          "linkId": "p02-g01-q04-surgeon",
-          "text": "Surgeon",
-          "type": "string",
-          "prefix": "page 02 group 01 question 4"
-        },
-        {
-          "linkId": "p02-g01-q05-operated-eye",
-          "text": "Operated eye",
-          "type": "choice",
-          "prefix": "page 02 group 01 question 5",
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "right",
-                "display": "Right"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "left",
-                "display": "Left"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "both",
-                "display": "Both"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "p02-g01-q06-status-of-other-eye",
-          "text": "Status of other eye",
-          "type": "choice",
-          "prefix": "page 02 group 01 question 6",
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "already-had-surgery",
-                "display": "Already had surgery"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "on-waitlist",
-                "display": "On waitlist"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "no-surgery-required",
-                "display": "No surgery required"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "pending-outcome",
-                "display": "Pending outcome of this eye"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "p02-g01-q07-surgical-issuesother",
-          "text": "Surgical Issues/Other",
-          "type": "text",
-          "prefix": "page 02 group 01 question 7"
         }
       ]
     }
   ],
-  "version": "0.3.1",
-  "date": "2026-07-08T20:43:02.394Z"
+  "description": "For starting the workflow to support cataract follow up with Optometrists",
+  "version": "0.4.0",
+  "publisher": "Te Whatu Ora | Health NZ",
+  "date": "2026-07-27T03:56:38.088Z"
 }
