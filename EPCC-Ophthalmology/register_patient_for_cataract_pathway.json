@@ -49,12 +49,61 @@
           "text": "Preferred Optometry Provider",
           "type": "string",
           "prefix": "page 02 group 01 question 1"
+        },
+        {
+          "linkId": "q1785208502486_18eemoj04",
+          "text": "Which district are you in?",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "G08513-H",
+                "display": "Auckland District"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option2",
+                "display": "Option 2"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "q1785208502984_niesvsg2j",
+          "text": "Auckland Optometrists",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "F1M035-F",
+                "display": "Frith and Laird Optometrists"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option2",
+                "display": "Option 2"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "q1785208502486_18eemoj04",
+              "operator": "=",
+              "answerCoding": {
+                "code": "G08513-H",
+                "display": "Auckland District"
+              }
+            }
+          ],
+          "enableBehavior": "all"
         }
       ]
     }
   ],
   "description": "For starting the workflow to support cataract follow up with Optometrists",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-07-27T03:56:38.088Z"
+  "date": "2026-07-28T03:24:04.090Z"
 }
