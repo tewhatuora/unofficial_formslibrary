@@ -45,16 +45,36 @@
       "prefix": "page 02",
       "item": [
         {
-          "linkId": "p02-g01-q01-preferred-optometry-provider",
-          "text": "Preferred Optometry Provider",
+          "linkId": "p02-g01-q01-preferred-optometry-provider-facility",
+          "text": "Preferred Optometry Provider (facility)",
           "type": "string",
           "prefix": "page 02 group 01 question 1"
+        },
+        {
+          "linkId": "p02-g01-q02-preferred-optometrist-cpn",
+          "text": "Preferred Optometrist (CPN)",
+          "type": "string",
+          "prefix": "page 02 group 01 question 2"
+        }
+      ]
+    },
+    {
+      "linkId": "p03-careplan-viewers",
+      "text": "Careplan viewers",
+      "type": "group",
+      "prefix": "page 03",
+      "item": [
+        {
+          "linkId": "p03-g01-q01-add-users-to-view-careplan-cpn",
+          "text": "Add users to view careplan (CPN)",
+          "type": "string",
+          "prefix": "page 03 group 01 question 1"
         }
       ]
     }
   ],
   "description": "For starting the workflow to support cataract follow up with Optometrists",
-  "version": "0.4.0",
+  "version": "0.4.0.1",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-07-27T03:56:38.088Z"
+  "date": "2026-08-02T21:24:39.710Z"
 }
