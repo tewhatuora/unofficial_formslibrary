@@ -22,25 +22,50 @@
           "linkId": "p01-g01-q01-optometry-provider",
           "text": "Optometry Provider",
           "type": "string",
-          "prefix": "page 01 group 01 question 1"
+          "prefix": "page 01 group 01 question 1",
+          "required": true
         },
         {
-          "linkId": "p01-g01-q02-date-of-surgery",
+          "linkId": "p01-g01-q02-optometrist",
+          "text": "Optometrist",
+          "type": "string",
+          "prefix": "page 01 group 01 question 2"
+        }
+      ]
+    },
+    {
+      "linkId": "p02-operation-details",
+      "text": "Operation details",
+      "type": "group",
+      "prefix": "page 02",
+      "item": [
+        {
+          "linkId": "p02-g01-q01-date-of-surgery",
           "text": "Date of Surgery",
           "type": "date",
-          "prefix": "page 01 group 01 question 2"
+          "prefix": "page 02 group 01 question 1",
+          "required": true
         },
         {
-          "linkId": "p01-g01-q03-surgeon",
-          "text": "Surgeon",
+          "linkId": "p02-g01-q02-actual-surgeon",
+          "text": "Actual Surgeon",
           "type": "string",
-          "prefix": "page 01 group 01 question 3"
+          "prefix": "page 02 group 01 question 2",
+          "required": true
         },
         {
-          "linkId": "p01-g01-q04-operated-eye",
+          "linkId": "p02-g01-q03-responsible-smo",
+          "text": "Responsible SMO",
+          "type": "string",
+          "prefix": "page 02 group 01 question 3",
+          "required": true
+        },
+        {
+          "linkId": "p02-g01-q04-operated-eye",
           "text": "Operated eye",
           "type": "choice",
-          "prefix": "page 01 group 01 question 4",
+          "prefix": "page 02 group 01 question 4",
+          "required": true,
           "answerOption": [
             {
               "valueCoding": {
@@ -63,10 +88,11 @@
           ]
         },
         {
-          "linkId": "p01-g01-q05-status-of-other-eye",
+          "linkId": "p02-g01-q05-status-of-other-eye",
           "text": "Status of other eye",
           "type": "choice",
-          "prefix": "page 01 group 01 question 5",
+          "prefix": "page 02 group 01 question 5",
+          "required": true,
           "answerOption": [
             {
               "valueCoding": {
@@ -95,22 +121,22 @@
           ]
         },
         {
-          "linkId": "p01-g01-q06-surgical-issuesother",
+          "linkId": "p02-g01-q06-surgical-issuesother",
           "text": "Surgical Issues/Other",
           "type": "text",
-          "prefix": "page 01 group 01 question 6"
+          "prefix": "page 02 group 01 question 6"
         },
         {
-          "linkId": "p01-g01-q07-attach-the-discharge-summary",
+          "linkId": "p02-g01-q07-attach-the-operation-note",
+          "text": "Attach the Operation Note",
+          "type": "attachment",
+          "prefix": "page 02 group 01 question 7"
+        },
+        {
+          "linkId": "p02-g01-q08-attach-the-discharge-summary",
           "text": "Attach the Discharge Summary",
           "type": "attachment",
-          "prefix": "page 01 group 01 question 7"
-        },
-        {
-          "linkId": "p01-g01-q08-attach-the-surgery-note",
-          "text": "Attach the Surgery Note",
-          "type": "attachment",
-          "prefix": "page 01 group 01 question 8"
+          "prefix": "page 02 group 01 question 8"
         }
       ]
     }
@@ -118,5 +144,5 @@
   "description": "For confirmation that the assessment will be going to the Optometrist",
   "version": "0.4.0",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-07-27T04:05:11.882Z"
+  "date": "2026-08-04T04:22:20.034Z"
 }
