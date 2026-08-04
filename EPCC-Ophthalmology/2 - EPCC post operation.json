@@ -30,6 +30,13 @@
           "text": "Optometrist",
           "type": "string",
           "prefix": "page 01 group 01 question 2"
+        },
+        {
+          "linkId": "p01-g01-q03-fit-for-optometry-follow-up",
+          "text": "Fit for Optometry follow-up ?",
+          "type": "boolean",
+          "prefix": "page 01 group 01 question 3",
+          "required": true
         }
       ]
     },
@@ -144,5 +151,5 @@
   "description": "For confirmation that the assessment will be going to the Optometrist",
   "version": "0.4.0",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-08-04T04:22:20.034Z"
+  "date": "2026-08-04T21:03:17.114Z"
 }
