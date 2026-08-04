@@ -19,20 +19,20 @@
       "prefix": "page 01",
       "item": [
         {
-          "linkId": "p01-g01-q01-consultant",
-          "text": "Consultant",
+          "linkId": "p01-g01-q01-phone-number",
+          "text": "Phone Number",
           "type": "string",
           "prefix": "page 01 group 01 question 1"
         },
         {
-          "linkId": "p01-g01-q02-phone-number",
-          "text": "Phone Number",
+          "linkId": "p01-g01-q02-email",
+          "text": "Email",
           "type": "string",
           "prefix": "page 01 group 01 question 2"
         },
         {
-          "linkId": "p01-g01-q03-email",
-          "text": "Email",
+          "linkId": "p01-g01-q03-interpreter",
+          "text": "Interpreter",
           "type": "string",
           "prefix": "page 01 group 01 question 3"
         }
@@ -48,7 +48,8 @@
           "linkId": "p02-g01-q01-preferred-optometry-provider-facility",
           "text": "Preferred Optometry Provider (facility)",
           "type": "string",
-          "prefix": "page 02 group 01 question 1"
+          "prefix": "page 02 group 01 question 1",
+          "required": true
         },
         {
           "linkId": "p02-g01-q02-preferred-optometrist-cpn",
@@ -59,16 +60,23 @@
       ]
     },
     {
-      "linkId": "p03-careplan-viewers",
-      "text": "Careplan viewers",
+      "linkId": "p03-careplan",
+      "text": "Careplan",
       "type": "group",
       "prefix": "page 03",
       "item": [
         {
-          "linkId": "p03-g01-q01-add-users-to-view-careplan-cpn",
+          "linkId": "p03-g01-q01-intended-surgeon-smo",
+          "text": "Intended surgeon (SMO)",
+          "type": "string",
+          "prefix": "page 03 group 01 question 1",
+          "required": true
+        },
+        {
+          "linkId": "p03-g01-q02-add-users-to-view-careplan-cpn",
           "text": "Add users to view careplan (CPN)",
           "type": "string",
-          "prefix": "page 03 group 01 question 1"
+          "prefix": "page 03 group 01 question 2"
         }
       ]
     }
@@ -76,5 +84,5 @@
   "description": "For starting the workflow to support cataract follow up with Optometrists",
   "version": "0.4.0.1",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-08-02T21:24:39.710Z"
+  "date": "2026-08-04T04:15:41.892Z"
 }
