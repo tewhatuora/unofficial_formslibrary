@@ -81,87 +81,93 @@
           ]
         },
         {
-          "linkId": "p02-g01-q02-date-of-follow-up-assessment",
-          "text": "Date of Follow up Assessment",
-          "type": "date",
-          "prefix": "page 02 group 01 question 2",
-          "required": true
+          "linkId": "p02-g01-q02-comment",
+          "text": "Comment",
+          "type": "string",
+          "prefix": "page 02 group 01 question 2"
         },
         {
-          "linkId": "p02-g01-q03-unaided-vision",
-          "text": "Unaided Vision",
-          "type": "string",
+          "linkId": "p02-g01-q03-date-of-follow-up-assessment",
+          "text": "Date of Follow up Assessment",
+          "type": "date",
           "prefix": "page 02 group 01 question 3",
           "required": true
         },
         {
-          "linkId": "p02-g01-q04-pinhole",
-          "text": "Pinhole",
+          "linkId": "p02-g01-q04-unaided-vision",
+          "text": "Unaided Vision",
           "type": "string",
           "prefix": "page 02 group 01 question 4",
           "required": true
         },
         {
-          "linkId": "p02-g01-q05-autosubj-refraction",
-          "text": "Auto/subj Refraction",
+          "linkId": "p02-g01-q05-pinhole",
+          "text": "Pinhole",
           "type": "string",
           "prefix": "page 02 group 01 question 5",
           "required": true
         },
         {
-          "linkId": "p02-g01-q06-wound-normal",
-          "text": "Wound Normal",
-          "type": "boolean",
+          "linkId": "p02-g01-q06-autosubj-refraction",
+          "text": "Auto/subj Refraction",
+          "type": "string",
           "prefix": "page 02 group 01 question 6",
           "required": true
         },
         {
-          "linkId": "p02-g01-q07-cornea-normal",
-          "text": "Cornea Normal",
+          "linkId": "p02-g01-q07-wound-normal",
+          "text": "Wound Normal",
           "type": "boolean",
           "prefix": "page 02 group 01 question 7",
           "required": true
         },
         {
-          "linkId": "p02-g01-q08-ac-normal",
-          "text": "AC Normal",
+          "linkId": "p02-g01-q08-cornea-normal",
+          "text": "Cornea Normal",
           "type": "boolean",
           "prefix": "page 02 group 01 question 8",
           "required": true
         },
         {
-          "linkId": "p02-g01-q09-pupil-normal",
-          "text": "Pupil Normal",
+          "linkId": "p02-g01-q09-ac-normal",
+          "text": "AC Normal",
           "type": "boolean",
           "prefix": "page 02 group 01 question 9",
           "required": true
         },
         {
-          "linkId": "p02-g01-q10-iolpc-normal",
-          "text": "IOL/PC Normal",
+          "linkId": "p02-g01-q10-pupil-normal",
+          "text": "Pupil Normal",
           "type": "boolean",
           "prefix": "page 02 group 01 question 10",
           "required": true
         },
         {
-          "linkId": "p02-g01-q11-fundus-or-oct-mac-normal",
-          "text": "Fundus or OCT mac Normal",
+          "linkId": "p02-g01-q11-iolpc-normal",
+          "text": "IOL/PC Normal",
           "type": "boolean",
           "prefix": "page 02 group 01 question 11",
           "required": true
         },
         {
-          "linkId": "p02-g01-q12-abnormal-pathway-triggered",
-          "text": "Abnormal Pathway Triggered",
+          "linkId": "p02-g01-q12-fundus-or-oct-mac-normal",
+          "text": "Fundus or OCT mac Normal",
           "type": "boolean",
           "prefix": "page 02 group 01 question 12",
           "required": true
         },
         {
-          "linkId": "p02-g01-q13-escalation-reason",
+          "linkId": "p02-g01-q13-abnormal-pathway-triggered",
+          "text": "Abnormal Pathway Triggered",
+          "type": "boolean",
+          "prefix": "page 02 group 01 question 13",
+          "required": true
+        },
+        {
+          "linkId": "p02-g01-q14-escalation-reason",
           "text": "Escalation Reason",
           "type": "open-choice",
-          "prefix": "page 02 group 01 question 13",
+          "prefix": "page 02 group 01 question 14",
           "answerOption": [
             {
               "valueCoding": {
@@ -184,10 +190,10 @@
           ]
         },
         {
-          "linkId": "p02-g01-q14-treatment-notes",
+          "linkId": "p02-g01-q15-treatment-notes",
           "text": "Treatment Notes",
           "type": "text",
-          "prefix": "page 02 group 01 question 14"
+          "prefix": "page 02 group 01 question 15"
         }
       ]
     },
@@ -240,7 +246,7 @@
     }
   ],
   "description": "Follow up assessment completed by an Optometrist when they are referred following cataract surgery.",
-  "version": "0.1.1.1",
+  "version": "0.4.0",
   "publisher": "Te Whatu Ora | Health New Zealand",
-  "date": "2026-08-04T21:10:40.334Z"
+  "date": "2026-08-04T21:26:31.982Z"
 }
