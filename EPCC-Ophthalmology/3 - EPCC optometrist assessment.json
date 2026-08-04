@@ -14,7 +14,7 @@
   "item": [
     {
       "linkId": "p01-consultation-details",
-      "text": "Consultation Details",
+      "text": "Operation Details (not to be modified)",
       "type": "group",
       "prefix": "page 01",
       "item": [
@@ -25,26 +25,8 @@
           "prefix": "page 01 group 01 question 1"
         },
         {
-          "linkId": "p01-g01-q02-date-of-follow-up-assessment",
-          "text": "Date of Follow up Assessment",
-          "type": "date",
-          "prefix": "page 01 group 01 question 2"
-        },
-        {
-          "linkId": "p01-g01-q03-assessed-by",
-          "text": "Assessed by",
-          "type": "string",
-          "prefix": "page 01 group 01 question 3"
-        },
-        {
-          "linkId": "p01-g01-q04-assessment-organisation",
-          "text": "Assessment Organisation",
-          "type": "string",
-          "prefix": "page 01 group 01 question 4"
-        },
-        {
           "linkId": "p01-g01-q05-eye-operated-on",
-          "text": "Eye Operated on",
+          "text": "Operated Eye",
           "type": "choice",
           "prefix": "page 01 group 01 question 5",
           "answerOption": [
@@ -59,12 +41,6 @@
                 "code": "option2",
                 "display": "Right"
               }
-            },
-            {
-              "valueCoding": {
-                "code": "option3",
-                "display": "Both"
-              }
             }
           ]
         }
@@ -72,90 +48,87 @@
     },
     {
       "linkId": "p02-complete-per-eye",
-      "text": "Complete per Eye",
+      "text": "Assessment",
       "type": "group",
       "prefix": "page 02",
       "repeats": true,
       "item": [
         {
-          "linkId": "p02-g01-q01-which-eye",
-          "text": "Which eye",
-          "type": "choice",
-          "prefix": "page 02 group 01 question 1",
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "option1",
-                "display": "Left"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "option2",
-                "display": "Right"
-              }
-            }
-          ]
+          "linkId": "p01-g01-q02-date-of-follow-up-assessment",
+          "text": "Date of Follow up Assessment",
+          "type": "date",
+          "prefix": "page 01 group 01 question 2",
+          "required": true
         },
         {
           "linkId": "p02-g01-q02-unaided-vision",
           "text": "Unaided Vision",
           "type": "string",
-          "prefix": "page 02 group 01 question 2"
+          "prefix": "page 02 group 01 question 2",
+          "required": true
         },
         {
           "linkId": "p02-g01-q03-pinhole",
           "text": "Pinhole",
           "type": "string",
-          "prefix": "page 02 group 01 question 3"
+          "prefix": "page 02 group 01 question 3",
+          "required": true
         },
         {
           "linkId": "p02-g01-q04-autosubj-refraction",
           "text": "Auto/subj Refraction",
           "type": "string",
-          "prefix": "page 02 group 01 question 4"
+          "prefix": "page 02 group 01 question 4",
+          "required": true
         },
         {
           "linkId": "p02-g01-q05-wound-normal",
           "text": "Wound Normal",
           "type": "boolean",
-          "prefix": "page 02 group 01 question 5"
+          "prefix": "page 02 group 01 question 5",
+          "required": true
         },
         {
           "linkId": "p02-g01-q06-cornea-normal",
           "text": "Cornea Normal",
           "type": "boolean",
-          "prefix": "page 02 group 01 question 6"
+          "prefix": "page 02 group 01 question 6",
+          "required": true
         },
         {
           "linkId": "p02-g01-q07-ac-normal",
           "text": "AC Normal",
           "type": "boolean",
-          "prefix": "page 02 group 01 question 7"
+          "prefix": "page 02 group 01 question 7",
+          "required": true
         },
         {
           "linkId": "p02-g01-q08-pupil-normal",
           "text": "Pupil Normal",
           "type": "boolean",
-          "prefix": "page 02 group 01 question 8"
+          "prefix": "page 02 group 01 question 8",
+          "required": true
         },
         {
           "linkId": "p02-g01-q09-iolpc-normal",
           "text": "IOL/PC Normal",
           "type": "boolean",
-          "prefix": "page 02 group 01 question 9"
+          "prefix": "page 02 group 01 question 9",
+          "required": true
         },
         {
           "linkId": "p02-g01-q10-fundus-or-oct-mac-normal",
           "text": "Fundus or OCT mac Normal",
           "type": "boolean",
-          "prefix": "page 02 group 01 question 10"
+          "prefix": "page 02 group 01 question 10",
+          "required": true
         },
         {
           "linkId": "p02-g01-q11-abnormal-pathway-triggered",
           "text": "Abnormal Pathway Triggered",
           "type": "boolean",
-          "prefix": "page 02 group 01 question 11"
+          "prefix": "page 02 group 01 question 11",
+          "required": true
         },
         {
           "linkId": "p02-g01-q12-escalation-reason",
@@ -202,6 +175,7 @@
           "text": "Follow up Recommendation",
           "type": "choice",
           "prefix": "page 03 group 01 question 1",
+          "required": true,
           "answerOption": [
             {
               "valueCoding": {
@@ -234,44 +208,12 @@
           "text": "Follow up recommendation comment",
           "type": "text",
           "prefix": "page 03 group 01 question 2"
-        },
-        {
-          "linkId": "p03-g01-q03-next-steps",
-          "text": "Next Steps",
-          "type": "choice",
-          "prefix": "page 03 group 01 question 3",
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "option1",
-                "display": "Other eye has already been operated on"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "option2",
-                "display": "Other eye is already on the waitlist "
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "option3",
-                "display": "Other eye meets CPAC criteria and has been added to the waitlist by Optometrist  "
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "option4",
-                "display": "No further surgery required"
-              }
-            }
-          ]
         }
       ]
     }
   ],
   "description": "Follow up assessment completed by an Optometrist when they are referred following cataract surgery.",
-  "version": "0.1.1",
+  "version": "0.1.1.1",
   "publisher": "Te Whatu Ora | Health New Zealand",
-  "date": "2026-07-14T01:41:50.514Z"
+  "date": "2026-08-04T04:28:42.071Z"
 }
