@@ -76,20 +76,16 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": "right",
-                "display": "Right"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "left",
+                "system": "http://snomed.info/sct",
+                "code": "7771000",
                 "display": "Left"
               }
             },
             {
               "valueCoding": {
-                "code": "both",
-                "display": "Both"
+                "system": "http://snomed.info/sct",
+                "code": "24028007",
+                "display": "Right"
               }
             }
           ]
@@ -149,7 +145,7 @@
     }
   ],
   "description": "For confirmation that the assessment will be going to the Optometrist",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-08-04T21:03:17.114Z"
+  "date": "2026-08-05T01:34:45.900Z"
 }
