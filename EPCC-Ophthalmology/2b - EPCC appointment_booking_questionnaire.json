@@ -1,0 +1,62 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire appointment-booking</b></p><h2>Appointment booking</h2><p>For the Optometrist to share the appointment booking.</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "draft",
+  "title": "Appointment booking",
+  "item": [
+    {
+      "linkId": "p01-appointment",
+      "text": "Appointment",
+      "type": "group",
+      "prefix": "page 01",
+      "item": [
+        {
+          "linkId": "p01-g01-q01-reason-for-exit",
+          "text": "Reason for exit",
+          "type": "choice",
+          "prefix": "page 01 group 01 question 1",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "option1",
+                "display": "Appointment booked"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "option2",
+                "display": "Could not contact the patient"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "p01-g01-q02-date-of-appointment",
+          "text": "Date of appointment",
+          "type": "date",
+          "prefix": "page 01 group 01 question 2",
+          "required": true
+        },
+        {
+          "linkId": "p01-g01-q03-comment",
+          "text": "Comment",
+          "type": "text",
+          "prefix": "page 01 group 01 question 3"
+        }
+      ]
+    }
+  ],
+  "description": "For the Optometrist to share the appointment booking.",
+  "version": "0.1.0",
+  "publisher": "Te Whatu Ora | Health NZ",
+  "date": "2026-08-06T02:55:37.817Z"
+}
