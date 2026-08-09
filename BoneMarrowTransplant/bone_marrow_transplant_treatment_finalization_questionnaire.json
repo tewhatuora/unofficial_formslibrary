@@ -9,7 +9,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire bone-marrow-transplant-treatment-finalization</b></p><h2>Bone Marrow Transplant Treatment Finalization</h2><p>Finalize actual treatment received information for a patient who underwent bone marrow transplant</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
   },
-  "status": "draft",
+  "status": "active",
   "title": "Bone Marrow Transplant Treatment Finalization",
   "item": [
     {
@@ -56,32 +56,32 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": "matched-related",
-                "display": "Matched Related Donor (MRD)"
+                "code": "211661000210106",
+                "display": "Matched related stem cell donor"
               }
             },
             {
               "valueCoding": {
-                "code": "matched-unrelated",
-                "display": "Matched Unrelated Donor (MUD)"
+                "code": "211671000210100",
+                "display": "Matched unrelated stem cell donor"
               }
             },
             {
               "valueCoding": {
-                "code": "mismatched-unrelated",
-                "display": "Mismatched Unrelated Donor (MMUD)"
+                "code": "211681000210103",
+                "display": "Mismatched unrelated stem cell donor"
               }
             },
             {
               "valueCoding": {
-                "code": "haploidentical",
-                "display": "Haploidentical"
+                "code": "211681000210103",
+                "display": "Mismatched related stem cell donor (Haplo)"
               }
             },
             {
               "valueCoding": {
-                "code": "cord-blood",
-                "display": "Cord Blood"
+                "code": "211701000210101",
+                "display": "Cord blood stem cell donor"
               }
             }
           ]
@@ -251,7 +251,7 @@
     }
   ],
   "description": "Finalize actual treatment received information for a patient who underwent bone marrow transplant",
-  "version": "0.4.1",
+  "version": "1.0.0",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-07-23T04:08:36.051Z"
+  "date": "2026-08-09T23:35:22.160Z"
 }
