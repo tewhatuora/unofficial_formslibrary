@@ -9,7 +9,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire bone-marrow-transplant-waiting-list-registration</b></p><h2>Bone Marrow Transplant Waiting List Registration</h2><p>Initial registration of a patient on the bone marrow transplant waiting list</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
   },
-  "status": "draft",
+  "status": "active",
   "title": "Bone Marrow Transplant Waiting List Registration",
   "item": [
     {
@@ -145,10 +145,10 @@
           "enableBehavior": "all"
         },
         {
-          "linkId": "p01-g01-q07-clinical-nurse-specialist-cns",
+          "linkId": "p01-g01-q05-wellington-care-team-members-to-add-to-the-carepla",
           "text": "Wellington Care Team members to add to the careplan",
           "type": "choice",
-          "prefix": "page 01 group 01 question 7",
+          "prefix": "page 01 group 01 question 5",
           "repeats": true,
           "answerOption": [
             {
@@ -215,10 +215,10 @@
           ]
         },
         {
-          "linkId": "p01-g01-q05-senior-medical-officer-smo-auckland",
+          "linkId": "p01-g01-q06-senior-medical-officer-smo-auckland",
           "text": "Senior Medical Officer (SMO) - Auckland",
           "type": "open-choice",
-          "prefix": "page 01 group 01 question 5",
+          "prefix": "page 01 group 01 question 6",
           "answerOption": [
             {
               "valueCoding": {
@@ -264,10 +264,10 @@
           "enableBehavior": "all"
         },
         {
-          "linkId": "p01-g01-q06-senior-medical-officer-smo-christchurch",
+          "linkId": "p01-g01-q07-senior-medical-officer-smo-christchurch",
           "text": "Senior Medical Officer (SMO) - Christchurch",
           "type": "open-choice",
-          "prefix": "page 01 group 01 question 6",
+          "prefix": "page 01 group 01 question 7",
           "answerOption": [
             {
               "valueCoding": {
@@ -353,10 +353,10 @@
           "required": true
         },
         {
-          "linkId": "p02-g01-q06-urgency",
+          "linkId": "p02-g01-q02-urgency-level",
           "text": "Urgency Level",
           "type": "choice",
-          "prefix": "page 02 group 01 question 6",
+          "prefix": "page 02 group 01 question 2",
           "answerOption": [
             {
               "valueCoding": {
@@ -382,10 +382,10 @@
           ]
         },
         {
-          "linkId": "p02-g01-q02-disease-indication",
+          "linkId": "p02-g01-q03-disease-indication",
           "text": "Disease Indication",
           "type": "choice",
-          "prefix": "page 02 group 01 question 2",
+          "prefix": "page 02 group 01 question 3",
           "required": true,
           "answerOption": [
             {
@@ -524,10 +524,10 @@
           ]
         },
         {
-          "linkId": "p02-g01-q03-patient-type-transplant-type",
+          "linkId": "p02-g01-q04-patient-type-transplant-type",
           "text": "Patient Type (Transplant Type)",
           "type": "choice",
-          "prefix": "page 02 group 01 question 3",
+          "prefix": "page 02 group 01 question 4",
           "required": true,
           "answerOption": [
             {
@@ -552,10 +552,10 @@
           ]
         },
         {
-          "linkId": "p02-g01-q04-treatment-intent",
+          "linkId": "p02-g01-q05-treatment-intent",
           "text": "Treatment Intent",
           "type": "open-choice",
-          "prefix": "page 02 group 01 question 4",
+          "prefix": "page 02 group 01 question 5",
           "answerOption": [
             {
               "valueCoding": {
@@ -573,16 +573,16 @@
           ]
         },
         {
-          "linkId": "p02-g01-q05-comments",
+          "linkId": "p02-g01-q06-comments",
           "text": "Comments",
           "type": "text",
-          "prefix": "page 02 group 01 question 5"
+          "prefix": "page 02 group 01 question 6"
         }
       ]
     }
   ],
   "description": "Initial registration of a patient on the bone marrow transplant waiting list",
-  "version": "0.4.8",
+  "version": "1.0.0",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-07-23T03:42:58.081Z"
+  "date": "2026-08-09T23:31:52.824Z"
 }
