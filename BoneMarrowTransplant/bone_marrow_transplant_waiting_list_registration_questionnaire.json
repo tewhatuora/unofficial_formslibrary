@@ -349,8 +349,7 @@
           "linkId": "p02-g01-q01-smo-transplant-clinical-indication-tci-date",
           "text": "SMO Transplant Clinical Indication (TCI) Date",
           "type": "date",
-          "prefix": "page 02 group 01 question 1",
-          "required": true
+          "prefix": "page 02 group 01 question 1"
         },
         {
           "linkId": "p02-g01-q02-urgency-level",
@@ -582,7 +581,7 @@
     }
   ],
   "description": "Initial registration of a patient on the bone marrow transplant waiting list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "Te Whatu Ora | Health NZ",
-  "date": "2026-08-09T23:31:52.824Z"
+  "date": "2026-08-16T21:17:53.133Z"
 }
