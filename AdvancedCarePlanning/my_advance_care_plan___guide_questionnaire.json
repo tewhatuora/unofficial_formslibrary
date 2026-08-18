@@ -1,0 +1,301 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire my-advance-care-plan-guide</b></p><h2>My Advance Care Plan &amp; Guide</h2><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "draft",
+  "title": "My Advance Care Plan & Guide",
+  "item": [
+    {
+      "linkId": "2",
+      "text": "What matters to me",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "2.1",
+          "text": "What makes you happy?",
+          "type": "text"
+        },
+        {
+          "linkId": "2.2",
+          "text": "What brings you pleasure and joy?",
+          "type": "text"
+        },
+        {
+          "linkId": "2.3",
+          "text": "How do you like to spend your time?",
+          "type": "text"
+        },
+        {
+          "linkId": "2.4",
+          "text": "What are your hobbies and interests?",
+          "type": "text"
+        },
+        {
+          "linkId": "2.5",
+          "text": "Are there routines you really like?",
+          "type": "text"
+        },
+        {
+          "linkId": "2.6",
+          "text": "My cultural, religious and spiritual values, rituals and beliefs:",
+          "type": "text"
+        },
+        {
+          "linkId": "2.7",
+          "text": "To honour these beliefs I want my whānau, loved ones and healthcare team to:",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Why I'm making an Advance Care Plan",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "3.1",
+          "text": "This is why I am making my advance care plan:",
+          "type": "text"
+        },
+        {
+          "linkId": "3.2",
+          "text": "I am well",
+          "type": "boolean"
+        },
+        {
+          "linkId": "3.3",
+          "text": "I am receiving care and treatment for the following:",
+          "type": "text"
+        },
+        {
+          "linkId": "3.4",
+          "text": "I understand this may happen to my health in the future:",
+          "type": "text"
+        },
+        {
+          "linkId": "3.5",
+          "text": "Facing my future makes me think about:",
+          "type": "text"
+        },
+        {
+          "linkId": "3.6",
+          "text": "Facing my future makes me feel:",
+          "type": "text"
+        },
+        {
+          "linkId": "3.7",
+          "text": "If my time were limited, my priorities would be:",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "How I make decisions",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "4.1",
+          "text": "I like to know...",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "Only the basics"
+            },
+            {
+              "valueString": "All the details about my condition and my treatment"
+            }
+          ]
+        },
+        {
+          "linkId": "4.2",
+          "text": "As doctors treat me, I would like...",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "My doctors to do what they think best"
+            },
+            {
+              "valueString": "To have a say in every decision"
+            }
+          ]
+        },
+        {
+          "linkId": "4.3",
+          "text": "If I had an illness that was going to shorten my life, I prefer to...",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "Know my doctor's best estimate for how long I have to live"
+            },
+            {
+              "valueString": "Not know how quickly it is likely to progress"
+            }
+          ]
+        },
+        {
+          "linkId": "4.4",
+          "text": "How involved do you want your loved ones to be?",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "I want them to do exactly as I have said, even if it makes them uncomfortable"
+            },
+            {
+              "valueString": "I want them to do what brings them peace, even if it goes against what I have said"
+            }
+          ]
+        },
+        {
+          "linkId": "4.5",
+          "text": "When it comes to sharing information...",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "I don't want my loved ones to know anything about my health"
+            },
+            {
+              "valueString": "I am comfortable with my loved ones knowing everything about my health"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "When I am dying",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "5.1",
+          "text": "As I am dying, my quality of life means:",
+          "type": "text"
+        },
+        {
+          "linkId": "5.2",
+          "text": "Other details I would like you to know:",
+          "type": "text"
+        },
+        {
+          "linkId": "5.3",
+          "text": "I understand that when I am dying my comfort and dignity will always be looked after.",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "Let the people who are important to me be with me"
+            },
+            {
+              "valueString": "Take out things like tubes that don't add to my comfort"
+            },
+            {
+              "valueString": "Stop medications and treatments that don't add to my comfort"
+            },
+            {
+              "valueString": "Attend to my religious, cultural and/or spiritual needs"
+            }
+          ]
+        },
+        {
+          "linkId": "5.4",
+          "text": "The place I die is important to me:",
+          "type": "boolean"
+        },
+        {
+          "linkId": "5.5",
+          "text": "When I am dying I would prefer to be cared for:",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "At home"
+            },
+            {
+              "valueString": "In hospital"
+            },
+            {
+              "valueString": "In a hospital level care facility (residential care)"
+            },
+            {
+              "valueString": "In hospice"
+            },
+            {
+              "valueString": "I don't mind where I am cared for"
+            }
+          ]
+        },
+        {
+          "linkId": "5.6",
+          "text": "Other details I would like you to know:",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "6",
+      "text": "My treatment and care choices",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "6.1",
+          "text": "I would like my treatment to be aimed at keeping me alive as long as possible. Exceptions to this would be:",
+          "type": "text"
+        },
+        {
+          "linkId": "6.2",
+          "text": "If required and appropriate I would want CPR to be attempted:",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "Yes"
+            },
+            {
+              "valueString": "No"
+            },
+            {
+              "valueString": "I will let my doctor decide at the time"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "7",
+      "text": "After my death",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "7.1",
+          "text": "My wishes for organ and tissue donation:",
+          "type": "text"
+        },
+        {
+          "linkId": "7.2",
+          "text": "My wishes for caring for my body immediately after death:",
+          "type": "text"
+        },
+        {
+          "linkId": "7.3",
+          "text": "After I die I would like to be:",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "Buried"
+            },
+            {
+              "valueString": "Cremated"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "0.0.1",
+  "publisher": "Te Whatu Ora | Health NZ",
+  "date": "2026-08-18T04:59:36.470Z"
+}
