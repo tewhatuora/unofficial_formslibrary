@@ -1,0 +1,226 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire acc4249-short-term-equipment-needed-post-six-weeks</b></p><h2>ACC4249 Short-term equipment (needed post six weeks discharge) request</h2><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "active",
+  "title": "ACC4249 Short-term equipment (needed post six weeks discharge) request",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Client details",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "1.1",
+          "text": "Client name",
+          "type": "string"
+        },
+        {
+          "linkId": "1.2",
+          "text": "Date of birth",
+          "type": "date"
+        },
+        {
+          "linkId": "1.3",
+          "text": "ACC45 number",
+          "type": "string"
+        },
+        {
+          "linkId": "1.4",
+          "text": "Claim number",
+          "type": "string"
+        },
+        {
+          "linkId": "1.5",
+          "text": "NHI number",
+          "type": "string"
+        },
+        {
+          "linkId": "1.6",
+          "text": "Phone number",
+          "type": "string"
+        },
+        {
+          "linkId": "1.7",
+          "text": "Address",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Hospital details",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "2.1",
+          "text": "Hospital",
+          "type": "string"
+        },
+        {
+          "linkId": "2.2",
+          "text": "Contact name",
+          "type": "string"
+        },
+        {
+          "linkId": "2.3",
+          "text": "Role",
+          "type": "string"
+        },
+        {
+          "linkId": "2.4",
+          "text": "Phone number",
+          "type": "string"
+        },
+        {
+          "linkId": "2.5",
+          "text": "Email",
+          "type": "string"
+        },
+        {
+          "linkId": "2.6",
+          "text": "Date of client’s acute discharge",
+          "type": "date"
+        },
+        {
+          "linkId": "2.7",
+          "text": "Additional comments",
+          "type": "text"
+        },
+        {
+          "linkId": "2.8",
+          "text": "Signature",
+          "type": "string"
+        },
+        {
+          "linkId": "2.9",
+          "text": "Date",
+          "type": "date"
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Decision",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "3.1",
+          "text": "ACC recovery team member",
+          "type": "string"
+        },
+        {
+          "linkId": "3.2",
+          "text": "ACC Recovery Team",
+          "type": "string"
+        },
+        {
+          "linkId": "3.3",
+          "text": "Phone number",
+          "type": "string"
+        },
+        {
+          "linkId": "3.4",
+          "text": "Email address",
+          "type": "string"
+        },
+        {
+          "linkId": "3.5",
+          "text": "Equipment decision",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "Approved"
+            },
+            {
+              "valueString": "Declined (no cover)"
+            },
+            {
+              "valueString": "Declined (outside of timeframe, see below)"
+            }
+          ]
+        },
+        {
+          "linkId": "3.6",
+          "text": "Additional comments",
+          "type": "text"
+        },
+        {
+          "linkId": "3.7",
+          "text": "Signed",
+          "type": "string"
+        },
+        {
+          "linkId": "3.8",
+          "text": "Date",
+          "type": "date"
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Equipment details",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "4.1",
+          "text": "Equipment details",
+          "type": "group",
+          "repeats": true,
+          "item": [
+            {
+              "linkId": "4.1.1",
+              "text": "Equipment",
+              "type": "string"
+            },
+            {
+              "linkId": "4.1.2",
+              "text": "Code",
+              "type": "string"
+            },
+            {
+              "linkId": "4.1.3",
+              "text": "Cost (Inc GST)",
+              "type": "decimal"
+            },
+            {
+              "linkId": "4.1.4",
+              "text": "Tick if not required",
+              "type": "boolean"
+            },
+            {
+              "linkId": "4.1.5",
+              "text": "Date item will be replaced (please remove hospital item)",
+              "type": "date"
+            },
+            {
+              "linkId": "4.1.6",
+              "text": "Purchase order number to invoice ACC (if required)",
+              "type": "string"
+            },
+            {
+              "linkId": "4.1.7",
+              "text": "Purchase order expiry date (date to which ACC will pay the hospital hire charge)",
+              "type": "date"
+            }
+          ]
+        },
+        {
+          "linkId": "4.2",
+          "text": "Additional comments",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "version": "0.0.1",
+  "publisher": "ACC",
+  "date": "2026-09-22T03:10:55.205Z"
+}
