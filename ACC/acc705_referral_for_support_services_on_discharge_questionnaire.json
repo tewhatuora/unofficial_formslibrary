@@ -1,0 +1,826 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire acc705-referral-for-support-services-on-discharge</b></p><h2>ACC705 Referral for Support Services on Discharge</h2><p>Form to describe a patient’s injury, any other conditions they have, and the support they need from ACC for a safe discharge.</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "active",
+  "title": "ACC705 Referral for Support Services on Discharge",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Patient details",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "1.1",
+          "text": "Patient name",
+          "type": "string"
+        },
+        {
+          "linkId": "1.2",
+          "text": "Date of birth",
+          "type": "date"
+        },
+        {
+          "linkId": "1.3",
+          "text": "Address",
+          "type": "string"
+        },
+        {
+          "linkId": "1.4",
+          "text": "Contact number",
+          "type": "string"
+        },
+        {
+          "linkId": "1.5",
+          "text": "NHI Number",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "1b",
+      "text": "Authorised alternative contact details",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "1b.1",
+          "text": "Contact name",
+          "type": "string"
+        },
+        {
+          "linkId": "1b.2",
+          "text": "Contact number",
+          "type": "string"
+        },
+        {
+          "linkId": "1b.3",
+          "text": "Relationship to patient",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "2a",
+      "text": "Referral information",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "2a.1",
+          "text": "Planned discharge date",
+          "type": "date"
+        },
+        {
+          "linkId": "2a.2",
+          "text": "Date supports are required",
+          "type": "date"
+        },
+        {
+          "linkId": "2a.3",
+          "text": "Referrer name",
+          "type": "string"
+        },
+        {
+          "linkId": "2a.4",
+          "text": "Role",
+          "type": "string"
+        },
+        {
+          "linkId": "2a.5",
+          "text": "Hospital name",
+          "type": "string"
+        },
+        {
+          "linkId": "2a.6",
+          "text": "Phone number",
+          "type": "string"
+        },
+        {
+          "linkId": "2a.7",
+          "text": "Email address",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "2b",
+      "text": "Service request",
+      "type": "choice",
+      "repeats": true,
+      "answerOption": [
+        {
+          "valueString": "Notify ACC a referral for HCS – Return to Independence has been sent to a provider"
+        },
+        {
+          "valueString": "Request ACC arranges home and community support (where ineligible for HCS-RTI)"
+        },
+        {
+          "valueString": "Request interim residential care"
+        },
+        {
+          "valueString": "Notify ACC of equipment required to support discharge"
+        },
+        {
+          "valueString": "Request for ACC to arrange"
+        },
+        {
+          "valueString": "Notify ACC rehabilitation services have been put in place"
+        },
+        {
+          "valueString": "Request rehabilitation services (not provided by NARP or HCS Provider)"
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Discharge planning",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "3.1",
+          "text": "Patient is discharging from",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "Acute inpatient"
+            },
+            {
+              "valueString": "Non-acute rehab inpatient"
+            },
+            {
+              "valueString": "Emergency department"
+            }
+          ]
+        },
+        {
+          "linkId": "3.2",
+          "text": "If the patient is being discharged to a different address to the one in section 1a, please provide this address",
+          "type": "string"
+        },
+        {
+          "linkId": "3.3",
+          "text": "Contact number (if different to the number supplied in section 1a)",
+          "type": "string"
+        },
+        {
+          "linkId": "3.4",
+          "text": "Does the patient live alone?",
+          "type": "boolean"
+        },
+        {
+          "linkId": "3.5",
+          "text": "Patient's living situation",
+          "type": "string"
+        },
+        {
+          "linkId": "3.6",
+          "text": "List any risks or hazards a provider needs to know when visiting the patient’s home",
+          "type": "string"
+        },
+        {
+          "linkId": "3.7",
+          "text": "Does the patient, or anyone else in the household, receive formal support?",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "Yes, provide more information below"
+            },
+            {
+              "valueString": "No"
+            }
+          ]
+        },
+        {
+          "linkId": "3.8",
+          "text": "Carer/agency",
+          "type": "string"
+        },
+        {
+          "linkId": "3.9",
+          "text": "Hours per day/week/fortnight",
+          "type": "string"
+        },
+        {
+          "linkId": "3.10",
+          "text": "Does the patient require an interpreter?",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "Yes, advise which language"
+            },
+            {
+              "valueString": "No"
+            }
+          ]
+        },
+        {
+          "linkId": "3.11",
+          "text": "List any informal support available in the home or community to assist the patient",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "4a",
+      "text": "Injury details",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "4a.1",
+          "text": "ACC45 number",
+          "type": "string"
+        },
+        {
+          "linkId": "4a.2",
+          "text": "Date of injury",
+          "type": "date"
+        },
+        {
+          "linkId": "4a.3",
+          "text": "Injury diagnosis at the time of discharge",
+          "type": "string"
+        },
+        {
+          "linkId": "4a.4",
+          "text": "Has this changed since the ACC45 was lodged?",
+          "type": "boolean"
+        },
+        {
+          "linkId": "4a.5",
+          "text": "How did the accident happen?",
+          "type": "string"
+        },
+        {
+          "linkId": "4a.6",
+          "text": "List the patient’s relevant treatment history (including surgery)",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "4b",
+      "text": "Pre-injury medical or disability details",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "4b.1",
+          "text": "Indicate any pre-existing conditions that might affect the patient’s ability to rehabilitate",
+          "type": "choice",
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueString": "Hypertension"
+            },
+            {
+              "valueString": "Hypotension"
+            },
+            {
+              "valueString": "Osteoporosis"
+            },
+            {
+              "valueString": "Arthritis"
+            },
+            {
+              "valueString": "Mental health diagnosis"
+            },
+            {
+              "valueString": "Heart disease"
+            },
+            {
+              "valueString": "Type 1 diabetes"
+            },
+            {
+              "valueString": "Type 2 diabetes"
+            },
+            {
+              "valueString": "Cognitive impairment"
+            },
+            {
+              "valueString": "Hearing impairment"
+            },
+            {
+              "valueString": "Visual impairment"
+            },
+            {
+              "valueString": "Total knee joint replacement"
+            },
+            {
+              "valueString": "Total hip joint replacement"
+            },
+            {
+              "valueString": "Chronic obstructive pulmonary disorder"
+            }
+          ]
+        },
+        {
+          "linkId": "4b.2",
+          "text": "Mobility issues, specify details",
+          "type": "string"
+        },
+        {
+          "linkId": "4b.3",
+          "text": "Neurological condition, specify details",
+          "type": "string"
+        },
+        {
+          "linkId": "4b.4",
+          "text": "Other conditions, specify details",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "4c",
+      "text": "Post injury functional limitations",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "4c.1",
+          "text": "Weight bearing status",
+          "type": "choice",
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueString": "Full weight bearing"
+            },
+            {
+              "valueString": "Weight bearing as tolerated"
+            },
+            {
+              "valueString": "Partial weight bearing"
+            },
+            {
+              "valueString": "Abide by hip precautions"
+            },
+            {
+              "valueString": "Non-weight bearing"
+            }
+          ]
+        },
+        {
+          "linkId": "4c.2",
+          "text": "Mobility aids",
+          "type": "choice",
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueString": "Nil aid"
+            },
+            {
+              "valueString": "Walking stick"
+            },
+            {
+              "valueString": "Crutches"
+            },
+            {
+              "valueString": "Standing walking frame"
+            },
+            {
+              "valueString": "2W2C frame"
+            },
+            {
+              "valueString": "Pram handle frame"
+            },
+            {
+              "valueString": "Gutter frame"
+            },
+            {
+              "valueString": "Wheelchair"
+            }
+          ]
+        },
+        {
+          "linkId": "4c.3",
+          "text": "Transfers",
+          "type": "choice",
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueString": "Independent"
+            },
+            {
+              "valueString": "Supervision"
+            },
+            {
+              "valueString": "1 person assist for transfers"
+            },
+            {
+              "valueString": "2 person assist for transfers"
+            },
+            {
+              "valueString": "Hoist transfers"
+            }
+          ]
+        },
+        {
+          "linkId": "4c.4",
+          "text": "Upper limb limitations",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "Left"
+            },
+            {
+              "valueString": "Right"
+            }
+          ]
+        },
+        {
+          "linkId": "4c.5",
+          "text": "Dominant hand",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "Left"
+            },
+            {
+              "valueString": "Right"
+            }
+          ]
+        },
+        {
+          "linkId": "4c.6",
+          "text": "Other, specify details",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "Support requirements due to injury",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "5.1",
+          "text": "Household tasks (e.g., laundry)",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "5.1.1",
+              "text": "Pre-injury status",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueString": "Independent"
+                },
+                {
+                  "valueString": "Assistance needed"
+                }
+              ]
+            },
+            {
+              "linkId": "5.1.2",
+              "text": "Describe the patient’s post-discharge needs",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "linkId": "5.2",
+          "text": "Showering/bathing",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "5.2.1",
+              "text": "Pre-injury status",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueString": "Independent"
+                },
+                {
+                  "valueString": "Assistance needed"
+                }
+              ]
+            },
+            {
+              "linkId": "5.2.2",
+              "text": "Describe the patient’s post-discharge needs",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "linkId": "5.3",
+          "text": "Toileting",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "5.3.1",
+              "text": "Pre-injury status",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueString": "Independent"
+                },
+                {
+                  "valueString": "Assistance needed"
+                }
+              ]
+            },
+            {
+              "linkId": "5.3.2",
+              "text": "Describe the patient’s post-discharge needs",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "linkId": "5.4",
+          "text": "Meal preparation",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "5.4.1",
+              "text": "Pre-injury status",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueString": "Independent"
+                },
+                {
+                  "valueString": "Assistance needed"
+                }
+              ]
+            },
+            {
+              "linkId": "5.4.2",
+              "text": "Describe the patient’s post-discharge needs",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "linkId": "5.5",
+          "text": "Transport",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "5.5.1",
+              "text": "Pre-injury status",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueString": "Independent"
+                },
+                {
+                  "valueString": "Assistance needed"
+                }
+              ]
+            },
+            {
+              "linkId": "5.5.2",
+              "text": "Describe the patient’s post-discharge needs",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "linkId": "5.6",
+          "text": "Medication management",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "5.6.1",
+              "text": "Pre-injury status",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueString": "Independent"
+                },
+                {
+                  "valueString": "Assistance needed"
+                }
+              ]
+            },
+            {
+              "linkId": "5.6.2",
+              "text": "Describe the patient’s post-discharge needs",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "6",
+      "text": "Rehabilitation requirements due to injury",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "6.1",
+          "text": "Does the patient require any further rehabilitation or treatment?",
+          "type": "boolean"
+        },
+        {
+          "linkId": "6.2",
+          "text": "Rehabilitation or treatment required",
+          "type": "string"
+        },
+        {
+          "linkId": "6.3",
+          "text": "Who will arrange this rehabilitation?",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "Discharging hospital"
+            },
+            {
+              "valueString": "ACC"
+            },
+            {
+              "valueString": "HCS-RTI provider"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "7",
+      "text": "Equipment",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "7.1",
+          "text": "Indicate if equipment is being provided by the hospital or you require ACC to arrange it",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "Equipment will be provided by the hospital"
+            },
+            {
+              "valueString": "ACC to arrange"
+            }
+          ]
+        },
+        {
+          "linkId": "7.2",
+          "text": "Equipment to be arranged by ACC",
+          "type": "string"
+        },
+        {
+          "linkId": "7.3",
+          "text": "Length of time required",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "8",
+      "text": "Home and Community Supports (HCS), if required",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "8.1",
+          "text": "After discharge, will the client require assistance from a support worker with any of the following, due to their injury?",
+          "type": "choice",
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueString": "Household tasks (e.g., laundry, vacuuming, dusting, etc)"
+            },
+            {
+              "valueString": "Showering/Bathing"
+            },
+            {
+              "valueString": "Meal preparation"
+            },
+            {
+              "valueString": "Shopping"
+            },
+            {
+              "valueString": "Childcare"
+            }
+          ]
+        },
+        {
+          "linkId": "8.2",
+          "text": "Is the client aged 16 years and under today?",
+          "type": "boolean"
+        },
+        {
+          "linkId": "8.3",
+          "text": "Does the client require over-night care from a support worker?",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "linkId": "9",
+      "text": "Interim care requirements",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "9.1",
+          "text": "What was the patient’s living situation before their accident?",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "Normally lives at home and needs to enter facility for short term care"
+            },
+            {
+              "valueString": "Normally lives in rest home/facility"
+            }
+          ]
+        },
+        {
+          "linkId": "9.2",
+          "text": "Due to their injury, they require",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "Independent unit/apartment"
+            },
+            {
+              "valueString": "Rest home level care"
+            },
+            {
+              "valueString": "Hospital level care"
+            },
+            {
+              "valueString": "Dementia level care"
+            },
+            {
+              "valueString": "Specialised psychogeriatric level care"
+            }
+          ]
+        },
+        {
+          "linkId": "9.3",
+          "text": "What is the clinical rationale for the patient needing interim care and why can’t the patient go home with a support plan in place?",
+          "type": "string"
+        },
+        {
+          "linkId": "9.4",
+          "text": "Name of residential facility the patient is being discharged to",
+          "type": "string"
+        },
+        {
+          "linkId": "9.5",
+          "text": "Date interim care is required from",
+          "type": "date"
+        },
+        {
+          "linkId": "9.6",
+          "text": "Anticipated length of stay",
+          "type": "string"
+        },
+        {
+          "linkId": "9.7",
+          "text": "Will ACC pay the discharging hospital or the aged residential care (ARC) facility for interim care?",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueString": "Hospital"
+            },
+            {
+              "valueString": "ARC facility"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "10",
+      "text": "Referral checklist",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "10.1",
+          "text": "Patient details and pre/post-injury information sections (1-5) have been completed",
+          "type": "boolean"
+        },
+        {
+          "linkId": "10.2",
+          "text": "Service request section (2b) has ticks indicating the services being requested",
+          "type": "boolean"
+        },
+        {
+          "linkId": "10.3",
+          "text": "Relevant service sections (6-9) have been completed with required information",
+          "type": "boolean"
+        },
+        {
+          "linkId": "10.4",
+          "text": "The discharge plan or service request has been discussed with the patient and patient representatives",
+          "type": "boolean"
+        },
+        {
+          "linkId": "10.5",
+          "text": "If available, supporting evidence such as the discharge report is attached",
+          "type": "boolean"
+        }
+      ]
+    }
+  ],
+  "description": "Form to describe a patient’s injury, any other conditions they have, and the support they need from ACC for a safe discharge.",
+  "version": "1.0.0",
+  "publisher": "ACC",
+  "date": "2026-09-22T03:10:10.187Z"
+}
