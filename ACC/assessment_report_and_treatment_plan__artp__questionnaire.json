@@ -1,0 +1,329 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire assessment-report-and-treatment-plan-artp</b></p><h2>Assessment Report and Treatment Plan (ARTP)</h2><p>For completion post-surgery</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "draft",
+  "title": "Assessment Report and Treatment Plan (ARTP)",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Kiritaki (Client) and claim details",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "1.1",
+          "text": "Claim number",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "1.2",
+          "text": "Date of injury",
+          "type": "date",
+          "required": true
+        },
+        {
+          "linkId": "1.7",
+          "text": "Primary contact number",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "1.8",
+          "text": "Email (optional)",
+          "type": "string"
+        },
+        {
+          "linkId": "1.9",
+          "text": "Alternate contact number (optional)",
+          "type": "string"
+        },
+        {
+          "linkId": "1.10",
+          "text": "Referring provider",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "1.11",
+          "text": "Date of referral from provider",
+          "type": "date",
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Diagnosis, history, and examination",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "2.1",
+          "text": "Specific clinical diagnosis requiring treatment (specify code if available, e.g., READ, ICD-10, SNOMED)",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "2.2",
+          "text": "In your clinical opinion, did the accident event cause the diagnosis/injury requiring the proposed treatment?",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueString": "Yes"
+            },
+            {
+              "valueString": "Unclear"
+            }
+          ]
+        },
+        {
+          "linkId": "2.3",
+          "text": "Please describe all the relevant factors that support a causal link between the accident event and the diagnosis/injury requiring the proposed treatment.",
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "2.4",
+          "text": "History of the current condition - include the mechanism of injury",
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "2.5",
+          "text": "Clinical examination findings",
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "2.6",
+          "text": "Diagnostic tests and imaging",
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "2.7",
+          "text": "Pre-existing factors (e.g., relevant medical history, prior surgery/ACC claims, medication, etc.)",
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Proposed management and prognosis",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "3.1",
+          "text": "Prognosis (expected timeframe for the client to recover)",
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "3.2",
+          "text": "Estimated return to work (if applicable): Include details on full return to work/fit-for-selected work and return to work program/pathway",
+          "type": "text"
+        },
+        {
+          "linkId": "3.3",
+          "text": "Expected post-operative instructions: Include details on rehabilitation protocol, weightbearing status, functional limitations, precautions",
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "3.4",
+          "text": "Is the client likely to need support before or after surgery?",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueString": "Yes"
+            },
+            {
+              "valueString": "No"
+            }
+          ]
+        },
+        {
+          "linkId": "3.5",
+          "text": "If yes, specify (e.g., physiotherapy, vocational rehabilitation, weekly compensation, home help, transport, equipment, childcare)",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Treatment details",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "4.1",
+          "text": "Recommended surgical treatment",
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "4.2",
+          "text": "Body site to be treated",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "4.3",
+          "text": "Body side (Left/Right/Both/Not applicable)",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueString": "Left"
+            },
+            {
+              "valueString": "Right"
+            },
+            {
+              "valueString": "Both"
+            },
+            {
+              "valueString": "Not applicable"
+            }
+          ]
+        },
+        {
+          "linkId": "4.4",
+          "text": "ACC procedure code and description (1)",
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "4.5",
+          "text": "ACC procedure code and description (2)",
+          "type": "text"
+        },
+        {
+          "linkId": "4.6",
+          "text": "Clinical priority (H1 - clinically urgent, H2 - home help required, H3 - receiving weekly compensation, H4 - risk of losing employment, Routine)",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueString": "H1 - clinically urgent"
+            },
+            {
+              "valueString": "H2 - home help required"
+            },
+            {
+              "valueString": "H3 - receiving weekly compensation"
+            },
+            {
+              "valueString": "H4 - risk of losing employment"
+            },
+            {
+              "valueString": "Routine"
+            }
+          ]
+        },
+        {
+          "linkId": "4.7",
+          "text": "If H1 - H4, describe the rationale",
+          "type": "text"
+        },
+        {
+          "linkId": "4.8",
+          "text": "Proposed surgery date",
+          "type": "date"
+        },
+        {
+          "linkId": "4.9",
+          "text": "Length of operation",
+          "type": "string"
+        },
+        {
+          "linkId": "4.10",
+          "text": "Length of stay required",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "Certification and specialist details",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "5.4",
+          "text": "Phone",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "5.5",
+          "text": "Email",
+          "type": "string",
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "6",
+      "text": "Lead supplier details",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "6.1",
+          "text": "Lead supplier",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "6.2",
+          "text": "Facility",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "6.3",
+          "text": "Contract number",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "6.4",
+          "text": "Contracted regulations",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "contracted",
+                "display": "Contracted"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "noncontractedsurgeryunderregulations",
+                "display": "Non-contracted (surgery under regulations)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "6.5",
+          "text": "Vendor ID",
+          "type": "string",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "description": "For completion post-surgery",
+  "version": "0.1.0",
+  "publisher": "ACC",
+  "date": "2026-10-12T01:56:47.400Z"
+}
