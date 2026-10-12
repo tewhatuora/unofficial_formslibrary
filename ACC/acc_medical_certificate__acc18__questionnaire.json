@@ -1,0 +1,1124 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire acc-medical-certificate-acc18</b></p><h2>ACC Medical Certificate (ACC18)</h2><p>Questionnaire derived from the ACC Claim API medicalCertificate payload specification.</p><p><i>This questionnaire was generated using the FHIR Questionnaire Designer.</i></p></div>"
+  },
+  "status": "draft",
+  "title": "ACC Medical Certificate (ACC18)",
+  "item": [
+    {
+      "linkId": "provider",
+      "text": "Provider",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "provider.identifiers",
+          "text": "Provider's identifiers",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "provider.providerId",
+              "text": "ACC provider identifier",
+              "type": "string",
+              "required": true,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/minLength",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/regex",
+                  "valueString": "^[A-Za-z0-9]{1,8}$"
+                }
+              ]
+            },
+            {
+              "linkId": "provider.providerTypeCode",
+              "text": "Provider type",
+              "type": "choice",
+              "required": true,
+              "answerValueSet": "https://example.health.nz/fhir/ValueSet/acc-provider-type",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "provider.practiceName",
+              "text": "Practice name",
+              "type": "string",
+              "required": true
+            },
+            {
+              "linkId": "provider.hpiOrganisationNumber",
+              "text": "HPI organisation number",
+              "type": "string",
+              "required": true,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/regex",
+                  "valueString": "^[A-Za-z0-9/]{1,12}$"
+                }
+              ]
+            },
+            {
+              "linkId": "provider.hpiFacilityNumber",
+              "text": "HPI facility number",
+              "type": "string",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/regex",
+                  "valueString": "^[A-Za-z0-9]{1,12}$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "provider.name",
+          "text": "Provider's name",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "provider.firstName",
+              "text": "First name",
+              "type": "string",
+              "required": true
+            },
+            {
+              "linkId": "provider.middleName",
+              "text": "Middle name or initials",
+              "type": "string"
+            },
+            {
+              "linkId": "provider.surname",
+              "text": "Family name or surname",
+              "type": "string",
+              "required": true
+            }
+          ]
+        },
+        {
+          "linkId": "provider.address",
+          "text": "Provider's address",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "provider.address.type",
+              "text": "Address type",
+              "type": "choice",
+              "required": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/CodeSystem/acc45",
+                    "code": "Home",
+                    "display": "Home"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/CodeSystem/acc45",
+                    "code": "Postal",
+                    "display": "Postal"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "provider.address.line1",
+              "text": "Address",
+              "type": "string",
+              "required": true
+            },
+            {
+              "linkId": "provider.address.line2",
+              "text": "Address line 2",
+              "type": "string"
+            },
+            {
+              "linkId": "provider.address.suburb",
+              "text": "Suburb",
+              "type": "string"
+            },
+            {
+              "linkId": "provider.address.city",
+              "text": "City or town",
+              "type": "string",
+              "required": true
+            },
+            {
+              "linkId": "provider.address.postCode",
+              "text": "Postcode",
+              "type": "string",
+              "required": true,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/minLength",
+                  "valueInteger": 4
+                }
+              ]
+            },
+            {
+              "linkId": "provider.address.country",
+              "text": "Country",
+              "type": "string",
+              "required": true
+            }
+          ]
+        },
+        {
+          "linkId": "provider.contact",
+          "text": "Provider's contact details",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "provider.contact.email",
+              "text": "Email address",
+              "type": "string",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/regex",
+                  "valueString": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"
+                }
+              ]
+            },
+            {
+              "linkId": "provider.contact.mobile",
+              "text": "Mobile number",
+              "type": "string"
+            },
+            {
+              "linkId": "provider.contact.work",
+              "text": "Work phone number",
+              "type": "string"
+            },
+            {
+              "linkId": "provider.contact.home",
+              "text": "Home phone number",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "declaration",
+      "text": "Provider's declaration",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "declaration.date",
+          "text": "Declaration date",
+          "type": "date",
+          "required": true,
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue"
+            }
+          ]
+        },
+        {
+          "linkId": "declaration.consultationMode",
+          "text": "Mode of consultation",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://example.org/CodeSystem/acc45",
+                "code": "Inperson",
+                "display": "In person"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/CodeSystem/acc45",
+                "code": "Telehealth",
+                "display": "Telehealth"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "claimNumber",
+      "text": "Claim number (medical fees number)",
+      "type": "string",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/regex",
+          "valueString": "^[A-Za-z0-9]{1,12}$"
+        }
+      ]
+    },
+    {
+      "linkId": "patient",
+      "text": "Patient",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "patient.details",
+          "text": "Patient details",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "patient.nhi",
+              "text": "National Health Index (NHI) number",
+              "type": "string",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/minLength",
+                  "valueInteger": 7
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/regex",
+                  "valueString": "^[A-Za-z]{3}[0-9]{2}([0-9]{2}|[A-Za-z]{2})$"
+                }
+              ]
+            },
+            {
+              "linkId": "patient.firstName",
+              "text": "First name",
+              "type": "string",
+              "required": true
+            },
+            {
+              "linkId": "patient.middleName",
+              "text": "Middle name or initials",
+              "type": "string"
+            },
+            {
+              "linkId": "patient.surname",
+              "text": "Family name or surname",
+              "type": "string",
+              "required": true
+            },
+            {
+              "linkId": "patient.dateOfBirth",
+              "text": "Date of birth",
+              "type": "date",
+              "required": true,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/minValue"
+                }
+              ]
+            },
+            {
+              "linkId": "patient.accidentDate",
+              "text": "Injury date, or accident date",
+              "type": "date",
+              "required": true,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/minValue"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "patient.address",
+          "text": "Patient's address",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "patient.address.type",
+              "text": "Address type",
+              "type": "choice",
+              "required": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/CodeSystem/acc45",
+                    "code": "Home",
+                    "display": "Home"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/CodeSystem/acc45",
+                    "code": "Postal",
+                    "display": "Postal"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "patient.address.line1",
+              "text": "Address",
+              "type": "string",
+              "required": true
+            },
+            {
+              "linkId": "patient.address.line2",
+              "text": "Address line 2",
+              "type": "string"
+            },
+            {
+              "linkId": "patient.address.suburb",
+              "text": "Suburb",
+              "type": "string"
+            },
+            {
+              "linkId": "patient.address.city",
+              "text": "City or town",
+              "type": "string",
+              "required": true
+            },
+            {
+              "linkId": "patient.address.postCode",
+              "text": "Postcode",
+              "type": "string",
+              "required": true,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/minLength",
+                  "valueInteger": 4
+                }
+              ]
+            },
+            {
+              "linkId": "patient.address.country",
+              "text": "Country",
+              "type": "string",
+              "required": true
+            }
+          ]
+        },
+        {
+          "linkId": "patient.contact",
+          "text": "Patient's contact details",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "patient.contact.email",
+              "text": "Email address",
+              "type": "string",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/regex",
+                  "valueString": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"
+                }
+              ]
+            },
+            {
+              "linkId": "patient.contact.mobile",
+              "text": "Mobile number",
+              "type": "string"
+            },
+            {
+              "linkId": "patient.contact.work",
+              "text": "Work phone number",
+              "type": "string"
+            },
+            {
+              "linkId": "patient.contact.home",
+              "text": "Home phone number",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "employment",
+      "text": "Employment",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "employment.inPaidEmployment",
+          "text": "Does the patient need time off work due to their injury?",
+          "type": "boolean",
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "rehabilitation",
+      "text": "Rehabilitation assistance",
+      "type": "group",
+      "enableWhen": [
+        {
+          "question": "employment.inPaidEmployment",
+          "operator": "=",
+          "answerBoolean": false
+        }
+      ],
+      "enableBehavior": "all",
+      "item": [
+        {
+          "linkId": "rehabilitation.assistanceRequired",
+          "text": "Assistance required",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "linkId": "rehabilitation.assistanceType",
+          "text": "Assistance type",
+          "type": "choice",
+          "required": true,
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://example.org/CodeSystem/acc45",
+                "code": "Home",
+                "display": "Home"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/CodeSystem/acc45",
+                "code": "Equipment",
+                "display": "Equipment"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/CodeSystem/acc45",
+                "code": "Travel",
+                "display": "Travel"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/CodeSystem/acc45",
+                "code": "Other",
+                "display": "Other"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "rehabilitation.assistanceRequired",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "enableBehavior": "all",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "check-box"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "rehabilitation.otherAssistanceComments",
+          "text": "Other assistance type",
+          "type": "string",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "rehabilitation.assistanceType",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://example.org/CodeSystem/acc45",
+                "code": "Other"
+              }
+            }
+          ],
+          "enableBehavior": "all"
+        },
+        {
+          "linkId": "rehabilitation.assistanceComments",
+          "text": "Comments",
+          "type": "text",
+          "enableWhen": [
+            {
+              "question": "rehabilitation.assistanceRequired",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "enableBehavior": "all"
+        }
+      ]
+    },
+    {
+      "linkId": "diagnosis",
+      "text": "Diagnosis",
+      "type": "group",
+      "required": true,
+      "repeats": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/minOccurs",
+          "valueInteger": 1
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxOccurs",
+          "valueInteger": 20
+        }
+      ],
+      "item": [
+        {
+          "linkId": "diagnosis.codeType",
+          "text": "Read, ICD or SNOMED",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://example.org/CodeSystem/acc45-diagnosis-code-type",
+                "code": "1",
+                "display": "Read code or SNOMED code"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/CodeSystem/acc45-diagnosis-code-type",
+                "code": "2",
+                "display": "ICD-9"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/CodeSystem/acc45-diagnosis-code-type",
+                "code": "3",
+                "display": "ICD-10"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "diagnosis.description",
+          "text": "Diagnosis description",
+          "type": "string",
+          "required": true
+        },
+        {
+          "linkId": "diagnosis.side",
+          "text": "Side",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://example.org/CodeSystem/acc45",
+                "code": "notApplicable",
+                "display": "Not applicable"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/CodeSystem/acc45",
+                "code": "left",
+                "display": "Left"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/CodeSystem/acc45",
+                "code": "right",
+                "display": "Right"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/CodeSystem/acc45",
+                "code": "bilateral",
+                "display": "Bilateral"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "diagnosis.comment",
+          "text": "Diagnosis comments (optional): complications, severity",
+          "type": "text"
+        },
+        {
+          "linkId": "diagnosis.action",
+          "text": "Add, modify, or delete",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://example.org/CodeSystem/acc45",
+                "code": "add",
+                "display": "Add"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/CodeSystem/acc45",
+                "code": "modify",
+                "display": "Modify"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/CodeSystem/acc45",
+                "code": "delete",
+                "display": "Delete"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "diagnosis.primary",
+          "text": "Principal diagnosis (exactly one diagnosis must be primary)",
+          "type": "boolean",
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "workCapacity",
+      "text": "Work capacity",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "workCapacity.incapacityType",
+          "text": "Fully unfit for work, or fit for some work",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://example.org/CodeSystem/acc45",
+                "code": "Fullyunfitforwork",
+                "display": "Fully unfit for work"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://example.org/CodeSystem/acc45",
+                "code": "Fitforselectedwork",
+                "display": "Fit for selected work"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "employment.inPaidEmployment",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "enableBehavior": "all"
+        },
+        {
+          "linkId": "workCapacity.incapacity",
+          "text": "Incapacity period",
+          "type": "group",
+          "repeats": true,
+          "enableWhen": [
+            {
+              "question": "employment.inPaidEmployment",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "enableBehavior": "all",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxOccurs",
+              "valueInteger": 2
+            }
+          ],
+          "item": [
+            {
+              "linkId": "workCapacity.incapacity.fromDate",
+              "text": "Start date of incapacity period",
+              "type": "date",
+              "required": true
+            },
+            {
+              "linkId": "workCapacity.incapacity.toDate",
+              "text": "End date of incapacity period",
+              "type": "date",
+              "required": true
+            },
+            {
+              "linkId": "workCapacity.incapacity.comments",
+              "text": "Fully unfit - comment",
+              "type": "text",
+              "required": true,
+              "enableWhen": [
+                {
+                  "question": "workCapacity.incapacityType",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://example.org/CodeSystem/acc45",
+                    "code": "Fullyunfitforwork"
+                  }
+                }
+              ],
+              "enableBehavior": "all"
+            },
+            {
+              "linkId": "workCapacity.incapacity.selectedWork",
+              "text": "Fit for selected work",
+              "type": "group",
+              "enableWhen": [
+                {
+                  "question": "workCapacity.incapacityType",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "http://example.org/CodeSystem/acc45",
+                    "code": "Fitforselectedwork"
+                  }
+                }
+              ],
+              "enableBehavior": "all",
+              "item": [
+                {
+                  "linkId": "workCapacity.incapacity.selectedWork.restrictionComment",
+                  "text": "Fit for some work - comment",
+                  "type": "text"
+                },
+                {
+                  "linkId": "workCapacity.incapacity.selectedWork.hoursPerDay",
+                  "text": "The patient is fit to work X hours per day",
+                  "type": "decimal",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/minValue"
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/maxValue"
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/maxDecimalPlaces",
+                      "valueInteger": 2
+                    }
+                  ]
+                },
+                {
+                  "linkId": "workCapacity.incapacity.selectedWork.daysPerWeek",
+                  "text": "The patient is fit to work X days per week",
+                  "type": "integer",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                      "valueInteger": 1
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                      "valueInteger": 7
+                    }
+                  ]
+                },
+                {
+                  "linkId": "workCapacity.incapacity.selectedWork.physicalRestrictions",
+                  "text": "Physical restrictions, if relevant",
+                  "type": "choice",
+                  "repeats": true,
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "system": "http://example.org/CodeSystem/acc45-restriction",
+                        "code": "Lifting",
+                        "display": "Lifting"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "http://example.org/CodeSystem/acc45-restriction",
+                        "code": "Posture",
+                        "display": "Posture"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "http://example.org/CodeSystem/acc45-restriction",
+                        "code": "Heavy Physical",
+                        "display": "Heavy physical"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "http://example.org/CodeSystem/acc45-restriction",
+                        "code": "Repetition",
+                        "display": "Repetition"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "http://example.org/CodeSystem/acc45-restriction",
+                        "code": "Vibration",
+                        "display": "Vibration"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "http://example.org/CodeSystem/acc45-restriction",
+                        "code": "Temperature",
+                        "display": "Temperature"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "http://example.org/CodeSystem/acc45-restriction",
+                        "code": "Driving",
+                        "display": "Driving"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "http://example.org/CodeSystem/acc45-restriction",
+                        "code": "Prolonged Sitting",
+                        "display": "Prolonged sitting"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "http://example.org/CodeSystem/acc45-restriction",
+                        "code": "Prolonged Walking",
+                        "display": "Prolonged walking"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "http://example.org/CodeSystem/acc45-restriction",
+                        "code": "Prolonged Standing",
+                        "display": "Prolonged standing"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "http://example.org/CodeSystem/acc45-restriction",
+                        "code": "Other",
+                        "display": "Other"
+                      }
+                    }
+                  ],
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "check-box"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "workCapacity.returnToNormalWorkDate",
+          "text": "Return to normal work date",
+          "type": "date"
+        },
+        {
+          "linkId": "workCapacity.reviewIncapacityDate",
+          "text": "Next visit to provider date",
+          "type": "date"
+        },
+        {
+          "linkId": "workCapacity.returnToWork",
+          "text": "Returning to work assistance",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "workCapacity.returnToWork.assistanceRequired",
+              "text": "Is return to work assistance required?",
+              "type": "boolean",
+              "required": true
+            },
+            {
+              "linkId": "workCapacity.returnToWork.assistanceType",
+              "text": "Support needed to stay at work or return to work, or clinical review of the patient's fitness for work needed",
+              "type": "choice",
+              "required": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/CodeSystem/acc45",
+                    "code": "needSupport",
+                    "display": "Support needed to stay at work or return to work"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/CodeSystem/acc45",
+                    "code": "needClinicalReview",
+                    "display": "Clinical review of fitness for work needed"
+                  }
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "workCapacity.returnToWork.assistanceRequired",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "enableBehavior": "all"
+            }
+          ]
+        },
+        {
+          "linkId": "workCapacity.accAssistance",
+          "text": "Help for the patient",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "workCapacity.accAssistance.issuesDetails",
+              "text": "What complications or other issues are affecting recovery or rehabilitation?",
+              "type": "text"
+            },
+            {
+              "linkId": "workCapacity.accAssistance.otherComments",
+              "text": "What other assistance is needed that the patient should discuss with a case manager? (for instance equipment, home help, transport)",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "linkId": "workCapacity.contact",
+          "text": "Contact the provider",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "workCapacity.contactRequired",
+              "text": "ACC to contact me",
+              "type": "boolean",
+              "required": true
+            },
+            {
+              "linkId": "workCapacity.accContact.anyDay",
+              "text": "Any day",
+              "type": "boolean",
+              "required": true,
+              "enableWhen": [
+                {
+                  "question": "workCapacity.contactRequired",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "enableBehavior": "all"
+            },
+            {
+              "linkId": "workCapacity.accContact.preferredContactDay",
+              "text": "Specific weekday(s)",
+              "type": "choice",
+              "required": true,
+              "repeats": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/CodeSystem/acc45",
+                    "code": "Monday",
+                    "display": "Monday"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/CodeSystem/acc45",
+                    "code": "Tuesday",
+                    "display": "Tuesday"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/CodeSystem/acc45",
+                    "code": "Wednesday",
+                    "display": "Wednesday"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/CodeSystem/acc45",
+                    "code": "Thursday",
+                    "display": "Thursday"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://example.org/CodeSystem/acc45",
+                    "code": "Friday",
+                    "display": "Friday"
+                  }
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "workCapacity.contactRequired",
+                  "operator": "=",
+                  "answerBoolean": true
+                },
+                {
+                  "question": "workCapacity.accContact.anyDay",
+                  "operator": "=",
+                  "answerBoolean": false
+                }
+              ],
+              "enableBehavior": "all",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "check-box"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "workCapacity.accContact.contactComments",
+              "text": "Contact method, time, or message",
+              "type": "text",
+              "enableWhen": [
+                {
+                  "question": "workCapacity.contactRequired",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "enableBehavior": "all"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "url": "https://example.health.nz/fhir/Questionnaire/acc-medical-certificate",
+  "description": "Questionnaire derived from the ACC Claim API medicalCertificate payload specification.",
+  "version": "0.1.0",
+  "publisher": "Health NZ | Te Whatu Ora",
+  "date": "2026-10-12T02:28:39.414Z"
+}
